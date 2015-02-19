@@ -12,7 +12,6 @@ Start building the basic layout
 	min-height: 600px;
 	background-size: cover;
 	background-image: url('../../images/stock5.jpg');
-	//background-attachment: fixed;
 	color: white;
 	&:after {
 		content: "";
@@ -21,7 +20,7 @@ Start building the basic layout
 		left: 0;
 		height: 100%;
 		width:100%;
-		background: rgba(0,0,0,0.2);
+		background: rgba(0,0,0,0.4);
 	}
 
 	.container {
@@ -178,7 +177,7 @@ Start building for larger resolutions
 
 	@media (min-width: $breakpoint-4) {
 		.hero-title {
-			font-size: 3.8em;
+			font-size: 3.5em;
 		}
 	}
 

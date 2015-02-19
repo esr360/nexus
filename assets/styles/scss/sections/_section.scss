@@ -57,12 +57,19 @@ Start building the basic layout
 		h2,
 		h3 {
 			margin: 0.15em 0;
+		    &:first-child {
+		    	margin-top: 0;
+		    }
+		    &:last-child {
+		        margin-bottom: 0;
+		    }
 		}
-		h2 {
-			font-size: 1em;
-		}
-		h3 {
-			font-size: 0.9em;
+		p {
+			margin-top: 0;
+			margin-bottom: 0;
+			font-size: 0.65em;
+			line-height: 1;
+			color: $brand-1;
 		}
 	}
 
