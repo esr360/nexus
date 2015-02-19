@@ -1,0 +1,75 @@
+
+/* Welcome Section
+================================================================ */
+
+.section.welcome {
+
+/******************************************************************
+Start building the basic layout
+******************************************************************/
+
+	padding-bottom: 0 !important;
+
+	.container {
+		position: relative;
+	}
+
+	header {
+		transition: 0.2s;
+		transform: scale(0);
+		background: $background-color;
+		&:not(:first-of-type) {
+			position: absolute;
+			top: -0.75em;
+		}
+		&.active {
+			transform: scale(1);
+		}
+	}
+
+	.earth {
+		transition: 0.4s;
+		bottom: 0;
+		img {
+			animation-name: spin;
+			animation-delay: 1s;
+		}
+	}
+
+	.pins {
+		opacity: 1;
+		transition: 0.4s;
+		transition-delay: 1s;
+	}
+
+	&.inactive {
+		.earth {
+			bottom: -15em;
+			img {				
+				animation-name: none;
+			}
+		}
+		.pins {
+			opacity: 0;
+		}
+	}
+
+/******************************************************************
+Start building for smaller resolutions
+******************************************************************/
+
+	@media (max-width: $breakpoint-1) {
+		.earth {
+			.pin {
+				transform: scale(0.75) rotate(-45deg);
+			}
+		}
+	}
+
+/******************************************************************
+Start building for larger resolutions
+******************************************************************/
+
+	@media (min-width: $breakpoint-3) {}
+
+} // end .welcome

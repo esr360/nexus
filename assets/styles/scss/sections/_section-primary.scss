@@ -1,0 +1,64 @@
+
+/* Primary Section
+================================================================ */
+
+.section.primary {
+
+/******************************************************************
+Start building the basic layout
+******************************************************************/
+
+	background: $background-color;
+
+	&:not(.welcome) {
+		header {		
+			transform: scale(1);
+			transition: 0.4s;
+			&.inactive {
+				transform: scale(0);
+			}
+		}
+	}
+
+	h2 {
+		font-weight: 100;
+		b {
+			color: white;
+			background: $brand-1;
+			padding: 0 0.2em;
+		}
+		span {
+			font-family: $font-1;
+			font-weight: 900;
+			color: $brand-1;
+		}
+		strong {
+			text-transform: none;
+			font-weight: 900;
+		}
+	}
+
+	h3 {
+		display: none;
+		font-weight: 800;
+	}
+
+	.mini-title {
+		font-size: 2em;
+	}
+
+	.lead {
+		font-size: $large-font-size;
+	}
+
+/******************************************************************
+Start building for larger resolutions
+******************************************************************/
+
+	@media (min-width: $breakpoint-2) {
+		h3 {
+			display: block;
+		}
+	}
+
+} // end .section.primary

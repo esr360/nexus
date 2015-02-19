@@ -1,0 +1,198 @@
+
+/* OControl Panel Nav
+================================================================ */
+
+body {
+
+/******************************************************************
+Start building the basic layout
+******************************************************************/
+
+	position: relative;
+	&:before, &:after {
+		content: "";
+		height: 15%;
+		position: fixed;
+		background: $dark-grey;	
+		width: 100%;	
+		z-index: 1;	
+		transition: 0s;
+	}
+	&:before {
+		top: -20%;
+	}
+	&:after {
+		bottom: -20%;
+	}
+	
+	.cp-nav-container {
+		z-index: 1;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		padding-top: 1.25em;
+		font-size: 1.15em;
+		transition: 0s;
+		visibility: hidden;
+		.logo {
+			padding: 1.5rem 0 1em 4rem;
+			font-size: 2em;
+			line-height: 1.2;
+			@extend .invisible;
+			a {
+				border: none;
+				background: none;
+				color: white;
+				display: inline-block;
+			}
+			.fa {
+				&:before {
+					top: 53%;
+				}
+			}
+		}
+		ul {
+			font-family: $font-2;
+			transition: 0s;
+			margin-top: 0;
+			padding-left: 6rem;
+			width: 10%;
+			min-width: 250px;
+			@extend .invisible;
+			li {
+				padding: 1em 0;
+				&.active {
+					a {
+						color: $brand-1;
+					}
+				}
+			}
+			a {
+				color: white;
+				&:hover {
+					color: $brand-1;					
+				}
+			}
+			ul {
+				display: none;
+			}
+		}
+		.main-search {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: -16%;
+			width: 65%;
+			margin: auto;
+			@extend .invisible;
+			.search-close {
+				display: none;
+			}
+			.button {			
+				font-size: 1.5em;
+			}
+			input {
+				width: 100%;
+				background: none;
+				color: white;
+				height: 3em;
+				border-bottom: 1px solid rgba(255,255,255,0.25);
+				padding: 0.5em 1em 0.5em 0;
+				transition: 0s;
+				font-size: 1.25em !important;
+			}
+			[type="submit"] {
+				color: rgba(255,255,255,0.5);
+				right: 0 !important;
+				&:hover {
+					color: $brand-1;
+				}
+			}
+			::placeholder { 
+				opacity: 0.3;
+				color: white;
+			}
+		}
+		.copyright {
+			color: white;
+			position: absolute;
+			padding-left: 4rem;
+			bottom: 15%;
+			font-weight: 300;
+			@extend .invisible;
+		}
+	}
+
+/******************************************************************
+CP nav is active
+******************************************************************/
+
+	&.cp-active {
+		&:before,
+		&:after {
+			transition: 0.4s;
+		}
+		&:before {
+			top: 0;
+		}
+		&:after {
+			bottom: 0;
+		}
+		#site-content {
+			transform: scale(0.65);
+			transition: 0.4s;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			right: -8%;
+		}
+		.cp-nav-container {
+			visibility: visible;
+			.logo,
+			ul,
+			.main-search,
+			.copyright {
+				transition: 0.4s;
+				transition-delay: 0.4s;
+				@extend .visible;
+			}
+			ul {				
+				padding-left: 4rem;
+			}
+			.main-search {
+				top: 3.6%;
+			}
+		}
+		.cp-trigger {			
+			@extend .visible;
+		}
+	}
+
+/******************************************************************
+Start building for smaller resolutions
+******************************************************************/
+
+	@media (max-height: 800px) {
+		&:before, 
+		&:after {
+			height: 21%;
+		}
+		.cp-nav-container {
+			.logo {
+				font-size: 1.5em;
+			}
+			ul {
+				li {
+					padding: 0.65em 0em;
+				}
+			}
+			.copyright {
+				font-size: 1.1rem;
+				bottom: 21%;
+			}
+		}
+	}
+
+} // end body

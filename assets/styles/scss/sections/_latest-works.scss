@@ -1,0 +1,43 @@
+
+/* Latest Works
+================================================================ */
+
+.section.latest-works {
+
+/******************************************************************
+Start building the basic layout
+******************************************************************/
+
+	.portfolio-items {
+		transition: 0.4s;
+		transform: scale(1);
+	}
+	.owl-nav {
+		transition: 0.4s;
+		transition-delay: 0.4s;
+	}
+
+	&.inactive {
+		.portfolio-items {
+			transform: scale(0);
+		}
+		.owl-nav {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}	
+	&.active {
+		.owl-nav {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+
+/******************************************************************
+Start building for larger resolutions
+******************************************************************/
+
+	@media (min-width: $breakpoint-3) {
+	}
+
+} // end .section.latest-works

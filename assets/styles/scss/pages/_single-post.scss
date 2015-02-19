@@ -1,0 +1,52 @@
+
+/* Single Post
+================================================================ */
+
+body.single-post {
+
+	.sub-header {
+		background-size: cover;
+		background-image: url('../../images/stock13.jpg');
+	}
+	.main-post {
+		padding-bottom: 1em !important;
+	}
+	.social-share {
+		margin-bottom: 4em;
+	}
+	.blog-posts {
+		h4 {
+			font-size: 1.2em !important;
+		}
+		h5 {
+			font-size: 1em !important;
+		}
+		.thumb {
+			height: 126px;
+		}
+	} 
+	.comments {
+		padding-top: 0.5rem !important;
+		position: relative;
+		top: -2px;
+	}
+	.hidden-comment {
+		display: none;
+	}
+
+/******************************************************************
+Start building for smaller resolutions
+******************************************************************/
+
+	@media (max-width: $breakpoint-2) {
+		.post-meta {
+			font-size: 0.9rem;
+		}
+	}
+	@media (max-width: $breakpoint-3) {
+		.section.blog-posts {
+			padding-top: 3em;
+		}
+	}
+	
+} // end body.single-post

@@ -1,0 +1,174 @@
+
+/* Dropdown Navigation
+   Used in: "modules/_main-nav.scss"
+================================================================ */
+
+ul {
+
+/******************************************************************
+Start building the basic layout
+******************************************************************/
+
+	@extend ul.reset;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s;
+	position: absolute;
+	z-index: 999;
+	min-width: 185px;
+	margin-top: 2.6em;
+	text-align: left;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 0.5em;
+	li {
+		display: block;
+		position: relative;
+		margin-left: 0;
+		a {
+			font-size: 0.9em;
+			color: $grey;
+			background: $background-color;
+			line-height: 3.2;
+			box-shadow: inset 0px -1px 0px 0px white;
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			font-weight: 100;
+			&:before, &:after {
+				content: "\f105";
+				font-family: FontAwesome;	
+				color: rgba(0,0,0,0.35);			
+			}
+			&:before {
+				margin-right: 0.75em;
+				transition: 0.4s;
+				padding: 7px 4px 7px 5px;
+				border-radius: 50%;
+				border: 1px solid;
+				display: inline-block;
+				text-align: center;
+				line-height: 0;
+			}
+			&:after {
+				display: none;
+			}
+			&:not(:only-child) {
+				&:after {				
+					position: absolute;
+					right: 1em;
+					display: inline-block;
+				}
+			}
+		}
+		&:hover {
+			a {
+				color: $brand-1;
+				&:before {
+					background: $brand-1;
+					border-color: $brand-1;
+					color: white;
+				}
+			}
+			> ul {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		&:first-child {
+			a {
+				border-radius: 7px 7px 0 0;
+			}
+		}
+		&:last-child {
+			a {
+				border-radius: 0 0 7px 7px;
+				border-bottom: none;
+				box-shadow: none;
+			}
+		}
+	}
+	// 2nd level and below
+	ul {
+		top: 0;
+		left: 150%;
+		margin-top: 0;
+		border-radius: 0;
+		z-index: -1;
+		&:before, 
+		&:after {
+			display: none;
+		}
+		li {
+			a {
+				background: rgba(0,0,0,0.75);
+				color: white !important;
+				border-radius: 0 !important;
+				border-right: none;
+				border-bottom: 1px solid rgba(255,255,255,0.05);
+				box-shadow: inset 0px -1px 0px 0px black;
+				&:after {
+					color: rgba(255,255,255,0.25);
+				}
+			}	
+			&:hover {
+				a {
+					background: darken($brand-1, 15%);
+					box-shadow: none;
+					&:before,
+					&:after {
+						color: white;
+					}
+				}
+			}
+			&:last-child {
+				a {
+				}
+			}	
+		}
+		// 3d level and below
+		ul {
+			left: 149.5%;
+			left: calc(150% - 1px);
+			li {
+				&:hover {
+					a {
+						background: darken($brand-1, 25%);
+					}
+				}
+			}
+		}
+	}
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+	}
+	&:before {
+		height: 20px;
+		top: -20px;
+		width: 100%;
+	}
+	&:after {
+		height: 18px;
+		width: 18px;
+		background: $background-color;
+		transform: rotate(45deg);
+		top: -3px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+/******************************************************************
+Start building for larger resolutions
+******************************************************************/
+
+	@media (min-width: $breakpoint-4) {
+	}
+
+} // end dropdown ul
+
+&:hover > ul {
+	opacity: 1;
+	visibility: visible;
+	margin-top: 1.1em;
+}

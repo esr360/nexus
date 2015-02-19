@@ -1,0 +1,94 @@
+
+/* Skills
+================================================================ */
+
+.section.skills {
+
+/******************************************************************
+Start building the basic layout
+******************************************************************/
+
+	h2, h3 {
+		position: relative;
+		transition: 0.4s;
+		opacity: 1;
+		bottom: 0;
+	}
+	h5 {
+		font-family: $font-1;
+		margin-bottom: 0.5em;
+		top: 0;
+		transition: 0.4s;
+		position: relative;
+	}
+	p {
+		opacity: 1;
+		top: 0;
+		position: relative;
+		transition: 0.4s;
+	}
+	.progress-bars {
+		transition: 1s;
+	}
+	.progress {
+		transition: 1s;
+	}
+	.progress-bar {
+		transition: 0.4s;
+	}
+	
+	&.inactive {
+		.progress-bar {
+			background: transparent;
+			color: transparent;
+		}
+		.progress {
+			width: 0 !important;
+			padding: 0;
+		}
+		h2, h3, h5 {
+			opacity: 0;
+		}
+		h2 {
+			bottom: -5rem;
+		}
+		h3 {
+			bottom: -2rem;
+		}
+		h5 {
+			top: -1em;
+		}
+		p {
+			opacity: 0;
+			top: -2rem;
+		}
+	}
+
+/******************************************************************
+Start building for smaller resolutions
+******************************************************************/
+
+	@media (max-width: $breakpoint-3) {
+		.progress-bars {
+			margin-top: 3em;
+		}
+	}
+
+/******************************************************************
+Start building for larger resolutions
+******************************************************************/
+
+	@media (min-width: $breakpoint-3) {
+		.progress-bars {
+			padding-left: 3.5%;
+			vertical-align: middle;
+		}
+	}
+
+	@media (min-width: $breakpoint-3) and (max-width: $breakpoint-4) {
+		h3 {
+			font-size: 2.5em;
+		}
+	}
+
+} // end .section.skills

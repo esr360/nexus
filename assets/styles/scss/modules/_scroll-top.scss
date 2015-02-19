@@ -1,0 +1,40 @@
+
+/* Scroll to Top
+================================================================ */
+
+.scroll-top {
+
+	display: none;
+	opacity: 0;
+	visibility: hidden;
+	position: fixed;
+	bottom: 3rem;
+	right: 3rem;
+	font-size: 1.6em;
+	color: rgba(0,0,0,0.6);
+	height: 40px;
+	width: 40px;
+	border: 2px solid;
+	z-index: 9;
+	&.visible {
+		opacity: 0.5 !important;
+	}
+	&:hover {
+		opacity: 1 !important;
+		background: $brand-1;
+		color: white;
+	}
+	&:before {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 47%;
+		text-align: center;
+		transform: translateY(-50%);
+	}
+
+	@media (min-width: 1500px) {
+		display: block;
+	}
+
+} // end .scroll-top

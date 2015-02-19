@@ -1,0 +1,137 @@
+
+/* Blog Posts Section
+================================================================ */
+
+.section.blog-posts {
+
+/******************************************************************
+Start building the basic layout
+******************************************************************/
+
+	.blog-post {
+		position: relative;
+		h4, h5 {
+			margin: 0;
+		}
+		h4 {
+			font-size: 1.4em;
+			font-family: $font-1;
+			font-weight: 900;
+			margin-bottom: 0.2rem;
+			a {
+				color: $main-text-color;
+				border: none;
+			}
+		}
+		h5 {
+			font-size: 1.2em;
+			font-weight: 300;
+		}
+		p {
+			font-weight: 100;
+		}
+		small {
+			position: absolute;
+			right: 0;
+			bottom: 1.1em;
+		}
+	}
+
+	.thumb {
+		height: 150px;
+		overflow: hidden;
+		margin-bottom: 1.5em;
+		display: block;
+		border: none;
+		img {
+			transition: 0.4s;
+			min-width: 100%;
+		}
+		&:hover {
+			img {
+				transform: scale(1.25);
+			}
+		}
+	}
+
+	.profile {
+		height: 50px;
+		width: 50px;
+		position: absolute;
+		top: 1.2em;
+		left: -0.5em;
+	}
+
+	.date {
+		float: right;
+		width: 45px;
+		span {
+			display: block;
+			text-align: center;
+			&:first-child {
+				color: white;
+				background: $brand-1;
+				font-size: 0.9em;
+			}
+			&:last-child {
+				line-height: 1.8;
+				font-size: 1.15em;
+				color: rgba(0,0,0,0.5);
+				border: 1px solid rgba(0,0,0,0.1);
+				border-top: none;
+				font-weight: lighter;
+			}
+		}
+	}
+
+	/* Animations */
+
+	&.inactive {
+		.blog-post {
+			top: 5em;
+			opacity: 0;
+		}
+	} 
+
+	.blog-post {
+		position: relative;
+		transition: 0.4s;
+		top: 0;
+		opacity: 1;
+		&:nth-child(2) {
+			transition-delay: 0.4s;
+		}
+		&:nth-child(3) {
+			transition-delay: 0.8s;
+	
+		}
+	}
+
+/******************************************************************
+Start building for smaller resolutions
+******************************************************************/
+
+	@media (max-width: $breakpoint-3) {
+		.blog-post {
+			&:not(:last-child) {
+				padding-bottom: 3em;
+				margin-bottom: 3em;
+				border-bottom: 1px dotted rgba(0,0,0,0.1);
+			}
+			small {
+				bottom: 5.1em;
+			}
+		}
+		.thumb {
+			height: 150px !important;
+		}
+	}
+
+/******************************************************************
+Start building for larger resolutions
+******************************************************************/
+
+	@media (min-width: $breakpoint-3) {
+	}
+
+} // end .blog-posts

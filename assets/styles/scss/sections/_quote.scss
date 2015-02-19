@@ -1,0 +1,43 @@
+
+/* Primary Quote
+================================================================ */
+
+.section.quote {
+
+/******************************************************************
+Start building the basic layout
+******************************************************************/
+
+	padding: 8em 0;
+	background-color: $brand-1;
+	overflow: hidden;
+	//background: linear-gradient(to bottom,  $brand-1 0%, adjust-hue(darken($brand-1, 5%), 5%) 100%); /* W3C */
+
+	blockquote {
+		font-size: 2em;
+		margin: auto;
+		color: white;
+		font-weight: lighter;
+		line-height: 1;
+		transition: 0.4s;
+		transform: scale(1) rotate(0deg);
+		b {
+			font-weight: 900;
+		}
+		&.inactive {
+			transform: scale(0) rotate(-540deg);
+		}
+	}
+
+/******************************************************************
+Start building for larger resolutions
+******************************************************************/
+
+	@media (min-width: $breakpoint-3) {
+		blockquote {
+			width: 80%;
+			font-size: 2.75em;
+		}
+	}
+
+} // end .motivate

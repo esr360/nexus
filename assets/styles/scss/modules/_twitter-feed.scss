@@ -1,0 +1,141 @@
+
+/* Twitter Feed
+================================================================ */
+
+#twitter-feed {
+
+    margin:auto;
+    overflow:auto;
+    overflow-y: hidden;
+    * {
+        font-size: 0.8rem;
+    }
+    a:hover {
+        text-decoration: none;
+    }      
+    h1 {
+        display: none;
+        position: absolute;
+        font-weight: normal;
+        line-height: 2;
+        top: 0;
+        right: 0;
+        margin: 0;
+    }
+    a[href="https://twitter.com/"] {
+        display: none;
+    }
+    .twitter-article {
+        margin-top: 1.5em;
+        &:first-of-type {
+            margin-top: 0;
+        }
+        &:hover {
+            .tweet-time a {
+                background: $brand-1;
+            }
+        }
+    }      
+    .twitter-article, #loading-container {
+        width:100%;
+        float:left;
+        position:relative;
+        min-height: 49px;
+    }
+    .twitter-pic {
+        position:absolute;
+        img {
+            float:left;
+            border-radius:7px; 
+            margin-top: 2px;
+            border:none;       
+        }
+    }
+    .tweetprofilelink {
+        strong a {
+            color: $white;
+            &:hover {
+                border-color: inherit;
+            }
+        }
+        >a {
+            font-size: 0.95em;
+        }
+    }
+      
+/* -------- TEXT STYLING ------*/
+
+    .twitter-text {
+        width: 100%;
+        float: left;
+        padding-left: 52px;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        p {
+            margin: 0px;
+            line-height: 16px;
+        }
+    }
+    .tweet-time {
+        position: absolute;
+        right: 0;
+        a {
+            background: darken($light-grey, 25%);
+            padding: 0 2px;
+            font-size: 0.9em;
+            border-radius: 2px;
+            color: white;
+            text-shadow: none;
+        }
+    }
+
+    /* -------- FEED  ACTIONS ------*/
+
+    #twitter-actions {
+        width: 75px;
+        float: right;
+        margin-right: 5px;
+        margin-top: 3px;
+        display: none;
+    }
+    .intent {
+        width: 25px;
+        height: 16px;
+        float: left;
+        a {
+            width: 25px;
+            height: 16px;
+            display: block;
+            background-image: url(../twitter-feed/images/tweet-actions.png);
+            float: left;
+            &:hover {
+                background-position: -25px 0px;
+            }
+        }
+    }
+    #intent-retweet a {
+        background-position: 0px -17px;
+        &:hover {
+            background-position: -25px -17px;
+        }
+    }
+    #intent-fave a {
+        background-position: 0px -36px;
+        &:hover {
+            background-position: -25px -36px;
+        }
+    }
+    
+    /* -------- RETWEET INDICATOR ------*/
+
+    #retweet-indicator {
+        width: 14px;
+        height: 10px;
+        background-image: url(../twitter-feed/images/tweet-actions.png);
+        background-position: -5px -54px;
+        margin-top: 3px;
+        float: left;
+    }
+
+}
