@@ -7,26 +7,23 @@ TO-DO LIST
 
 TODO
 
-- convert to php
-- fix spelling of Manhattan
-- update copyright year to 2015
+- update one-page theme options
 - rethink slider prev/next icons (dot nav in some cases instead?)
-- add child menu support to cp nav
+- remove/redo social icons
 - make all circular icons consistent with CSS class
+- add why choose us section
+- modal/popup login/register
 - add animates pulsating to welcome pins
-- remove some scroll animations
-- add border/shadow to dropdown menu
-- ensure mobile size consistencies
-- look at other potential fonts (animated fonts?)
+- add child menu support to cp nav
 - improve breadcrumb
-- look at spacing/font-size consistencies etc
 - add more pages (see dropdown menu)
-- add multiple header options
-- add multiple footer options (full/minimalistic)
 - updates contact us page (eg add 3 boxes)
 - add stat counter (coffee/lines of code etc)
 - add dot navigation (fixed on right)
-- modal/popup login/register
+- add multiple header options
+- add multiple footer options (full/minimalistic)
+- look at spacing/font-size consistencies etc
+- ensure mobile size consistencies
 
 DONE
 
@@ -64,33 +61,20 @@ DONE
 - package theme for themeforest
 - submit to theme forest ***
 
+- convert to php
+- fix spelling of Manhattan
+- update copyright year to 2015
+- redo hero section
+- look at other potential fonts (animated fonts?)
+- source better meet the team images for demo
+- ensure php formatting is consistent
+- add border/shadow to dropdown menu
+- make welcome section more varied
+- make dropdown nav dark
+- remove some scroll animations
+- add liveicons where appropriate
+
 BACKLOG
 
 - change all jquery class selectors to IDs - ensure to update docs
 - make titles/comments consistent
-
-==============================================
-
-NOTES FOR OFF CANVAS NAV
-
-==============================================
-
-toggleActiveState(state)
-
-Calling this with a parameter of 0, i.e.
-
-  toggleActiveState(0);
-
-...will force the site to turn off the .nav-active class, and go back to the "large" view. If the site is already in the "large" view, it will do nothing.
-
-Calling this with a parameter of 1, i.e.
-
-  toggleActiveState(1);
-
-...will force the site to turn ON the .nav-active class, and go to the "small" view. If it is already in the "small" view, it will do nothing.
-
-Calling this with any other value, i.e.
-
-  toggleActiveState(); or toggleActiveState(2);
-
-...will toggle whatever state is currently in play, and switch it to the "other" view.

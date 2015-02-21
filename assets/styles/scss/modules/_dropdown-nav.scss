@@ -20,36 +20,33 @@ Start building the basic layout
 	text-align: left;
 	left: 50%;
 	transform: translateX(-50%);
-	border-radius: 0.5em;
 	li {
 		display: block;
 		position: relative;
 		margin-left: 0;
 		a {
 			font-size: 0.9em;
-			color: $grey;
-			background: $background-color;
+			color: rgba(255,255,255,0.75);
+			background: rgba(0,0,0,0.86);
 			line-height: 3.2;
-			box-shadow: inset 0px -1px 0px 0px white;
-			border-bottom: 1px solid rgba(0,0,0,0.1);
-			//font-weight: 100;
+			box-shadow: inset 0px -1px 0px 0px rgba(255,255,255,0.05);
+			border-bottom: 1px solid rgba(0,0,0,0.5);
+			-webkit-backface-visibility: hidden;
 			&:before, &:after {
-				content: "\f105";
 				font-family: FontAwesome;	
-				color: rgba(0,0,0,0.35);			
+				transition: 0.4s;		
 			}
 			&:before {
+				content: "\f138";
 				margin-right: 0.75em;
-				transition: 0.4s;
-				padding: 7px 4px 7px 5px;
-				border-radius: 50%;
-				border: 1px solid;
 				display: inline-block;
-				text-align: center;
-				line-height: 0;
 			}
 			&:after {
+				content: "\f105";
 				display: none;
+				color: rgba(255,255,255,0.5);
+				font-size: 1.2em;
+				margin-top: -0.25em;
 			}
 			&:not(:only-child) {
 				&:after {				
@@ -61,27 +58,31 @@ Start building the basic layout
 		}
 		&:hover {
 			a {
-				color: $brand-1;
-				&:before {
-					background: $brand-1;
-					border-color: $brand-1;
-					color: white;
+				background: $brand-1;
+				color: $white;
+				box-shadow: none;
+				border-bottom-color: transparent;
+				&:before,
+				&:after {
+					color: $white;
 				}
 			}
 			> ul {
 				opacity: 1;
 				visibility: visible;
+				a {
+					border-bottom: 1px solid darken($brand-1, 5%);
+				}
 			}
 		}
 		&:first-child {
 			a {
-				border-radius: 7px 7px 0 0;
+				border-top: 8px solid darken($brand-1, 10%);
 			}
 		}
 		&:last-child {
 			a {
-				border-radius: 0 0 7px 7px;
-				border-bottom: none;
+				border-bottom: none !important;
 				box-shadow: none;
 			}
 		}
@@ -90,6 +91,7 @@ Start building the basic layout
 	ul {
 		top: 0;
 		left: 150%;
+		left: calc(150% - 1px);
 		margin-top: 0;
 		border-radius: 0;
 		z-index: -1;
@@ -97,30 +99,16 @@ Start building the basic layout
 		&:after {
 			display: none;
 		}
-		li {
-			a {
-				background: rgba(0,0,0,0.75);
-				color: white !important;
-				border-radius: 0 !important;
-				border-right: none;
-				border-bottom: 1px solid rgba(255,255,255,0.05);
-				box-shadow: inset 0px -1px 0px 0px black;
-				&:after {
-					color: rgba(255,255,255,0.25);
-				}
-			}	
+		li {	
 			&:hover {
 				a {
 					background: darken($brand-1, 15%);
-					box-shadow: none;
-					&:before,
-					&:after {
-						color: white;
-					}
+					border-bottom-color: transparent;
 				}
 			}
-			&:last-child {
+			&:first-child {
 				a {
+					border-top: none;
 				}
 			}	
 		}
@@ -148,11 +136,11 @@ Start building the basic layout
 		width: 100%;
 	}
 	&:after {
-		height: 18px;
-		width: 18px;
-		background: $background-color;
+		height: 10px;
+		width: 10px;
+		background: darken($brand-1, 10%);
 		transform: rotate(45deg);
-		top: -3px;
+		top: -5px;
 		left: 0;
 		right: 0;
 		margin: auto;

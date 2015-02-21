@@ -5,6 +5,23 @@
 $(document).ready(function() {
 
 /******************************************************************
+Loading Spinner
+******************************************************************/
+
+if (window.matchMedia('(min-width: 940px)').matches) {
+    $(window).load(function(){
+        /* Loading Spinner */
+        $('.loading-wrapper').removeClass('active');
+        /* Hero Section */
+        setTimeout(function(){
+            $('section.hero').removeClass('inactive');
+        }, 600)
+    }); // End window.load
+} else {
+    $('.loading-wrapper').removeClass('active');  
+}
+
+/******************************************************************
 Parallax Titles
 ******************************************************************/
 
@@ -322,7 +339,7 @@ Services Slider
 
 $('.services-slider').owlCarousel({
     items: 1,
-    loop: true,
+    loop: false,
     dots: false,
     nav: true,
     navText: [],

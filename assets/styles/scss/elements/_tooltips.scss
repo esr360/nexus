@@ -9,11 +9,11 @@ http://www.tipue.com/tipr
 Converted to SCSS for One Nexus by Edmund Reed
 */
 
-$tooltip-bg        :  rgba(0,0,0,0.6);
+$tooltip-bg        :  rgba(0,0,0,0.65);
 $tooltip-max-width :  300px;
 
 .tipr_content {
-	padding: 0.35rem 1rem;
+	padding: 0.35rem 1rem 0.4rem;
 	background: $tooltip-bg;
 	border-radius: 0.4rem;
 	color: #ffffff;
@@ -40,7 +40,9 @@ $tooltip-max-width :  300px;
 	position: relative;
 	background: $tooltip-bg;
 	border-radius: 0.4rem;
+	width: auto;
 }
+
 .tipr_point_top, 
 .tipr_point_bottom {
 	&:after, &:before {
@@ -62,6 +64,7 @@ $tooltip-max-width :  300px;
 		margin-left: -9px;
 	}
 }
+
 .tipr_point_top {
 	&:after, &:before {
 		top: 99%;
@@ -73,6 +76,7 @@ $tooltip-max-width :  300px;
 		border-top-color: $tooltip-bg;
 	}
 }
+
 .tipr_point_bottom {
 	&:after, &:before {
 		bottom: 99%;

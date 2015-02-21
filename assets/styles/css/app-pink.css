@@ -2582,7 +2582,7 @@ Style Variants
   max-width: none;
   width: auto !important;
   height: 101%;
-  margin-left: -20%;
+  margin-left: -25%;
 }
 
 .profile.profile-alt {
@@ -5259,7 +5259,6 @@ body.fh-visible .main-search [type="submit"] {
   -webkit-box-shadow: inset 0px -1px 0px 0px white;
   box-shadow: inset 0px -1px 0px 0px white;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  font-weight: 100;
 }
 
 .main-nav > ul > li ul li a:before,
@@ -6997,7 +6996,7 @@ Sections
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .hero .container {
@@ -7383,6 +7382,24 @@ Sections
   margin: 0.15em 0;
 }
 
+.section .section-title h2:first-child,
+.section .section-title h3:first-child {
+  margin-top: 0;
+}
+
+.section .section-title h2:last-child,
+.section .section-title h3:last-child {
+  margin-bottom: 0;
+}
+
+.section .section-title p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.65em;
+  line-height: 1;
+  color: #bb1c4d;
+}
+
 @media (min-width: 720px) {
   .section header p {
     width: 80%;
@@ -7424,28 +7441,32 @@ Sections
   transform: scale(0);
 }
 
-.section.primary h2 {
+.section.primary .section-title h2 {
+  font-size: 1em;
   font-weight: 100;
 }
 
-.section.primary h2 b {
+.section.primary .section-title h2 b {
+  display: inline-block;
+  line-height: 1.1;
   color: white;
   background: #bb1c4d;
-  padding: 0 0.2em;
+  padding: 0 0.125em;
 }
 
-.section.primary h2 span {
+.section.primary .section-title h2 span {
   font-family: "Lato", sans-serif;
   font-weight: 900;
   color: #bb1c4d;
 }
 
-.section.primary h2 strong {
+.section.primary .section-title h2 strong {
   text-transform: none;
   font-weight: 900;
 }
 
-.section.primary h3 {
+.section.primary .section-title h3 {
+  font-size: 0.95em;
   display: none;
   font-weight: 800;
 }
@@ -7459,7 +7480,7 @@ Sections
 }
 
 @media (min-width: 720px) {
-  .section.primary h3 {
+  .section.primary .section-title h3 {
     display: block;
   }
 }
@@ -7496,12 +7517,14 @@ Sections
   z-index: 1;
 }
 
-.section.secondary h2 {
+.section.secondary .section-title h2 {
+  font-size: 1em;
   font-family: "Lato", sans-serif;
   font-weight: 900;
 }
 
-.section.secondary h3 {
+.section.secondary .section-title h3 {
+  font-size: 0.9em;
   font-weight: 100;
 }
 

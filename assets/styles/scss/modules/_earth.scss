@@ -19,7 +19,7 @@ Start building the basic layout
 		position: absolute;
 		left: 0;
 		animation-name: spin;
-		animation-duration: 25s;
+		animation-duration: 35s;
 		animation-iteration-count: infinite;
 		animation-timing-function: linear;
 	}
@@ -77,11 +77,11 @@ Start building for larger resolutions
 			}
 			&:nth-of-type(2) {
 				bottom: 25%;
-				transform: rotate(-80deg);
+				transform: rotate(-90deg);
 			}
 			&:nth-of-type(3) {
 				bottom: 25%;
-				transform: rotate(-10deg);
+				transform: rotate(0deg);
 			}
 		}
 	}

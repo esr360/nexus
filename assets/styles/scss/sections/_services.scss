@@ -88,16 +88,19 @@ Start building the basic layout
 			.fa {
 				color: $brand-1;
 			}
+			path {
+				fill: $brand-1;
+			}
 		}
 		.fa {
 			font-size: 2.75em;
-			color: $brand-1;
 			padding-top: 0.1em;
 			color: rgba(0,0,0,0.2);
 			transition: 0.4s;
 		}
-		.fa-mobile {
-			font-size: 3.2em;
+		.livicon {
+			display: inline-block;
+			vertical-align: middle;
 		}
 		h4, h5 {			
 			margin: 0.25rem 0;

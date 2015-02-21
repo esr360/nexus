@@ -20,7 +20,10 @@ Start building the basic layout
 		background: $background-color;
 		&:not(:first-of-type) {
 			position: absolute;
-			top: -0.75em;
+			top: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
 		}
 		&.active {
 			transform: scale(1);
@@ -34,6 +37,50 @@ Start building the basic layout
 			animation-name: spin;
 			animation-delay: 1s;
 		}
+	}
+
+	.livicon {
+		display: inline-block;
+		vertical-align: middle;
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+
+	.welcome-browsers {
+		.livicon {
+			margin-left: 0.5rem;
+			cursor: help;
+		}
+	}
+
+	.welcome-features {
+		width: 100%;
+		text-align: left;
+		.welcome-feature {
+			&:hover {
+				path {
+					fill: $brand-1;
+				}
+			}
+		}
+		.section-title {
+			margin-bottom: 2.4rem;
+			text-align: center;
+		}
+		h4 {
+			margin: 0;
+			font-size: 1.4em;
+			font-weight: 700;
+		}
+		p {
+			font-size: $base-font-size;
+			margin-top: 0.5rem;
+		}
+	}
+
+	.tipr_container_top {
+		margin-top: -116px;
 	}
 
 	.pins {
