@@ -50,13 +50,18 @@ Start building for larger resolutions
 	@media (min-width: $breakpoint-3) {
 		.container {
 			top: calc(50% + 2rem);
-			h1, p {
+			h1, 
+			p {
 				margin: 0;
 				width: 85%;
 				width: calc(100% - 16rem);
 			}
+			h1 {
+				margin-bottom: 0.2em;
+			}
 			// Animations
-			h1, p {
+			h1, 
+			p {
 				transition: 0.4s;
 				position: relative;
 			}

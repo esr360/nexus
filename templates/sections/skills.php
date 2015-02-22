@@ -6,7 +6,16 @@
                     <h2>Our Skills</h2>
                     <h3><i>It's What We Do Best</i></h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis odio urna, quis molestie enim vulputate id. Ut tristique tellus in tellus lacinia, non gravida ex cursus. Proin sed lacus maximus, venenatis mi non, suscipit nisl. Cras dictum erat id tortor ornare, vel facilisis dolor vehicula. Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget, tincidunt condimentum felis.</p>
+                <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing</b> elit. Vestibulum euismod nisi tincidunt mollis sagittis. Sed rutrum quam non tortor ornare.</p>             
+                <ul class="bullet-list">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    <li>Cras facilisis odio urna, quis molestie enim vulputate id</li>
+                    <li>Cras dictum erat id tortor ornare, vel facilisis dolor vehicula</li>
+                </ul>
+                <p class="button-set">
+                    <a href="#" class="button round brand-1">View Demo</a>
+                    <a href="#" class="button round border">Read More</a>
+                </p>
             </div>
             <div class="span-6 progress-bars">
                 <h5>HTML5</h5>

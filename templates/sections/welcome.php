@@ -23,7 +23,7 @@
             </header>
             <header class="welcome-content welcome-features">
                 <div class="section-title">
-                    <h2>Our <i>Features</i> are <strong>World Class <i class="fa fa-trophy"></i></strong></h2>
+                    <h2>Our <i>Features</i> Are <strong>World Class <i class="fa fa-trophy"></i></strong></h2>
                 </div>
                 <div class="row">
                     <div class="span-4 welcome-feature">

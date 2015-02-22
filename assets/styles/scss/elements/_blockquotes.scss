@@ -8,7 +8,8 @@ blockquote {
 	border: 0;;
 	position: relative;
 	font-family: $font-2;
-	p, h4 {
+	p, 
+	h4 {
 		margin: 0;
 		padding: 0 3rem;
 		font-weight: inherit;
@@ -28,6 +29,9 @@ blockquote {
 			right: 0;
 			bottom: -0.25rem;
 		}
+	}
+	h4 {
+		line-height: 1;
 	}
 	cite {
 		font-weight: bold;

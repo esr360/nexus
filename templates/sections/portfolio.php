@@ -21,11 +21,11 @@
                 <div class="portfolio-item">
                     <div class="controls">
                         <a href="single-project.html" class="fa fa-link"></a>
-                        <a href="assets/images/stock8.jpg" class="fa fa-search"></a>
+                        <a href="assets/images/stock16.jpg" class="fa fa-search"></a>
                     </div>
                     <h4><a href="single-project.html">Cras Facilisis</a></h4>
                     <p>Cras dictum erat id tortor ornare.</p>
-                    <img src="assets/images/stock8.jpg" alt="" />
+                    <img src="assets/images/stock16.jpg" alt="" />
                 </div>
                 <div class="portfolio-item">
                     <div class="controls">
@@ -95,11 +95,11 @@
                 <div class="portfolio-item">
                     <div class="controls">
                         <a href="single-project.html" class="fa fa-link"></a>
-                        <a href="assets/images/stock8.jpg" class="fa fa-search"></a>
+                        <a href="assets/images/stock16.jpg" class="fa fa-search"></a>
                     </div>
                     <h4><a href="single-project.html">Cras Facilisis</a></h4>
                     <p>Cras dictum erat id tortor ornare.</p>
-                    <img src="assets/images/stock8.jpg" alt="" />
+                    <img src="assets/images/stock16.jpg" alt="" />
                 </div>
                 <div class="portfolio-item">
                     <div class="controls">
@@ -133,11 +133,11 @@
                 <div class="portfolio-item">
                     <div class="controls">
                         <a href="single-project.html" class="fa fa-link"></a>
-                        <a href="assets/images/stock8.jpg" class="fa fa-search"></a>
+                        <a href="assets/images/stock16.jpg" class="fa fa-search"></a>
                     </div>
                     <h4><a href="single-project.html">Cras Facilisis</a></h4>
                     <p>Cras dictum erat id tortor ornare.</p>
-                    <img src="assets/images/stock8.jpg" alt="" />
+                    <img src="assets/images/stock16.jpg" alt="" />
                 </div>
                 <div class="portfolio-item">
                     <div class="controls">

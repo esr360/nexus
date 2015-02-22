@@ -19,9 +19,13 @@ Start building the basic layout
 			}
 		}
 	}
+
 	.section-title {
-		h2 {
+		h2,
+		h3 {
 			font-size: 1em;
+		}
+		h2 {
 			font-weight: 100;
 			b {
 				display: inline-block;
@@ -41,18 +45,32 @@ Start building the basic layout
 			}
 		}
 		h3 {
-			font-size: 1em;
 			display: none;
 			font-weight: 800;
 		}
+		h4 {
+			position: relative;
+			font-size: 2.25rem;
+			font-weight: 100;
+			&:before {
+				content: "";
+				border-bottom: 1px dotted rgba(0,0,0,0.2);
+				width: 100%;
+				position: absolute;
+				left: 0;
+				bottom: 0.3em;
+				z-index: 0;
+			}
+			span {
+				background: $background-color;
+				padding: 0 0.5em;
+				position: relative;
+			}
+		}
 	}
 
-	.mini-title {
-		font-size: 2em;
-	}
-
-	.lead {
-		font-size: $large-font-size;
+	+ .primary {
+		padding-top: 0;
 	}
 
 /******************************************************************

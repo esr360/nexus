@@ -8,13 +8,13 @@
 Start building the basic layout
 ******************************************************************/
 
-	padding: 6em 0;
+	padding: 6rem 0;
 
 	header {
 		text-align: center;
 		&.sep {
 			position: relative;
-			margin-bottom: 6em;
+			margin-bottom: 5.25em;
 			&:after {
 				content: "• • •";
 				position: absolute;
@@ -56,7 +56,7 @@ Start building the basic layout
 		font-size: 2.85rem;
 		h2,
 		h3 {
-			margin: 0.15em 0;
+			margin: 0.25em 0;	
 		    &:first-child {
 		    	margin-top: 0;
 		    }
@@ -67,10 +67,18 @@ Start building the basic layout
 		p {
 			margin-top: 0;
 			margin-bottom: 0;
-			font-size: 0.65em;
+			font-size: 1.8rem;
 			line-height: 1;
 			color: $brand-1;
 		}
+	}
+
+	.lead {
+		font-size: $large-font-size;
+	}
+	
+	.section {
+		padding: 0;
 	}
 
 /******************************************************************

@@ -38,6 +38,12 @@ Start building the basic layout
 		}
 	}
 
+	.button {
+		&.border {
+			color: $white;
+		}
+	}
+
 /******************************************************************
 Start building for larger resolutions
 ******************************************************************/

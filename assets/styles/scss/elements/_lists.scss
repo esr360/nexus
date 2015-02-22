@@ -2,13 +2,15 @@
 /* Lists
 ================================================================ */
 
-ul.reset, ol.reset {
+ul.reset, 
+ol.reset {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
 
-ul.clear, ol.clear {
+ul.clear, 
+ol.clear {
 	padding-left: 1em;
 }
 
@@ -31,6 +33,38 @@ ul.clear, ol.clear {
 			float: left;
 			&:nth-child(even) {
 				margin-left: 2.5%;
+			}
+		}
+	}
+}
+
+[class*="bullet-list"] {
+	@extend ul.reset;
+	margin-bottom: 1.75rem;
+	li {
+		line-height: 1.6;
+		&:before,
+		&:after {
+			font-family: FontAwesome;
+			color: $brand-1;
+		}
+		&:before {
+			content: "\f138";	
+			margin-right: 0.75rem;		
+		}
+		&:after {
+			display: none;
+			content: "\f137";
+			margin-left: 0.75rem;			
+		}
+	}
+	&[class*="-right"] {
+		li {
+			&:before {
+				display: none;
+			}
+			&:after {
+				display: inline-block;
 			}
 		}
 	}

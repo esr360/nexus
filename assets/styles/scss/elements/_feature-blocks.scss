@@ -4,11 +4,25 @@
 
 .feature-block {
 
-	background: rgba(255,255,255,0.75);
-	border-radius: 0.4em;
-	border-top: 5px solid $brand-1;
+	background: rgba(255,255,255,0.5);
+	border-top: 8px solid $brand-1;
 	text-align: center;
 	padding: 2.5em 1em;
+	transition: 0.4s;
+	&:hover {
+		transform: scale(1.1);
+		background: $brand-1;
+		border-top-color: darken($brand-1, 10%);
+		h4,
+		h5,
+		p {
+			color: white;
+		}
+		path {
+			fill: white;
+		}
+	}
+
 	.fa {
 		height: 3em;
 		width: 3em;
@@ -19,12 +33,31 @@
 		background: $brand-1;
 		color: white;
 	}
-	h4 {
-		color: $brand-1;
-		font-weight: 600;
-		font-size: 1.2em;
-		margin: 1em 0 0.75em;
+
+	path {
+		fill: $brand-1;
 	}
+
+	h4,
+	h5,
+	p,
+	path {
+		transition: 0.4s;
+	}
+
+	h4 {
+		font-weight: 600;
+		font-size: 1.4rem;
+		margin: 1em 0 0.25em;
+	}
+
+	h5 {
+		font-size: 1.2rem;
+		font-weight: 300;
+		color: $brand-1;
+		margin: 0.25em auto 1rem;
+	}
+
 	p {
 		font-weight: 100;
 		margin: 0;

@@ -4,80 +4,13 @@
 
 body.blog-index {
 
-	.section.blog-posts {
-		.blog-post {
-			padding-bottom: 4em;
-			margin-bottom: 4em;
-			border-bottom: 1px dotted rgba(0,0,0,0.25);
-			> p {
-				margin-bottom: 2.5em;
-			}
-			small {
-				bottom: 6.25em;
-			}
-		}
+	.blog-items {
 		.thumb {
-			height: 225px;
+			height: 200px;
 		}
 	}
 
-} // end body.blog
-
-.author {
-	padding-top: 2em;
-	margin-bottom: 2em;
-	border-top: 1px dotted rgba(0,0,0,0.25);
-	border-bottom: 1px dotted rgba(0,0,0,0.25);
-}
-
-.the-author {
-	@extend .cf;
-	h3 {
-		text-align: center;
-		display: block !important;
-		margin-bottom: 1em !important;
-	}
-	h4 {
-		margin-bottom: 0;
-		font-size: 1.2em;
-	}
-	h5 {
-		margin: 0;
-		font-weight: 300;
-		color: $brand-1;
-		font-size: 1em;
-	}
-	p {
-		margin: 0.5em 0;
-	}
-	.author-content {
-		text-align: center;
-	}
-	@media (min-width: $breakpoint-2) {
-		.profile,
-		.author-content {
-			display: inline-block;
-			vertical-align: middle;
-		}
-		.profile {
-			margin-bottom: 0;
-		}
-		.author-content {
-			width: 85%;
-			width: calc(100% - 132px);
-			margin-left: 26px;
-			text-align: left;
-		}
-	}
-}
-
-.single-post-content {
-	margin-bottom: 4rem;
-	font-weight: 300;
-	ul {
-		list-style: circle;
-	}
-}
+} // end body.blog-index
 
 .post-meta {
 	position: relative;
@@ -97,16 +30,5 @@ body.blog-index {
 		height: 75px;
 		width: 75px;
 		display: inline-block;
-	}
-}
-
-/******************************************************************
-Start building for larger resolutions
-******************************************************************/
-
-@media (min-width: $breakpoint-2) {
-	.single-post-content {
-		font-size: $large-font-size;
-		text-align: justify;
 	}
 }

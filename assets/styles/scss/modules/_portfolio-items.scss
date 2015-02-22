@@ -89,7 +89,8 @@ Start building the basic layout
 		.fa-link {
 			line-height: 1.75rem;
 		}
-		h4, p {
+		h4, 
+		p {
 			position: absolute;
 			z-index: 2;
 			left: 2.5rem;
@@ -97,7 +98,7 @@ Start building the basic layout
 			opacity: 0;
 		}
 		h4 {
-			font-size: 1.4em;
+			font-size: 1.4rem;
 			bottom: -2rem;
 		}
 		p {
@@ -118,7 +119,7 @@ Start building the basic layout
 				top: 50%;
 			}
 			img {
-				transform: scale(1.5);
+				transform: scale(1.25);
 			}
 		}
 	}

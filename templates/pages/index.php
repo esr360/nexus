@@ -39,7 +39,7 @@ $parentUrl = "";
 
         <?php require("../sections/testimonials.php"); ?>
 
-        <?php require("../sections/blog-posts.php"); ?>
+        <?php require("../sections/latest-posts.php"); ?>
 
         <div id="map"></div>
 

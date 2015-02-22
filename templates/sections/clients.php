@@ -2,9 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="span-4 title">
-                <div class="section-title">
+                <div class="section-title title-group">
                     <h2>Our Clients</h2>
-                    <p>Meet Our Happy Clients</p>
+                    <h5>Meet Our Happy Clients</h5>
                 </div>
             </div>
             <div class="span-8 client-logos">  

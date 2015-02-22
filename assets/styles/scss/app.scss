@@ -43,16 +43,20 @@ Elements
 @import "elements/ribbons";
 @import "elements/tables";
 @import "elements/tabs";
+@import "elements/title-groups";
 @import "elements/tooltips";
 
 /******************************************************************
 Modules
 ******************************************************************/
 
+@import "modules/author";
+@import "modules/blog-items";
 @import "modules/bottom-bar";
 @import "modules/breadcrumb";
 @import "modules/comments";
 @import "modules/control-panel-nav";
+@import "modules/desktop-carousel";
 @import "modules/earth";
 @import "modules/flyout-nav";
 @import "modules/footer";
@@ -77,10 +81,10 @@ Sections
 ******************************************************************/
 
 @import "sections/banner";
-@import "sections/blog-posts";
 @import "sections/clients";
 @import "sections/contact";
 @import "sections/hero";
+@import "sections/latest-posts";
 @import "sections/latest-works";
 @import "sections/pricing";
 @import "sections/quote";

@@ -9,7 +9,7 @@ Start building the basic layout
 ******************************************************************/
 
 	position: relative;
-	padding: 5em 0;
+	padding: 5rem 0;
 	text-align: center;
 	background-color: $background-color;
 	&:after {
@@ -30,7 +30,7 @@ Start building the basic layout
 	}
 	h4 {
 		font-weight: 100;
-		font-size: 1.75em;
+		font-size: 1.8rem;
 		margin: 0;
 		b {
 			font-weight: 900;
@@ -56,7 +56,9 @@ Start building the basic layout
 	}
 	&.alt {
 		background: $brand-1;
-		&, a, h4 i {
+		&, 
+		a, 
+		h4 i {
 			color: white;
 		}
 		i {

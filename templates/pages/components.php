@@ -2,16 +2,16 @@
 // start the ouput buffer
 ob_start(); 
 // page config
-$title = "Single Post";
-$url = "single-post.html";
-$type = "blog";
-$parentTitle = "Our Blog";
-$parentUrl = "blog.html";
+$title = "Components";
+$url = "components.html";
+$type = "";
+$parentTitle = "";
+$parentUrl = "";
 ?>
 
 <?php require("../global/head.php"); ?>
 
-<body class="further blog single-post">
+<body class="further components">
 
     <!-- SITE CONTENT -->
 
@@ -28,13 +28,7 @@ $parentUrl = "blog.html";
 
         <!-- Main Content -->
 
-        <?php require("../sections/single-post.php"); ?>
-
-        <?php require("../sections/comments.php"); ?>
-
-        <?php require("../sections/related-posts.php"); ?>
-        
-        <?php require("../sections/promo-banner.php"); ?>
+        <div id="map"></div>
 
         <!-- Footer -->
         <?php require("../global/footer.php"); ?>
@@ -55,13 +49,17 @@ $parentUrl = "blog.html";
 
     <!-- General -->
     <script src="assets/js/global.js"></script>
+    <script src="assets/js/form-validation.js"></script>
+
+    <!-- Google Map -->
+    <?php require("../global/google-map.php"); ?>
 
 </body>
 
 <?php require("../global/feet.php"); ?>
 
 <?php
-$cachefile = "../../single-post.html";
+$cachefile = "../../components.html";
 $fp = fopen($cachefile, 'w'); 
 // save the contents of output buffer to the file
 fwrite($fp, ob_get_contents()); 

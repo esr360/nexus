@@ -7,22 +7,28 @@ TO-DO LIST
 
 TODO
 
+- add cheatsheet/components page
+- potential to add round/square button option
+- change menu icon to animated X
+- remove all icons from buttons
+- make profile pic links/modals/gallerys consistent
+- edit section-title links for one-page
 - update one-page theme options
 - rethink slider prev/next icons (dot nav in some cases instead?)
 - remove/redo social icons
 - make all circular icons consistent with CSS class
 - add why choose us section
-- modal/popup login/register
 - add animates pulsating to welcome pins
 - add child menu support to cp nav
 - improve breadcrumb
-- add more pages (see dropdown menu)
 - updates contact us page (eg add 3 boxes)
 - add stat counter (coffee/lines of code etc)
 - add dot navigation (fixed on right)
+- modal/popup login/register
+- add more pages (see dropdown menu)
 - add multiple header options
 - add multiple footer options (full/minimalistic)
-- look at spacing/font-size consistencies etc
+- look at spacing/font-size consistencies etc [all pages]
 - ensure mobile size consistencies
 
 DONE
@@ -63,6 +69,8 @@ DONE
 
 - convert to php
 - fix spelling of Manhattan
+- make all transition/animation speeds consistent
+- make hover scale() consistent
 - update copyright year to 2015
 - redo hero section
 - look at other potential fonts (animated fonts?)
@@ -73,6 +81,9 @@ DONE
 - make dropdown nav dark
 - remove some scroll animations
 - add liveicons where appropriate
+- add old face stock photos to portfolio
+- make names/profile pics consistent
+- improve typography
 
 BACKLOG
 

@@ -32,7 +32,7 @@ $parentUrl = "portfolio.html";
 
         <?php require("../sections/testimonials.php"); ?>
         
-        <?php require("../sections/latest-works.php"); ?>
+        <?php require("../sections/latest-works-further.php"); ?>
         
         <?php require("../sections/promo-banner.php"); ?>
 

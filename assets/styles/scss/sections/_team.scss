@@ -30,12 +30,12 @@ Start building the basic layout
 
 	h4 {
 		font-family: $font-1;
-		font-size: 1.4em;
+		font-size: 1.4rem;
 		font-weight: 900;
-		margin-bottom: 0.2rem;
+		margin-bottom: 0.25em;
 	}
 	h5 {
-		font-size: 1.2em;
+		font-size: 1.2rem;
 		margin-top: 0;
 		font-weight: 300;	
 		color: $brand-1;	
@@ -119,7 +119,7 @@ Start building the basic layout
 				top: 50%;
 			}
 			img {
-				transform: scale(1.5);
+				transform: scale(1.25);
 			}
 		}
 	}

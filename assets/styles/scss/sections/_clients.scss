@@ -9,14 +9,16 @@ Start building the basic layout
 ******************************************************************/
 
 	background-image: url('../../images/polygon-bg-grey.jpg') !important;
-	padding: 4em 0 !important;
+	padding: 5rem 0;
 	//background-attachment: fixed;
 	text-align: center;
 	&:after {
 		background: rgba(0,0,0,0.5) !important;
 	}
-	h4 {
-		font-size: 1.75em;
+	h5 {
+		font-size: 1.8rem;
+		font-weight: 100;
+		color: $brand-1;
 	}
 	.client-logos {
 		margin-top: 3em;

@@ -58,7 +58,14 @@
                             <a href="#">Pages</a>
                             <ul>
                                 <li<?php if ($title == "404") { ?> class="active"<?php } ?>><a href="#">404</a></li>
-                                <li<?php if ($title == "Careers") { ?> class="active"<?php } ?>><a href="#">Careers</a></li>
+                                <li<?php if ($title == "Careers") { ?> class="active"<?php } ?>>
+                                    <a href="#">Careers</a>                                    
+                                    <ul>
+                                        <li><a href="#">Lorem Ipsum</a></li>
+                                        <li><a href="#">Lorem Ipsum</a></li>
+                                        <li><a href="#">Lorem Ipsum</a></li>
+                                    </ul>
+                                </li>
                                 <li<?php if ($title == "Coming Soon") { ?> class="active"<?php } ?>><a href="#">Coming Soon</a></li>
                                 <li<?php if ($title == "FAQ") { ?> class="active"<?php } ?>><a href="#">FAQ</a></li>
                             </ul>
