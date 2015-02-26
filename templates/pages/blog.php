@@ -1,5 +1,5 @@
 <?php 
-$ROOT = '/nexus/';
+$ROOT = '/';
 // start the ouput buffer
 ob_start(); 
 // page config

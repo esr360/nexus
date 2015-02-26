@@ -22,8 +22,8 @@
                     </span>
                     <p>Nunc pharetra et massa eu volutpat. Duis at posuere justo. Vivamus lobortis mi at leo pellentesque vehicula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Proin ac augue quam. Etiam sollicitudin magna vitae nunc accumsan cursus.</p>
                 </div>
-                <a class="button small round report" href="#"><i class="fa fa-warning"></i> Report</a>
-                <a class="button small round reply" href="#new-comment"><i class="fa fa-reply"></i> Reply</a>
+                <a class="button small round report" href="#">Report</a>
+                <a class="button small round reply" href="#new-comment">Reply</a>
             </article>
 
             <article class="comment comment-reply">
@@ -37,8 +37,8 @@
                     </span>
                     <p>Nunc pharetra et massa eu volutpat. Duis at posuere justo. Vivamus lobortis mi at leo pellentesque vehicula. Cum sociis natoque penatibus et magnis dis parturient.</p>
                 </div>
-                <a class="button small round report" href="#"><i class="fa fa-warning"></i> Report</a>
-                <a class="button small round reply" href="#new-comment"><i class="fa fa-reply"></i> Reply</a>
+                <a class="button small round report" href="#">Report</a>
+                <a class="button small round reply" href="#new-comment">Reply</a>
             </article>
 
             <article class="comment">
@@ -54,8 +54,8 @@
 
                     <p>Quisque id justo euismod lorem efficitur rutrum sit amet a quam. Maecenas quis blandit est. In iaculis orci diam, sed vehicula lectus mollis eget. Donec aliquet non magna id gravida. Duis convallis felis id mauris tincidunt, et consequat dolor tincidunt. Vivamus dictum, ante et consectetur varius, nunc sapien pellentesque nulla, non ornare ipsum justo ut erat. Curabitur mi turpis, fermentum id semper quis, convallis eget elit.</p>
                 </div>
-                <a class="button small round report" href="#"><i class="fa fa-warning"></i> Report</a>
-                <a class="button small round reply" href="#new-comment"><i class="fa fa-reply"></i> Reply</a>
+                <a class="button small round report" href="#">Report</a>
+                <a class="button small round reply" href="#new-comment">Reply</a>
             </article>
 
             <article class="comment">
@@ -69,8 +69,8 @@
                     </span>
                     <p>Nunc pharetra et massa eu volutpat. Duis at posuere justo.</p>
                 </div>
-                <a class="button small round report" href="#"><i class="fa fa-warning"></i> Report</a>
-                <a class="button small round reply" href="#new-comment"><i class="fa fa-reply"></i> Reply</a>
+                <a class="button small round report" href="#">Report</a>
+                <a class="button small round reply" href="#new-comment">Reply</a>
             </article>
 
             <article class="comment hidden-comment">
@@ -84,8 +84,8 @@
                     </span>
                     <p>Nunc pharetra et massa eu volutpat. Duis at posuere justo. Vivamus lobortis mi at leo pellentesque vehicula. Cum sociis natoque penatibus et magnis dis parturient.</p>
                 </div>
-                <a class="button small round report" href="#"><i class="fa fa-warning"></i> Report</a>
-                <a class="button small round reply" href="#new-comment"><i class="fa fa-reply"></i> Reply</a>
+                <a class="button small round report" href="#">Report</a>
+                <a class="button small round reply" href="#new-comment">Reply</a>
             </article>
 
             <article class="comment hidden-comment comment-reply">
@@ -99,8 +99,8 @@
                     </span>
                     <p>Quisque id justo euismod lorem efficitur rutrum sit amet a quam. Maecenas quis blandit est. In iaculis orci diam, sed vehicula lectus mollis eget. Donec aliquet non magna id gravida. Duis convallis felis id mauris tincidunt, et consequat dolor tincidunt. Vivamus dictum, ante et consectetur varius, nunc sapien pellentesque nulla, non ornare ipsum justo ut erat. Curabitur mi turpis, fermentum id semper quis, convallis eget elit.</p>
                 </div>
-                <a class="button small round report" href="#"><i class="fa fa-warning"></i> Report</a>
-                <a class="button small round reply" href="#new-comment"><i class="fa fa-reply"></i> Reply</a>
+                <a class="button small round report" href="#">Report</a>
+                <a class="button small round reply" href="#new-comment">Reply</a>
             </article>
 
             <article class="comment hidden-comment">
@@ -114,12 +114,12 @@
                     </span>
                     <p>Nunc pharetra et massa eu volutpat. Duis at posuere justo. Vivamus lobortis mi at leo pellentesque vehicula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Proin ac augue quam. Etiam sollicitudin magna vitae nunc accumsan cursus.</p>
                 </div>
-                <a class="button small round report" href="#"><i class="fa fa-warning"></i> Report</a>
-                <a class="button small round reply" href="#new-comment"><i class="fa fa-reply"></i> Reply</a>
+                <a class="button small round report" href="#">Report</a>
+                <a class="button small round reply" href="#new-comment">Reply</a>
             </article>
 
             <div class="load-more-wrapper">
-                <a class="button brand-1 round load-more"><i class="fa fa-download"></i> Load More</a>
+                <a class="button brand-1 round load-more">Load More</a>
             </div>
 
         </div>

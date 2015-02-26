@@ -1,7 +1,8 @@
 <?php 
-$ROOT = '/nexus/';
+$ROOT = '/';
 // start the ouput buffer
 ob_start(); 
+$ROOT = '/';
 // page config
 $title = "Index";
 $url = "index-single.html";
