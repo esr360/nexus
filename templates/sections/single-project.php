@@ -12,14 +12,14 @@
 
         <div class="project-preview">
             <img src="<?php echo $ROOT; ?>assets/images/desktop.png" alt="Single Project" />
-            <div class="owl-carousel previews">
-                <a class="modal-image" href="<?php echo $ROOT; ?>assets/images/stock7.jpg">
+            <div class="owl-carousel previews" id="project-gallery">
+                <a href="<?php echo $ROOT; ?>assets/images/stock7.jpg">
                     <img src="<?php echo $ROOT; ?>assets/images/stock7.jpg" alt="" />
                 </a>
-                <a class="modal-image" href="<?php echo $ROOT; ?>assets/images/stock16.jpg">
+                <a href="<?php echo $ROOT; ?>assets/images/stock16.jpg">
                     <img src="<?php echo $ROOT; ?>assets/images/stock16.jpg" alt="" />
                 </a>
-                <a class="modal-image" href="<?php echo $ROOT; ?>assets/images/stock10.jpg">
+                <a href="<?php echo $ROOT; ?>assets/images/stock10.jpg">
                     <img src="<?php echo $ROOT; ?>assets/images/stock10.jpg" alt="" />
                 </a>
             </div>

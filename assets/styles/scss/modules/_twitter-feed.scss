@@ -7,9 +7,6 @@
     margin:auto;
     overflow:auto;
     overflow-y: hidden;
-    * {
-        font-size: 0.8rem;
-    }
     a:hover {
         text-decoration: none;
     }      
@@ -69,12 +66,9 @@
         width: 100%;
         float: left;
         padding-left: 52px;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
         box-sizing: border-box;
         p {
             margin: 0px;
-            line-height: 16px;
         }
     }
     .tweet-time {
@@ -88,54 +82,6 @@
             color: white;
             text-shadow: none;
         }
-    }
-
-    /* -------- FEED  ACTIONS ------*/
-
-    #twitter-actions {
-        width: 75px;
-        float: right;
-        margin-right: 5px;
-        margin-top: 3px;
-        display: none;
-    }
-    .intent {
-        width: 25px;
-        height: 16px;
-        float: left;
-        a {
-            width: 25px;
-            height: 16px;
-            display: block;
-            background-image: url(../twitter-feed/images/tweet-actions.png);
-            float: left;
-            &:hover {
-                background-position: -25px 0px;
-            }
-        }
-    }
-    #intent-retweet a {
-        background-position: 0px -17px;
-        &:hover {
-            background-position: -25px -17px;
-        }
-    }
-    #intent-fave a {
-        background-position: 0px -36px;
-        &:hover {
-            background-position: -25px -36px;
-        }
-    }
-    
-    /* -------- RETWEET INDICATOR ------*/
-
-    #retweet-indicator {
-        width: 14px;
-        height: 10px;
-        background-image: url(../twitter-feed/images/tweet-actions.png);
-        background-position: -5px -54px;
-        margin-top: 3px;
-        float: left;
     }
 
 }

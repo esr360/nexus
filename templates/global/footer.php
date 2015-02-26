@@ -47,7 +47,7 @@
                                     <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
                                 </span>
                                 <span class="tweet-time"><a href="#">23 Sep</a></span><br>
-                                Suspendisse tempus sodales neque, eget eleifend turpis tristique eu, nullam a nisl maximus.
+                                Suspendisse tempus neque, eget eleifend turpis tristique eu.
                             </p>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                                     <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
                                 </span>
                                 <span class="tweet-time"><a href="#">10 Oct</a></span><br>
-                                Suspendisse tempus sodales neque, eget eleifend turpis tristique eu.
+                                Suspendisse tempus neque, eget eleifend turpis tristique eu.
                             </p>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                 <div class="owl-carousel footer-testimonials">
                     <div class="testimonial">
                         <blockquote>
-                                <p>Aenean lobortis ante nunc. Integer ac justo ex. Curabitur at enim ac nisi lacinia...</p>
+                                <p>Aenean lobortis ante nunc. Integer justo ex. Curabitur at enim ac nisi...</p>
                         </blockquote>
                         <div class="cf">
                             <span class="profile">
@@ -91,7 +91,7 @@
                     </div>
                     <div class="testimonial">
                         <blockquote>
-                                <p>Aenean lobortis ante nunc. Integer ac justo ex. Curabitur at enim ac nisi lacinia...</p>
+                                <p>Aenean lobortis ante nunc. Integer justo ex. Curabitur at enim ac nisi...</p>
                         </blockquote>
                         <div class="cf">
                             <span class="profile">
@@ -107,7 +107,7 @@
                     </div>
                     <div class="testimonial">
                         <blockquote>
-                                <p>Aenean lobortis ante nunc. Integer ac justo ex. Curabitur at enim ac nisi lacinia...</p>
+                                <p>Aenean lobortis ante nunc. Integer justo ex. Curabitur at enim ac nisi...</p>
                         </blockquote>
                         <div class="cf">
                             <span class="profile">

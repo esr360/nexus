@@ -14,7 +14,7 @@
             <a href="<?php echo $ROOT; ?>assets/images/stock13.jpg" class="modal-image thumb">                            
                 <img src="<?php echo $ROOT; ?>assets/images/stock13.jpg" alt="" />
             </a>                    
-            <a href="blog.html" class="profile profile-border">            
+            <a href="<?php echo $ROOT; ?>assets/images/stock17.jpg" class="profile profile-border modal-image">            
                 <img src="<?php echo $ROOT; ?>assets/images/stock17.jpg" alt="" />
             </a>
         </div>

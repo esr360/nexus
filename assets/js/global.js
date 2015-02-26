@@ -287,6 +287,25 @@ $('.pp-prev').click(function() {
 })
 
 /******************************************************************
+Single Project Gallery
+******************************************************************/
+
+$("#project-gallery").magnificPopup({ 
+    type: "image",
+    delegate: "a",
+    gallery: {
+        enabled: true
+    },
+    callbacks: {
+        change: function() {
+            if (this.isOpen) {
+                this.wrap.addClass('mfp-open');
+            }
+        }
+    }
+});
+
+/******************************************************************
 Meet the Team Gallery
 ******************************************************************/
 
