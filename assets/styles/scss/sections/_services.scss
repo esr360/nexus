@@ -8,22 +8,6 @@
 Start building the basic layout
 ******************************************************************/
 
-	padding-bottom: 11em !important;
-	position: relative;
-	&:after {
-		content: "";
-		background-image: url('../../images/dot-map.png');
-		background-repeat: no-repeat;
-		width: 60%;
-		left: 0;
-		right: 0;
-		margin: auto;
-		opacity: 0.05;
-		height: 20%;
-		position: absolute;
-		bottom: 0;
-	}
-
 	.row {
 		margin-top: 4em;
 		&:first-child {
@@ -102,17 +86,19 @@ Start building the basic layout
 			display: inline-block;
 			vertical-align: middle;
 		}
-		h4, h5 {			
+		h4, 
+		h5 {			
 			margin: 0.25em 0;
 		}
 		h4 {
-			font-size: 1.4em;
+			font-size: 1.4rem;
 			font-weight: 700;
 			margin-top: 1em;
 		}
 		h5 {
 			font-size: 1.2em;
 			font-weight: 300;
+			color: $brand-1;
 		}
 		p {
 			font-weight: lighter;

@@ -5,59 +5,55 @@
 .accordion {
 
 	margin-bottom: $base-margin;
-	border-bottom: 1px solid rgba(0,0,0,0.15);
 	> * {
 		margin: 0;
+		background: rgba(0,0,0,0);
+		border-top: 1px solid rgba(0,0,0,0.2);
+		transition: 0.4s;
 		> *:first-child {
-			padding: 1em;
+			padding: 1.5rem 1.5rem 1rem;
 			margin: 0;
-			border: 1px solid rgba(0,0,0,0.15);
-			border-bottom: none;
 			cursor: pointer;
-			font-weight: normal;	
+			font-weight: 400;	
 			line-height: 1;		
   			backface-visibility: hidden;
 			transition: 0.4s;
 			display: block;
-			&:after {
+			&:before {
 				content: "\f138";
 				font-family: FontAwesome;
 				opacity: 0.4;
-				float: right;
 				color: $grey;
 				transition: 0.4s;
+				margin-right: 0.5rem;
 			}
 			~ * {
 				display: none;
-				border: 1px solid rgba(0,0,0,0.15);
-				border-bottom: none;
-				padding: 1.5em;
+				padding: 0 1.5rem 1.5rem;
 				margin: 0;
-				margin-top: -1px;	
-				font-weight: lighter;
-				background: lighten($dark-white, 4%);
 				*:last-child {
 					margin-bottom: 0;
 				}					
 			}
+		}
+		&:last-child {
+			border-bottom: 1px solid rgba(0,0,0,0.2);
 		}	
-		&:hover, &.active {
+		&:hover, 
+		&.active {
+			background: rgba($white, 0.65);
 			> *:first-child {
-				background: $brand-1;
-				color: white;
-				&:after {
+				&:before {
 					opacity: 1;
-					color: white;
+					color: $brand-1;
 				}
 			}
 		}	
 		&.active {
+			border-right: 8px solid $brand-1;
 			> *:first-child {
-				background: $brand-1;
-				border-color: $brand-1;
-				color: white;
-				&:after {
-					color: white;				
+				color: $brand-1;
+				&:before {			
 					transform: rotate(90deg);
 				}
 			}

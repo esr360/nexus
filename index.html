@@ -34,6 +34,7 @@
 
     <div id="site-content">
 
+        <!-- Header -->
         <header class="app-header" id="app-header">
     <div class="container">
         <div class="header-wrapper">
@@ -47,40 +48,48 @@
                 <a href="index-single.html" class="html-logo"><i class="fa fa-square-o"></i> [Nexus]</a>
             </div>
             <!-- Main-Nav -->
-            <nav class="main-nav">
-                <ul>
-                    <!-- Dropdown Nav -->
-                    <li>
-                        <a href="#">Pages</a>
-                        <ul>
-                            <li><a href="#">404</a></li>
-                            <li><a href="#">Careers</a></li>
-                            <li><a href="#">Coming Soon</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </li> 
-                    <li class="active">
-                        <a href="#site-content">Home</a>
-                        <ul>
-                            <li><a href="#">Parallax Title</a></li>
-                            <li><a href="#">Parallax Background</a></li>
-                            <li><a href="#">Video Background</a></li>
-                            <li><a href="#">Slider Background</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="search-toggle">
-                    <i class="fa fa-search"></i>
-                </div>
-            </nav>
-        </div>
+                            <nav class="main-nav">
+                    <ul>
+                        <!-- Dropdown Nav -->
+                        <li>
+                            <a href="#">Pages</a>
+                            <ul>
+                                <li><a href="#">404</a></li>
+                                <li>
+                                    <a href="#">Careers</a>                                    
+                                    <ul>
+                                        <li><a href="#">Lorem Ipsum</a></li>
+                                        <li><a href="#">Lorem Ipsum</a></li>
+                                        <li><a href="#">Lorem Ipsum</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Coming Soon</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </li> 
+                        <li class="active">
+                            <a href="index.html">Home</a>
+                            <ul>
+                                <li><a href="#">Parallax Title</a></li>
+                                <li><a href="#">Parallax Background</a></li>
+                                <li><a href="#">Fixed Background</a></li>
+                                <li><a href="#">Video Background</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="search-toggle">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </nav>
+                    </div>
     </div>
 </header>
+        <!-- Hero -->
         <section class="hero inactive">
     <a href="#about" class="fa fa-angle-down hero-down"></a>
     <div class="container">
@@ -110,14 +119,45 @@
                 <p>Suspendisse tempus sodales neque, eget eleifend <a href="#">turpis tristique</a> eu. Nullam a nisl maximus, ultrices est ut blandit nislr, elit in lobortis mattis.</p>
             </header>
             <header class="welcome-content">
-                <h2>Nexus is <b>Responsive</b></h2>
-                <h3>Optimized For All Devices</h3>
-                <p>Suspendisse tempus sodales neque, eget eleifend <a href="#">turpis tristique</a> eu. Nullam a nisl maximus, ultrices est ut blandit nislr, elit in lobortis mattis.</p>
+                <div class="section-title">
+                    <h2>Nexus is <b>Responsive</b></h2>
+                    <h3>Built For All Browsers & Devices</h3>
+                </div>
+                <p class="welcome-browsers">
+                    <i class="livicon tooltip" data-tip="Internet Explorer" data-n="ie" data-c="original" data-s="68" data-hc="false"></i>
+                    <i class="livicon tooltip" data-tip="Firefox" data-n="firefox" data-c="original" data-s="68" data-hc="false"></i>
+                    <i class="livicon tooltip" data-tip="Chrome" data-n="chrome" data-c="original" data-s="68" data-hc="false"></i>
+                    <i class="livicon tooltip" data-tip="Opera" data-n="opera" data-c="original" data-s="68" data-hc="false"></i>
+                    <i class="livicon tooltip" data-tip="Safari" data-n="safari" data-c="original" data-s="68" data-hc="false"></i>
+                </p>
             </header>
-            <header class="welcome-content">
-                <h2><i class="fa fa-cog"></i> Easy to <b>Customize</b></h2>
-                <h3>Built For Humans By Humans</h3>
-                <p>Suspendisse tempus sodales neque, eget eleifend <a href="#">turpis tristique</a> eu. Nullam a nisl maximus, ultrices est ut blandit nislr, elit in lobortis mattis.</p>
+            <header class="welcome-content welcome-features">
+                <div class="section-title">
+                    <h2>Our <i>Features</i> Are <strong>World Class <i class="fa fa-trophy"></i></strong></h2>
+                </div>
+                <div class="row">
+                    <div class="span-4 welcome-feature">
+                        <i class="livicon" data-n="tablet" data-c="#C1C1C1" data-op="1" data-s="68" data-hc="false"></i>
+                        <div class="span-9">
+                            <h4>Retina Ready</h4>
+                            <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur maximus ridiculus mus.</p>
+                        </div> 
+                    </div>
+                    <div class="span-4 welcome-feature">
+                        <i class="livicon" data-n="html5" data-c="#C1C1C1" data-op="1" data-s="68" data-hc="false"></i>
+                        <div class="span-9">
+                            <h4>Valid HTML5</h4>
+                            <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur maximus ridiculus mus.</p>
+                        </div>
+                    </div>
+                    <div class="span-4 welcome-feature">
+                        <i class="livicon" data-n="responsive" data-c="#C1C1C1" data-op="1" data-s="68" data-hc="false"></i>
+                        <div class="span-9">
+                            <h4>Fully Responsive</h4>
+                            <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur maximus ridiculus mus.</p>
+                        </div> 
+                    </div>
+                </div>
             </header>
         </div>
         <div class="earth">               
@@ -138,7 +178,16 @@
                     <h2>Our Skills</h2>
                     <h3><i>It's What We Do Best</i></h3>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras facilisis odio urna, quis molestie enim vulputate id. Ut tristique tellus in tellus lacinia, non gravida ex cursus. Proin sed lacus maximus, venenatis mi non, suscipit nisl. Cras dictum erat id tortor ornare, vel facilisis dolor vehicula. Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget, tincidunt condimentum felis.</p>
+                <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing</b> elit. Vestibulum euismod nisi tincidunt mollis sagittis. Sed rutrum quam non tortor ornare.</p>             
+                <ul class="bullet-list">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    <li>Cras facilisis odio urna, quis molestie enim vulputate id</li>
+                    <li>Cras dictum erat id tortor ornare, vel facilisis dolor vehicula</li>
+                </ul>
+                <p class="button-set">
+                    <a href="#" class="button round brand-1">View Demo</a>
+                    <a href="#" class="button round border">Read More</a>
+                </p>
             </div>
             <div class="span-6 progress-bars">
                 <h5>HTML5</h5>
@@ -161,59 +210,59 @@
         </div>
     </div>
 </section>
-        <section class="section services primary" id="services">
+        <section class="section services primary section-map" id="services">
     <div class="container">
-        <header class="sep inactive">
+        <header class="sep active">
             <div class="section-title">
-                <h2>Our <i>Services</i> are <strong>World Class <i class="fa fa-trophy"></i></strong></h2>
+                <h2>Our <i>Services</i> Are <strong>World Class <i class="fa fa-trophy"></i></strong></h2>
             </div>
             <p class="sub-text">Suspendisse tempus sodales neque, eget eleifend <a href="#">turpis tristique</a> eu. Nullam a nisl maximus, ultrices est ut blandit nislr, elit in lobortis mattis.</p>
         </header>
         <div class="owl-carousel services-slider inactive">
             <a href="#" class="service">
-                <i class="fa fa-desktop"></i>
+                <i class="livicon" data-n="desktop" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
                 <div class="title">
-                    <h4>Web <i>Design</i></h4>
+                    <h4>Web Design</h4>
                     <h5>Donec finibus fringilla purus</h5>
                 </div>
                 <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
             </a>
             <a href="#" class="service">
-                <i class="fa fa-mobile"></i>
+                <i class="livicon" data-n="tablet" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
                 <div class="title">
-                    <h4>Mobile App <i>Design</i></h4>
+                    <h4>Mobile App Design</h4>
                     <h5>Donec finibus fringilla purus</h5>
                 </div>
                 <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
             </a>
             <a href="#" class="service">
-                <i class="fa fa-photo"></i>
+                <i class="livicon" data-n="image" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
                 <div class="title">
-                    <h4>Graphic <i>Design</i></h4>
+                    <h4>Graphic Design</h4>
                     <h5>Donec finibus fringilla purus</h5>
                 </div>
                 <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
             </a>
             <a href="#" class="service">
-                <i class="fa fa-file-image-o"></i>
+                <i class="livicon" data-n="doc-portrait" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
                 <div class="title">
-                    <h4>Posters & <i>Flyers</i></h4>
+                    <h4>Posters & Flyers</h4>
                     <h5>Donec finibus fringilla purus</h5>
                 </div>
                 <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
             </a>
             <a href="#" class="service">
-                <i class="fa fa-facebook-square"></i>
+                <i class="livicon" data-n="connect" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
                 <div class="title">
-                    <h4>Social <i>Media</i></h4>
+                    <h4>Social Media</h4>
                     <h5>Donec finibus fringilla purus</h5>
                 </div>
                 <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
             </a>
             <a href="#" class="service">
-                <i class="fa fa-database"></i>
+                <i class="livicon" data-n="servers" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
                 <div class="title">
-                    <h4>Web <i>Hosting</i></h4>
+                    <h4>Web Hosting</h4>
                     <h5>Donec finibus fringilla purus</h5>
                 </div>
                 <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
@@ -223,7 +272,7 @@
 </section>
         <section class="section quote">
     <div class="container">
-        <blockquote class="inactive">
+        <blockquote class="active">
             <h4>We can take your awesome ideas and turn them into an <b>exciting reality</b>...</h4>
         </blockquote>
     </div>
@@ -232,9 +281,9 @@
     <div class="container">
         <div class="row">
             <div class="span-4 title">
-                <div class="section-title">
+                <div class="section-title title-group">
                     <h2>Our Clients</h2>
-                    <p>Meet Our Happy Clients</p>
+                    <h5>Meet Our Happy Clients</h5>
                 </div>
             </div>
             <div class="span-8 client-logos">  
@@ -270,10 +319,10 @@
 </section>
         <section class="section primary latest-works inactive" id="portfolio">
     <div class="container">
-        <header class="sep inactive">
+        <header class="sep active">
             <div class="section-title">
                 <h2>Our <i>Portfolio</i></h2>
-                <h3>Some of our Recent Works</h3>
+                <h3>Some of Our Recent Works</h3>
             </div>
             <p>Suspendisse tempus sodales neque, eget eleifend <a href="#">turpis tristique</a> eu. Nullam a nisl maximus, ultrices est ut blandit nislr, elit in lobortis mattis.</p>
         </header>
@@ -290,11 +339,11 @@
             <div class="portfolio-item">
                 <div class="controls">
                     <a href="single-project.html" class="fa fa-link"></a>
-                    <a href="assets/images/stock8.jpg" class="fa fa-search"></a>
+                    <a href="assets/images/stock16.jpg" class="fa fa-search"></a>
                 </div>
                 <h4><a href="single-project.html">Cras Facilisis</a></h4>
                 <p>Cras dictum erat id tortor ornare.</p>
-                <img src="assets/images/stock8.jpg" alt="" />
+                <img src="assets/images/stock16.jpg" alt="" />
             </div>
             <div class="portfolio-item">
                 <div class="controls">
@@ -340,15 +389,6 @@
         <div class="testimonials-slider owl-carousel">
             <div class="testimonial">
                 <div class="profile">            
-                    <img width="150" src="assets/images/stock8.jpg" alt="" />
-                </div>
-                <blockquote>
-                    <p>Suspendisse tempus sodales neque, eget eleifend <b>turpis tristique</b> eu. Nullam a nisl maximus, <b><span>ultrices est</span></b> ut blandit nislr, elit in lobortis mattis.</p>
-                    <h5><cite>John Doe - Theme Forest</cite></h5>
-                </blockquote>
-            </div>
-            <div class="testimonial">
-                <div class="profile">            
                     <img width="150" src="assets/images/stock12.jpg" alt="" />
                 </div>
                 <blockquote>
@@ -365,42 +405,51 @@
                     <h5><cite>John Doe - Theme Forest</cite></h5>
                 </blockquote>
             </div>
+            <div class="testimonial">
+                <div class="profile">            
+                    <img width="150" src="assets/images/stock8.jpg" alt="" />
+                </div>
+                <blockquote>
+                    <p>Suspendisse tempus sodales neque, eget eleifend <b>turpis tristique</b> eu. Nullam a nisl maximus, <b><span>ultrices est</span></b> ut blandit nislr, elit in lobortis mattis.</p>
+                    <h5><cite>John Doe - Theme Forest</cite></h5>
+                </blockquote>
+            </div>
         </div>
     </div>
 </section>
-        <section class="section primary blog-posts inactive" id="blog">
+        <section class="section primary latest-posts inactive" id="blog">
     <div class="container">
-        <header class="sep inactive">
+        <header class="sep active">
             <div class="section-title">
                 <h2>Our <a href="blog.html">Blog</a></h2>
                 <h3>Read About Our Projects</h3>
             </div>
             <p class="sub-text">Suspendisse tempus sodales neque, eget eleifend <a href="#">turpis tristique</a> eu. Nullam a nisl maximus, ultrices est ut blandit nislr, elit in lobortis mattis.</p>
         </header>
-        <div class="row">
-            <div class="span-4 blog-post">                    
+        <div class="row blog-items">
+            <div class="span-4 blog-item">                    
                 <a href="single-post.html" class="thumb">                  
                     <img src="assets/images/stock3.jpg" alt="" />
                 </a>
-                <a href="assets/images/stock8.jpg" class="modal-image profile profile-alt">            
-                    <img src="assets/images/stock8.jpg" alt="" />
+                <a href="assets/images/stock17.jpg" class="modal-image profile profile-alt">            
+                    <img src="assets/images/stock17.jpg" alt="" />
                 </a>
                 <div class="date">
                     <span>Sep</span>
                     <span>23</span>
                 </div>
                 <h4><a href="single-post.html">Lorem Ipsum Dolor</a></h4>
-                <h5>Posted by <a href="blog.html">John Doe</a></h5>
+                <h5>Posted by <a href="blog.html">Jane Doe</a></h5>
                 <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget...</p>
                 <a class="button round brand-1" href="single-post.html">Read More</a>
                 <small>Posted in <a href="blog.html">Web Design</a></small>
             </div>
-            <div class="span-4 blog-post">
+            <div class="span-4 blog-item">
                 <a href="single-post.html" class="thumb">                            
                     <img src="assets/images/stock1.jpg" alt="" />
                 </a>
-                <a href="assets/images/stock12.jpg" class="modal-image profile profile-alt">            
-                    <img src="assets/images/stock12.jpg" alt="" />
+                <a href="assets/images/stock16.jpg" class="modal-image profile profile-alt">            
+                    <img src="assets/images/stock16.jpg" alt="" />
                 </a>
                 <div class="date">
                     <span>Oct</span>
@@ -412,19 +461,19 @@
                 <a class="button round brand-1" href="single-post.html">Read More</a>
                 <small>Posted in <a href="blog.html">Wordpress</a></small>
             </div>
-            <div class="span-4 blog-post">
+            <div class="span-4 blog-item">
                 <a href="single-post.html" class="thumb">                            
                     <img src="assets/images/stock4.jpg" alt="" />
                 </a>
-                <a href="assets/images/stock15.jpg" class="modal-image profile profile-alt">            
-                    <img src="assets/images/stock15.jpg" alt="" />
+                <a href="assets/images/stock18.jpg" class="modal-image profile profile-alt">            
+                    <img src="assets/images/stock18.jpg" alt="" />
                 </a>
                 <div class="date">
                     <span>Oct</span>
                     <span>14</span>
                 </div>
                 <h4><a href="single-post.html">Elit in Lobortis</a></h4>
-                <h5>Posted by <a href="blog.html">John Doe</a></h5>
+                <h5>Posted by <a href="blog.html">Sam Tho</a></h5>
                 <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget...</p>
                 <a class="button round brand-1" href="single-post.html">Read More</a>
                 <small>Posted in <a href="blog.html">Themes</a></small>
@@ -434,6 +483,7 @@
 </section>
         <div id="map"></div>
 
+        <!-- Footer -->
         <footer class="app-footer">
     <div class="container footer-content">
         <div class="row">
@@ -616,8 +666,7 @@
 
 <!-- Site Overlay -->
 <div class="site-overlay invisible" id="site-overlay"></div>
-    <!-- Theme Options -->
-<div class="theme-options">
+    <div class="theme-options">
     <i class="fa fa-cog options-trigger"></i>
     <div class="options-content">
         <h3>Theme Options</h3>
@@ -666,6 +715,10 @@
 <!-- MatchMedia Polyfill -->
 <script src="assets/js/matchMedia.js"></script>
 
+<!-- LivIcons -->
+<script src="assets/js/raphael.js"></script>
+<script src="assets/js/livicons-custom.min.js"></script>
+
 <!-- Interactive Elements/Modules -->
 <script src="assets/js/accordion.js"></script>
 <script src="assets/js/carousel.js"></script>
@@ -687,8 +740,7 @@
     <script src="assets/js/section-welcome.js"></script>
 
     <!-- Google Map -->
-    <!-- Google Map -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="assets/js/google-map.js"></script>
 </body>
 

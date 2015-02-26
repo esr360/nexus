@@ -11,11 +11,11 @@
             </div>
         </header>
         <div class="post-meta">
-            <a href="assets/images/stock13.jpg" class="modal-image thumb">                            
-                <img src="assets/images/stock13.jpg" alt="" />
+            <a href="<?php echo $ROOT; ?>assets/images/stock13.jpg" class="modal-image thumb">                            
+                <img src="<?php echo $ROOT; ?>assets/images/stock13.jpg" alt="" />
             </a>                    
             <a href="blog.html" class="profile profile-border">            
-                <img src="assets/images/stock17.jpg" alt="" />
+                <img src="<?php echo $ROOT; ?>assets/images/stock17.jpg" alt="" />
             </a>
         </div>
         <div class="post-content">
@@ -41,8 +41,8 @@
                     <h4><span>The <i>Author</i></span></h4>
                 </div>
             </header>
-            <a href="assets/images/stock17.jpg" class="modal-image profile profile-border">
-                <img width="150" alt="" src="assets/images/stock17.jpg">
+            <a href="<?php echo $ROOT; ?>assets/images/stock17.jpg" class="modal-image profile profile-border">
+                <img width="150" alt="" src="<?php echo $ROOT; ?>assets/images/stock17.jpg">
             </a>
             <div class="author-content">
                 <h4><a href="blog.html">Jane Doe</a></h4>

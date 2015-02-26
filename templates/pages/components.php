@@ -1,4 +1,5 @@
 <?php 
+$ROOT = '/nexus/';
 // start the ouput buffer
 ob_start(); 
 // page config
@@ -48,8 +49,8 @@ $parentUrl = "";
     <?php require("../global/theme-options-js.php"); ?>
 
     <!-- General -->
-    <script src="assets/js/global.js"></script>
-    <script src="assets/js/form-validation.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/global.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/form-validation.js"></script>
 
     <!-- Google Map -->
     <?php require("../global/google-map.php"); ?>

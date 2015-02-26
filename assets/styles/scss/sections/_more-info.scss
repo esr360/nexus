@@ -1,0 +1,28 @@
+
+/* More About Us
+================================================================ */
+
+.section.more-info {
+
+/******************************************************************
+Start building the basic layout
+******************************************************************/
+
+    background: $background-color !important;
+    color: $main-text-color !important;
+    &:after {
+        background-image: url('../../images/section-bg-1.jpg') !important;
+        background-size: 120% 220% !important;
+        background-position: 25% -37% !important;
+        opacity: 0.15;
+    }
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    iframe {
+        display: block;
+    }
+
+} // end .section.more-info

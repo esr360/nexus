@@ -5,7 +5,7 @@
             <div class="logo" id="logo">
                 <!-- image logo -->
                 <a href="index-single.html" class="image-logo">
-                    <img src="assets/images/logo.png" alt="One Nexus" />
+                    <img src="<?php echo $ROOT; ?>assets/images/logo.png" alt="One Nexus" />
                 </a>
                 <!-- HTML logo -->
                 <a href="index-single.html" class="html-logo"><i class="fa fa-square-o"></i> [Nexus]</a>

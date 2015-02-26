@@ -6,7 +6,7 @@
                 <div class="logo">
                     <!-- image logo -->
                     <a href="index-single.html" class="image-logo">
-                        <img src="assets/images/logo.png" alt="One Nexus" />
+                        <img src="<?php echo $ROOT; ?>assets/images/logo.png" alt="One Nexus" />
                     </a>
                     <!-- HTML logo -->
                     <a href="index-single.html" class="html-logo"><i class="fa fa-square-o"></i> [Nexus]</a>
@@ -37,8 +37,8 @@
                 <div id="twitter-feed">
                     <div class="twitter-article">
                         <div class="twitter-pic">
-                            <a href="assets/images/twitter-pic.jpg" class="modal-image">
-                                <img width="42" height="42" src="assets/images/twitter-pic.jpg" alt="">
+                            <a href="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" class="modal-image">
+                                <img width="42" height="42" src="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" alt="">
                             </a>
                         </div>
                         <div class="twitter-text">
@@ -53,8 +53,8 @@
                     </div>
                     <div class="twitter-article">
                         <div class="twitter-pic">
-                            <a href="assets/images/twitter-pic.jpg" class="modal-image">
-                                <img width="42" height="42" src="assets/images/twitter-pic.jpg" alt="">
+                            <a href="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" class="modal-image">
+                                <img width="42" height="42" src="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" alt="">
                             </a>
                         </div>
                         <div class="twitter-text">
@@ -79,8 +79,8 @@
                         </blockquote>
                         <div class="cf">
                             <span class="profile">
-                                <a href="assets/images/stock12.jpg" class="modal-image thumb"> 
-                                    <img src="assets/images/stock12.jpg" alt="" />
+                                <a href="<?php echo $ROOT; ?>assets/images/stock12.jpg" class="modal-image thumb"> 
+                                    <img src="<?php echo $ROOT; ?>assets/images/stock12.jpg" alt="" />
                                 </a>
                             </span>
                             <cite>
@@ -95,8 +95,8 @@
                         </blockquote>
                         <div class="cf">
                             <span class="profile">
-                                <a href="assets/images/stock8.jpg" class="modal-image thumb"> 
-                                    <img src="assets/images/stock8.jpg" alt="" />
+                                <a href="<?php echo $ROOT; ?>assets/images/stock8.jpg" class="modal-image thumb"> 
+                                    <img src="<?php echo $ROOT; ?>assets/images/stock8.jpg" alt="" />
                                 </a>
                             </span>
                             <cite>
@@ -111,8 +111,8 @@
                         </blockquote>
                         <div class="cf">
                             <span class="profile">
-                                <a href="assets/images/stock15.jpg" class="modal-image thumb"> 
-                                    <img src="assets/images/stock15.jpg" alt="" />
+                                <a href="<?php echo $ROOT; ?>assets/images/stock15.jpg" class="modal-image thumb"> 
+                                    <img src="<?php echo $ROOT; ?>assets/images/stock15.jpg" alt="" />
                                 </a>
                             </span>
                             <cite>

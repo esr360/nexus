@@ -1,4 +1,5 @@
 <?php 
+$ROOT = '/nexus/';
 // start the ouput buffer
 ob_start(); 
 // page config
@@ -54,7 +55,7 @@ $parentUrl = "blog.html";
     <?php require("../global/theme-options-js.php"); ?>
 
     <!-- General -->
-    <script src="assets/js/global.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/global.js"></script>
 
 </body>
 

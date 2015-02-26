@@ -1,4 +1,5 @@
 <?php 
+$ROOT = '/nexus/';
 // start the ouput buffer
 ob_start(); 
 // page config
@@ -61,10 +62,10 @@ $parentUrl = "";
     <?php require("../global/theme-options-js.php"); ?>
 
     <!-- General -->
-    <script src="assets/js/global.js"></script>
-    <script src="assets/js/homepage.js"></script>
-    <script src="assets/js/scroll-spy.js"></script>
-    <script src="assets/js/section-welcome.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/global.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/homepage.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/scroll-spy.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/section-welcome.js"></script>
 
     <!-- Google Map -->
     <?php require("../global/google-map.php"); ?>

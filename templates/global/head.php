@@ -14,16 +14,16 @@
     <meta name="MobileOptimized" content="320">
 
     <!-- Icons & favicons -->
-    <link rel="apple-touch-icon" href="assets/images/apple-icon-touch.png">
-    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="<?php echo $ROOT; ?>assets/images/apple-icon-touch.png">
+    <link rel="icon" href="<?php echo $ROOT; ?>assets/images/favicon.png">
     <!--[if IE]>
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="<?php echo $ROOT; ?>assets/images/favicon.ico">
     <![endif]-->
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/styles/css/app.css">
-    <link rel="stylesheet" class="color-switcher" href="assets/styles/css/app.css">
+    <link rel="stylesheet" href="<?php echo $ROOT; ?>assets/styles/css/app.css">
+    <link rel="stylesheet" class="color-switcher" href="<?php echo $ROOT; ?>assets/styles/css/app.css">
     
     <!-- Modernizr -->
-    <script src="assets/js/modernizr.min.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/modernizr.min.js"></script>
 </head>

@@ -81,6 +81,24 @@ Start building the basic layout
 		padding: 0;
 	}
 
+	&.section-map {
+		padding-bottom: 11em !important;
+		position: relative;
+		&:after {
+			content: "";
+			background-image: url('../../images/dot-map.png');
+			background-repeat: no-repeat;
+			width: 60%;
+			left: 0;
+			right: 0;
+			margin: auto;
+			opacity: 0.05;
+			height: 20%;
+			position: absolute;
+			bottom: 0;
+		}
+	}
+
 /******************************************************************
 Start building for larger resolutions
 ******************************************************************/

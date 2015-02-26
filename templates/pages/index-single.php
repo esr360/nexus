@@ -1,4 +1,5 @@
 <?php 
+$ROOT = '/nexus/';
 // start the ouput buffer
 ob_start(); 
 // page config
@@ -29,11 +30,19 @@ $parentUrl = "";
 
         <?php require("../sections/skills.php"); ?>
 
-        <?php require("../sections/team.php"); ?>
+        <?php require("../sections/why-choose-us.php"); ?>
 
         <?php require("../sections/promo-banner.php"); ?>
 
+        <?php require("../sections/team.php"); ?>
+
+        <?php require("../sections/more-info.php"); ?>
+
         <?php require("../sections/services.php"); ?>
+
+        <?php require("../sections/stats.php"); ?>
+
+        <?php require("../sections/what-we-offer.php"); ?>
 
         <?php require("../sections/clients.php"); ?>
 
@@ -71,11 +80,11 @@ $parentUrl = "";
     <?php require("../global/theme-options-js.php"); ?>
 
     <!-- General -->
-    <script src="assets/js/global.js"></script>
-    <script src="assets/js/form-validation.js"></script>
-    <script src="assets/js/homepage.js"></script>
-    <script src="assets/js/scroll-spy.js"></script>
-    <script src="assets/js/section-welcome.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/global.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/form-validation.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/homepage.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/scroll-spy.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/section-welcome.js"></script>
 
     <!-- Google Map -->
     <?php require("../global/google-map.php"); ?>

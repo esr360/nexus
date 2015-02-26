@@ -19,7 +19,7 @@ Start building the basic layout
 		left: 0;
 		height: 100%;
 		width:100%;
-		background: rgba(0,0,0,0.5);
+		background: rgba(0,0,0,0.35);
 	}
 
 	.container {
@@ -41,6 +41,11 @@ Start building the basic layout
 	.button {
 		&.border {
 			color: $white;
+			&:hover {
+				background: $white;
+				border-color: $white;
+				color: #071216;
+			}
 		}
 	}
 

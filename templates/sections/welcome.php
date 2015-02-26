@@ -51,7 +51,7 @@
             </header>
         </div>
         <div class="earth">               
-            <img src="assets/images/earth.png" alt="" />
+            <img src="<?php echo $ROOT; ?>assets/images/earth.png" alt="" />
             <div class="pins">
                 <div class='pin active'></div>
                 <div class='pin'></div>

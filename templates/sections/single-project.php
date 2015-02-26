@@ -11,16 +11,16 @@
         </header>
 
         <div class="project-preview">
-            <img src="assets/images/desktop.png" alt="Single Project" />
+            <img src="<?php echo $ROOT; ?>assets/images/desktop.png" alt="Single Project" />
             <div class="owl-carousel previews">
-                <a class="modal-image" href="assets/images/stock7.jpg">
-                    <img src="assets/images/stock7.jpg" alt="" />
+                <a class="modal-image" href="<?php echo $ROOT; ?>assets/images/stock7.jpg">
+                    <img src="<?php echo $ROOT; ?>assets/images/stock7.jpg" alt="" />
                 </a>
-                <a class="modal-image" href="assets/images/stock16.jpg">
-                    <img src="assets/images/stock16.jpg" alt="" />
+                <a class="modal-image" href="<?php echo $ROOT; ?>assets/images/stock16.jpg">
+                    <img src="<?php echo $ROOT; ?>assets/images/stock16.jpg" alt="" />
                 </a>
-                <a class="modal-image" href="assets/images/stock10.jpg">
-                    <img src="assets/images/stock10.jpg" alt="" />
+                <a class="modal-image" href="<?php echo $ROOT; ?>assets/images/stock10.jpg">
+                    <img src="<?php echo $ROOT; ?>assets/images/stock10.jpg" alt="" />
                 </a>
             </div>
             <div class="pp-owl-nav">
@@ -76,7 +76,7 @@
 
         <div class="row info-graphic">
             <div class="span-4 va-middle blue-media">
-                <img src="assets/images/chrome-preview.png" alt="" />
+                <img src="<?php echo $ROOT; ?>assets/images/chrome-preview.png" alt="" />
             </div>
             <div class="span-8 va-middle">
                 <header class="title-group-m">
@@ -107,7 +107,7 @@
                 </p>
             </div>
             <div class="span-4 va-middle">
-                <img src="assets/images/desktop.png" alt="" />
+                <img src="<?php echo $ROOT; ?>assets/images/desktop.png" alt="" />
             </div>
         </div>
 

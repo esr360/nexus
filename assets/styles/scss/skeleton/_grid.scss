@@ -75,6 +75,8 @@ Block Columns
 ******************************************************************/
 
 	&.block-columns {
+		display: table;
+		width: 100%;
 		> [class*="span"] {
 			display: table-cell;
 		}

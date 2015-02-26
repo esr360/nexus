@@ -1,0 +1,101 @@
+
+/* Why Choose Us Section
+================================================================ */
+
+.section.why-choose-us {
+
+/******************************************************************
+Start building the basic layout
+******************************************************************/
+
+    .wcu-content {
+        position: relative;
+    }
+    .wcu-graphic {
+        width: 40%;
+        margin: auto;
+    }
+    .wcu-feature {
+        position: absolute;
+        width: 30%;
+        text-align: center;
+        &:nth-child(1) {
+            top: 0;
+            left: 0;
+        }
+        &:nth-child(2) {
+            left: 0;
+            bottom: 0;
+        }
+        &:nth-child(3) {
+            top: 0;
+            right: 0;
+        }
+        &:nth-child(4) {
+            bottom: 0;
+            right: 0;
+        }
+        &.wcu-left,
+        &.wcu-right {
+            &:after {
+                content: "";
+                position: absolute;
+                top: 1.75rem;
+                left: 0;
+                right: 0;
+                margin: auto;
+                width: 130px;
+                border-bottom: 1px solid rgba(0,0,0,0.2);
+            }
+        }
+        &.wcu-left {
+            padding-right: 2rem;
+            &:after {
+                transform: translateX(70%);
+            }
+        }
+        &.wcu-right {
+            padding-left: 2rem;
+            &:after {
+                transform: translateX(-70%);
+            }
+        }
+        &:hover {
+            .fa {
+                color: $brand-1;
+            }
+            path {
+                fill: $brand-1;
+            }
+        }
+        .livicon {
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        .fa {
+            font-size: 2.75em;
+            padding-top: 0.1em;
+            color: rgba(0,0,0,0.2);
+            transition: 0.4s;
+        }
+        h4 {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        h5 {
+            font-size: 1.2em;
+            font-weight: 300;
+            color: $brand-1;
+        }
+        p {
+            margin-top: 1rem;
+        }
+    }
+
+    &.section-map {
+        &:after {
+            bottom: -5rem;
+        }
+    }
+
+} // end .section.why-choose-us

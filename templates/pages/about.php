@@ -1,4 +1,5 @@
 <?php 
+$ROOT = '/nexus/';
 // start the ouput buffer
 ob_start(); 
 // page config
@@ -27,10 +28,14 @@ $parentUrl = "";
         <?php require("../global/breadcrumb.php"); ?>
 
         <!-- Main Content -->
-
+        
         <?php require("../sections/welcome.php"); ?>
 
         <?php require("../sections/skills.php"); ?>
+
+        <?php require("../sections/why-choose-us.php"); ?>
+        
+        <?php require("../sections/promo-banner.php"); ?>
 
         <?php require("../sections/team.php"); ?>
 
@@ -58,8 +63,8 @@ $parentUrl = "";
     <?php require("../global/theme-options-js.php"); ?>
 
     <!-- General -->
-    <script src="assets/js/global.js"></script>
-    <script src="assets/js/section-welcome.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/global.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/section-welcome.js"></script>
 
     <!-- Google Map -->
     <?php require("../global/google-map.php"); ?>

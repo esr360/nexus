@@ -86,12 +86,22 @@ Color Variants
 
 } // end .button
 
-/* Button set */
+// Button Set
 .button-set {
 	.button {
 		margin-left: 0.5em;
 		&:first-child {
 			margin-left: 0;
+		}
+	}
+	.text-div {
+		margin: 0 0.5rem;
+	}
+	a:not([class*="button"]) {
+		border-bottom: 1px dotted;
+		color: $main-text-color;
+		&:hover {
+			color: $brand-1;
 		}
 	}
 }

@@ -11,9 +11,9 @@
             <div class="span-4 team-member">
                 <div class="team-pic">
                     <div class="mask">
-                        <a href="assets/images/stock8.jpg" class="fa fa-search"></a>
+                        <a href="<?php echo $ROOT; ?>assets/images/stock8.jpg" class="fa fa-search"></a>
                     </div>
-                    <img src="assets/images/stock8.jpg" alt="" />
+                    <img src="<?php echo $ROOT; ?>assets/images/stock8.jpg" alt="" />
                 </div>
                 <h4>John Doe</h4>
                 <h5>CEO</h5>
@@ -30,9 +30,9 @@
             <div class="span-4 team-member">
                 <div class="team-pic">
                     <div class="mask">
-                        <a href="assets/images/stock15.jpg" class="fa fa-search"></a>
+                        <a href="<?php echo $ROOT; ?>assets/images/stock15.jpg" class="fa fa-search"></a>
                     </div>
-                    <img src="assets/images/stock15.jpg" alt="" />
+                    <img src="<?php echo $ROOT; ?>assets/images/stock15.jpg" alt="" />
                 </div>
                 <h4>Jane Dough</h4>
                 <h5>Graphic Designer</h5>
@@ -48,9 +48,9 @@
             <div class="span-4 team-member">
                 <div class="team-pic">
                     <div class="mask">
-                        <a href="assets/images/stock12.jpg" class="fa fa-search"></a>
+                        <a href="<?php echo $ROOT; ?>assets/images/stock12.jpg" class="fa fa-search"></a>
                     </div>
-                    <img src="assets/images/stock12.jpg" alt="" />
+                    <img src="<?php echo $ROOT; ?>assets/images/stock12.jpg" alt="" />
                 </div>
                 <h4>Sam Tho</h4>
                 <h5>Web Developer</h5>

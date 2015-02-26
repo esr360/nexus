@@ -7,29 +7,31 @@ TO-DO LIST
 
 TODO
 
-- add cheatsheet/components page
-- potential to add round/square button option
-- change menu icon to animated X
 - remove all icons from buttons
 - make profile pic links/modals/gallerys consistent
 - edit section-title links for one-page
 - update one-page theme options
 - rethink slider prev/next icons (dot nav in some cases instead?)
 - remove/redo social icons
+- add cheatsheet/components page
+- replace all repeated CSS values with variables
 - make all circular icons consistent with CSS class
-- add why choose us section
-- add animates pulsating to welcome pins
 - add child menu support to cp nav
 - improve breadcrumb
 - updates contact us page (eg add 3 boxes)
 - add stat counter (coffee/lines of code etc)
+- look at spacing/font-size consistencies etc [all pages]
+- ensure mobile size consistencies
+
+FOR NEXT RELEASE (1.1)
+
+- potential to add round/square button option
+- add multiple header options
+- add multiple footer options (full/minimalistic)
+- add animates pulsating to welcome pins
 - add dot navigation (fixed on right)
 - modal/popup login/register
 - add more pages (see dropdown menu)
-- add multiple header options
-- add multiple footer options (full/minimalistic)
-- look at spacing/font-size consistencies etc [all pages]
-- ensure mobile size consistencies
 
 DONE
 
@@ -65,7 +67,9 @@ DONE
 - create theme promotion artwork
 - write theme forest product page
 - package theme for themeforest
-- submit to theme forest ***
+- submit to theme forest
+
+********************************
 
 - convert to php
 - fix spelling of Manhattan
@@ -73,7 +77,7 @@ DONE
 - make hover scale() consistent
 - update copyright year to 2015
 - redo hero section
-- look at other potential fonts (animated fonts?)
+- look at other potential icons (animated icons?)
 - source better meet the team images for demo
 - ensure php formatting is consistent
 - add border/shadow to dropdown menu
@@ -84,8 +88,20 @@ DONE
 - add old face stock photos to portfolio
 - make names/profile pics consistent
 - improve typography
+- add more info section (w/video)
+- add why choose us section
 
 BACKLOG
 
 - change all jquery class selectors to IDs - ensure to update docs
 - make titles/comments consistent
+- change menu icon to animated X
+
+
+==============================================
+
+Resources
+
+==============================================
+
+http://www.pixeden.com/vector-objects/apple-product-vector-pack

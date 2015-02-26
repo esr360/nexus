@@ -8,10 +8,10 @@
         <div class="row blog-items">
             <div class="span-4 blog-item">                    
                 <a href="single-post.html" class="thumb">                  
-                    <img src="assets/images/stock3.jpg" alt="" />
+                    <img src="<?php echo $ROOT; ?>assets/images/stock3.jpg" alt="" />
                 </a>
-                <a href="assets/images/stock17.jpg" class="modal-image profile profile-alt">            
-                    <img src="assets/images/stock17.jpg" alt="" />
+                <a href="<?php echo $ROOT; ?>assets/images/stock17.jpg" class="modal-image profile profile-alt">            
+                    <img src="<?php echo $ROOT; ?>assets/images/stock17.jpg" alt="" />
                 </a>
                 <div class="date">
                     <span>Sep</span>
@@ -25,10 +25,10 @@
             </div>
             <div class="span-4 blog-item">
                 <a href="single-post.html" class="thumb">                            
-                    <img src="assets/images/stock1.jpg" alt="" />
+                    <img src="<?php echo $ROOT; ?>assets/images/stock1.jpg" alt="" />
                 </a>
-                <a href="assets/images/stock16.jpg" class="modal-image profile profile-alt">            
-                    <img src="assets/images/stock16.jpg" alt="" />
+                <a href="<?php echo $ROOT; ?>assets/images/stock16.jpg" class="modal-image profile profile-alt">            
+                    <img src="<?php echo $ROOT; ?>assets/images/stock16.jpg" alt="" />
                 </a>
                 <div class="date">
                     <span>Oct</span>
@@ -42,10 +42,10 @@
             </div>
             <div class="span-4 blog-item">
                 <a href="single-post.html" class="thumb">                            
-                    <img src="assets/images/stock4.jpg" alt="" />
+                    <img src="<?php echo $ROOT; ?>assets/images/stock4.jpg" alt="" />
                 </a>
-                <a href="assets/images/stock18.jpg" class="modal-image profile profile-alt">            
-                    <img src="assets/images/stock18.jpg" alt="" />
+                <a href="<?php echo $ROOT; ?>assets/images/stock18.jpg" class="modal-image profile profile-alt">            
+                    <img src="<?php echo $ROOT; ?>assets/images/stock18.jpg" alt="" />
                 </a>
                 <div class="date">
                     <span>Oct</span>

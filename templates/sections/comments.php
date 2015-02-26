@@ -12,8 +12,8 @@
         <div class="comments-wrapper">
 
             <article class="comment">
-                <a class="profile profile-border modal-image" href="assets/images/stock16.jpg">
-                    <img width="150" src="assets/images/stock16.jpg" alt="" />
+                <a class="profile profile-border modal-image" href="<?php echo $ROOT; ?>assets/images/stock16.jpg">
+                    <img width="150" src="<?php echo $ROOT; ?>assets/images/stock16.jpg" alt="" />
                 </a>
                 <div class="comment-content">
                     <h4>John Doe</h4>
@@ -27,8 +27,8 @@
             </article>
 
             <article class="comment comment-reply">
-                <a class="profile profile-border modal-image" href="assets/images/stock17.jpg">
-                    <img width="150" src="assets/images/stock17.jpg" alt="" />
+                <a class="profile profile-border modal-image" href="<?php echo $ROOT; ?>assets/images/stock17.jpg">
+                    <img width="150" src="<?php echo $ROOT; ?>assets/images/stock17.jpg" alt="" />
                 </a>
                 <div class="comment-content">
                     <h4>Jane Dough</h4>
@@ -42,8 +42,8 @@
             </article>
 
             <article class="comment">
-                <a class="profile profile-border modal-image" href="assets/images/stock18.jpg">
-                    <img width="150" src="assets/images/stock18.jpg" alt="" />
+                <a class="profile profile-border modal-image" href="<?php echo $ROOT; ?>assets/images/stock18.jpg">
+                    <img width="150" src="<?php echo $ROOT; ?>assets/images/stock18.jpg" alt="" />
                 </a>
                 <div class="comment-content">
                     <h4>Sam Tho</h4>
@@ -59,8 +59,8 @@
             </article>
 
             <article class="comment">
-                <a class="profile profile-border modal-image" href="assets/images/stock16.jpg">
-                    <img width="150" src="assets/images/stock16.jpg" alt="" />
+                <a class="profile profile-border modal-image" href="<?php echo $ROOT; ?>assets/images/stock16.jpg">
+                    <img width="150" src="<?php echo $ROOT; ?>assets/images/stock16.jpg" alt="" />
                 </a>
                 <div class="comment-content">
                     <h4>John Doe</h4>
@@ -74,8 +74,8 @@
             </article>
 
             <article class="comment hidden-comment">
-                <a class="profile profile-border modal-image" href="assets/images/stock18.jpg">
-                    <img width="150" src="assets/images/stock18.jpg" alt="" />
+                <a class="profile profile-border modal-image" href="<?php echo $ROOT; ?>assets/images/stock18.jpg">
+                    <img width="150" src="<?php echo $ROOT; ?>assets/images/stock18.jpg" alt="" />
                 </a>
                 <div class="comment-content">
                     <h4>Sam Tho</h4>
@@ -89,8 +89,8 @@
             </article>
 
             <article class="comment hidden-comment comment-reply">
-                <a class="profile profile-border modal-image" href="assets/images/stock17.jpg">
-                    <img width="150" src="assets/images/stock17.jpg" alt="" />
+                <a class="profile profile-border modal-image" href="<?php echo $ROOT; ?>assets/images/stock17.jpg">
+                    <img width="150" src="<?php echo $ROOT; ?>assets/images/stock17.jpg" alt="" />
                 </a>
                 <div class="comment-content">
                     <h4>Jane Dough</h4>
@@ -104,8 +104,8 @@
             </article>
 
             <article class="comment hidden-comment">
-                <a class="profile profile-border modal-image" href="assets/images/stock16.jpg">
-                    <img width="150" src="assets/images/stock16.jpg" alt="" />
+                <a class="profile profile-border modal-image" href="<?php echo $ROOT; ?>assets/images/stock16.jpg">
+                    <img width="150" src="<?php echo $ROOT; ?>assets/images/stock16.jpg" alt="" />
                 </a>
                 <div class="comment-content">
                     <h4>John Doe</h4>
