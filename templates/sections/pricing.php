@@ -23,7 +23,7 @@
                         <li><span><i class="fa fa-support"></i> Support</span><strong>None</strong></li>
                     </ul>
                     <div class="buy-now">
-                        <a href="#" class="button brand-1 full-width"><i class="fa fa-shopping-cart"></i> Buy Now</a>
+                        <a href="#" class="button brand-1 full-width"><i class="fa fa-shopping-cart"></i> Get For Free</a>
                     </div>
                 </div>
             </div>
