@@ -8178,6 +8178,17 @@ Sections
   color: white;
 }
 
+.stats .stat h4 {
+  font-size: 2.25rem;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.stats .stat p {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
 .stats .stat:nth-child(1) {
   background: #1480aa;
 }
