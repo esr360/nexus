@@ -18,7 +18,7 @@
                     <li>Cras dictum erat id tortor ornare, vel facilisis dolor vehicula</li>
                 </ul>
                 <p class="button-set">
-                    <a href="#" class="button round brand-1">View Demo</a>
+                    <a href="#" class="button round brand-1">Get in Touch</a>
                     <span class="text-div">-</span><a href="about.html">Read More</a>
                 </p>
             </div>

@@ -19,6 +19,17 @@ Start building the basic layout
         position: absolute;
         width: 30%;
         text-align: center;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 1.75rem;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 130px;
+            transition: 0.4s;
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+        }
         &:nth-child(1) {
             top: 0;
             left: 0;
@@ -35,19 +46,6 @@ Start building the basic layout
             bottom: 0;
             right: 0;
         }
-        &.wcu-left,
-        &.wcu-right {
-            &:after {
-                content: "";
-                position: absolute;
-                top: 1.75rem;
-                left: 0;
-                right: 0;
-                margin: auto;
-                width: 130px;
-                border-bottom: 1px solid rgba(0,0,0,0.2);
-            }
-        }
         &.wcu-left {
             padding-right: 2rem;
             &:after {
@@ -61,6 +59,9 @@ Start building the basic layout
             }
         }
         &:hover {
+            &:after {
+                border-bottom-color: $brand-1;
+            }
             .fa {
                 color: $brand-1;
             }

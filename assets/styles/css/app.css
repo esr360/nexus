@@ -8667,6 +8667,19 @@ Sections
   text-align: center;
 }
 
+.section.why-choose-us .wcu-feature:after {
+  content: "";
+  position: absolute;
+  top: 1.75rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 130px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 .section.why-choose-us .wcu-feature:nth-child(1) {
   top: 0;
   left: 0;
@@ -8687,18 +8700,6 @@ Sections
   right: 0;
 }
 
-.section.why-choose-us .wcu-feature.wcu-left:after,
-.section.why-choose-us .wcu-feature.wcu-right:after {
-  content: "";
-  position: absolute;
-  top: 1.75rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 130px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
 .section.why-choose-us .wcu-feature.wcu-left {
   padding-right: 2rem;
 }
@@ -8717,6 +8718,10 @@ Sections
   -webkit-transform: translateX(-70%);
   -ms-transform: translateX(-70%);
   transform: translateX(-70%);
+}
+
+.section.why-choose-us .wcu-feature:hover:after {
+  border-bottom-color: #1795c5;
 }
 
 .section.why-choose-us .wcu-feature:hover .fa {
