@@ -67,7 +67,7 @@ Start building the basic layout
 			li {
 				padding: 1em 0;
 				&.active {
-					a {
+					> a {
 						color: $brand-1;
 					}
 				}
@@ -115,7 +115,8 @@ Start building the basic layout
 			a {
 				color: white;
 				&:hover {
-					color: $brand-1;					
+					color: $brand-1;
+					border-bottom: none;					
 				}
 			}		
 		}
