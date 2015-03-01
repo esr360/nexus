@@ -7,13 +7,12 @@ TO-DO LIST
 
 TODO
 
-- add child menu support to cp nav [css]
 - rethink slider prev/next icons (dot nav in some cases instead?) [css]
 - updates contact us page (eg add 3 boxes) [html]
-- add cheatsheet/components page [html]
 - replace all repeated CSS values with variables [css]
 - improve breadcrumb [css]
 - ensure mobile size consistencies
+- add cheatsheet/components page [html]
 
 FOR NEXT RELEASE (1.1)
 
@@ -55,6 +54,7 @@ DONE
 - look at spacing/font-size consistencies etc [all pages]
 - make all circular/square icons consistent with CSS class [css]
 - edit footer links [php]
+- add child menu support to cp nav [css]
 
 ********************************
 

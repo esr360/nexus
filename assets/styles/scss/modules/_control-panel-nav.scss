@@ -55,11 +55,14 @@ Start building the basic layout
 		}
 		ul {
 			font-family: $font-2;
+		}
+		> ul {
 			transition: 0s;
 			margin-top: 0;
 			padding-left: 6rem;
 			width: 10%;
-			min-width: 250px;
+			min-width: 250px;	
+			position: relative;
 			@extend .invisible;
 			li {
 				padding: 1em 0;
@@ -68,16 +71,48 @@ Start building the basic layout
 						color: $brand-1;
 					}
 				}
+				&:hover {
+					> ul {
+						@extend .visible;
+					}
+					a:not(:only-child) {						
+						&:after {
+							content: "";
+							height: 20px;
+							width: 20px;
+							background: #1C1C1C;
+							transform: rotate(45deg);
+							position: absolute;
+							right: 1rem;
+						}
+					}
+				}
+				> ul {
+					transition: 0.4s;
+					position: absolute;
+					top: 0;
+					left: 14rem;
+					background: #1C1C1C;
+					border-radius: 0.4rem;
+					font-size: 0.75em;
+					width: 88%;
+					height: 100%;
+					padding: 0.5rem 2rem;
+					margin: 0;
+					@extend .invisible;
+					li {						
+						a {
+							color: $white;
+						}
+					}
+				}
 			}
 			a {
 				color: white;
 				&:hover {
 					color: $brand-1;					
 				}
-			}
-			ul {
-				display: none;
-			}
+			}		
 		}
 		.main-search {
 			position: absolute;
@@ -151,14 +186,14 @@ CP nav is active
 		.cp-nav-container {
 			visibility: visible;
 			.logo,
-			ul,
+			> ul,
 			.main-search,
 			.copyright {
 				transition: 0.4s;
 				transition-delay: 0.4s;
 				@extend .visible;
 			}
-			ul {				
+			> ul {				
 				padding-left: 4rem;
 			}
 			.main-search {
