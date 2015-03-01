@@ -226,22 +226,12 @@ Tooltip
  });
 
 /******************************************************************
-Portfolio Items
+Progress Bars
 ******************************************************************/
 
-$(".portfolio-items").magnificPopup({ 
-    type: "image",
-    delegate: ".fa-search",
-    gallery: {
-        enabled: true
-    },
-    callbacks: {
-        change: function() {
-            if (this.isOpen) {
-                this.wrap.addClass('mfp-open');
-            }
-        }
-    }
+$(".progress").each(function() {
+    attrProgress = $(this).attr('data-progress');
+    $(this).css({ width : attrProgress }); 
 });
 
 /******************************************************************
@@ -271,6 +261,64 @@ $(window).on("load scroll", function(d,h) {
         }
     });
 });
+
+/******************************************************************
+Portfolio Items Gallery
+******************************************************************/
+
+$(".portfolio-items").magnificPopup({ 
+    type: "image",
+    delegate: ".icon-view",
+    gallery: {
+        enabled: true
+    },
+    callbacks: {
+        change: function() {
+            if (this.isOpen) {
+                this.wrap.addClass('mfp-open');
+            }
+        }
+    }
+});
+
+/******************************************************************
+Single Project Gallery
+******************************************************************/
+
+$("#project-gallery").magnificPopup({ 
+    type: "image",
+    delegate: "a",
+    gallery: {
+        enabled: true
+    },
+    callbacks: {
+        change: function() {
+            if (this.isOpen) {
+                this.wrap.addClass('mfp-open');
+            }
+        }
+    }
+});
+
+/******************************************************************
+Meet the Team Gallery
+******************************************************************/
+
+$(".section.team").magnificPopup({ 
+    type: "image",
+    delegate: ".mask [class^='icon-']",
+    gallery: {
+        enabled: true
+    },
+    callbacks: {
+        change: function() {
+            if (this.isOpen) {
+                this.wrap.addClass('mfp-open');
+            }
+        }
+    }
+});
+
 
 /******************************************************************
 Portfolio Grid Carousel
@@ -315,45 +363,7 @@ $('.pp-prev').click(function() {
 })
 
 /******************************************************************
-Single Project Gallery
-******************************************************************/
-
-$("#project-gallery").magnificPopup({ 
-    type: "image",
-    delegate: "a",
-    gallery: {
-        enabled: true
-    },
-    callbacks: {
-        change: function() {
-            if (this.isOpen) {
-                this.wrap.addClass('mfp-open');
-            }
-        }
-    }
-});
-
-/******************************************************************
-Meet the Team Gallery
-******************************************************************/
-
-$(".section.team").magnificPopup({ 
-    type: "image",
-    delegate: ".fa-search",
-    gallery: {
-        enabled: true
-    },
-    callbacks: {
-        change: function() {
-            if (this.isOpen) {
-                this.wrap.addClass('mfp-open');
-            }
-        }
-    }
-});
-
-/******************************************************************
-Footer Testimonials Slider
+Footer Testimonials Carousel
 ******************************************************************/
 
 $('.footer-testimonials').owlCarousel({
@@ -367,7 +377,7 @@ $('.footer-testimonials').owlCarousel({
 });
 
 /******************************************************************
-Testimonials Slider
+Testimonials Carousel
 ******************************************************************/
 
 $('.testimonials-slider').owlCarousel({
@@ -381,7 +391,7 @@ $('.testimonials-slider').owlCarousel({
 });
 
 /******************************************************************
-Services Slider
+Services Carousel
 ******************************************************************/
 
 $('.services-slider').owlCarousel({
@@ -403,15 +413,14 @@ $('.services-slider').owlCarousel({
 });
 
 /******************************************************************
-Clients Slider
+Clients Carousel
 ******************************************************************/
 
 $('.clients-slider').owlCarousel({
     items: 1,
     loop: true,
-    dots: false,
-    nav: true,
-    navText: [],
+    dots: true,
+    nav: false,
     margin: 35,
     slideBy: 1,
     autoplay:true,
@@ -425,16 +434,6 @@ $('.clients-slider').owlCarousel({
             items: 3
         }
     }
-});
-
-// Go to the next item
-$('.clients-slider .slide-next').unbind("click").click(function() {
-    $('.clients-slider').trigger('next.owl.carousel');
-});
-
-// Go to the previous item
-$('.clients-slider .slide-prev').unbind("click").click(function() {
-    $('.clients-slider').trigger('prev.owl.carousel');
 });
 
 }); // End document.ready

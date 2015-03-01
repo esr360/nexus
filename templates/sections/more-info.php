@@ -1,4 +1,4 @@
-<section class="section secondary more-info">
+<section class="section secondary more-info inactive" id="s-more-info">
     <div class="container">
         <div class="row">
             <div class="span-6">
@@ -6,7 +6,7 @@
                     <iframe src="http://www.youtube.com/embed/Q3oItpVa9fs" frameborder="0" width="560" height="320"></iframe>
                 </div>
             </div>
-            <div class="span-6">
+            <div class="span-6 more-info-meta">
                 <div class="section-title">
                     <h2>More Info</h2>
                     <h3><i>Learn More About Us</i></h3>
@@ -18,8 +18,11 @@
                     <li>Cras dictum erat id tortor ornare, vel facilisis dolor vehicula</li>
                 </ul>
                 <p class="button-set">
-                    <a href="#" class="button round brand-1">Get in Touch</a>
-                    <span class="text-div">-</span><a href="about.html">Read More</a>
+                    <a href="<?php if ($type == "one-page") { ?>#s-contact<?php } else { ?>contact.html<?php } ?>" 
+                        class="button round brand-1">Get in Touch</a>
+                    <span class="text-div">-</span>
+                    <a href="<?php if ($type == "one-page") { ?>#s-services<?php } else { ?>about.html<?php } ?>" 
+                        class="button round border">Read More</a>
                 </p>
             </div>
         </div>

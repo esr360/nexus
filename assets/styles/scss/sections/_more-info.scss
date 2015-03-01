@@ -16,9 +16,24 @@ Start building the basic layout
         background-position: 25% -37% !important;
         opacity: 0.1;
     }
+
     .container {
         position: relative;
         z-index: 2;
+    }
+
+    .more-info-meta {
+        position: relative;
+        transition: 0.4s;
+        opacity: 1;
+        top: 0;
+    }
+
+    &.inactive {
+        .more-info-meta {
+            top: 3rem;
+            opacity: 0;
+        }
     }
 
     iframe {

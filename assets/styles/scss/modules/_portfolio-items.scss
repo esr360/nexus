@@ -44,9 +44,6 @@ Start building the basic layout
 		}
 		a {
 			color: white;
-			&:hover {
-				border-color: white;
-			}
 		}
 		img {
 			display: block;
@@ -70,18 +67,6 @@ Start building the basic layout
 		.fa {		
 			display: inline-block;	
 			margin-left: 0.25rem;
-			text-align: center;
-			line-height: 1.65rem;
-			height: 2rem;
-			width: 2rem;
-			font-size: 0.9rem;
-			transition: 0.4s;
-			border: 2px solid $white;
-			border-radius: 1.5rem;
-			&:hover {
-				background: $brand-1;
-				border: 2px solid $brand-1;
-			}
 			&:first-child {
 				margin-left: 0;
 			}
@@ -100,6 +85,11 @@ Start building the basic layout
 		h4 {
 			font-size: 1.4rem;
 			bottom: -2rem;
+			&:hover {
+				a {
+					border-color: white;
+				}
+			}
 		}
 		p {
 			bottom: -1em;

@@ -4,16 +4,16 @@
 
 .section.latest-posts {
 
-	/* Animations */
+	// Animations
 
 	&.inactive {
-		.blog-post {
-			top: 5em;
+		.blog-item {
+			top: 3rem;
 			opacity: 0;
 		}
 	} 
 
-	.blog-post {
+	.blog-item {
 		position: relative;
 		transition: 0.4s;
 		top: 0;

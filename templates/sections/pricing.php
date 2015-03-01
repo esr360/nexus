@@ -1,4 +1,4 @@
-<section class="section primary pricing inactive">
+<section class="section primary pricing inactive" id="s-pricing">
     <div class="container">
         <header class="sep active">
             <div class="section-title">

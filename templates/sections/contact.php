@@ -1,4 +1,4 @@
-<section class="section primary contact inactive" id="contact">
+<section class="section primary contact inactive" id="s-contact">
     <div class="container">
         <header class="sep active">
             <div class="section-title">

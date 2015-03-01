@@ -19,6 +19,8 @@ Start building the basic layout
         position: absolute;
         width: 30%;
         text-align: center;
+        transition: 0.4s;
+        opacity: 1;
         &:after {
             content: "";
             position: absolute;
@@ -90,6 +92,18 @@ Start building the basic layout
         }
         p {
             margin-top: 1rem;
+        }
+    }
+
+    &.inactive {
+        .wcu-feature {
+            opacity: 0;
+        }
+        .wcu-left {
+            left: -3rem !important;
+        }
+        .wcu-right {
+            right: -3rem !important;
         }
     }
 

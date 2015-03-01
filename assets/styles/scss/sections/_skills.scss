@@ -8,12 +8,13 @@
 Start building the basic layout
 ******************************************************************/
 
-	h2, h3 {
+	.skills-meta {
 		position: relative;
 		transition: 0.4s;
 		opacity: 1;
-		bottom: 0;
+		top: 0;
 	}
+
 	h5 {
 		font-family: $font-1;
 		margin-bottom: 0.5em;
@@ -21,12 +22,7 @@ Start building the basic layout
 		transition: 0.4s;
 		position: relative;
 	}
-	p {
-		opacity: 1;
-		top: 0;
-		position: relative;
-		transition: 0.4s;
-	}
+	
 	.progress-bars {
 		transition: 1s;
 	}
@@ -36,7 +32,7 @@ Start building the basic layout
 	.progress-bar {
 		transition: 0.4s;
 	}
-	
+
 	&.inactive {
 		.progress-bar {
 			background: transparent;
@@ -46,21 +42,9 @@ Start building the basic layout
 			width: 0 !important;
 			padding: 0;
 		}
-		h2, h3, h5 {
+		.skills-meta {
 			opacity: 0;
-		}
-		h2 {
-			bottom: -5rem;
-		}
-		h3 {
-			bottom: -2rem;
-		}
-		h5 {
-			top: -1em;
-		}
-		p {
-			opacity: 0;
-			top: -2rem;
+			top: 3rem;
 		}
 	}
 

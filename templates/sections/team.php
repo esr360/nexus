@@ -1,4 +1,4 @@
-<section class="section primary team inactive">
+<section class="section primary team inactive" id="s-team">
     <div class="container">
         <header class="sep active">
             <div class="section-title">
@@ -11,7 +11,9 @@
             <div class="span-4 team-member">
                 <div class="team-pic">
                     <div class="mask">
-                        <a href="<?php echo $ROOT; ?>assets/images/stock8.jpg" class="fa fa-search"></a>
+                        <a href="<?php echo $ROOT; ?>assets/images/stock8.jpg" class="icon-lrg-border-round">
+                            <i class="fa fa-search"></i>
+                        </a>
                     </div>
                     <img src="<?php echo $ROOT; ?>assets/images/stock8.jpg" alt="" />
                 </div>
@@ -19,18 +21,32 @@
                 <h5>CEO</h5>
                 <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur maximus ridiculus mus. Donec finibus fringilla ultrices purus.</p>
                 <div class="social-icons">
-                    <a class="tooltip social dribbble" data-tip="Dribbble" href="#"></a>
-                    <a class="tooltip social facebook" data-tip="Facebook" href="#"></a>
-                    <a class="tooltip social twitter" data-tip="Twitter" href="#"></a>
-                    <a class="tooltip social linkedin" data-tip="LinkedIn" href="#"></a>
-                    <a class="tooltip social deviantart" data-tip="deviantART" href="#"></a>
-                    <a class="tooltip social behance" data-tip="Behance" href="#"></a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Dribbble">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="DeviantArt">
+                        <i class="fa fa-deviantart"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Behance">
+                        <i class="fa fa-behance"></i>
+                    </a>
                 </div>
             </div>
             <div class="span-4 team-member">
                 <div class="team-pic">
                     <div class="mask">
-                        <a href="<?php echo $ROOT; ?>assets/images/stock15.jpg" class="fa fa-search"></a>
+                        <a href="<?php echo $ROOT; ?>assets/images/stock15.jpg" class="icon-lrg-border-round">
+                            <i class="fa fa-search"></i>
+                        </a>
                     </div>
                     <img src="<?php echo $ROOT; ?>assets/images/stock15.jpg" alt="" />
                 </div>
@@ -38,17 +54,29 @@
                 <h5>Graphic Designer</h5>
                 <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur maximus ridiculus mus. Donec finibus fringilla ultrices purus.</p>
                 <div class="social-icons">
-                    <a class="tooltip social dribbble" data-tip="Dribbble" href="#"></a>
-                    <a class="tooltip social twitter" data-tip="Twitter" href="#"></a>
-                    <a class="tooltip social linkedin" data-tip="LinkedIn" href="#"></a>
-                    <a class="tooltip social deviantart" data-tip="deviantART" href="#"></a>
-                    <a class="tooltip social behance" data-tip="Behance" href="#"></a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Dribbble">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="DeviantArt">
+                        <i class="fa fa-deviantart"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Behance">
+                        <i class="fa fa-behance"></i>
+                    </a>
                 </div>
             </div>
             <div class="span-4 team-member">
                 <div class="team-pic">
                     <div class="mask">
-                        <a href="<?php echo $ROOT; ?>assets/images/stock12.jpg" class="fa fa-search"></a>
+                        <a href="<?php echo $ROOT; ?>assets/images/stock12.jpg" class="icon-lrg-border-round">
+                            <i class="fa fa-search"></i>
+                        </a>
                     </div>
                     <img src="<?php echo $ROOT; ?>assets/images/stock12.jpg" alt="" />
                 </div>
@@ -56,10 +84,19 @@
                 <h5>Web Developer</h5>
                 <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur maximus ridiculus mus. Donec finibus fringilla ultrices purus.</p>
                 <div class="social-icons">
-                    <a class="tooltip social dribbble" data-tip="Dribbble" href="#"></a>
-                    <a class="tooltip social facebook" data-tip="Facebook" href="#"></a>
-                    <a class="tooltip social twitter" data-tip="Twitter" href="#"></a>
-                    <a class="tooltip social linkedin" data-tip="LinkedIn" href="#"></a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Dribbble">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    </a>
                 </div>
             </div>
         </div>

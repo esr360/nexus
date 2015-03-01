@@ -33,8 +33,8 @@ Visibility
 }
 
 .invisible {
-    opacity: 0;
-    visibility: hidden;
+    opacity: 0 !important;
+    visibility: hidden !important;
 }
 
 .visible {
@@ -91,22 +91,10 @@ Vertically Align Anything
 
 //http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
 
-.vam {    
+%vam {    
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-}
-
-/******************************************************************
-Image Replacement
-******************************************************************/
-
-// http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
-
-.image-replacement {
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
 }
 
 /******************************************************************

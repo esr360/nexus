@@ -14,23 +14,7 @@
             <?php if ($type == "one-page"){ ?>
                 <nav class="main-nav">
                     <ul>
-                        <!-- Dropdown Nav -->
-                        <li>
-                            <a href="#">Pages</a>
-                            <ul>
-                                <li><a href="#">404</a></li>
-                                <li>
-                                    <a href="#">Careers</a>
-                                    <ul>
-                                        <li><a href="#">Lorem Ipsum</a></li>
-                                        <li><a href="#">Lorem Ipsum</a></li>
-                                        <li><a href="#">Lorem Ipsum</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Coming Soon</a></li>
-                                <li><a href="#">FAQ</a></li>
-                            </ul>
-                        </li> 
+                        <!-- Dropdown Nav --> 
                         <li class="active">
                             <a href="#site-content">Home</a>
                             <ul>
@@ -40,13 +24,13 @@
                                 <li><a href="#">Video Background</a></li>
                             </ul>
                         </li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#s-welcome">About</a></li>
+                        <li><a href="#s-services">Services</a></li>
+                        <li><a href="#s-latest-works">Portfolio</a></li>
+                        <li><a href="#s-latest-posts">Blog</a></li>
+                        <li><a href="#s-contact">Contact</a></li>
                     </ul>
-                    <div class="search-toggle">
+                    <div class="icon-round-lrg-plain search-toggle">
                         <i class="fa fa-search"></i>
                     </div>
                 </nav>
@@ -54,22 +38,6 @@
                 <nav class="main-nav">
                     <ul>
                         <!-- Dropdown Nav -->
-                        <li>
-                            <a href="#">Pages</a>
-                            <ul>
-                                <li<?php if ($title == "404") { ?> class="active"<?php } ?>><a href="#">404</a></li>
-                                <li<?php if ($title == "Careers") { ?> class="active"<?php } ?>>
-                                    <a href="#">Careers</a>                                    
-                                    <ul>
-                                        <li><a href="#">Lorem Ipsum</a></li>
-                                        <li><a href="#">Lorem Ipsum</a></li>
-                                        <li><a href="#">Lorem Ipsum</a></li>
-                                    </ul>
-                                </li>
-                                <li<?php if ($title == "Coming Soon") { ?> class="active"<?php } ?>><a href="#">Coming Soon</a></li>
-                                <li<?php if ($title == "FAQ") { ?> class="active"<?php } ?>><a href="#">FAQ</a></li>
-                            </ul>
-                        </li> 
                         <li<?php if ($title == "Index"){ ?> class="active"<?php } ?>>
                             <a href="index.html">Home</a>
                             <ul>
@@ -85,7 +53,7 @@
                         <li<?php if ($type == "blog"){ ?> class="active"<?php } ?>><a href="blog.html">Blog</a></li>
                         <li<?php if ($title == "Contact Us") { ?> class="active"<?php } ?>><a href="contact.html">Contact</a></li>
                     </ul>
-                    <div class="search-toggle">
+                    <div class="icon-round-lrg-plain search-toggle">
                         <i class="fa fa-search"></i>
                     </div>
                 </nav>

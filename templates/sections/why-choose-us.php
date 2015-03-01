@@ -1,4 +1,4 @@
-<section class="section primary why-choose-us section-map">
+<section class="section primary why-choose-us section-map inactive" id="s-why-choose-us">
     <div class="container">
         <header class="sep active">
             <div class="section-title">

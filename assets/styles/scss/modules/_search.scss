@@ -69,7 +69,7 @@ body.search-active {
 		}
 	}
 	::placeholder { 
-		opacity: 0.3;
+		opacity: 0.6;
 		transition: 0s;
 	}
 }
@@ -78,22 +78,9 @@ body.search-active {
 	display: none;
 	vertical-align: middle;
 	margin-left: 0.25em;
-	color: white;
+	cursor: pointer;
 	.fa {
-		font-size: 1.2em;
-		line-height: 1.7em;
-		height: 1.95em;
-		width: 1.95em;
-		border: 2px solid transparent;
-		text-align: center;
-		border-radius: 1.5em;
 		cursor: pointer;
-		transition: 0.4s;
-	}
-	&:hover {
-		.fa {
-			background: $brand-1;
-		}
 	}
 	@media (min-width: $breakpoint-3) {
 		display: inline-block;

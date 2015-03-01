@@ -47,7 +47,7 @@ $large-font-size       :     $base-font-size * 1.4;
 Color Palette
 ******************************************************************/
 
-/* Greyscale Colors */
+// Greyscale Colors
 
 $white                 :     #ffffff;
 $dark-white            :     #f7f7f7;
@@ -59,7 +59,7 @@ $black                 :     #000000;
 $greyscale-colors      :     $white, $light-grey, $grey, $dark-grey, $black;
 $greyscale-names       :     white, light-grey, grey, dark-grey, black;
 
-/* Branding Colors */
+// Branding Colors
 
 $blue                  :	 #1795C5;
 $green                 :	 #1CBB9B;
@@ -72,7 +72,7 @@ $brand-2               :     #3D5C6D;
 $brand-colors          :     $brand-1, $brand-2;
 $brand-names           :     brand-1, brand-2;
 
-/* Alert Box Colors */
+// Alert Box Colors
 
 $help                  :     #e7d16c;
 $danger                :     #CB8888;
@@ -81,6 +81,25 @@ $info                  :     #79a9c0;
 
 $emotional-colors      :     $help, $danger, $success, $info;
 $emotional-names       :     help, danger, success, info;
+
+// Social Network Colors
+
+$facebook    :  #507CBD;
+$twitter     :  #63CEF2;
+$linkedin    :  #117BB8;
+$github      :  #1C1C1C;
+$skype       :  #63CEF2;
+$pinterest   :  #CD2129;
+$instagram   :  #5280A5;
+$rss         :  #FBA933;
+$youtube     :  #CB312E;
+$flickr      :  #ED1384;
+$vimeo       :  #1EB8EB;
+$dribbble    :  #EB4C89;
+$behance     :  #0595FC;
+$deviantart  :  #B3C434;
+$reddit      :  #0D7CCD;
+$google-plus :  #dd4b39;
 
 /******************************************************************
 Theming

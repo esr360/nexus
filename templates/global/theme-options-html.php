@@ -4,10 +4,14 @@
         <h3>Theme Options</h3>
         <div class="row bp0 page-type">
             <div class="span-6">
-                <a href="index-single.html" class="button round full-width active">One Page</a>
+                <a href="index-single.html" class="button round full-width<?php if ($type == "one-page") { ?> active<?php } ?>">
+                	One Page
+                </a>
             </div>
             <div class="span-6">
-                <a href="index.html" class="button round full-width">Multi-Page</a>
+                <a href="index.html" class="button round full-width<?php if ($type != "one-page") { ?> active<?php } ?>">
+                	Multi-Page
+                </a>
             </div>
         </div>
         <section class="theme-option">

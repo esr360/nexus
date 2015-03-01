@@ -23,12 +23,24 @@
                 <h4>We are on many social sites</h4>
                 <p>Find us on many other websites to keep up to date with our latest designs, projects and find out what we're up to.</p>
                 <div class="social-icons">
-                    <a href="#" data-tip="Dribbble" class="tooltip social dribbble"></a>
-                    <a href="#" data-tip="Facebook" class="tooltip social facebook"></a>
-                    <a href="#" data-tip="Twitter" class="tooltip social twitter"></a>
-                    <a href="#" data-tip="LinkedIn" class="tooltip social linkedin"></a>
-                    <a href="#" data-tip="deviantART" class="tooltip social deviantart"></a>
-                    <a href="#" data-tip="Behance" class="tooltip social behance"></a>
+                    <a href="#" class="icon tooltip" data-tip="Dribbble">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="icon tooltip" data-tip="Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon tooltip" data-tip="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon tooltip" data-tip="LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="icon tooltip" data-tip="DeviantArt">
+                        <i class="fa fa-deviantart"></i>
+                    </a>
+                    <a href="#" class="icon tooltip" data-tip="Behance">
+                        <i class="fa fa-behance"></i>
+                    </a>
                 </div>
             </div>
             <div class="span-3 footer-col">
@@ -135,11 +147,31 @@
                 <!-- Footer Navigation -->
                 <nav class="footer-nav">                
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li>
+                            <a href="<?php if ($type == "one-page"){ ?>#s-welcome<?php } else { ?>about.html<?php } ?>">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php if ($type == "one-page"){ ?>#s-services<?php } else { ?>services.html<?php } ?>">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php if ($type == "one-page"){ ?>#s-latest-works<?php } else { ?>portfolio.html<?php } ?>">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php if ($type == "one-page"){ ?>#s-latest-posts<?php } else { ?>blog.html<?php } ?>">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="<?php if ($type == "one-page"){ ?>#s-contact<?php } else { ?>contact.html<?php } ?>">
+                                Contact
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>

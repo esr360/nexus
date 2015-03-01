@@ -1,7 +1,7 @@
-<section class="section secondary skills inactive">
+<section class="section secondary skills inactive" id="s-skills">
         <div class="container">
         <div class="row block-columns">
-            <div class="span-6">
+            <div class="span-6 skills-meta">
                 <div class="section-title">
                     <h2>Our Skills</h2>
                     <h3><i>It's What We Do Best</i></h3>
@@ -13,26 +13,28 @@
                     <li>Cras dictum erat id tortor ornare, vel facilisis dolor vehicula</li>
                 </ul>
                 <p class="button-set">
-                    <a href="#" class="button round brand-1">Get in Touch</a>
-                    <a href="#" class="button round border">Read More</a>
+                    <a href="<?php if ($type == "one-page") { ?>#s-contact<?php } else { ?>contact.html<?php } ?>" 
+                        class="button round brand-1">Get in Touch</a>
+                    <a href="<?php if ($type == "one-page") { ?>#s-why-choose-us<?php } else { ?>about.html<?php } ?>" 
+                        class="button round border">Read More</a>
                 </p>
             </div>
             <div class="span-6 progress-bars">
                 <h5>HTML5</h5>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 75%">75%</div>
+                    <div class="progress" data-progress="75%">75%</div>
                 </div>
                 <h5>CSS3/SASS</h5>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 100%">100%</div>
+                    <div class="progress" data-progress="100%">100%</div>
                 </div>
                 <h5>JavaScript/jQuery</h5>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 80%">80%</div>
+                    <div class="progress" data-progress="80%">80%</div>
                 </div>
                 <h5>PHP/Wordpress</h5>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 55%">55%</div>
+                    <div class="progress" data-progress="65%">65%</div>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-<section class="section primary welcome inactive" id="about">
+<section class="section primary welcome inactive" id="s-welcome">
     <div class="container">
         <div class="welcome-titles">
             <header class="welcome-content">

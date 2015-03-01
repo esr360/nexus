@@ -1,14 +1,20 @@
 <!-- Loading Spinner -->
-<div class="loading-wrapper active"><div class="spinner"></div></div>
+<div class="loading-wrapper active">
+	<div class="spinner"></div>
+</div>
 
 <!-- Fixed header -->
 <div class="fixed-header-container" id="fixed-header"></div>
 
 <!-- Control Panel Nav Trigger -->
-<span class="nav-trigger cp-trigger" id="cp-trigger"></span>
+<div class="icon-lrg nav-trigger cp-trigger" id="cp-trigger">
+    <i class="fa fa-bars"></i>
+</div>
 
 <!-- Flyout Nav Trigger -->
-<span class="nav-trigger flyout-trigger" id="flyout-trigger"></span>
+<span class="icon-lrg nav-trigger flyout-trigger" id="flyout-trigger">
+    <i class="fa fa-bars"></i>
+</span>
 
 <!-- Control Panel Nav -->
 <nav class="cp-nav-container" id="cp-nav"></nav>
@@ -17,7 +23,9 @@
 <nav class="flyout-nav-container" id="flyout-nav"></nav>
 
 <!-- Scroll-to-top Icon-->
-<a class="fa fa-angle-up scroll-top" href="#site-content"></a> 
+<a class="icon-lrg-border scroll-top" href="#site-content">
+    <i class="fa fa-angle-up"></i>
+</a>
 
 <!-- Main Search -->
 <div class="main-search" id="search">

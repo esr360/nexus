@@ -7,20 +7,12 @@ TO-DO LIST
 
 TODO
 
-- remove all icons from buttons
-- make profile pic links/modals/gallerys consistent
-- edit section-title links for one-page
-- update one-page theme options
-- rethink slider prev/next icons (dot nav in some cases instead?)
-- remove/redo social icons
-- add cheatsheet/components page
-- replace all repeated CSS values with variables
-- make all circular icons consistent with CSS class
-- add child menu support to cp nav
-- improve breadcrumb
-- updates contact us page (eg add 3 boxes)
-- add stat counter (coffee/lines of code etc)
-- look at spacing/font-size consistencies etc [all pages]
+- add child menu support to cp nav [css]
+- rethink slider prev/next icons (dot nav in some cases instead?) [css]
+- updates contact us page (eg add 3 boxes) [html]
+- add cheatsheet/components page [html]
+- replace all repeated CSS values with variables [css]
+- improve breadcrumb [css]
 - ensure mobile size consistencies
 
 FOR NEXT RELEASE (1.1)
@@ -34,6 +26,39 @@ FOR NEXT RELEASE (1.1)
 - add more pages (see dropdown menu)
 
 DONE
+
+- convert to php
+- fix spelling of Manhattan
+- make all transition/animation speeds consistent
+- make hover scale() consistent
+- update copyright year to 2015
+- redo hero section
+- look at other potential icons (animated icons?)
+- source better meet the team images for demo
+- ensure php formatting is consistent
+- add border/shadow to dropdown menu
+- make welcome section more varied
+- make dropdown nav dark
+- remove some scroll animations
+- add liveicons where appropriate
+- add old face stock photos to portfolio
+- make names/profile pics consistent
+- improve typography
+- add more info section (w/video)
+- add why choose us section
+- remove all icons from buttons
+- make profile pic links/modals/gallerys consistent
+- add stat counter (coffee/lines of code etc)
+- edit section-title links for one-page
+- update one-page theme options [php]
+- remove/redo social icons [css]
+- look at spacing/font-size consistencies etc [all pages]
+- make all circular/square icons consistent with CSS class [css]
+- edit footer links [php]
+
+********************************
+
+OLD
 
 - remove outline/glow on chrome inputs
 - chrome box-shadow on blog posts
@@ -69,28 +94,6 @@ DONE
 - package theme for themeforest
 - submit to theme forest
 
-********************************
-
-- convert to php
-- fix spelling of Manhattan
-- make all transition/animation speeds consistent
-- make hover scale() consistent
-- update copyright year to 2015
-- redo hero section
-- look at other potential icons (animated icons?)
-- source better meet the team images for demo
-- ensure php formatting is consistent
-- add border/shadow to dropdown menu
-- make welcome section more varied
-- make dropdown nav dark
-- remove some scroll animations
-- add liveicons where appropriate
-- add old face stock photos to portfolio
-- make names/profile pics consistent
-- improve typography
-- add more info section (w/video)
-- add why choose us section
-
 BACKLOG
 
 - change all jquery class selectors to IDs - ensure to update docs
@@ -100,7 +103,7 @@ BACKLOG
 
 ==============================================
 
-Resources
+RESOURCES
 
 ==============================================
 

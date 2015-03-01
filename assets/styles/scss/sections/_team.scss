@@ -43,12 +43,6 @@ Start building the basic layout
 	p {
 		font-weight: lighter;
 	}
-	.social {
-		background: $brand-1 !important;
-		&:hover {
-			background: darken($brand-1, 10%) !important;
-		}
-	}
 	.mask {
 		background: rgba(0,0,0,0.7);
 		position: absolute;
@@ -71,33 +65,15 @@ Start building the basic layout
 		    transform: scale(1.15);		   
 		    transition: 0.4s;
 		}
-	}
-	.fa-search {
-		position: absolute;
-		top: 40%;
-		transform: translateY(-50%);
-		color: $white;
-		display: inline-block;
-		left: 0;
-		right: 0;
-		margin: auto;
-		background: $brand-1;
-		height: 2.75em;
-		width: 2.75em;
-		border-radius: 50%;
-		z-index: 6;
-		transition: 0.4s;
-		&:before {
+		[class^="icon-"] {
 			position: absolute;
-			font-size: $large-font-size;
-			top: 50%;
+			top: 42.5%;
+			transform: translateY(-50%);
+			display: inline-block;
 			left: 0;
 			right: 0;
-			z-index: 2;
-			transform: translateY(-55%);
-		}
-		&:hover {
-			background: darken($brand-1, 10%);
+			margin: auto;
+			z-index: 6;
 		}
 	}
 	.team-pic {
@@ -115,7 +91,7 @@ Start building the basic layout
 					transform: scale(1);
 				}
 			}
-			.fa-search {
+			[class^="icon-"] {
 				top: 50%;
 			}
 			img {
@@ -131,8 +107,8 @@ Start building for smaller resolutions
 	@media (max-width: $breakpoint-2) {
 		.team-member {
 			&:not(:last-child) {
-				padding-bottom: 2em;
-				margin-bottom: 2em;
+				padding-bottom: 2rem;
+				margin-bottom: 2rem;
 				border-bottom: 1px dotted rgba(0,0,0,0.1);
 			}
 		}
@@ -143,11 +119,6 @@ Start building for larger resolutions
 ******************************************************************/
 
 	@media (min-width: $breakpoint-2) and (max-width: $breakpoint-3) {
-		.social {
-			width: 1.8em;
-			height: 1.8em;
-			line-height: 1.8em;
-		}
 	}
 
 } // end .team
