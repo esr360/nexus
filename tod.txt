@@ -7,11 +7,7 @@ TO-DO LIST
 
 TODO
 
-- fix cp-nav child menu link color
-- look at price-chart font-sizes
-- add faux-slider functionality to welcome section
-- fix more-info read-more link
-- updates contact us page (eg add 3 boxes) [html]
+- update contact us page (eg add 3 boxes) [html]
 - replace all repeated CSS values with variables [css]
 - improve breadcrumb [css]
 - ensure mobile size consistencies
@@ -20,6 +16,7 @@ TODO
 
 FOR NEXT RELEASE (1.1)
 
+- improve welcome section js
 - potential to add round/square button option
 - add multiple header options
 - add multiple footer options (full/minimalistic)
@@ -60,6 +57,11 @@ DONE
 - edit footer links [php]
 - add child menu support to cp nav [css]
 - rethink slider prev/next icons (dot nav in some cases instead?) [css]
+- fix cp-nav child menu link color
+- look at price-chart font-sizes
+- fix more-info read-more link
+- add faux-slider functionality to welcome section
+- add dropdown icon if parent has child submenu
 
 ********************************
 
