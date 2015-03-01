@@ -30,6 +30,64 @@ $('.earth .pin').click(function() {
 
 });
 
+pin1 = $('.earth .pin:nth-child(1)');
+pin2 = $('.earth .pin:nth-child(2)');
+pin3 = $('.earth .pin:nth-child(3)');
+
+$('.section.welcome .nav-next').click(function() {
+
+    if (pin1.hasClass('active')) {
+        pin1.removeClass('active');
+        pin3.addClass('active');
+        $('.welcome-content').removeClass('active');
+        setTimeout(function(){
+            $('.welcome-content:nth-child(3)').addClass('active'); 
+        }, 200);
+    } else if (pin2.hasClass('active')) {
+        pin2.removeClass('active');
+        pin1.addClass('active');
+        $('.welcome-content').removeClass('active');
+        setTimeout(function(){
+            $('.welcome-content:nth-child(1)').addClass('active'); 
+        }, 200);
+    } else if (pin3.hasClass('active')) {
+        pin3.removeClass('active');
+        pin2.addClass('active');
+        $('.welcome-content').removeClass('active');
+        setTimeout(function(){
+            $('.welcome-content:nth-child(2)').addClass('active'); 
+        }, 200);
+    }
+
+});
+
+$('.section.welcome .nav-prev').click(function() {
+
+    if (pin1.hasClass('active')) {
+        pin1.removeClass('active');
+        pin2.addClass('active');
+        $('.welcome-content').removeClass('active');
+        setTimeout(function(){
+            $('.welcome-content:nth-child(2)').addClass('active'); 
+        }, 200);
+    } else if (pin2.hasClass('active')) {
+        pin2.removeClass('active');
+        pin3.addClass('active');
+        $('.welcome-content').removeClass('active');
+        setTimeout(function(){
+            $('.welcome-content:nth-child(3)').addClass('active'); 
+        }, 200);
+    } else if (pin3.hasClass('active')) {
+        pin3.removeClass('active');
+        pin1.addClass('active');
+        $('.welcome-content').removeClass('active');
+        setTimeout(function(){
+            $('.welcome-content:nth-child(1)').addClass('active'); 
+        }, 200);
+    }
+
+});
+
 /******************************************************************
 Welcome Section Scroll Animations
 ******************************************************************/
