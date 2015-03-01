@@ -167,34 +167,6 @@ Start building the basic layout
 
 	position: relative;
 
-	.owl-nav {
-		div {
-			position: absolute;
-			font-size: 2.25em;
-			top: 41%;
-			color: rgba(0,0,0,0.25);
-			transition: 0.4s;
-			&:before {
-				font-family: FontAwesome;
-			}
-			&:hover {
-				color: $brand-1;
-			}
-			&:first-child {
-				left: -2em;
-				&:before {
-					content: "\f137";
-				}
-			}
-			&:last-child {
-				right: -2em;
-				&:before {
-					content: "\f138";
-				}
-			}
-		}
-	}
-
 	.owl-dots {
 		text-align: center;
 		padding-top: 2em;
@@ -206,6 +178,9 @@ Start building the basic layout
 			display: inline-block;
 			margin-left: 0.5em;
 			transition: 0.4s;
+			span {
+				display: none;
+			}
 			&:first-child {
 				margin-left: 0;
 			}
@@ -220,9 +195,6 @@ Start building for smaller resolutions
 ******************************************************************/
 
 	@media (max-width: $breakpoint-4) {
-		.owl-nav {
-			display: none;
-		}
 	}
 
 } // end .portfolio-carousel

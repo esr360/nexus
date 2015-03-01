@@ -35,11 +35,23 @@ Start building the basic layout
 			}
 		}
 	}
+	.clients-slider {		
+		position: relative;
+		top: -0.75rem;
+	}
 	.owl-item {
 		img {
 			width: auto;
 			margin: auto;
 		}
+	}
+
+	.owl-dots {
+		position: absolute;
+		left: 0;
+		right: 0;
+		margin: auto;
+		bottom: -2.5rem;
 	}
 
 /******************************************************************

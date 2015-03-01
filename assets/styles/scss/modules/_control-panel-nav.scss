@@ -77,15 +77,20 @@ Start building the basic layout
 					}
 					a:not(:only-child) {						
 						&:after {
-							content: "";
-							height: 20px;
-							width: 20px;
-							background: #1C1C1C;
-							transform: rotate(45deg);
-							position: absolute;
-							right: 1rem;
+							opacity: 1;
 						}
 					}
+				}
+				a:after {
+					transition: 0.4s;
+					content: "";
+					height: 20px;
+					width: 20px;
+					background: #1C1C1C;
+					transform: rotate(45deg);
+					position: absolute;
+					right: 1rem;
+					opacity: 0;
 				}
 				> ul {
 					transition: 0.4s;

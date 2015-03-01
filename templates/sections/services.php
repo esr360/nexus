@@ -56,5 +56,13 @@
                 <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
             </div>
         </div>
+        <div class="nav-carousel">
+            <div class="icon-round-border-lrg nav-prev">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <div class="icon-round-border-lrg nav-next">
+                <i class="fa fa-angle-right"></i>
+            </div>
+        </div>
     </div>
 </section>

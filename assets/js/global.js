@@ -42,6 +42,10 @@ if (window.matchMedia('(min-width: 940px)').matches) { // is the window width la
             'opacity' : 1 - st/700
         }); 
 
+        $('.mouse').css({ 
+            'opacity' : 1 - st/700
+        }); 
+
     });
 
 /* Sub Header Parallax Title
@@ -68,14 +72,7 @@ if (window.matchMedia('(min-width: 940px)').matches) { // is the window width la
 Mouse Scroll Down
 ******************************************************************/
 
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-        $('.mouse').fadeOut(800);
-    }
-    else {
-        $('.mouse').fadeIn(800);
-    }
-});
+
 
 /******************************************************************
 Opera Flyout Nav
@@ -332,87 +329,91 @@ $(".section.team").magnificPopup({
     }
 });
 
-
 /******************************************************************
 Portfolio Grid Carousel
 ******************************************************************/
 
-$('.portfolio-carousel').owlCarousel({
+var portfolioCarousel = $('.portfolio-carousel');
+
+portfolioCarousel.owlCarousel({
     items: 1,
     loop: false,
     dots: true,
-    nav: true,
-    navText: [],
+    nav: false,
     slideBy: 1
 })
 
+// Go to the next item
+$('.section.latest-works .nav-next').click(function() {
+    portfolioCarousel.trigger('next.owl.carousel');
+})
+
+// Go to the previous item
+$('.section.latest-works .nav-prev').click(function() {
+    portfolioCarousel.trigger('prev.owl.carousel');
+})
 
 /******************************************************************
 Portfolio Previews Carousel
 ******************************************************************/
 
-$('.single-project .previews').owlCarousel({
+var projectCarousel = $('.single-project .previews');
+
+projectCarousel.owlCarousel({
     items: 1,
     dots: false,
     loop: true,
     nav: false,
     autoplay:true,
-    navText: [],
     slideBy: 1
 })
 
-var pp = $('.single-project .previews');
-
-pp.owlCarousel();
-
 // Go to the next item
-$('.pp-next').click(function() {
-    pp.trigger('next.owl.carousel');
+$('.project-carousel .nav-next').click(function() {
+    projectCarousel.trigger('next.owl.carousel');
 })
 
 // Go to the previous item
-$('.pp-prev').click(function() {
-    pp.trigger('prev.owl.carousel');
+$('.project-carousel .nav-prev').click(function() {
+    projectCarousel.trigger('prev.owl.carousel');
 })
-
-/******************************************************************
-Footer Testimonials Carousel
-******************************************************************/
-
-$('.footer-testimonials').owlCarousel({
-    items: 1,
-    loop: true,
-    dots: false,
-    nav: true,
-    navText: [],
-    margin: 20,
-    slideBy: 1
-});
 
 /******************************************************************
 Testimonials Carousel
 ******************************************************************/
 
-$('.testimonials-slider').owlCarousel({
+var testimonialCarousel = $('.testimonials-slider');
+
+testimonialCarousel.owlCarousel({
     items: 1,
     loop: true,
     dots: false,
-    nav: true,
-    navText: [],
+    nav: false,
     margin: 60,
     slideBy: 1
 });
+
+// Go to the next item
+$('.section.testimonials .nav-next').click(function() {
+    testimonialCarousel.trigger('next.owl.carousel');
+})
+
+// Go to the previous item
+$('.section.testimonials .nav-prev').click(function() {
+    testimonialCarousel.trigger('prev.owl.carousel');
+})
 
 /******************************************************************
 Services Carousel
 ******************************************************************/
 
-$('.services-slider').owlCarousel({
+var servicesCarousel = $('.services-slider');
+
+servicesCarousel.owlCarousel({
     items: 1,
     loop: false,
     dots: false,
-    nav: true,
-    navText: [],
+    nav: false,
     margin: 20,
     slideBy: 1,
     responsive:{
@@ -424,6 +425,16 @@ $('.services-slider').owlCarousel({
         }
     }
 });
+
+// Go to the next item
+$('.section.services .nav-next').click(function() {
+    servicesCarousel.trigger('next.owl.carousel');
+})
+
+// Go to the previous item
+$('.section.services .nav-prev').click(function() {
+    servicesCarousel.trigger('prev.owl.carousel');
+})
 
 /******************************************************************
 Clients Carousel
@@ -447,6 +458,20 @@ $('.clients-slider').owlCarousel({
             items: 3
         }
     }
+});
+
+/******************************************************************
+Footer Testimonials Carousel
+******************************************************************/
+
+$('.footer-testimonials').owlCarousel({
+    items: 1,
+    loop: true,
+    dots: false,
+    nav: true,
+    navText: [],
+    margin: 20,
+    slideBy: 1
 });
 
 }); // End document.ready

@@ -20,6 +20,10 @@ Start building the basic layout
 		}
 	}
 
+	+ .primary {
+		padding-top: 0;
+	}
+
 	.section-title {
 		h2,
 		h3 {
@@ -69,8 +73,16 @@ Start building the basic layout
 		}
 	}
 
-	+ .primary {
-		padding-top: 0;
+	.nav-carousel {
+		[class*="nav-"] {
+			border-color: #c1c1c1;
+			color: #c1c1c1;
+			&:hover {
+				border-color: $brand-1;
+				background: $brand-1;
+				color: white;
+			}
+		}
 	}
 
 /******************************************************************

@@ -10,22 +10,28 @@
             <p>Suspendisse tempus sodales neque, eget eleifend <a href="#">turpis tristique</a> eu. Nullam a nisl maximus, ultrices est ut blandit nislr, elit in lobortis mattis.</p>
         </header>
 
-        <div class="project-preview">
-            <img src="<?php echo $ROOT; ?>assets/images/desktop.png" alt="Single Project" />
-            <div class="owl-carousel previews" id="project-gallery">
-                <a href="<?php echo $ROOT; ?>assets/images/stock7.jpg">
-                    <img src="<?php echo $ROOT; ?>assets/images/stock7.jpg" alt="" />
-                </a>
-                <a href="<?php echo $ROOT; ?>assets/images/stock16.jpg">
-                    <img src="<?php echo $ROOT; ?>assets/images/stock16.jpg" alt="" />
-                </a>
-                <a href="<?php echo $ROOT; ?>assets/images/stock10.jpg">
-                    <img src="<?php echo $ROOT; ?>assets/images/stock10.jpg" alt="" />
-                </a>
+        <div class="project-carousel">
+            <div class="project-preview">
+                <img src="<?php echo $ROOT; ?>assets/images/desktop.png" alt="Single Project" />
+                <div class="owl-carousel previews" id="project-gallery">
+                    <a href="<?php echo $ROOT; ?>assets/images/stock7.jpg">
+                        <img src="<?php echo $ROOT; ?>assets/images/stock7.jpg" alt="" />
+                    </a>
+                    <a href="<?php echo $ROOT; ?>assets/images/stock16.jpg">
+                        <img src="<?php echo $ROOT; ?>assets/images/stock16.jpg" alt="" />
+                    </a>
+                    <a href="<?php echo $ROOT; ?>assets/images/stock10.jpg">
+                        <img src="<?php echo $ROOT; ?>assets/images/stock10.jpg" alt="" />
+                    </a>
+                </div>
             </div>
-            <div class="pp-owl-nav">
-                <div class="pp-prev"></div>
-                <div class="pp-next"></div>
+            <div class="nav-carousel">
+                <div class="icon-round-border-lrg nav-prev">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="icon-round-border-lrg nav-next">
+                    <i class="fa fa-angle-right"></i>
+                </div>
             </div>
         </div>
 

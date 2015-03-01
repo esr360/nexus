@@ -66,7 +66,7 @@
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                    <div class="search-toggle">
+                    <div class="icon-round-lrg-plain search-toggle">
                         <i class="fa fa-search"></i>
                     </div>
                 </nav>
@@ -108,22 +108,28 @@
             <p>Suspendisse tempus sodales neque, eget eleifend <a href="#">turpis tristique</a> eu. Nullam a nisl maximus, ultrices est ut blandit nislr, elit in lobortis mattis.</p>
         </header>
 
-        <div class="project-preview">
-            <img src="/assets/images/desktop.png" alt="Single Project" />
-            <div class="owl-carousel previews" id="project-gallery">
-                <a href="/assets/images/stock7.jpg">
-                    <img src="/assets/images/stock7.jpg" alt="" />
-                </a>
-                <a href="/assets/images/stock16.jpg">
-                    <img src="/assets/images/stock16.jpg" alt="" />
-                </a>
-                <a href="/assets/images/stock10.jpg">
-                    <img src="/assets/images/stock10.jpg" alt="" />
-                </a>
+        <div class="project-carousel">
+            <div class="project-preview">
+                <img src="/assets/images/desktop.png" alt="Single Project" />
+                <div class="owl-carousel previews" id="project-gallery">
+                    <a href="/assets/images/stock7.jpg">
+                        <img src="/assets/images/stock7.jpg" alt="" />
+                    </a>
+                    <a href="/assets/images/stock16.jpg">
+                        <img src="/assets/images/stock16.jpg" alt="" />
+                    </a>
+                    <a href="/assets/images/stock10.jpg">
+                        <img src="/assets/images/stock10.jpg" alt="" />
+                    </a>
+                </div>
             </div>
-            <div class="pp-owl-nav">
-                <div class="pp-prev"></div>
-                <div class="pp-next"></div>
+            <div class="nav-carousel">
+                <div class="icon-round-border-lrg nav-prev">
+                    <i class="fa fa-angle-left"></i>
+                </div>
+                <div class="icon-round-border-lrg nav-next">
+                    <i class="fa fa-angle-right"></i>
+                </div>
             </div>
         </div>
 
@@ -249,6 +255,14 @@
                 </blockquote>
             </div>
         </div>
+        <div class="nav-carousel">
+            <div class="icon-round-border-lrg nav-prev">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <div class="icon-round-border-lrg nav-next">
+                <i class="fa fa-angle-right"></i>
+            </div>
+        </div>
     </div>
 </section>        
         <section class="section primary latest-works inactive" id="portfolio">
@@ -263,8 +277,12 @@
         <div class="portfolio-items">
             <div class="portfolio-item">
                 <div class="controls">
-                    <a href="single-project.html" class="fa fa-link"></a>
-                    <a href="/assets/images/stock7.jpg" class="fa fa-search"></a>
+                    <a href="single-project.html" class="icon-round-border">
+                        <i class="fa fa-link"></i>
+                    </a>
+                    <a href="/assets/images/stock7.jpg" class="icon-round-border icon-view">
+                        <i class="fa fa-search"></i>
+                    </a>
                 </div>
                 <h4><a href="single-project.html">Lorem Ipsum</a></h4>
                 <p>Cras dictum erat id tortor ornare.</p>
@@ -272,8 +290,12 @@
             </div>
             <div class="portfolio-item">
                 <div class="controls">
-                    <a href="single-project.html" class="fa fa-link"></a>
-                    <a href="/assets/images/stock16.jpg" class="fa fa-search"></a>
+                    <a href="single-project.html" class="icon-round-border">
+                        <i class="fa fa-link"></i>
+                    </a>
+                    <a href="/assets/images/stock16.jpg" class="icon-round-border icon-view">
+                        <i class="fa fa-search"></i>
+                    </a>
                 </div>
                 <h4><a href="single-project.html">Cras Facilisis</a></h4>
                 <p>Cras dictum erat id tortor ornare.</p>
@@ -281,8 +303,12 @@
             </div>
             <div class="portfolio-item">
                 <div class="controls">
-                    <a href="single-project.html" class="fa fa-link"></a>
-                    <a href="/assets/images/stock10.jpg" class="fa fa-search"></a>
+                    <a href="single-project.html" class="icon-round-border">
+                        <i class="fa fa-link"></i>
+                    </a>
+                    <a href="/assets/images/stock10.jpg" class="icon-round-border icon-view">
+                        <i class="fa fa-search"></i>
+                    </a>
                 </div>
                 <h4><a href="single-project.html">Turpis Tristique</a></h4>
                 <p>Cras dictum erat id tortor ornare.</p>
@@ -290,8 +316,12 @@
             </div>
             <div class="portfolio-item max-bp2">
                 <div class="controls">
-                    <a href="single-project.html" class="fa fa-link"></a>
-                    <a href="/assets/images/stock6.jpg" class="fa fa-search"></a>
+                    <a href="single-project.html" class="icon-round-border">
+                        <i class="fa fa-link"></i>
+                    </a>
+                    <a href="/assets/images/stock6.jpg" class="icon-round-border icon-view">
+                        <i class="fa fa-search"></i>
+                    </a>
                 </div>
                 <h4><a href="single-project.html">Lorem Ipsum</a></h4>
                 <p>Cras dictum erat id tortor ornare.</p>
@@ -338,12 +368,24 @@
                 <h4>We are on many social sites</h4>
                 <p>Find us on many other websites to keep up to date with our latest designs, projects and find out what we're up to.</p>
                 <div class="social-icons">
-                    <a href="#" data-tip="Dribbble" class="tooltip social dribbble"></a>
-                    <a href="#" data-tip="Facebook" class="tooltip social facebook"></a>
-                    <a href="#" data-tip="Twitter" class="tooltip social twitter"></a>
-                    <a href="#" data-tip="LinkedIn" class="tooltip social linkedin"></a>
-                    <a href="#" data-tip="deviantART" class="tooltip social deviantart"></a>
-                    <a href="#" data-tip="Behance" class="tooltip social behance"></a>
+                    <a href="#" class="icon tooltip" data-tip="Dribbble">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="icon tooltip" data-tip="Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon tooltip" data-tip="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon tooltip" data-tip="LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="icon tooltip" data-tip="DeviantArt">
+                        <i class="fa fa-deviantart"></i>
+                    </a>
+                    <a href="#" class="icon tooltip" data-tip="Behance">
+                        <i class="fa fa-behance"></i>
+                    </a>
                 </div>
             </div>
             <div class="span-3 footer-col">
@@ -450,11 +492,31 @@
                 <!-- Footer Navigation -->
                 <nav class="footer-nav">                
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -466,16 +528,22 @@
     <!-- TOOLS/UTILITIES -->
 
     <!-- Loading Spinner -->
-<div class="loading-wrapper active"><div class="spinner"></div></div>
+<div class="loading-wrapper active">
+	<div class="spinner"></div>
+</div>
 
 <!-- Fixed header -->
 <div class="fixed-header-container" id="fixed-header"></div>
 
 <!-- Control Panel Nav Trigger -->
-<span class="nav-trigger cp-trigger" id="cp-trigger"></span>
+<div class="icon-lrg nav-trigger cp-trigger" id="cp-trigger">
+    <i class="fa fa-bars"></i>
+</div>
 
 <!-- Flyout Nav Trigger -->
-<span class="nav-trigger flyout-trigger" id="flyout-trigger"></span>
+<span class="icon-lrg nav-trigger flyout-trigger" id="flyout-trigger">
+    <i class="fa fa-bars"></i>
+</span>
 
 <!-- Control Panel Nav -->
 <nav class="cp-nav-container" id="cp-nav"></nav>
@@ -484,7 +552,9 @@
 <nav class="flyout-nav-container" id="flyout-nav"></nav>
 
 <!-- Scroll-to-top Icon-->
-<a class="fa fa-angle-up scroll-top" href="#site-content"></a> 
+<a class="icon-lrg-border scroll-top" href="#site-content">
+    <i class="fa fa-angle-up"></i>
+</a>
 
 <!-- Main Search -->
 <div class="main-search" id="search">

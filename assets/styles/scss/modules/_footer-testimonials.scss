@@ -31,7 +31,7 @@
 				}
 			}
 			&:hover {
-				color: $brand-1;
+				color: $white;
 				text-decoration: none;
 			}
 		}
@@ -97,6 +97,7 @@
 			padding-left: 0.75em;
 			strong {
 				display: block;
+				font-style: normal;
 			}
 		}
 		i {

@@ -249,5 +249,13 @@
                 </div>
             </div>
         </div>
+        <div class="nav-carousel">
+            <div class="icon-round-border-lrg nav-prev">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <div class="icon-round-border-lrg nav-next">
+                <i class="fa fa-angle-right"></i>
+            </div>
+        </div>
     </div>
 </section>

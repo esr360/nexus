@@ -7,12 +7,16 @@ TO-DO LIST
 
 TODO
 
-- rethink slider prev/next icons (dot nav in some cases instead?) [css]
+- fix cp-nav child menu link color
+- look at price-chart font-sizes
+- add faux-slider functionality to welcome section
+- fix more-info read-more link
 - updates contact us page (eg add 3 boxes) [html]
 - replace all repeated CSS values with variables [css]
 - improve breadcrumb [css]
 - ensure mobile size consistencies
 - add cheatsheet/components page [html]
+- add homepage option landing page
 
 FOR NEXT RELEASE (1.1)
 
@@ -55,6 +59,7 @@ DONE
 - make all circular/square icons consistent with CSS class [css]
 - edit footer links [php]
 - add child menu support to cp nav [css]
+- rethink slider prev/next icons (dot nav in some cases instead?) [css]
 
 ********************************
 

@@ -2,11 +2,21 @@
 /* Desktop Carousel
 ================================================================ */
 
+.project-carousel {
+	position: relative;
+	.nav-carousel {
+		[class*="nav-"] {
+			top: 36% !important;
+		}
+	}
+}
+
 .project-preview {
 
 	width: 65%;
 	margin: auto;
 	position: relative;
+
 	.previews {
 		position: absolute;
 		top: 4%;
@@ -17,63 +27,18 @@
 		height: 55.7%;
 		overflow: hidden;
 	}
-	.pp-owl-nav {
-		div {
-			display: inline-block;
-			position: absolute;
-			color: rgba(0,0,0,0.2);
-			text-shadow: 1px 1px 0px white;
-			font-size: 4.5em;
-			top: 7%;
-			cursor: pointer;
-			transition: 0.4s;
-			&:before {
-				font-family: FontAwesome;
-			}
-			&.pp-prev {
-				left: -3rem;
-				&:before {
-					content: "\f104";
-				}
-			}
-			&.pp-next {
-				right: -3rem;
-				&:before {
-					content: "\f105";
-				}
-			}
-			&:hover {
-				color: $brand-1;
-			}
-		}
-	}
 
 /******************************************************************
 Start building for larger resolutions
 ******************************************************************/
 
 	@media (min-width: $breakpoint-1) {
-		.pp-owl-nav {
-			div {
-				top: 15%;
-			}
-		}
 	}
 
 	@media (min-width: $breakpoint-2) {
-		.pp-owl-nav {
-			div {
-				top: 25%;
-			}
-		}
 	}
 
 	@media (min-width: $breakpoint-3) {
-		.pp-owl-nav {
-			div {
-				top: 30%;
-			}
-		}
 	}
 
 }

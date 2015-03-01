@@ -26,11 +26,13 @@
         transition: 0.4s;
     }
     &:hover {
+        background-color: $white;
+        border-color: $white;
         &:before {
-            background-color: $brand-1;  
+            background-color: #071216;  
         }
         [class*="mouse-scroll"] {
-            border-top-color: $brand-1;
+            border-top-color: #071216;
         }
     }
 }

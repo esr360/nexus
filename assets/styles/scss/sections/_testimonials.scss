@@ -2,11 +2,15 @@
 /* Testimonials
 ================================================================ */
 
-.testimonials {
+.section.testimonials {
 
 /******************************************************************
 Start building the basic layout
 ******************************************************************/
+
+	.container {
+		position: static;
+	}
 
 	.testimonial {
 		blockquote {
@@ -33,42 +37,6 @@ Start building the basic layout
 		}
 	}
 
-	.owl-nav {
-		transition: 0.4s;
-		transition-delay: 1.4s;
-		opacity: 1;
-		div {
-			position: absolute;
-			top: 1.5em;
-			transform: translateY(-50%);
-			font-size: 2em;
-			color: rgba(255,255,255,0.5);
-			transition: 0.4s;
-			&:after {
-				font-family: FontAwesome;
-			}
-			&:nth-child(1) {
-				&:after {					
-					content: "\f137";
-				}
-			}
-			&:nth-child(2) {
-				&:after {					
-					content: "\f138";
-				}
-			}
-			&:hover {
-				color: $brand-1;
-			}
-		}
-	}
-	.owl-prev {
-		left: 0;
-	}
-	.owl-next {
-		right: 0;
-	}
-
 	.testimonials-slider {
 		transition: 0.4s;
 		bottom: 0;
@@ -80,9 +48,6 @@ Start building the basic layout
 		.testimonials-slider {
 			bottom: -2em;
 			opacity: 0;
-			.owl-nav {
-				opacity: 0;
-			}
 		}
 	}
 
@@ -94,11 +59,6 @@ Start building for larger resolutions
 		.testimonial {
 			p {
 				font-size: $large-font-size;
-			}
-		}
-		.owl-nav {
-			div {
-				top: 50%;
 			}
 		}
 	}

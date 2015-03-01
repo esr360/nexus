@@ -26,6 +26,7 @@ Start building the basic layout
 		position: relative;
 		z-index: 1;
 	}
+
 	.section-title {
 		h2 {
 			font-size: 1em;
@@ -43,6 +44,17 @@ Start building the basic layout
 			&:hover {
 				background: $white;
 				border-color: $white;
+				color: #071216;
+			}
+		}
+	}
+
+	.nav-carousel {
+		[class*="nav-"] {
+			border-color: $white;
+			color: $white;
+			&:hover {
+				background: $white;
 				color: #071216;
 			}
 		}

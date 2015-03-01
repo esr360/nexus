@@ -10,6 +10,10 @@ Start building the basic layout
 
 	padding: 6rem 0;
 
+	.section {
+		padding: 0;
+	}
+
 	header {
 		text-align: center;
 		&.sep {
@@ -73,14 +77,6 @@ Start building the basic layout
 		}
 	}
 
-	.lead {
-		font-size: $large-font-size;
-	}
-	
-	.section {
-		padding: 0;
-	}
-
 	&.section-map {
 		padding-bottom: 11em !important;
 		position: relative;
@@ -96,6 +92,29 @@ Start building the basic layout
 			height: 20%;
 			position: absolute;
 			bottom: 0;
+		}
+	}
+
+	.lead {
+		font-size: $large-font-size;
+	}
+
+	.nav-carousel {
+		[class*="nav-"] {
+			position: absolute;
+			z-index: 2;
+			top: 50%;
+			transform: translateY(-50%);
+			cursor: pointer;
+			.fa {
+				cursor: pointer;
+			}
+		}
+		.nav-prev {
+			left: 3rem;
+		}
+		.nav-next {
+			right: 3rem;
 		}
 	}
 
