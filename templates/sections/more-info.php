@@ -21,8 +21,7 @@
                     <a href="<?php if ($type == "one-page") { ?>#s-contact<?php } else { ?>contact.html<?php } ?>" 
                         class="button round brand-1">Get in Touch</a>
                     <span class="text-div">-</span>
-                    <a href="<?php if ($type == "one-page") { ?>#s-services<?php } else { ?>about.html<?php } ?>" 
-                        class="button round border">Read More</a>
+                    <a href="<?php if ($type == "one-page") { ?>#s-services<?php } else { ?>about.html<?php } ?>">Read More</a>
                 </p>
             </div>
         </div>
