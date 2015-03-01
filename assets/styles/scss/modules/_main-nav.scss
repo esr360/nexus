@@ -34,6 +34,15 @@ Start building the basic layout
 				font-weight: bold;
 				border-radius: 1.5em;
 				border: 2px solid transparent;
+				&:not(:only-child) {
+					&:after {
+						content: "\f107";
+						font-family: FontAwesome;
+						float: right;
+						margin: 0.025em 0 0 0.4em;
+						opacity: 0.5;
+					}
+				}
 	    	}
 	    }
 	}

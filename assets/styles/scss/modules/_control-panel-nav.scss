@@ -80,6 +80,9 @@ Start building the basic layout
 							opacity: 1;
 						}
 					}
+					> a {
+						color: $brand-1;	
+					}
 				}
 				a:after {
 					transition: 0.4s;
@@ -113,10 +116,17 @@ Start building the basic layout
 				}
 			}
 			a {
-				color: white;
-				&:hover {
-					color: $brand-1;
-					border-bottom: none;					
+				color: $white;
+				display: block;
+				border-bottom: none;	
+				&:not(:only-child) {
+					&:before {
+						content: "\f105";
+						font-family: FontAwesome;
+						float: right;
+						margin-top: 0.025rem;
+						opacity: 0.5;
+					}					
 				}
 			}		
 		}
