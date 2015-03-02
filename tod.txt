@@ -7,6 +7,7 @@ TO-DO LIST
 
 TODO
 
+- add active animations to carousel icons
 - update contact us page (eg add 3 boxes) [html]
 - replace all repeated CSS values with variables [css]
 - improve breadcrumb [css]
