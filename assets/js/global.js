@@ -22,34 +22,10 @@ if (window.matchMedia('(min-width: 940px)').matches) {
 }
 
 /******************************************************************
-Parallax Titles
+Sub-Header Parallax Title
 ******************************************************************/
 
 if (window.matchMedia('(min-width: 940px)').matches) { // is the window width larger than 940px?
-
-/* Hero Parallax Title
-******************************************************************/
-
-    var heroTitle = $('.title-wrapper'); // the element to apply parallax to
-
-    $(window).on('scroll', function() { // call the script on window scroll
-
-        var st = $(this).scrollTop();
-
-        // set the CSS relative to scroll position to achieve parallax effect
-        heroTitle.css({ 
-            'transform' : "translate3d(0px,"+(st/3)+"px, 0px)",
-            'opacity' : 1 - st/700
-        }); 
-
-        $('.mouse').css({ 
-            'opacity' : 1 - st/700
-        }); 
-
-    });
-
-/* Sub Header Parallax Title
-******************************************************************/
 
     var shTitle = $('.sh-title-wrapper'); // the element to apply parallax to
 
@@ -67,12 +43,6 @@ if (window.matchMedia('(min-width: 940px)').matches) { // is the window width la
     });
 
 }
-
-/******************************************************************
-Mouse Scroll Down
-******************************************************************/
-
-
 
 /******************************************************************
 Opera Flyout Nav

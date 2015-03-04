@@ -13,7 +13,7 @@ $parentUrl = "";
 
 <?php require("../global/head.php"); ?>
 
-<body class="index index-single">
+<body class="hero-fixed index index-single">
 
     <!-- SITE CONTENT -->
 

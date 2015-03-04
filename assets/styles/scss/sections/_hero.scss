@@ -179,3 +179,11 @@ Start building for larger resolutions
 	}
 
 } // end .hero
+
+.hero-fixed {
+	.hero {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+}
