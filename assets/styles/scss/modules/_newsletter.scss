@@ -51,6 +51,7 @@
 			color: rgba($black, 0.5);
 		}
 		&:hover {
+			background: $brand-1;
 			.fa {
 				color: $white;
 			}
