@@ -28,7 +28,7 @@
     <!-- Modernizr -->
     <script src="/assets/js/modernizr.min.js"></script>
 </head>
-<body class="index index-single">
+<body class="parallax-title index index-single">
 
     <!-- SITE CONTENT -->
 
@@ -74,6 +74,12 @@
     </div>
 </header>
         <!-- Hero -->
+
+        <video autoplay loop poster="../../assets/images/stock5.jpg" class="hero-vid">
+            <source src="../../assets/videos/hero-vid.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+
         <section class="hero inactive">
     <div class="hero-down">
         <a href="#s-welcome" class="mouse">
@@ -407,7 +413,7 @@
         </div>
     </div>
 </section>
-        <section class="section services primary section-map" id="s-services">
+        <section class="section services primary section-map inactive" id="s-services">
     <div class="container">
         <header class="sep active">
             <div class="section-title">
@@ -415,7 +421,7 @@
             </div>
             <p class="sub-text">Suspendisse tempus sodales neque, eget eleifend <a href="#">turpis tristique</a> eu. Nullam a nisl maximus, ultrices est ut blandit nislr, elit in lobortis mattis.</p>
         </header>
-        <div class="owl-carousel services-slider inactive">
+        <div class="owl-carousel services-slider">
             <div class="service">
                 <i class="livicon" data-n="desktop" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
                 <div class="title">
@@ -937,9 +943,18 @@
                 </ul>
             </div>
             <div class="span-3 footer-col">
-                <h3>Stay in Touch</h3>
-                <h4>We are on many social sites</h4>
-                <p>Find us on many other websites to keep up to date with our latest designs, projects and find out what we're up to.</p>
+                <h3>Newsletter</h3>
+                <h4>Sign up to our mailing list</h4>
+                <p>Suspendisse tempus sodales neque, eget eleifend turpis tristique eu.</p>
+                <form class="newsletter h5-valid">
+                    <div class="form-element">
+                        <input type="email" class="box" required="" placeholder="Enter your email address" />
+                        <label>Email Address</label>
+                        <button type="submit">
+                            <i class="fa fa-check"></i>
+                        </button>
+                    </div>
+                </form>
                 <div class="social-icons">
                     <a href="#" class="icon tooltip" data-tip="Dribbble">
                         <i class="fa fa-dribbble"></i>
@@ -968,33 +983,29 @@
                     <div class="twitter-article">
                         <div class="twitter-pic">
                             <a href="/assets/images/twitter-pic.jpg" class="modal-image">
-                                <img width="42" height="42" src="/assets/images/twitter-pic.jpg" alt="">
+                                <img width="56" height="56" src="/assets/images/twitter-pic.jpg" alt="">
                             </a>
+                            <div class="tweet-time"><a href="#">23 Sep</a></div>
                         </div>
                         <div class="twitter-text">
-                            <p>
-                                <span class="tweetprofilelink">
-                                    <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
-                                </span>
-                                <span class="tweet-time"><a href="#">23 Sep</a></span><br>
-                                Suspendisse tempus neque, eget eleifend turpis tristique eu.
-                            </p>
+                            <div class="tweetprofilelink">
+                                <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
+                            </div>
+                            <p>Suspendisse tempus neque, eget eleifend turpis tristique eu.</p>
                         </div>
                     </div>
                     <div class="twitter-article">
                         <div class="twitter-pic">
                             <a href="/assets/images/twitter-pic.jpg" class="modal-image">
-                                <img width="42" height="42" src="/assets/images/twitter-pic.jpg" alt="">
+                                <img width="56" height="56" src="/assets/images/twitter-pic.jpg" alt="">
                             </a>
+                            <div class="tweet-time"><a href="#">23 Sep</a></div>
                         </div>
                         <div class="twitter-text">
-                            <p>
-                                <span class="tweetprofilelink">
-                                    <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
-                                </span>
-                                <span class="tweet-time"><a href="#">10 Oct</a></span><br>
-                                Suspendisse tempus neque, eget eleifend turpis tristique eu.
-                            </p>
+                            <div class="tweetprofilelink">
+                                <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
+                            </div>
+                            <p>Suspendisse tempus neque, eget eleifend turpis tristique eu.</p>
                         </div>
                     </div>
                 </div>                        

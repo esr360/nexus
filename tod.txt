@@ -7,13 +7,13 @@ TO-DO LIST
 
 TODO
 
-- add active animations to carousel icons
 - update contact us page (eg add 3 boxes) [html]
-- replace all repeated CSS values with variables [css]
 - improve breadcrumb [css]
+- replace all repeated CSS values with variables [css]
 - ensure mobile size consistencies
 - add cheatsheet/components page [html]
 - add homepage option landing page
+- update documentation
 
 FOR NEXT RELEASE (1.1)
 
@@ -63,6 +63,11 @@ DONE
 - fix more-info read-more link
 - add faux-slider functionality to welcome section
 - add dropdown icon if parent has child submenu
+- fix footer testimonial font size
+- fix footer tweet time
+- remove old section positiong fix from google map
+- add active animations to carousel icons
+- add parallax options
 
 ********************************
 
@@ -116,3 +121,4 @@ RESOURCES
 ==============================================
 
 http://www.pixeden.com/vector-objects/apple-product-vector-pack
+http://www.wedistill.io/videos?filterrific%5Bby_status%5D=approved&page=6
