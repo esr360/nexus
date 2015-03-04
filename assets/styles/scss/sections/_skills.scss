@@ -21,6 +21,8 @@ Start building the basic layout
 		top: 0;
 		transition: 0.4s;
 		position: relative;
+		opacity: 1;
+		transition: 0.4s;
 	}
 	
 	.progress-bars {
@@ -34,6 +36,9 @@ Start building the basic layout
 	}
 
 	&.inactive {
+		h5 {
+			opacity: 0;
+		}
 		.progress-bar {
 			background: transparent;
 			color: transparent;
