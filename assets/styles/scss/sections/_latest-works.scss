@@ -12,10 +12,18 @@ Start building the basic layout
 		transition: 0.4s;
 		transform: scale(1);
 	}
+	
+	.nav-carousel {		
+		transition-delay: 1s;
+	}
 
 	&.inactive {
 		.portfolio-items {
 			transform: scale(0);
+		}
+		.nav-carousel {
+			opacity: 0;
+			visibility: hidden;
 		}
 	}	
 

@@ -15,15 +15,6 @@ Start building the basic layout
 		}
 	}
 
-	.services-slider {
-		transition: 0.4s;
-		top: 0;
-		&.inactive {
-			top: 3rem;
-			opacity: 0;
-		}
-	}
-
 	.service {
 		color: $main-text-color;
 		display: block;
@@ -60,6 +51,26 @@ Start building the basic layout
 		p {
 			font-weight: lighter;
 			margin-top: 0.75em;
+		}
+	}
+
+	.services-slider {
+		transition: 0.4s;
+		top: 0;
+	}
+	
+	.nav-carousel {		
+		transition-delay: 1s;
+	}
+
+	&.inactive {
+		.services-slider {
+			top: 3rem;
+			opacity: 0;
+		}
+		.nav-carousel {
+			opacity: 0;
+			visibility: hidden;
 		}
 	}
 

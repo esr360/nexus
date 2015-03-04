@@ -116,6 +116,10 @@ Start building the basic layout
 		.nav-next {
 			right: 3rem;
 		}
+		// for animations
+		visibility: visible;
+		opacity: 1;
+		transition: 0.4s;
 	}
 
 /******************************************************************

@@ -43,11 +43,19 @@ Start building the basic layout
 		position: relative;
 		text-align: center;
 	}
+	
+	.nav-carousel {		
+		transition-delay: 1s;
+	}
 
 	&.inactive {
 		.testimonials-slider {
 			bottom: -2em;
 			opacity: 0;
+		}
+		.nav-carousel {
+			opacity: 0;
+			visibility: hidden;
 		}
 	}
 

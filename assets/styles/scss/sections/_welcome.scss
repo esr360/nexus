@@ -90,6 +90,10 @@ Start building the basic layout
 		transition-delay: 1s;
 	}
 
+	.nav-carousel {		
+		transition-delay: 1s;
+	}
+
 	&.inactive {
 		.earth {
 			bottom: -15em;
@@ -99,6 +103,10 @@ Start building the basic layout
 		}
 		.pins {
 			opacity: 0;
+		}
+		.nav-carousel {
+			opacity: 0;
+			visibility: hidden;
 		}
 	}
 
