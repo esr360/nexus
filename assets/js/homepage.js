@@ -9,7 +9,7 @@ if (window.matchMedia('(min-width: 940px)').matches) { // is the window width la
 /* Hero Parallax Title
 ******************************************************************/
 
-    var heroTitle = $('.parallax-title .title-wrapper'); // the element to apply parallax to
+    var heroTitle = $('.parallax-title .title-wrapper, .video-bg .title-wrapper'); // the element to apply parallax to
 
     $(window).on('scroll', function() { // call the script on window scroll
 
@@ -17,7 +17,7 @@ if (window.matchMedia('(min-width: 940px)').matches) { // is the window width la
 
         // set the CSS relative to scroll position to achieve parallax effect
         heroTitle.css({ 
-            'transform' : "translate3d(0px,"+(st/3)+"px, 0px)",
+            'transform' : "translate3d(0px,"+(st/2.5)+"px, 0px)",
             'opacity' : 1 - st/700
         }); 
 
@@ -63,6 +63,8 @@ if (window.matchMedia('(min-width: 940px)').matches) { // is the window width la
 
 /* Hero HTML5 Video
 ******************************************************************/
+
+$('.video-bg .hero-vid, .video-bg .hero-overlay').show();
 
 } // end window.matchMedia
 

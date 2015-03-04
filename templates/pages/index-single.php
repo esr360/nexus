@@ -13,7 +13,7 @@ $parentUrl = "";
 
 <?php require("../global/head.php"); ?>
 
-<body class="hero-fixed index index-single">
+<body class="parallax-title index index-single">
 
     <!-- SITE CONTENT -->
 
@@ -23,6 +23,12 @@ $parentUrl = "";
         <?php require("../global/header.php"); ?>
 
         <!-- Hero -->
+
+        <video autoplay loop poster="../../assets/images/stock5.jpg" class="hero-vid">
+            <source src="../../assets/videos/hero-vid.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+
         <?php require("../sections/hero.php"); ?>
 
         <!-- Main Content -->
