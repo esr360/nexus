@@ -13,7 +13,8 @@ Start building the basic layout
 
 	.form-element {
 		position: relative;
-		input, textarea {
+		input, 
+		textarea {
 			&:focus {
 				outline: 0;
 				box-shadow: none;
@@ -74,7 +75,8 @@ Start building the basic layout
 		margin-right: 2em;
 		margin-left: 0;
 	}
-	input, textarea {		
+	input, 
+	textarea {		
 		&:focus:invalid {
 			border-color: #C23A2C;
 		}
@@ -137,7 +139,8 @@ Start building for larger resolutions
 	}
 
 	@media (min-width: $breakpoint-3) {
-		label, textarea {
+		label, 
+		textarea {
 			font-size: 1em;
 		}
 		input {
@@ -207,7 +210,10 @@ Start building for larger resolutions
 	}
 }
 
-form, input, textarea, label {
+form, 
+input, 
+textarea, 
+label {
 	font-family: $font-1;
 }
 

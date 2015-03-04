@@ -106,6 +106,13 @@ Color Variants
 	}
 }
 
+button {
+	&,
+	.fa {
+		transition: 0.4s;
+	}
+}
+
 /* Makes input, button and .button elements equal height in Firefox */
 input::-moz-focus-inner,
 button::-moz-focus-inner { 
