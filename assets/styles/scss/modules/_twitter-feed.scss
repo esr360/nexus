@@ -5,49 +5,46 @@
 #twitter-feed {
 
     margin:auto;
-    overflow:auto;
-    overflow-y: hidden;
+
     a:hover {
         text-decoration: none;
-    }      
-    h1 {
-        display: none;
-        position: absolute;
-        font-weight: normal;
-        line-height: 2;
-        top: 0;
-        right: 0;
-        margin: 0;
-    }
-    a[href="https://twitter.com/"] {
-        display: none;
-    }
+    }    
+
     .twitter-article {
-        margin-top: 1.5em;
+        margin-top: 1rem;
         &:first-of-type {
             margin-top: 0;
         }
-        &:hover {
-            .tweet-time a {
-                background: $brand-1;
-            }
-        }
-    }      
-    .twitter-article, #loading-container {
-        width:100%;
-        float:left;
-        position:relative;
-        min-height: 49px;
+    }   
+
+    .twitter-pic,
+    .twitter-text {
+        display: table-cell;
+        vertical-align: top;
     }
+
     .twitter-pic {
-        position:absolute;
+        width: 30%;
+        width: calc(46px - 0.0000001em);
+        a,
         img {
-            float:left;
-            border-radius:7px; 
+            display: block;
+        }
+        img {
             margin-top: 2px;
-            border:none;       
+            border:none;     
         }
     }
+
+    .twitter-text {
+        width: 70%;
+        width: calc(100% - 46px);
+        padding-left: 0.75rem;
+        p {
+            margin: 0px;
+        }
+    }
+
     .tweetprofilelink {
         strong a {
             color: $white;
@@ -55,30 +52,19 @@
                 border-color: inherit;
             }
         }
-        >a {
+        > a {
             font-size: 0.95em;
         }
     }
-      
-/* -------- TEXT STYLING ------*/
 
-    .twitter-text {
-        width: 100%;
-        float: left;
-        padding-left: 52px;
-        box-sizing: border-box;
-        p {
-            margin: 0px;
-        }
-    }
     .tweet-time {
-        position: absolute;
-        right: 0;
+        position: relative;
+        top: -1px;
+        text-align: center;
         a {
-            background: darken($light-grey, 25%);
-            padding: 0 2px;
-            font-size: 0.9em;
-            border-radius: 2px;
+            background: $brand-1;
+            padding: 0 1px;
+            font-size: 0.75rem;
             color: white;
             text-shadow: none;
         }

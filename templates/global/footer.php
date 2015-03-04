@@ -50,33 +50,29 @@
                     <div class="twitter-article">
                         <div class="twitter-pic">
                             <a href="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" class="modal-image">
-                                <img width="42" height="42" src="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" alt="">
+                                <img width="56" height="56" src="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" alt="">
                             </a>
+                            <div class="tweet-time"><a href="#">23 Sep</a></div>
                         </div>
                         <div class="twitter-text">
-                            <p>
-                                <span class="tweetprofilelink">
-                                    <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
-                                </span>
-                                <span class="tweet-time"><a href="#">23 Sep</a></span><br>
-                                Suspendisse tempus neque, eget eleifend turpis tristique eu.
-                            </p>
+                            <div class="tweetprofilelink">
+                                <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
+                            </div>
+                            <p>Suspendisse tempus neque, eget eleifend turpis tristique eu.</p>
                         </div>
                     </div>
                     <div class="twitter-article">
                         <div class="twitter-pic">
                             <a href="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" class="modal-image">
-                                <img width="42" height="42" src="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" alt="">
+                                <img width="56" height="56" src="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" alt="">
                             </a>
+                            <div class="tweet-time"><a href="#">23 Sep</a></div>
                         </div>
                         <div class="twitter-text">
-                            <p>
-                                <span class="tweetprofilelink">
-                                    <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
-                                </span>
-                                <span class="tweet-time"><a href="#">10 Oct</a></span><br>
-                                Suspendisse tempus neque, eget eleifend turpis tristique eu.
-                            </p>
+                            <div class="tweetprofilelink">
+                                <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
+                            </div>
+                            <p>Suspendisse tempus neque, eget eleifend turpis tristique eu.</p>
                         </div>
                     </div>
                 </div>                        
