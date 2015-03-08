@@ -1,0 +1,54 @@
+
+/* Services Section
+================================================================ */
+
+.section.services {
+
+/******************************************************************
+Start building the basic layout
+******************************************************************/
+
+	.row {
+		margin-top: 4rem;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.services-slider {
+		transition: 0.4s;
+		top: 0;
+	}
+	
+	.nav-carousel {		
+		transition-delay: 1s;
+	}
+
+	&.inactive {
+		.services-slider {
+			top: 3rem;
+			opacity: 0;
+		}
+		.nav-carousel {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+
+/******************************************************************
+Start building for larger resolutions
+******************************************************************/
+
+	@media (min-width: $breakpoint-2) {
+	}
+
+	@media (min-width: $breakpoint-2) and (max-width: $breakpoint-3) {
+	}
+	
+	@media (min-width: $breakpoint-3) {
+	}
+
+	@media (min-width: $breakpoint-4) {
+	}
+
+} // end .feature.services
