@@ -1,0 +1,83 @@
+
+/* Widgets
+================================================================ */
+
+.widget {
+
+/******************************************************************
+Start building the basic layout
+******************************************************************/
+
+    color: $main-text-color;
+    border-bottom: none;
+    &:hover {
+        .fa {
+            color: $brand-1;
+        }
+        path {
+            fill: $brand-1;
+        }
+    }
+
+    .widget-content {
+        header {
+            display: table;
+            width: 100%;
+            text-align: left;
+            .fa,
+            .livicon,
+            .title {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            .title {
+                padding-left: 0.5em;
+            }
+        }
+    }
+
+    > .fa,
+    > .livicon {
+        &, + .widget-content {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        + .widget-content {
+            padding-left: 1em;
+        }
+    }
+
+    .fa {
+        font-size: 2.75em;
+        padding-top: 0.1em;
+        color: rgba(0,0,0,0.2);
+        transition: 0.4s;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: $brand-1;
+    }
+
+    p {
+        margin-top: 0.25em;
+    }
+
+/******************************************************************
+Start building for larger resolutions
+******************************************************************/
+
+    @media (min-width: $breakpoint-3) {  
+        padding: 0;
+    }
+
+    @media (min-width: $breakpoint-4) {
+    }
+
+} // end .widget

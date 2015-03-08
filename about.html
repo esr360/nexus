@@ -52,22 +52,6 @@
                     <ul>
                         <!-- Dropdown Nav -->
                         <li>
-                            <a href="#">Pages</a>
-                            <ul>
-                                <li><a href="#">404</a></li>
-                                <li>
-                                    <a href="#">Careers</a>                                    
-                                    <ul>
-                                        <li><a href="#">Lorem Ipsum</a></li>
-                                        <li><a href="#">Lorem Ipsum</a></li>
-                                        <li><a href="#">Lorem Ipsum</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Coming Soon</a></li>
-                                <li><a href="#">FAQ</a></li>
-                            </ul>
-                        </li> 
-                        <li>
                             <a href="index.html">Home</a>
                             <ul>
                                 <li><a href="#">Parallax Title</a></li>
@@ -82,7 +66,7 @@
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                    <div class="search-toggle">
+                    <div class="icon-round-lrg-plain search-toggle">
                         <i class="fa fa-search"></i>
                     </div>
                 </nav>
@@ -111,7 +95,7 @@
 </nav>
         <!-- Main Content -->
         
-        <section class="section primary welcome inactive" id="about">
+        <section class="section primary welcome inactive" id="s-welcome">
     <div class="container">
         <div class="welcome-titles">
             <header class="welcome-content">
@@ -172,11 +156,19 @@
             </div>
         </div>
     </div>
+    <div class="nav-carousel">
+        <div class="icon-round-border-lrg nav-prev">
+            <i class="fa fa-angle-left"></i>
+        </div>
+        <div class="icon-round-border-lrg nav-next">
+            <i class="fa fa-angle-right"></i>
+        </div>
+    </div>
 </section>
-        <section class="section secondary skills inactive">
+        <section class="section secondary skills inactive" id="s-skills">
         <div class="container">
         <div class="row block-columns">
-            <div class="span-6">
+            <div class="span-6 skills-meta">
                 <div class="section-title">
                     <h2>Our Skills</h2>
                     <h3><i>It's What We Do Best</i></h3>
@@ -188,32 +180,34 @@
                     <li>Cras dictum erat id tortor ornare, vel facilisis dolor vehicula</li>
                 </ul>
                 <p class="button-set">
-                    <a href="#" class="button round brand-1">View Demo</a>
-                    <a href="#" class="button round border">Read More</a>
+                    <a href="contact.html" 
+                        class="button round brand-1">Get in Touch</a>
+                    <a href="about.html" 
+                        class="button round border">Read More</a>
                 </p>
             </div>
             <div class="span-6 progress-bars">
                 <h5>HTML5</h5>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 75%">75%</div>
+                    <div class="progress" data-progress="75%">75%</div>
                 </div>
                 <h5>CSS3/SASS</h5>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 100%">100%</div>
+                    <div class="progress" data-progress="100%">100%</div>
                 </div>
                 <h5>JavaScript/jQuery</h5>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 80%">80%</div>
+                    <div class="progress" data-progress="80%">80%</div>
                 </div>
                 <h5>PHP/Wordpress</h5>
                 <div class="progress-bar">
-                    <div class="progress" style="width: 55%">55%</div>
+                    <div class="progress" data-progress="65%">65%</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-        <section class="section primary why-choose-us section-map">
+        <section class="section primary why-choose-us section-map inactive" id="s-why-choose-us">
     <div class="container">
         <header class="sep active">
             <div class="section-title">
@@ -275,7 +269,7 @@
         </div>
     </div>
 </section>
-        <section class="section primary team inactive">
+        <section class="section primary team inactive" id="s-team">
     <div class="container">
         <header class="sep active">
             <div class="section-title">
@@ -288,7 +282,9 @@
             <div class="span-4 team-member">
                 <div class="team-pic">
                     <div class="mask">
-                        <a href="/assets/images/stock8.jpg" class="fa fa-search"></a>
+                        <a href="/assets/images/stock8.jpg" class="icon-lrg-border-round">
+                            <i class="fa fa-search"></i>
+                        </a>
                     </div>
                     <img src="/assets/images/stock8.jpg" alt="" />
                 </div>
@@ -296,18 +292,32 @@
                 <h5>CEO</h5>
                 <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur maximus ridiculus mus. Donec finibus fringilla ultrices purus.</p>
                 <div class="social-icons">
-                    <a class="tooltip social dribbble" data-tip="Dribbble" href="#"></a>
-                    <a class="tooltip social facebook" data-tip="Facebook" href="#"></a>
-                    <a class="tooltip social twitter" data-tip="Twitter" href="#"></a>
-                    <a class="tooltip social linkedin" data-tip="LinkedIn" href="#"></a>
-                    <a class="tooltip social deviantart" data-tip="deviantART" href="#"></a>
-                    <a class="tooltip social behance" data-tip="Behance" href="#"></a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Dribbble">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="DeviantArt">
+                        <i class="fa fa-deviantart"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Behance">
+                        <i class="fa fa-behance"></i>
+                    </a>
                 </div>
             </div>
             <div class="span-4 team-member">
                 <div class="team-pic">
                     <div class="mask">
-                        <a href="/assets/images/stock15.jpg" class="fa fa-search"></a>
+                        <a href="/assets/images/stock15.jpg" class="icon-lrg-border-round">
+                            <i class="fa fa-search"></i>
+                        </a>
                     </div>
                     <img src="/assets/images/stock15.jpg" alt="" />
                 </div>
@@ -315,17 +325,29 @@
                 <h5>Graphic Designer</h5>
                 <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur maximus ridiculus mus. Donec finibus fringilla ultrices purus.</p>
                 <div class="social-icons">
-                    <a class="tooltip social dribbble" data-tip="Dribbble" href="#"></a>
-                    <a class="tooltip social twitter" data-tip="Twitter" href="#"></a>
-                    <a class="tooltip social linkedin" data-tip="LinkedIn" href="#"></a>
-                    <a class="tooltip social deviantart" data-tip="deviantART" href="#"></a>
-                    <a class="tooltip social behance" data-tip="Behance" href="#"></a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Dribbble">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="DeviantArt">
+                        <i class="fa fa-deviantart"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Behance">
+                        <i class="fa fa-behance"></i>
+                    </a>
                 </div>
             </div>
             <div class="span-4 team-member">
                 <div class="team-pic">
                     <div class="mask">
-                        <a href="/assets/images/stock12.jpg" class="fa fa-search"></a>
+                        <a href="/assets/images/stock12.jpg" class="icon-lrg-border-round">
+                            <i class="fa fa-search"></i>
+                        </a>
                     </div>
                     <img src="/assets/images/stock12.jpg" alt="" />
                 </div>
@@ -333,10 +355,19 @@
                 <h5>Web Developer</h5>
                 <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur maximus ridiculus mus. Donec finibus fringilla ultrices purus.</p>
                 <div class="social-icons">
-                    <a class="tooltip social dribbble" data-tip="Dribbble" href="#"></a>
-                    <a class="tooltip social facebook" data-tip="Facebook" href="#"></a>
-                    <a class="tooltip social twitter" data-tip="Twitter" href="#"></a>
-                    <a class="tooltip social linkedin" data-tip="LinkedIn" href="#"></a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Dribbble">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon-lrg tooltip" data-tip="LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    </a>
                 </div>
             </div>
         </div>
@@ -394,8 +425,12 @@
         <div class="portfolio-items">
             <div class="portfolio-item">
                 <div class="controls">
-                    <a href="single-project.html" class="fa fa-link"></a>
-                    <a href="/assets/images/stock7.jpg" class="fa fa-search"></a>
+                    <a href="single-project.html" class="icon-round-border">
+                        <i class="fa fa-link"></i>
+                    </a>
+                    <a href="/assets/images/stock7.jpg" class="icon-round-border icon-view">
+                        <i class="fa fa-search"></i>
+                    </a>
                 </div>
                 <h4><a href="single-project.html">Lorem Ipsum</a></h4>
                 <p>Cras dictum erat id tortor ornare.</p>
@@ -403,8 +438,12 @@
             </div>
             <div class="portfolio-item">
                 <div class="controls">
-                    <a href="single-project.html" class="fa fa-link"></a>
-                    <a href="/assets/images/stock16.jpg" class="fa fa-search"></a>
+                    <a href="single-project.html" class="icon-round-border">
+                        <i class="fa fa-link"></i>
+                    </a>
+                    <a href="/assets/images/stock16.jpg" class="icon-round-border icon-view">
+                        <i class="fa fa-search"></i>
+                    </a>
                 </div>
                 <h4><a href="single-project.html">Cras Facilisis</a></h4>
                 <p>Cras dictum erat id tortor ornare.</p>
@@ -412,8 +451,12 @@
             </div>
             <div class="portfolio-item">
                 <div class="controls">
-                    <a href="single-project.html" class="fa fa-link"></a>
-                    <a href="/assets/images/stock10.jpg" class="fa fa-search"></a>
+                    <a href="single-project.html" class="icon-round-border">
+                        <i class="fa fa-link"></i>
+                    </a>
+                    <a href="/assets/images/stock10.jpg" class="icon-round-border icon-view">
+                        <i class="fa fa-search"></i>
+                    </a>
                 </div>
                 <h4><a href="single-project.html">Turpis Tristique</a></h4>
                 <p>Cras dictum erat id tortor ornare.</p>
@@ -421,8 +464,12 @@
             </div>
             <div class="portfolio-item max-bp2">
                 <div class="controls">
-                    <a href="single-project.html" class="fa fa-link"></a>
-                    <a href="/assets/images/stock6.jpg" class="fa fa-search"></a>
+                    <a href="single-project.html" class="icon-round-border">
+                        <i class="fa fa-link"></i>
+                    </a>
+                    <a href="/assets/images/stock6.jpg" class="icon-round-border icon-view">
+                        <i class="fa fa-search"></i>
+                    </a>
                 </div>
                 <h4><a href="single-project.html">Lorem Ipsum</a></h4>
                 <p>Cras dictum erat id tortor ornare.</p>
@@ -455,16 +502,37 @@
                 </ul>
             </div>
             <div class="span-3 footer-col">
-                <h3>Stay in Touch</h3>
-                <h4>We are on many social sites</h4>
-                <p>Find us on many other websites to keep up to date with our latest designs, projects and find out what we're up to.</p>
+                <h3>Newsletter</h3>
+                <h4>Sign up to our mailing list</h4>
+                <p>Suspendisse tempus sodales neque, eget eleifend turpis tristique eu.</p>
+                <form class="newsletter h5-valid">
+                    <div class="form-element">
+                        <input type="email" class="box" required="" placeholder="Enter your email address" />
+                        <label>Email Address</label>
+                        <button type="submit">
+                            <i class="fa fa-check"></i>
+                        </button>
+                    </div>
+                </form>
                 <div class="social-icons">
-                    <a href="#" data-tip="Dribbble" class="tooltip social dribbble"></a>
-                    <a href="#" data-tip="Facebook" class="tooltip social facebook"></a>
-                    <a href="#" data-tip="Twitter" class="tooltip social twitter"></a>
-                    <a href="#" data-tip="LinkedIn" class="tooltip social linkedin"></a>
-                    <a href="#" data-tip="deviantART" class="tooltip social deviantart"></a>
-                    <a href="#" data-tip="Behance" class="tooltip social behance"></a>
+                    <a href="#" class="icon tooltip" data-tip="Dribbble">
+                        <i class="fa fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="icon tooltip" data-tip="Facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="#" class="icon tooltip" data-tip="Twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icon tooltip" data-tip="LinkedIn">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="icon tooltip" data-tip="DeviantArt">
+                        <i class="fa fa-deviantart"></i>
+                    </a>
+                    <a href="#" class="icon tooltip" data-tip="Behance">
+                        <i class="fa fa-behance"></i>
+                    </a>
                 </div>
             </div>
             <div class="span-3 footer-col">
@@ -474,33 +542,29 @@
                     <div class="twitter-article">
                         <div class="twitter-pic">
                             <a href="/assets/images/twitter-pic.jpg" class="modal-image">
-                                <img width="42" height="42" src="/assets/images/twitter-pic.jpg" alt="">
+                                <img width="56" height="56" src="/assets/images/twitter-pic.jpg" alt="">
                             </a>
+                            <div class="tweet-time"><a href="#">23 Sep</a></div>
                         </div>
                         <div class="twitter-text">
-                            <p>
-                                <span class="tweetprofilelink">
-                                    <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
-                                </span>
-                                <span class="tweet-time"><a href="#">23 Sep</a></span><br>
-                                Suspendisse tempus sodales neque, eget eleifend turpis tristique eu, nullam a nisl maximus.
-                            </p>
+                            <div class="tweetprofilelink">
+                                <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
+                            </div>
+                            <p>Suspendisse tempus neque, eget eleifend turpis tristique eu.</p>
                         </div>
                     </div>
                     <div class="twitter-article">
                         <div class="twitter-pic">
                             <a href="/assets/images/twitter-pic.jpg" class="modal-image">
-                                <img width="42" height="42" src="/assets/images/twitter-pic.jpg" alt="">
+                                <img width="56" height="56" src="/assets/images/twitter-pic.jpg" alt="">
                             </a>
+                            <div class="tweet-time"><a href="#">23 Sep</a></div>
                         </div>
                         <div class="twitter-text">
-                            <p>
-                                <span class="tweetprofilelink">
-                                    <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
-                                </span>
-                                <span class="tweet-time"><a href="#">10 Oct</a></span><br>
-                                Suspendisse tempus sodales neque, eget eleifend turpis tristique eu.
-                            </p>
+                            <div class="tweetprofilelink">
+                                <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
+                            </div>
+                            <p>Suspendisse tempus neque, eget eleifend turpis tristique eu.</p>
                         </div>
                     </div>
                 </div>                        
@@ -511,7 +575,7 @@
                 <div class="owl-carousel footer-testimonials">
                     <div class="testimonial">
                         <blockquote>
-                                <p>Aenean lobortis ante nunc. Integer ac justo ex. Curabitur at enim ac nisi lacinia...</p>
+                                <p>Aenean lobortis ante nunc. Integer justo ex. Curabitur at enim ac nisi...</p>
                         </blockquote>
                         <div class="cf">
                             <span class="profile">
@@ -527,7 +591,7 @@
                     </div>
                     <div class="testimonial">
                         <blockquote>
-                                <p>Aenean lobortis ante nunc. Integer ac justo ex. Curabitur at enim ac nisi lacinia...</p>
+                                <p>Aenean lobortis ante nunc. Integer justo ex. Curabitur at enim ac nisi...</p>
                         </blockquote>
                         <div class="cf">
                             <span class="profile">
@@ -543,7 +607,7 @@
                     </div>
                     <div class="testimonial">
                         <blockquote>
-                                <p>Aenean lobortis ante nunc. Integer ac justo ex. Curabitur at enim ac nisi lacinia...</p>
+                                <p>Aenean lobortis ante nunc. Integer justo ex. Curabitur at enim ac nisi...</p>
                         </blockquote>
                         <div class="cf">
                             <span class="profile">
@@ -571,11 +635,31 @@
                 <!-- Footer Navigation -->
                 <nav class="footer-nav">                
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li>
+                            <a href="about.html">
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="services.html">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -587,16 +671,22 @@
     <!-- TOOLS/UTILITIES -->
 
     <!-- Loading Spinner -->
-<div class="loading-wrapper active"><div class="spinner"></div></div>
+<div class="loading-wrapper active">
+	<div class="spinner"></div>
+</div>
 
 <!-- Fixed header -->
 <div class="fixed-header-container" id="fixed-header"></div>
 
 <!-- Control Panel Nav Trigger -->
-<span class="nav-trigger cp-trigger" id="cp-trigger"></span>
+<div class="icon-lrg nav-trigger cp-trigger" id="cp-trigger">
+    <i class="fa fa-bars"></i>
+</div>
 
 <!-- Flyout Nav Trigger -->
-<span class="nav-trigger flyout-trigger" id="flyout-trigger"></span>
+<span class="icon-lrg nav-trigger flyout-trigger" id="flyout-trigger">
+    <i class="fa fa-bars"></i>
+</span>
 
 <!-- Control Panel Nav -->
 <nav class="cp-nav-container" id="cp-nav"></nav>
@@ -605,7 +695,9 @@
 <nav class="flyout-nav-container" id="flyout-nav"></nav>
 
 <!-- Scroll-to-top Icon-->
-<a class="fa fa-angle-up scroll-top" href="#site-content"></a> 
+<a class="icon-lrg-border scroll-top" href="#site-content">
+    <i class="fa fa-angle-up"></i>
+</a>
 
 <!-- Main Search -->
 <div class="main-search" id="search">
@@ -622,10 +714,14 @@
         <h3>Theme Options</h3>
         <div class="row bp0 page-type">
             <div class="span-6">
-                <a href="index-single.html" class="button round full-width active">One Page</a>
+                <a href="index-single.html" class="button round full-width">
+                	One Page
+                </a>
             </div>
             <div class="span-6">
-                <a href="index.html" class="button round full-width">Multi-Page</a>
+                <a href="index.html" class="button round full-width active">
+                	Multi-Page
+                </a>
             </div>
         </div>
         <section class="theme-option">

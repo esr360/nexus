@@ -40,14 +40,6 @@ Start building the basic layout
 		}
 	}
 
-	.livicon {
-		display: inline-block;
-		vertical-align: middle;
-		&:first-child {
-			margin-left: 0;
-		}
-	}
-
 	.welcome-browsers {
 		.livicon {
 			margin-left: 0.5rem;
@@ -58,21 +50,9 @@ Start building the basic layout
 	.welcome-features {
 		width: 100%;
 		text-align: left;
-		.welcome-feature {
-			&:hover {
-				path {
-					fill: $brand-1;
-				}
-			}
-		}
 		.section-title {
 			margin-bottom: 2.4rem;
 			text-align: center;
-		}
-		h4 {
-			margin: 0;
-			font-size: 1.4rem;
-			font-weight: 700;
 		}
 		p {
 			font-size: $base-font-size;

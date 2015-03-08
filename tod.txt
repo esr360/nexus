@@ -30,9 +30,9 @@ DONE
 
 - convert to php
 - fix spelling of Manhattan
+- update copyright year to 2015
 - make all transition/animation speeds consistent
 - make hover scale() consistent
-- update copyright year to 2015
 - redo hero section
 - look at other potential icons (animated icons?)
 - source better meet the team images for demo
