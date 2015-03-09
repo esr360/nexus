@@ -12,37 +12,45 @@
                 <img src="<?php echo $ROOT; ?>assets/images/desktop.png" />
             </div>
             <div class="wcu-features">
-                <div class="wcu-feature wcu-left">
-                    <i class="livicon" data-n="desktop" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
-                    <div class="title-group">
-                        <h4>100% Responsive</i></h4>
-                    <h5>Donec finibus fringilla purus</h5>
+                <div class="widget wcu-feature wcu-left">
+                    <div class="widget-content">
+                        <i class="livicon" data-n="desktop" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
+                        <div class="title">
+                            <h4>100% Responsive</i></h4>
+                            <h5>Donec finibus fringilla purus</h5>
+                        </div>
+                        <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus.</p>
                     </div>
-                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus.</p>
                 </div>
-                <div class="wcu-feature wcu-left">
-                    <i class="livicon" data-n="responsive" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
-                    <div class="title-group">
-                        <h4>Mobile Optimized</i></h4>
-                    <h5>Donec finibus fringilla purus</h5>
+                <div class="widget wcu-feature wcu-left">
+                    <div class="widget-content">
+                        <i class="livicon" data-n="responsive" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
+                        <div class="title">
+                            <h4>Mobile Optimized</i></h4>
+                            <h5>Donec finibus fringilla purus</h5>
+                        </div>
+                        <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus.</p>
                     </div>
-                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus.</p>
                 </div>
-                <div class="wcu-feature wcu-right">
-                    <i class="livicon" data-n="image" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
-                    <div class="title-group">
-                        <h4>Pixel Perfect Design</h4>
-                    <h5>Donec finibus fringilla purus</h5>
+                <div class="widget wcu-feature wcu-right">
+                    <div class="widget-content">
+                        <i class="livicon" data-n="image" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
+                        <div class="title">
+                            <h4>Pixel Perfect Design</h4>
+                            <h5>Donec finibus fringilla purus</h5>
+                        </div>
+                        <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus.</p>
                     </div>
-                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus.</p>
                 </div>
-                <div class="wcu-feature wcu-right">
-                    <i class="livicon" data-n="code" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
-                    <div class="title-group">
-                        <h4>100% Valid Code</i></h4>
-                    <h5>Donec finibus fringilla purus</h5>
+                <div class="widget wcu-feature wcu-right">
+                    <div class="widget-content">
+                        <i class="livicon" data-n="code" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
+                        <div class="title">
+                            <h4>100% Valid Code</i></h4>
+                            <h5>Donec finibus fringilla purus</h5>
+                        </div>
+                        <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus.</p>
                     </div>
-                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus.</p>
                 </div>
             </div>
         </div>

@@ -11,10 +11,12 @@ Start building the basic layout
     .wcu-content {
         position: relative;
     }
+
     .wcu-graphic {
         width: 40%;
         margin: auto;
     }
+    
     .wcu-feature {
         position: absolute;
         width: 30%;
@@ -64,34 +66,6 @@ Start building the basic layout
             &:after {
                 border-bottom-color: $brand-1;
             }
-            .fa {
-                color: $brand-1;
-            }
-            path {
-                fill: $brand-1;
-            }
-        }
-        .livicon {
-            margin-bottom: 1rem;
-            display: inline-block;
-        }
-        .fa {
-            font-size: 2.75em;
-            padding-top: 0.1em;
-            color: rgba(0,0,0,0.2);
-            transition: 0.4s;
-        }
-        h4 {
-            font-size: 1.4rem;
-            font-weight: 700;
-        }
-        h5 {
-            font-size: 1.2rem;
-            font-weight: 300;
-            color: $brand-1;
-        }
-        p {
-            margin-top: 1rem;
         }
     }
 

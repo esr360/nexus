@@ -9,6 +9,37 @@
 		z-index: 2;
 	}
 
+	.contact-widgets {
+		margin-bottom: 4rem;
+		a {
+			color: $white;
+			border-bottom: 1px dotted;
+		}
+		.widget {
+			color: $white;
+			background: $brand-1;
+			padding: 1.75rem 2rem;
+			&:nth-child(1) {
+				background: darken($brand-1, 5%);
+			}
+			&:nth-child(3) {
+				background: lighten($brand-1, 5%);
+			}
+			&:hover {
+				path {
+					fill: $white;
+				}
+			}
+			h5 {
+				color: $white;
+			}
+		}
+	}
+
+	.send-message {
+		margin-bottom: 4rem;
+	}
+
 	/* Animations */
 
 	.form-element {

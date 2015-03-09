@@ -8,7 +8,6 @@ TO-DO LIST
 TODO
 
 - update contact us page (eg add 3 boxes) [html]
-- improve breadcrumb [css]
 - replace all repeated CSS values with variables [css]
 - ensure mobile size consistencies
 - add cheatsheet/components page [html]
@@ -112,6 +111,7 @@ BACKLOG
 - change all jquery class selectors to IDs - ensure to update docs
 - make titles/comments consistent
 - change menu icon to animated X
+- improve breadcrumb [css]
 
 
 ==============================================
