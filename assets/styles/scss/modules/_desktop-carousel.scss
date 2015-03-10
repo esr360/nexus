@@ -3,13 +3,31 @@
 ================================================================ */
 
 .project-carousel {
+
 	position: relative;
+
 	.nav-carousel {
 		[class*="nav-"] {
 			top: 36% !important;
 		}
 	}
-}
+
+/******************************************************************
+Start building for smaller resolutions
+******************************************************************/
+
+	@media (max-width: $breakpoint-3) {
+		.nav-carousel {
+			.nav-prev {
+				left: 0 !important;
+			}
+			.nav-next {
+				right: 0 !important;
+			}
+		}
+	}
+
+} // end .project-carousel
 
 .project-preview {
 
@@ -28,17 +46,4 @@
 		overflow: hidden;
 	}
 
-/******************************************************************
-Start building for larger resolutions
-******************************************************************/
-
-	@media (min-width: $breakpoint-1) {
-	}
-
-	@media (min-width: $breakpoint-2) {
-	}
-
-	@media (min-width: $breakpoint-3) {
-	}
-
-}
+} // end .project-preview

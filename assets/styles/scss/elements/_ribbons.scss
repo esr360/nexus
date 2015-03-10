@@ -26,14 +26,6 @@
 	}
 }
 
-/* reset certain elements (in case of conflicting CSS for classes, links, etc.) */
-
-.no-css-transforms .ribbon {
-	font-size: 1em;
-	position: relative;
-	width: 100%;
-}
-
 .ribbon .banner {
 	transform: rotate(45deg);
 	color: #fff;
@@ -43,12 +35,6 @@
 	right: -14px;
 	top: 22px;
 	width: 100px;
-}
-
-.ribbon-small .banner {
-	right: -8px;
-	top: 15px;
-	width: 65px;
 }
 
 .ribbon-large .banner {
@@ -67,13 +53,6 @@
 	}
 }
 
-.ribbon-small .banner {
-	&::after, &::before {
-		height: 6px;
-		width: 20px;
-	}
-}
-
 .ribbon-large .banner {
 	&::after, &::before {
 		height: 18px;
@@ -87,11 +66,6 @@
 	left: -45px;
 }
 
-.ribbon-small .banner::before {
-	top: -5px;
-	left: -30px;
-}
-
 .ribbon-large .banner::before {
 	top: 10px;
 	left: -68px;
@@ -103,21 +77,9 @@
 	right: -17px;
 }
 
-.ribbon-small .banner::after {
-	top: 18px;
-	right: -12px;
-}
-
 .ribbon-large .banner::after {
 	top: 45px;
 	right: -25px;
-}
-
-.no-css-transforms .ribbon .banner {
-	position: static;
-	width: 100%;
-	float: none;
-	font-size: 10px;
 }
 
 .ribbon .text {
@@ -132,16 +94,6 @@
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
-
-/* small text */
-
-.ribbon-small .text {
-	padding: 3px 0;
-	font-size: 8px;
-	min-height: 14px;
-	line-height: 14px;
-}
-
 /* large text */
 
 .ribbon-large .text {
@@ -163,11 +115,6 @@
 			z-index: -1;
 		}
 	}
-		&.ribbon-small .text {
-		&::before, &::after {
-			height: 20px;
-		}
-	}
 	&.ribbon-large .text {
 		&::before, &::after {
 			height: 46px;
@@ -181,15 +128,6 @@
 			transform: translateX(15%) skewX(45deg);
 		}
 	}
-}
-
-/* small text */
-
-/* large text */
-
-.no-css-transforms .ribbon .text {
-	height: 25px;
-	padding: 3px;
 }
 
 /*--- RIBBON COLORS ---*/
@@ -207,8 +145,4 @@
 			background-color: #62c462;
 		}
 	}
-}
-
-.no-css-transforms .ribbon .text {
-	background-color: #62c462;
 }

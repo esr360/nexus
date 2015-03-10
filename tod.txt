@@ -7,9 +7,6 @@ TO-DO LIST
 
 TODO
 
-- update contact us page (eg add 3 boxes) [html]
-- replace all repeated CSS values with variables [css]
-- ensure mobile size consistencies
 - add cheatsheet/components page [html]
 - add homepage option landing page
 - update documentation
@@ -67,6 +64,9 @@ DONE
 - remove old section positiong fix from google map
 - add active animations to carousel icons
 - add parallax options
+- update contact us page (eg add 3 boxes) [html]
+- replace all repeated CSS font sizes with variables [css]
+- ensure mobile size consistencies
 
 ********************************
 

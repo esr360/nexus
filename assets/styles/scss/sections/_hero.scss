@@ -34,7 +34,7 @@ Start building the basic layout
 	}
 
 	.hero-title {
-		font-size: 1.5em;
+		font-size: $font-size-4;
 		margin-bottom: 1.5rem;
 		h2,
 		h3 {
@@ -117,7 +117,7 @@ Start building for larger resolutions
 		height: 100vh;
 		min-height: 750px;
 		.hero-title {
-			font-size: 2.75em;
+			font-size: $font-size-6;
 		}
 		.container {
 			top: 52%;
@@ -126,10 +126,10 @@ Start building for larger resolutions
 			width: 80%;
 		}
 		.blurb {
-			font-size: $large-font-size;
+			font-size: $font-size-3;
 		}
 		.button {
-			font-size: 1.2rem;
+			font-size: $font-size-2;
 		}
 		.hero-down {
 			display: inline-block;
@@ -174,7 +174,7 @@ Start building for larger resolutions
 
 	@media (min-width: $breakpoint-4) {
 		.hero-title {
-			font-size: 3.5em;
+			font-size: $font-size-7;
 		}
 	}
 

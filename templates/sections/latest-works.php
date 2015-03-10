@@ -54,7 +54,7 @@
                     </a>
                     <a href="<?php echo $ROOT; ?>assets/images/stock6.jpg" class="icon-round-border icon-view">
                         <i class="fa fa-search"></i>
-                    </a>>
+                    </a>
                 </div>
                 <h4><a href="single-project.html">Cras Facilisis</a></h4>
                 <p>Cras dictum erat id tortor ornare.</p>

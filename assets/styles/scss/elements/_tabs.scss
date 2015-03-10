@@ -16,7 +16,7 @@
 			border: 1px solid rgba(0,0,0,0.15);
 			border-bottom: 0;
 			border-right: none;
-			font-size: 1rem;
+			font-size: $font-size-1;
 			transition: 0.5s;
 			&.active {
 				background: lighten($dark-white, 4%);

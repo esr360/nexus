@@ -9,23 +9,27 @@
                 <p>Suspendisse tempus sodales neque, eget eleifend <a href="#">turpis tristique</a> eu. Nullam a nisl maximus, ultrices est ut blandit nislr, elit in lobortis mattis.</p>
             </header>
         <?php } else if ($title == "Contact Us") { ?>
-        <div class="row block-columns contact-widgets">
+        <div class="row contact-widgets">
             <div class="span-4 widget">
                 <div class="widget-content">
                     <header>
-                        <i class="livicon" data-n="globe" data-op="1" data-c="#ffffff" data-s="48" data-hc="false"></i>
+                        <i class="livicon" data-n="globe" data-op="1" data-c="#C1C1C1" data-s="48" data-hc="false"></i>
                         <div class="title">
                             <h4>Our Address</h4>
                             <h5>Donec finibus fringilla purus</h5>
                         </div>
                     </header>
-                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo.</p>
+                    <p>
+                        420 Greene St<br />
+                        New York, NY 10000<br />
+                        Phone number (212) 111-0022<br />
+                    </p>
                 </div>
             </div>
             <div class="span-4 widget">
                 <div class="widget-content">
                     <header>
-                        <i class="livicon" data-n="phone" data-op="1" data-c="#ffffff" data-s="48" data-hc="false"></i>
+                        <i class="livicon" data-n="phone" data-op="1" data-c="#C1C1C1" data-s="48" data-hc="false"></i>
                         <div class="title">
                             <h4>Get in Touch</h4>
                             <h5>Donec finibus fringilla purus</h5>
@@ -41,7 +45,7 @@
             <div class="span-4 widget">
                 <div class="widget-content">
                     <header>
-                        <i class="livicon" data-n="clock" data-op="1" data-c="#ffffff" data-s="48" data-hc="false"></i>
+                        <i class="livicon" data-n="clock" data-op="1" data-c="#C1C1C1" data-s="48" data-hc="false"></i>
                         <div class="title">
                             <h4>Opening Hours</h4>
                             <h5>Donec finibus fringilla purus</h5>
@@ -55,12 +59,8 @@
                 </div>
             </div>
         </div>
+        <hr class="stripes" />
         <?php } ?>
-        <header class="send-message">
-            <div class="section-title">
-                <h4><span>Send A <i>Message</i></span></h4>
-            </div>
-        </header>
         <form class="h5-valid">
             <fieldset>
                 <div class="form-element">

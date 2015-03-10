@@ -7,7 +7,7 @@
                     <h3><i>It's What We Do Best</i></h3>
                 </div>
                 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing</b> elit. Vestibulum euismod nisi tincidunt mollis sagittis. Sed rutrum quam non tortor ornare.</p>             
-                <ul class="bullet-list">
+                <ul class="bullet-list min-bp2">
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
                     <li>Cras facilisis odio urna, quis molestie enim vulputate id</li>
                     <li>Cras dictum erat id tortor ornare, vel facilisis dolor vehicula</li>

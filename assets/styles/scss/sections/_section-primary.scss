@@ -25,10 +25,6 @@ Start building the basic layout
 	}
 
 	.section-title {
-		h2,
-		h3 {
-			font-size: 1em;
-		}
 		h2 {
 			font-weight: 100;
 			b {
@@ -49,12 +45,11 @@ Start building the basic layout
 			}
 		}
 		h3 {
-			display: none;
 			font-weight: 800;
 		}
 		h4 {
 			position: relative;
-			font-size: 2.25rem;
+			font-size: $font-size-4;
 			font-weight: 100;
 			&:before {
 				content: "";
@@ -89,10 +84,10 @@ Start building the basic layout
 Start building for larger resolutions
 ******************************************************************/
 
-	@media (min-width: $breakpoint-2) {
+	@media (min-width: $breakpoint-3) {
 		.section-title {
-			h3 {
-				display: block;
+			h4 {
+				font-size: $font-size-5;
 			}
 		}
 	}

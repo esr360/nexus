@@ -970,6 +970,10 @@ body.cp-active .cp-trigger {
 }
 
 /******************************************************************
+Element Seperators
+******************************************************************/
+
+/******************************************************************
 Clearfix
 ******************************************************************/
 
@@ -1372,7 +1376,7 @@ Elements
 .alert-success {
   padding: 0.85em;
   border: 1px solid;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   border-radius: 0.25em;
   font-weight: lighter;
   position: relative;
@@ -1533,7 +1537,7 @@ Elements
 }
 
 .button.large {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 .button.border {
@@ -1638,7 +1642,7 @@ blockquote h4:before,
 blockquote h4:after {
   position: absolute;
   font-family: FontAwesome;
-  font-size: 1.95rem;
+  font-size: 1.8rem;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -1832,15 +1836,9 @@ Owl Theme
   padding: 2.5em 1em;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  /******************************************************************
-  Start building for smaller resolutions
-  ******************************************************************/
 }
 
 .feature-block:hover {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
   background: #1795c5;
   border-color: #1795c5;
   border-top-color: #127297;
@@ -1859,7 +1857,7 @@ Owl Theme
 .feature-block .fa {
   height: 3em;
   width: 3em;
-  font-size: 1.75em;
+  font-size: 1.8rem;
   line-height: 3.075;
   text-align: center;
   border-radius: 50%;
@@ -1897,13 +1895,23 @@ Owl Theme
   margin: 0;
 }
 
-@media (max-width: 940px) {
-  .feature-block {
-    margin-bottom: 4em;
+@media (min-width: 940px) {
+  .feature-block:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
   }
+}
 
-  .feature-block:last-child {
-    margin-bottom: 0;
+/******************************************************************
+Start building for smaller resolutions
+******************************************************************/
+
+@media (max-width: 940px) {
+  .feature-block-wrapper:not(:last-child) {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -1933,7 +1941,7 @@ form {
   /******************************************************************
   Start building the basic layout
   ******************************************************************/
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 100;
   /******************************************************************
   Start building for larger resolutions
@@ -2009,7 +2017,7 @@ form label {
   position: absolute;
   left: 1em;
   top: 50%;
-  font-size: 0.85em;
+  font-size: 0.9rem;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -2062,7 +2070,7 @@ form textarea {
   margin-bottom: 1em;
   -webkit-box-shadow: none;
   box-shadow: none;
-  font-size: 0.85em;
+  font-size: 0.9rem;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -2094,7 +2102,7 @@ form select.box {
 @media (min-width: 940px) {
   form label,
   form textarea {
-    font-size: 1em;
+    font-size: 1rem;
   }
 
   form input[type="submit"],
@@ -2579,23 +2587,31 @@ ol.clear {
 
 [class*="bullet-list"] li {
   line-height: 1.6;
+  position: relative;
+  padding-left: 1em;
 }
 
 [class*="bullet-list"] li:before,
 [class*="bullet-list"] li:after {
   font-family: FontAwesome;
   color: #1795c5;
+  position: absolute;
 }
 
 [class*="bullet-list"] li:before {
   content: "\f138";
-  margin-right: 0.75rem;
+  left: -0.5em;
 }
 
 [class*="bullet-list"] li:after {
   display: none;
   content: "\f137";
-  margin-left: 0.75rem;
+  right: -0.5em;
+}
+
+[class*="bullet-list"][class*="-right"] li {
+  padding-left: 0;
+  padding-right: 1em;
 }
 
 [class*="bullet-list"][class*="-right"] li:before {
@@ -2674,12 +2690,12 @@ ol.clear {
 }
 
 .metro-block .share-amount div:first-child {
-  font-size: 1.75em;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
 .metro-block .share-amount div:last-child {
-  font-size: 0.8em;
+  font-size: 0.9rem;
 }
 
 .metro-block span {
@@ -2692,7 +2708,7 @@ ol.clear {
   padding: 0.4em;
   background: rgba(0, 0, 0, 0.4);
   font-weight: 600;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   font-family: "Raleway", sans-serif;
 }
 
@@ -3415,7 +3431,7 @@ img.mfp-img {
 .progress-bar .progress {
   background: #1795c5;
   height: 100%;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   line-height: 1.85;
   text-align: center;
   padding: 0 1em;
@@ -3452,14 +3468,6 @@ img.mfp-img {
   text-decoration: none;
 }
 
-/* reset certain elements (in case of conflicting CSS for classes, links, etc.) */
-
-.no-css-transforms .ribbon {
-  font-size: 1em;
-  position: relative;
-  width: 100%;
-}
-
 .ribbon .banner {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -3471,12 +3479,6 @@ img.mfp-img {
   right: -14px;
   top: 22px;
   width: 100px;
-}
-
-.ribbon-small .banner {
-  right: -8px;
-  top: 15px;
-  width: 65px;
 }
 
 .ribbon-large .banner {
@@ -3492,12 +3494,6 @@ img.mfp-img {
   height: 12px;
   position: absolute;
   width: 30px;
-}
-
-.ribbon-small .banner::after,
-.ribbon-small .banner::before {
-  height: 6px;
-  width: 20px;
 }
 
 .ribbon-large .banner::after,
@@ -3516,11 +3512,6 @@ img.mfp-img {
   left: -45px;
 }
 
-.ribbon-small .banner::before {
-  top: -5px;
-  left: -30px;
-}
-
 .ribbon-large .banner::before {
   top: 10px;
   left: -68px;
@@ -3536,21 +3527,9 @@ img.mfp-img {
   right: -17px;
 }
 
-.ribbon-small .banner::after {
-  top: 18px;
-  right: -12px;
-}
-
 .ribbon-large .banner::after {
   top: 45px;
   right: -25px;
-}
-
-.no-css-transforms .ribbon .banner {
-  position: static;
-  width: 100%;
-  float: none;
-  font-size: 10px;
 }
 
 .ribbon .text {
@@ -3564,15 +3543,6 @@ img.mfp-img {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   white-space: nowrap;
   text-overflow: ellipsis;
-}
-
-/* small text */
-
-.ribbon-small .text {
-  padding: 3px 0;
-  font-size: 8px;
-  min-height: 14px;
-  line-height: 14px;
 }
 
 /* large text */
@@ -3595,11 +3565,6 @@ img.mfp-img {
   z-index: -1;
 }
 
-.ribbon.ribbon-small .text::before,
-.ribbon.ribbon-small .text::after {
-  height: 20px;
-}
-
 .ribbon.ribbon-large .text::before,
 .ribbon.ribbon-large .text::after {
   height: 46px;
@@ -3617,15 +3582,6 @@ img.mfp-img {
   transform: translateX(15%) skewX(45deg);
 }
 
-/* small text */
-
-/* large text */
-
-.no-css-transforms .ribbon .text {
-  height: 25px;
-  padding: 3px;
-}
-
 /*--- RIBBON COLORS ---*/
 
 /* default */
@@ -3637,10 +3593,6 @@ img.mfp-img {
 
 .ribbon .text::before,
 .ribbon .text::after {
-  background-color: #62c462;
-}
-
-.no-css-transforms .ribbon .text {
   background-color: #62c462;
 }
 
@@ -3856,6 +3808,7 @@ Converted to SCSS for One Nexus by Edmund Reed
   ******************************************************************/
   color: #111111;
   border-bottom: none;
+  text-align: center;
   /******************************************************************
   Start building for larger resolutions
   ******************************************************************/
@@ -3863,23 +3816,6 @@ Converted to SCSS for One Nexus by Edmund Reed
 
 .widget:hover path {
   fill: #1795c5;
-}
-
-.widget .widget-content header {
-  width: 100%;
-  display: table;
-  text-align: left;
-}
-
-.widget .widget-content header .fa,
-.widget .widget-content header .livicon,
-.widget .widget-content header .title {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.widget .widget-content header .title {
-  padding-left: 0.5em;
 }
 
 .widget .title {
@@ -3900,19 +3836,6 @@ Converted to SCSS for One Nexus by Edmund Reed
 
 .widget .title:not(:first-child) {
   margin-top: 0.75em;
-}
-
-.widget > .fa,
-.widget > .fa + .widget-content,
-.widget > .livicon,
-.widget > .livicon + .widget-content {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.widget > .fa + .widget-content,
-.widget > .livicon + .widget-content {
-  padding-left: 1em;
 }
 
 .widget h4 {
@@ -3936,9 +3859,51 @@ Converted to SCSS for One Nexus by Edmund Reed
   padding-left: 0;
 }
 
+.widget ul li {
+  position: relative;
+}
+
+.widget ul li:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  margin-right: 0.5rem;
+  color: #C1C1C1;
+}
+
 @media (min-width: 940px) {
   .widget {
     padding: 0;
+    text-align: left;
+  }
+
+  .widget > .fa,
+  .widget > .fa + .widget-content,
+  .widget > .livicon,
+  .widget > .livicon + .widget-content {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .widget > .fa + .widget-content,
+  .widget > .livicon + .widget-content {
+    padding-left: 1em;
+  }
+
+  .widget .widget-content header {
+    width: 100%;
+    display: table;
+    text-align: left;
+  }
+
+  .widget .widget-content header .fa,
+  .widget .widget-content header .livicon,
+  .widget .widget-content header .title {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .widget .widget-content header .title {
+    padding-left: 0.5em;
   }
 }
 
@@ -3951,6 +3916,9 @@ Modules
 
 .post-author {
   margin-top: 4rem;
+  /******************************************************************
+  Start building for larger resolutions
+  ******************************************************************/
 }
 
 .post-author header {
@@ -3987,13 +3955,19 @@ Modules
 }
 
 .post-author h5 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 300;
   color: #1795c5;
 }
 
 .post-author p {
   margin: 0.5em 0;
+}
+
+.post-author .profile {
+  display: block;
+  margin: auto;
+  margin-bottom: 1.5rem;
 }
 
 .post-author .author-content {
@@ -4026,6 +4000,9 @@ Modules
 .blog-items {
   /******************************************************************
   Start building the basic layout
+  ******************************************************************/
+  /******************************************************************
+  Start building for smaller resolutions
   ******************************************************************/
   /******************************************************************
   Start building for larger resolutions
@@ -4113,16 +4090,22 @@ Modules
 .blog-items .date span:first-child {
   color: white;
   background: #1795c5;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 .blog-items .date span:last-child {
   line-height: 1.8;
-  font-size: 1.15em;
+  font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.5);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-top: none;
   font-weight: lighter;
+}
+
+@media (max-width: 940px) {
+  .blog-items .blog-item small {
+    bottom: 4em;
+  }
 }
 
 /* Bottom Bar
@@ -4134,7 +4117,7 @@ Start building the basic layout
 
 .bottom-bar {
   padding: 1.5em 0;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   background: #111111;
   position: relative;
   z-index: 2;
@@ -4187,7 +4170,7 @@ Start building the basic layout
 ================================================================ */
 
 .breadcrumb {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   background: #f7f7f7;
 }
 
@@ -4330,7 +4313,7 @@ Start building the basic layout
 
 .comments .comment-content .post-date {
   position: absolute;
-  font-size: 0.8em;
+  font-size: 0.9rem;
   right: 1.9em;
   top: 1.75em;
   font-family: "Raleway", sans-serif;
@@ -4347,7 +4330,7 @@ Start building the basic layout
   float: right;
   margin-top: 1em;
   margin-left: 1em;
-  font-size: 0.75em;
+  font-size: 0.9rem;
   line-height: 2.2;
   padding: 0 1em;
 }
@@ -4423,7 +4406,7 @@ Start building the basic layout
   }
 
   .comments [type="submit"] {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 }
 
@@ -4471,7 +4454,7 @@ body .cp-nav-container {
   height: 100%;
   width: 100%;
   padding-top: 1.25em;
-  font-size: 1.15em;
+  font-size: 1.2rem;
   -webkit-transition: 0s;
   transition: 0s;
   visibility: hidden;
@@ -4701,7 +4684,7 @@ body.cp-active .cp-nav-container .main-search {
   }
 
   body .cp-nav-container .copyright {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     bottom: 21%;
   }
 }
@@ -4711,19 +4694,29 @@ body.cp-active .cp-nav-container .main-search {
 
 .project-carousel {
   position: relative;
+  /******************************************************************
+  Start building for smaller resolutions
+  ******************************************************************/
 }
 
 .project-carousel .nav-carousel [class*="nav-"] {
   top: 36% !important;
 }
 
+@media (max-width: 940px) {
+  .project-carousel .nav-carousel .nav-prev {
+    left: 0 !important;
+  }
+
+  .project-carousel .nav-carousel .nav-next {
+    right: 0 !important;
+  }
+}
+
 .project-preview {
   width: 65%;
   margin: auto;
   position: relative;
-  /******************************************************************
-  Start building for larger resolutions
-  ******************************************************************/
 }
 
 .project-preview .previews {
@@ -4880,7 +4873,7 @@ body.cp-active .cp-nav-container .main-search {
   height: 100%;
   top: 0;
   z-index: 9999;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   font-weight: bold;
   overflow: auto;
   background: #111111;
@@ -5392,7 +5385,7 @@ body.fh-visible .main-search [type="submit"] {
 
 .logo {
   font-size: 1.65rem;
-  padding: 1em 0;
+  padding: 1.2em 0;
   font-weight: 400;
 }
 
@@ -5454,6 +5447,12 @@ body.fh-visible .main-search [type="submit"] {
   padding-bottom: 1px;
 }
 
+@media (min-width: 720px) {
+  .logo {
+    padding: 1em 0;
+  }
+}
+
 /* Main Navigation
 ================================================================ */
 
@@ -5507,7 +5506,7 @@ body.fh-visible .main-search [type="submit"] {
 }
 
 .main-nav > ul > li ul li a {
-  font-size: 0.9em;
+  font-size: 0.9rem;
   color: rgba(255, 255, 255, 0.75);
   background: rgba(0, 0, 0, 0.86);
   line-height: 3.2;
@@ -5534,7 +5533,7 @@ body.fh-visible .main-search [type="submit"] {
   content: "\f105";
   display: none;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 1.2em;
+  font-size: 1.2rem;
   margin-top: -0.25em;
 }
 
@@ -6313,7 +6312,7 @@ body.search-active .main-search {
   line-height: 1.8;
   height: 3.5em;
   padding: 0.75em;
-  font-size: 1.5em;
+  font-size: 1.4rem;
   float: left;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -6437,7 +6436,7 @@ body.search-active .main-search {
 }
 
 .hero.sub-header .container h1 {
-  font-size: 2.5em;
+  font-size: 1.8rem;
 }
 
 .hero.sub-header .sh-title-wrapper {
@@ -6445,7 +6444,7 @@ body.search-active .main-search {
 }
 
 .hero.sub-header .cta {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 @media (max-width: 940px) {
@@ -6456,11 +6455,11 @@ body.search-active .main-search {
 
 @media (min-width: 720px) {
   .hero.sub-header .container h1 {
-    font-size: 3.5em;
+    font-size: 3.5rem;
   }
 
   .hero.sub-header .cta {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 }
 
@@ -6540,7 +6539,7 @@ body.search-active .main-search {
   text-align: center;
   height: 2em;
   width: 2em;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: rgba(0, 0, 0, 0.35);
   cursor: pointer;
   border-radius: 0 0.25em 0.25em 0;
@@ -6591,7 +6590,7 @@ body.search-active .main-search {
   width: calc(100% - 50px);
   padding-right: 1em;
   margin: 0;
-  font-size: 0.85em;
+  font-size: 0.9rem;
   font-weight: 100;
 }
 
@@ -6609,7 +6608,7 @@ body.search-active .main-search {
 
 .theme-options .options-content h4 {
   margin-bottom: 0.65em;
-  font-size: 0.95em;
+  font-size: 0.9rem;
 }
 
 .theme-options .page-type {
@@ -6620,7 +6619,7 @@ body.search-active .main-search {
 
 .theme-options .page-type .button {
   line-height: 1.5;
-  font-size: 0.9em;
+  font-size: 0.9rem;
 }
 
 .theme-options .page-type .button.active {
@@ -6702,13 +6701,14 @@ body.search-active .main-search {
   }
 
   .theme-options .options-trigger {
-    top: 4.5em;
-    right: 1.45em;
+    top: 5.25em;
+    right: 1.95em;
     border-radius: 0.25em;
     z-index: 9;
-    height: 34px;
-    width: 34px;
-    font-size: 1em;
+    height: 39px;
+    width: 39px;
+    line-height: 38px;
+    font-size: 0.9rem;
   }
 
   .theme-options .options-content {
@@ -6950,6 +6950,7 @@ Sections
 }
 
 .section.clients h5 {
+  margin-top: 0.25em;
   font-size: 1.8rem;
   font-weight: 100;
   color: #1795c5;
@@ -7035,6 +7036,9 @@ Sections
 .section.contact {
   /* Animations */
   /******************************************************************
+  Start building for smaller resolutions
+  ******************************************************************/
+  /******************************************************************
   Start building for larger resolutions
   ******************************************************************/
 }
@@ -7046,33 +7050,6 @@ Sections
 
 .section.contact .contact-widgets {
   margin-bottom: 4rem;
-}
-
-.section.contact .contact-widgets a {
-  color: white;
-  border-bottom: 1px dotted;
-}
-
-.section.contact .contact-widgets .widget {
-  color: white;
-  background: #1795c5;
-  padding: 1.75rem 2rem;
-}
-
-.section.contact .contact-widgets .widget:nth-child(1) {
-  background: #1484ae;
-}
-
-.section.contact .contact-widgets .widget:nth-child(3) {
-  background: #1aa6dc;
-}
-
-.section.contact .contact-widgets .widget:hover path {
-  fill: white;
-}
-
-.section.contact .contact-widgets .widget h5 {
-  color: white;
 }
 
 .section.contact .send-message {
@@ -7118,6 +7095,14 @@ Sections
 
 .section.contact.inactive [type="submit"] {
   opacity: 0;
+}
+
+@media (max-width: 940px) {
+  .section.contact .widget:not(:last-child) {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+  }
 }
 
 @media (min-width: 720px) {
@@ -7167,7 +7152,7 @@ Sections
 }
 
 .hero .hero-title {
-  font-size: 1.5em;
+  font-size: 1.8rem;
   margin-bottom: 1.5rem;
 }
 
@@ -7262,7 +7247,7 @@ Sections
   }
 
   .hero .hero-title {
-    font-size: 2.75em;
+    font-size: 2.85rem;
   }
 
   .hero .container {
@@ -7325,7 +7310,7 @@ Sections
 
 @media (min-width: 1200px) {
   .hero .hero-title {
-    font-size: 3.5em;
+    font-size: 3.5rem;
   }
 }
 
@@ -7371,9 +7356,6 @@ Sections
   /******************************************************************
   Start building for smaller resolutions
   ******************************************************************/
-  /******************************************************************
-  Start building for larger resolutions
-  ******************************************************************/
 }
 
 .section.latest-posts.inactive .blog-item {
@@ -7399,12 +7381,23 @@ Sections
   transition-delay: 0.8s;
 }
 
+@media (max-width: 940px) {
+  .section.latest-posts .blog-item:not(:last-child) {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+  }
+}
+
 /* Latest Works
 ================================================================ */
 
 .section.latest-works {
   /******************************************************************
   Start building the basic layout
+  ******************************************************************/
+  /******************************************************************
+  Start building for smaller resolutions
   ******************************************************************/
   /******************************************************************
   Start building for larger resolutions
@@ -7435,6 +7428,28 @@ Sections
   visibility: hidden;
 }
 
+@media (max-width: 1400px) {
+  .section.latest-works > .container {
+    position: relative;
+  }
+
+  .section.latest-works .nav-carousel [class*="nav-"] {
+    top: auto;
+    bottom: -0.25rem;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .section.latest-works .nav-carousel .nav-prev {
+    left: 0;
+  }
+
+  .section.latest-works .nav-carousel .nav-next {
+    right: 0;
+  }
+}
+
 /* More About Us
 ================================================================ */
 
@@ -7444,6 +7459,9 @@ Sections
   ******************************************************************/
   background: #f7f7f7 !important;
   color: #111111 !important;
+  /******************************************************************
+  Start building for smaller resolutions
+  ******************************************************************/
 }
 
 .section.more-info:after {
@@ -7472,8 +7490,29 @@ Sections
   opacity: 0;
 }
 
-.section.more-info iframe {
-  display: block;
+.section.more-info .auto-resizable-iframe {
+  max-width: 720px;
+  margin: 0px auto;
+}
+
+.section.more-info .auto-resizable-iframe > div {
+  position: relative;
+  padding-bottom: 55%;
+  height: 0px;
+}
+
+.section.more-info .auto-resizable-iframe iframe {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 940px) {
+  .section.more-info .info-video {
+    margin-bottom: 2rem;
+  }
 }
 
 /* Pricing Section
@@ -7556,7 +7595,7 @@ Sections
 }
 
 .section.quote blockquote h4 {
-  font-size: 2.25rem;
+  font-size: 1.8rem;
 }
 
 .section.quote blockquote b {
@@ -7572,6 +7611,10 @@ Sections
 @media (min-width: 940px) {
   .section.quote blockquote {
     width: 80%;
+  }
+
+  .section.quote blockquote h4 {
+    font-size: 2.25rem;
   }
 }
 
@@ -7614,7 +7657,7 @@ Sections
 }
 
 .section header ul {
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .section header ul li {
@@ -7636,16 +7679,13 @@ Sections
 }
 
 .section header ul li .fa-calendar {
-  font-size: 0.9em;
-}
-
-.section .section-title {
-  font-size: 2.85rem;
+  font-size: 0.9rem;
 }
 
 .section .section-title h2,
 .section .section-title h3 {
   margin: 0.25em 0;
+  font-size: 1.8rem;
 }
 
 .section .section-title h2:first-child,
@@ -7667,14 +7707,16 @@ Sections
 }
 
 .section.section-map {
-  padding-bottom: 11em !important;
   position: relative;
 }
 
 .section.section-map:after {
+  display: none;
   content: "";
   background-image: url("../../images/dot-map.png");
   background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
   width: 60%;
   left: 0;
   right: 0;
@@ -7724,11 +7766,33 @@ Sections
     margin-left: auto;
     margin-right: auto;
   }
+
+  .section header ul {
+    font-size: 1.4rem;
+  }
+
+  .section .section-title h2,
+  .section .section-title h3 {
+    font-size: 2.25rem;
+  }
 }
 
 @media (min-width: 940px) {
   .section header p {
     font-size: 1.4rem;
+  }
+
+  .section .section-title h2,
+  .section .section-title h3 {
+    font-size: 2.85rem;
+  }
+
+  .section.section-map {
+    padding-bottom: 11em !important;
+  }
+
+  .section.section-map:after {
+    display: block;
   }
 }
 
@@ -7763,11 +7827,6 @@ Sections
   padding-top: 0;
 }
 
-.section.primary .section-title h2,
-.section.primary .section-title h3 {
-  font-size: 1em;
-}
-
 .section.primary .section-title h2 {
   font-weight: 100;
 }
@@ -7792,13 +7851,12 @@ Sections
 }
 
 .section.primary .section-title h3 {
-  display: none;
   font-weight: 800;
 }
 
 .section.primary .section-title h4 {
   position: relative;
-  font-size: 2.25rem;
+  font-size: 1.8rem;
   font-weight: 100;
 }
 
@@ -7829,9 +7887,9 @@ Sections
   color: white;
 }
 
-@media (min-width: 720px) {
-  .section.primary .section-title h3 {
-    display: block;
+@media (min-width: 940px) {
+  .section.primary .section-title h4 {
+    font-size: 2.25rem;
   }
 }
 
@@ -7868,12 +7926,10 @@ Sections
 }
 
 .section.secondary .section-title h2 {
-  font-size: 1em;
   font-weight: 900;
 }
 
 .section.secondary .section-title h3 {
-  font-size: 0.9em;
   font-weight: 100;
 }
 
@@ -7905,7 +7961,7 @@ Sections
   Start building the basic layout
   ******************************************************************/
   /******************************************************************
-  Start building for larger resolutions
+  Start building for smaller resolutions
   ******************************************************************/
 }
 
@@ -7936,6 +7992,20 @@ Sections
 .section.services.inactive .nav-carousel {
   opacity: 0;
   visibility: hidden;
+}
+
+@media (max-width: 940px) {
+  .section.services > .container {
+    position: relative;
+  }
+
+  .section.services .nav-carousel .nav-prev {
+    left: 0;
+  }
+
+  .section.services .nav-carousel .nav-next {
+    right: 0;
+  }
 }
 
 /* Skills
@@ -8019,12 +8089,6 @@ Sections
   }
 }
 
-@media (min-width: 940px) and (max-width: 1200px) {
-  .section.skills h3 {
-    font-size: 2.5em;
-  }
-}
-
 /* Stats Section
 ================================================================ */
 
@@ -8076,9 +8140,6 @@ Sections
   ******************************************************************/
   /******************************************************************
   Start building for smaller resolutions
-  ******************************************************************/
-  /******************************************************************
-  Start building for larger resolutions
   ******************************************************************/
 }
 
@@ -8213,6 +8274,9 @@ Sections
   Start building the basic layout
   ******************************************************************/
   /******************************************************************
+  Start building for smaller resolutions
+  ******************************************************************/
+  /******************************************************************
   Start building for larger resolutions
   ******************************************************************/
 }
@@ -8266,6 +8330,24 @@ Sections
 .section.testimonials.inactive .nav-carousel {
   opacity: 0;
   visibility: hidden;
+}
+
+@media (max-width: 940px) {
+  .section.testimonials > .container {
+    position: relative;
+  }
+
+  .section.testimonials .nav-carousel [class*="nav-"] {
+    top: 2.5em;
+  }
+
+  .section.testimonials .nav-carousel .nav-prev {
+    left: 0;
+  }
+
+  .section.testimonials .nav-carousel .nav-next {
+    right: 0;
+  }
 }
 
 @media (min-width: 720px) {
@@ -8408,6 +8490,32 @@ Sections
     -ms-transform: scale(0.75) rotate(-45deg);
     transform: scale(0.75) rotate(-45deg);
   }
+
+  .section.welcome .title span {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .section.welcome .welcome-features h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 940px) {
+  .section.welcome .welcome-features .title {
+    margin-top: 0.75em;
+  }
+
+  .section.welcome .welcome-features p {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .section.welcome .nav-carousel {
+    display: none;
+  }
 }
 
 /* What We Offer Section
@@ -8454,10 +8562,17 @@ Sections
   /******************************************************************
   Start building the basic layout
   ******************************************************************/
+  /******************************************************************
+  Start building for smaller resolutions
+  ******************************************************************/
+  /******************************************************************
+  Start building for larger resolutions
+  ******************************************************************/
 }
 
 .section.why-choose-us .wcu-content {
   position: relative;
+  min-height: 450px;
 }
 
 .section.why-choose-us .wcu-graphic {
@@ -8466,25 +8581,10 @@ Sections
 }
 
 .section.why-choose-us .wcu-feature {
-  position: absolute;
-  width: 30%;
   text-align: center;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   opacity: 1;
-}
-
-.section.why-choose-us .wcu-feature:after {
-  content: "";
-  position: absolute;
-  top: 1.75rem;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 130px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .section.why-choose-us .wcu-feature:nth-child(1) {
@@ -8507,26 +8607,6 @@ Sections
   right: 0;
 }
 
-.section.why-choose-us .wcu-feature.wcu-left {
-  padding-right: 2rem;
-}
-
-.section.why-choose-us .wcu-feature.wcu-left:after {
-  -webkit-transform: translateX(70%);
-  -ms-transform: translateX(70%);
-  transform: translateX(70%);
-}
-
-.section.why-choose-us .wcu-feature.wcu-right {
-  padding-left: 2rem;
-}
-
-.section.why-choose-us .wcu-feature.wcu-right:after {
-  -webkit-transform: translateX(-70%);
-  -ms-transform: translateX(-70%);
-  transform: translateX(-70%);
-}
-
 .section.why-choose-us .wcu-feature:hover:after {
   border-bottom-color: #1795c5;
 }
@@ -8545,6 +8625,58 @@ Sections
 
 .section.why-choose-us.section-map:after {
   bottom: -5rem;
+}
+
+@media (max-width: 940px) {
+  .section.why-choose-us .wcu-graphic {
+    margin-bottom: 4rem;
+  }
+
+  .section.why-choose-us .wcu-feature:not(:last-child) {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (min-width: 940px) {
+  .section.why-choose-us .wcu-feature {
+    position: absolute;
+    width: 30%;
+  }
+
+  .section.why-choose-us .wcu-feature:after {
+    content: "";
+    position: absolute;
+    top: 1.75rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 130px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .section.why-choose-us .wcu-feature.wcu-left {
+    padding-right: 2rem;
+  }
+
+  .section.why-choose-us .wcu-feature.wcu-left:after {
+    -webkit-transform: translateX(70%);
+    -ms-transform: translateX(70%);
+    transform: translateX(70%);
+  }
+
+  .section.why-choose-us .wcu-feature.wcu-right {
+    padding-left: 2rem;
+  }
+
+  .section.why-choose-us .wcu-feature.wcu-right:after {
+    -webkit-transform: translateX(-70%);
+    -ms-transform: translateX(-70%);
+    transform: translateX(-70%);
+  }
 }
 
 /******************************************************************
@@ -8645,15 +8777,17 @@ body.services .section.services .row.active {
 
 @media (max-width: 940px) {
   body.services .section.services .row {
+    margin-top: 4rem;
+  }
+
+  body.services .section.services .row:first-child {
     margin-top: 0;
   }
 
-  body.services .section.services .service {
-    margin-bottom: 4em;
-  }
-
-  body.services .section.services .service h5 {
-    display: none;
+  body.services .section.services .service:not(:last-child) {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
   }
 
   body.services .section.services:after {
@@ -8678,6 +8812,9 @@ body.services .section.services .row.active {
 
 body.single-post {
   /******************************************************************
+  Start building for smaller resolutions
+  ******************************************************************/
+  /******************************************************************
   Start building for larger resolutions
   ******************************************************************/
 }
@@ -8694,6 +8831,14 @@ body.single-post .hidden-comment {
 
 body.single-post .metro-blocks {
   margin: 4rem 0 0;
+}
+
+@media (max-width: 940px) {
+  body.single-post .blog-item:not(:last-child) {
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.1);
+  }
 }
 
 @media (min-width: 720px) {
@@ -8758,6 +8903,31 @@ body.single-project .info-graphic header {
   width: 100%;
 }
 
+body.single-project .info-graphic h4,
+body.single-project .info-graphic h5 {
+  margin: 0.25em 0;
+}
+
+body.single-project .info-graphic h4:first-child,
+body.single-project .info-graphic h5:first-child {
+  margin-top: 0;
+}
+
+body.single-project .info-graphic h4:last-child,
+body.single-project .info-graphic h5:last-child {
+  margin-bottom: 0;
+}
+
+body.single-project .info-graphic h4 {
+  font-size: 1.8rem;
+}
+
+body.single-project .info-graphic h5 {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  color: #1795c5;
+}
+
 body.single-project .feature-blocks.inactive .feature-block-wrapper {
   bottom: -3em;
   opacity: 0;
@@ -8781,6 +8951,14 @@ body.single-project .section.testimonials .nav-carousel {
 
   body.single-project .info-graphic [class*="span"]:first-child {
     margin-top: 0;
+  }
+
+  body.single-project .info-graphic .lead {
+    font-size: 1rem;
+  }
+
+  body.single-project .info-graphic .text-right {
+    text-align: left !important;
   }
 }
 

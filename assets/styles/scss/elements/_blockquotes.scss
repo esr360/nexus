@@ -16,7 +16,7 @@ blockquote {
 		&:before, &:after {
 			position: absolute;
 			font-family: FontAwesome;
-			font-size: 1.95rem;
+			font-size: $font-size-4;
 			color: rgba(0,0,0,0.5);
 		}
 		&:before {

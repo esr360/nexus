@@ -36,10 +36,21 @@ Start building the basic layout
 	}
 
 /******************************************************************
-Start building for larger resolutions
+Start building for smaller resolutions
 ******************************************************************/
 
-	@media (min-width: $breakpoint-3) {
+	@media (max-width: $breakpoint-3) {
+		> .container {
+			position: relative;
+		}
+		.nav-carousel {	
+			.nav-prev {
+				left: 0;
+			}
+			.nav-next {
+				right: 0;
+			}
+		}
 	}
 
 } // end .feature.services

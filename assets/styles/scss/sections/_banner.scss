@@ -30,7 +30,7 @@ Start building the basic layout
 	}
 	h4 {
 		font-weight: 100;
-		font-size: 1.8rem;
+		font-size: $font-size-4;
 		margin: 0;
 		b {
 			font-weight: 900;
@@ -45,7 +45,7 @@ Start building the basic layout
 		}
 	}
 	p {
-		font-size: 1.2rem;
+		font-size: $font-size-2;
 		font-weight: lighter;
 	}
 	.meta {

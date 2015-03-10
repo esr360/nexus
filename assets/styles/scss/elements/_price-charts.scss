@@ -12,7 +12,7 @@
 	h4 {
 		margin-top: 0.5em;
 		margin-bottom: 0.25em;
-		font-size: 1.8rem;
+		font-size: $font-size-4;
 		.fa {
 			color: white;
 		}
@@ -22,15 +22,15 @@
 		margin-bottom: 1.25em;
 		font-weight: 100;
 		font-family: $font-1;
-		font-size: 1.2rem;
+		font-size: $font-size-2;
 	}
 	.price {
 		padding: 0.1em;
 		background: rgba(0,0,0,0.6);
 		height: 2.75em;
-		font-size: 1.8rem;
+		font-size: $font-size-4;
 		span {
-			font-size: 2.85rem;
+			font-size: $font-size-6;
 		}
 	}
 	ul {
@@ -43,13 +43,11 @@
 			line-height: 3;
 			display: table;
 			width: 100%;
-			//font-size: 1.1em;
 			&:nth-child(even) {
 				background: rgba(0,0,0,0.1);
 			}
 			.fa {
 				width: 1.5em;
-				//color: $main-text-color;
 			}
 			strong, span {
 				display: table-cell;
@@ -62,7 +60,7 @@
 	.buy-now {
 		background: rgba(255,255,255,0.5);
 		padding: 0.75em;
-		font-size: 1.2rem;
+		font-size: $font-size-2;
 	}
 	&.free {
 		&, .button {

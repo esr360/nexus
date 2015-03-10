@@ -43,23 +43,28 @@ ol.clear {
 	margin-bottom: 1.75rem;
 	li {
 		line-height: 1.6;
+		position: relative;
+		padding-left: 1em;
 		&:before,
 		&:after {
 			font-family: FontAwesome;
 			color: $brand-1;
+			position: absolute;
 		}
 		&:before {
 			content: "\f138";	
-			margin-right: 0.75rem;		
+			left: -0.5em;	
 		}
 		&:after {
 			display: none;
-			content: "\f137";
-			margin-left: 0.75rem;			
+			content: "\f137";	
+			right: -0.5em;				
 		}
 	}
 	&[class*="-right"] {
 		li {
+			padding-left: 0;
+			padding-right: 1em;
 			&:before {
 				display: none;
 			}

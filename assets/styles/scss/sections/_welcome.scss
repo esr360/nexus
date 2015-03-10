@@ -55,7 +55,7 @@ Start building the basic layout
 			text-align: center;
 		}
 		p {
-			font-size: $base-font-size;
+			font-size: $font-size-1;
 		}
 	}
 
@@ -98,6 +98,36 @@ Start building for smaller resolutions
 			.pin {
 				transform: scale(0.75) rotate(-45deg);
 			}
+		}
+		.title {
+			span {
+				display: none;
+			}
+		}
+	}
+
+	@media (max-width: $breakpoint-2) {
+		.welcome-features {
+			h4 {
+				font-size: $font-size-1;
+			}
+		}
+	}
+
+	@media (max-width: $breakpoint-3) {
+		.welcome-features {
+			.title {
+				margin-top: 0.75em;
+			}
+			p {
+				display: none;
+			}
+		}
+	}
+
+	@media (max-width: $breakpoint-4) {
+		.nav-carousel {
+			display: none;
 		}
 	}
 

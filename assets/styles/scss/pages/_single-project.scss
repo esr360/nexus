@@ -39,6 +39,24 @@ body.single-project {
 			text-align: left;
 			width: 100%;
 		}
+		h4,
+		h5 {
+			margin: 0.25em 0;	
+		    &:first-child {
+		    	margin-top: 0;
+		    }
+		    &:last-child {
+		        margin-bottom: 0;
+		    }
+		}
+		h4 {
+			font-size: $font-size-4;
+		}
+		h5 {
+			font-size: $font-size-3;
+			font-weight: lighter;
+			color: $brand-1;
+		}
 	}
 
 	// Animations
@@ -78,6 +96,12 @@ Start building for smaller resolutions
 					margin-top: 0;
 				}
 			}
+			.lead {
+				font-size: $font-size-1;
+			}
+			.text-right {
+				text-align: left !important;
+			}
 		}
 	}
 	@media (max-width: $breakpoint-4) {
@@ -102,7 +126,7 @@ Start building for larger resolutions
 		.section.single-project {
 			header {
 				ul {
-					font-size: $large-font-size;
+					font-size: $font-size-3;
 				}
 			}
 		}

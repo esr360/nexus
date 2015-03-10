@@ -220,24 +220,20 @@ Stats Animated Numbers
 
 stat = $('[id^="stat-"]');
 
+var statsDone = true;
+
 $(window).on("load scroll", function(d,h) {
     stat.each(function(i) {
         a = $(this).offset().top + $(this).height();
         b = $(window).scrollTop() + $(window).height();
         statSep = $.animateNumber.numberStepFactories.separator(',');
         attrStat = $(this).attr('data-val');
-        if (window.matchMedia('(min-width: 940px)').matches) {
-            if (a < b) {
-                $(this).animateNumber({ 
-                        number: attrStat,
-                        numberStep: statSep
-                    }, 2000
-                );
-            }
-        } else {
+        if (a < b) {
             $(this).animateNumber({ 
-                number: attrStat
-            });
+                    number: attrStat,
+                    numberStep: statSep
+                }, 2000
+            );
         }
     });
 });

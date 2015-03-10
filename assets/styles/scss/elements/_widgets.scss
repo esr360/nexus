@@ -10,26 +10,10 @@ Start building the basic layout
 
     color: $main-text-color;
     border-bottom: none;
+    text-align: center;
     &:hover {
         path {
             fill: $brand-1;
-        }
-    }
-
-    .widget-content {
-        header {
-            width: 100%;
-            display: table;
-            text-align: left;
-            .fa,
-            .livicon,
-            .title {
-                display: table-cell;
-                vertical-align: middle;
-            }
-            .title {
-                padding-left: 0.5em;
-            }
         }
     }
 
@@ -49,25 +33,13 @@ Start building the basic layout
         }
     }
 
-    > .fa,
-    > .livicon {
-        &, 
-        + .widget-content {
-            display: table-cell;
-            vertical-align: middle;
-        }
-        + .widget-content {
-            padding-left: 1em;
-        }
-    }
-
     h4 {
-        font-size: 1.4rem;
+        font-size: $font-size-3;
         font-weight: 700;
     }
 
     h5 {
-        font-size: 1.2rem;
+        font-size: $font-size-2;
         font-weight: 300;
         color: $brand-1;
     }
@@ -80,6 +52,15 @@ Start building the basic layout
     ul {
         list-style: none;
         padding-left: 0;
+        li {
+            position: relative;
+            &:before {
+                font-family: FontAwesome;
+                content: "\f105";
+                margin-right: 0.5rem;
+                color: #C1C1C1;
+            }
+        }
     }
 
 /******************************************************************
@@ -88,6 +69,34 @@ Start building for larger resolutions
 
     @media (min-width: $breakpoint-3) {  
         padding: 0;
+        text-align: left;
+        > .fa,
+        > .livicon {
+            &, 
+            + .widget-content {
+                display: table-cell;
+                vertical-align: middle;
+            }
+            + .widget-content {
+                padding-left: 1em;
+            }
+        }
+        .widget-content {
+            header {
+                width: 100%;
+                display: table;
+                text-align: left;
+                .fa,
+                .livicon,
+                .title {
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+                .title {
+                    padding-left: 0.5em;
+                }
+            }
+        }
     }
 
 } // end .widget

@@ -5,7 +5,7 @@
 .logo {	
 
 	font-size: 1.65rem;
-	padding: 1em 0;
+	padding: 1.2em 0;
 	font-weight: 400;
 	a {
 		display: inline-block;
@@ -50,6 +50,10 @@
 		display: block;
 		max-height: 36px;
 		padding-bottom: 1px
+	}
+
+	@media (min-width: $breakpoint-2) {
+		padding: 1em 0;
 	}
 
 } // end .logo

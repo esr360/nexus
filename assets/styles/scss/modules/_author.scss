@@ -25,7 +25,7 @@
 	}
 
 	h4 {
-		font-size: 1.4rem;
+		font-size: $font-size-3;
 		a {
 			color: inherit;
 			&:hover {
@@ -36,7 +36,7 @@
 	}
 
 	h5 {
-		font-size: 1.2em;
+		font-size: $font-size-2;
 		font-weight: 300;
 		color: $brand-1;
 	}
@@ -44,10 +44,20 @@
 	p {
 		margin: 0.5em 0;
 	}
+
+	.profile {
+		display: block;
+		margin: auto;
+		margin-bottom: 1.5rem;
+	}
 	
 	.author-content {
 		text-align: center;
 	}
+
+/******************************************************************
+Start building for larger resolutions
+******************************************************************/
 
 	@media (min-width: $breakpoint-2) {
 		.profile,
@@ -66,4 +76,4 @@
 		}
 	}
 
-}
+} // end .post-author

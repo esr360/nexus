@@ -15,7 +15,8 @@ Start building the basic layout
 		background: rgba(0,0,0,0.5) !important;
 	}
 	h5 {
-		font-size: 1.8rem;
+		margin-top: 0.25em;
+		font-size: $font-size-4;
 		font-weight: 100;
 		color: $brand-1;
 	}

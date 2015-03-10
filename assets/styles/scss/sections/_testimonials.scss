@@ -60,13 +60,34 @@ Start building the basic layout
 	}
 
 /******************************************************************
+Start building for smaller resolutions
+******************************************************************/
+
+	@media (max-width: $breakpoint-3) {
+		> .container {
+			position: relative;
+		}
+		.nav-carousel {		
+			[class*="nav-"] {
+				top: 2.5em;
+			}
+			.nav-prev {
+				left: 0;
+			}
+			.nav-next {
+				right: 0;
+			}
+		}
+	}
+
+/******************************************************************
 Start building for larger resolutions
 ******************************************************************/
 
 	@media (min-width: $breakpoint-2) {
 		.testimonial {
 			p {
-				font-size: $large-font-size;
+				font-size: $font-size-3;
 			}
 		}
 	}

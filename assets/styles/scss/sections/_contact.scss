@@ -11,29 +11,6 @@
 
 	.contact-widgets {
 		margin-bottom: 4rem;
-		a {
-			color: $white;
-			border-bottom: 1px dotted;
-		}
-		.widget {
-			color: $white;
-			background: $brand-1;
-			padding: 1.75rem 2rem;
-			&:nth-child(1) {
-				background: darken($brand-1, 5%);
-			}
-			&:nth-child(3) {
-				background: lighten($brand-1, 5%);
-			}
-			&:hover {
-				path {
-					fill: $white;
-				}
-			}
-			h5 {
-				color: $white;
-			}
-		}
 	}
 
 	.send-message {
@@ -79,12 +56,26 @@
 	}
 	
 /******************************************************************
+Start building for smaller resolutions
+******************************************************************/
+
+    @media (max-width: $breakpoint-3) {
+        .widget {
+            &:not(:last-child) {
+                padding-bottom: 2rem;
+                margin-bottom: 2rem;
+                border-bottom: 1px dotted rgba(0,0,0,0.1);
+            }
+        }
+    }
+
+/******************************************************************
 Start building for larger resolutions
 ******************************************************************/
 
 	@media (min-width: $breakpoint-2) {
 		[type="submit"] {
-			font-size: 1.2rem;
+			font-size: $font-size-2;
 		}
 	}
 	

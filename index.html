@@ -66,7 +66,7 @@
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
-                    <div class="icon-round-lrg-plain">
+                    <div class="icon-round-lrg-plain search-toggle">
                         <i class="fa fa-search"></i>
                     </div>
                 </nav>
@@ -115,7 +115,14 @@
                     <h2>Nexus is <b>Responsive</b></h2>
                     <h3>Built For All Browsers & Devices</h3>
                 </div>
-                <p class="welcome-browsers">
+                <p class="welcome-browsers max-bp2">
+                    <i class="livicon tooltip" data-tip="Internet Explorer" data-n="ie" data-c="original" data-s="48" data-hc="false"></i>
+                    <i class="livicon tooltip" data-tip="Firefox" data-n="firefox" data-c="original" data-s="48" data-hc="false"></i>
+                    <i class="livicon tooltip" data-tip="Chrome" data-n="chrome" data-c="original" data-s="48" data-hc="false"></i>
+                    <i class="livicon tooltip" data-tip="Opera" data-n="opera" data-c="original" data-s="48" data-hc="false"></i>
+                    <i class="livicon tooltip" data-tip="Safari" data-n="safari" data-c="original" data-s="48" data-hc="false"></i>
+                </p>
+                <p class="welcome-browsers min-bp2">
                     <i class="livicon tooltip" data-tip="Internet Explorer" data-n="ie" data-c="original" data-s="68" data-hc="false"></i>
                     <i class="livicon tooltip" data-tip="Firefox" data-n="firefox" data-c="original" data-s="68" data-hc="false"></i>
                     <i class="livicon tooltip" data-tip="Chrome" data-n="chrome" data-c="original" data-s="68" data-hc="false"></i>
@@ -127,27 +134,33 @@
                 <div class="section-title">
                     <h2>Our <i>Features</i> Are <strong>World Class <i class="fa fa-trophy"></i></strong></h2>
                 </div>
-                <div class="row">
-                    <div class="span-4 welcome-feature">
+                <div class="row bp0">
+                    <div class="span-4 widget welcome-feature">
                         <i class="livicon" data-n="tablet" data-c="#C1C1C1" data-op="1" data-s="68" data-hc="false"></i>
-                        <div class="span-9">
-                            <h4>Retina Ready</h4>
-                            <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur maximus ridiculus mus.</p>
-                        </div> 
-                    </div>
-                    <div class="span-4 welcome-feature">
-                        <i class="livicon" data-n="html5" data-c="#C1C1C1" data-op="1" data-s="68" data-hc="false"></i>
-                        <div class="span-9">
-                            <h4>Valid HTML5</h4>
+                        <div class="widget-content">
+                            <div class="title">
+                                <h4>Retina Ready</h4>
+                            </div> 
                             <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur maximus ridiculus mus.</p>
                         </div>
                     </div>
-                    <div class="span-4 welcome-feature">
-                        <i class="livicon" data-n="responsive" data-c="#C1C1C1" data-op="1" data-s="68" data-hc="false"></i>
-                        <div class="span-9">
-                            <h4>Fully Responsive</h4>
+                    <div class="span-4 widget welcome-feature">
+                        <i class="livicon" data-n="html5" data-c="#C1C1C1" data-op="1" data-s="68" data-hc="false"></i>
+                        <div class="widget-content">
+                            <div class="title">
+                                <h4>Valid HTML5</h4>
+                            </div>
                             <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur maximus ridiculus mus.</p>
-                        </div> 
+                        </div>
+                    </div>
+                    <div class="span-4 widget welcome-feature">
+                        <i class="livicon" data-n="responsive" data-c="#C1C1C1" data-op="1" data-s="68" data-hc="false"></i>
+                        <div class="widget-content">
+                            <div class="title">
+                                <h4><span>100%</span> Responsive</h4>
+                            </div> 
+                            <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur maximus ridiculus mus.</p>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -161,6 +174,14 @@
             </div>
         </div>
     </div>
+    <div class="nav-carousel">
+        <div class="icon-round-border-lrg nav-prev">
+            <i class="fa fa-angle-left"></i>
+        </div>
+        <div class="icon-round-border-lrg nav-next">
+            <i class="fa fa-angle-right"></i>
+        </div>
+    </div>
 </section>
         <section class="section secondary skills inactive" id="s-skills">
         <div class="container">
@@ -171,7 +192,7 @@
                     <h3><i>It's What We Do Best</i></h3>
                 </div>
                 <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing</b> elit. Vestibulum euismod nisi tincidunt mollis sagittis. Sed rutrum quam non tortor ornare.</p>             
-                <ul class="bullet-list">
+                <ul class="bullet-list min-bp2">
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
                     <li>Cras facilisis odio urna, quis molestie enim vulputate id</li>
                     <li>Cras dictum erat id tortor ornare, vel facilisis dolor vehicula</li>
@@ -204,7 +225,7 @@
         </div>
     </div>
 </section>
-        <section class="section services primary section-map" id="s-services">
+        <section class="section services primary section-map inactive" id="s-services">
     <div class="container">
         <header class="sep active">
             <div class="section-title">
@@ -212,54 +233,86 @@
             </div>
             <p class="sub-text">Suspendisse tempus sodales neque, eget eleifend <a href="#">turpis tristique</a> eu. Nullam a nisl maximus, ultrices est ut blandit nislr, elit in lobortis mattis.</p>
         </header>
-        <div class="owl-carousel services-slider inactive">
-            <div class="service">
-                <i class="livicon" data-n="desktop" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
-                <div class="title">
-                    <h4>Web Design</h4>
-                    <h5>Donec finibus fringilla purus</h5>
+        <div class="owl-carousel services-slider">
+            <div class="widget service">
+                <div class="widget-content">
+                    <header>
+                        <i class="livicon" data-n="desktop" data-op="1" data-c="#C1C1C1" data-s="48" data-hc="false"></i>
+                        <div class="title">
+                            <h4>Web Design</h4>
+                            <h5>Donec finibus fringilla purus</h5>
+                        </div>
+                    </header>
+                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
                 </div>
-                <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
             </div>
-            <div class="service">
-                <i class="livicon" data-n="tablet" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
-                <div class="title">
-                    <h4>Mobile App Design</h4>
-                    <h5>Donec finibus fringilla purus</h5>
+            <div class="widget service">
+                <div class="widget-content">
+                    <header>
+                        <i class="livicon" data-n="tablet" data-op="1" data-c="#C1C1C1" data-s="48" data-hc="false"></i>
+                        <div class="title">
+                            <h4>Mobile App Design</h4>
+                            <h5>Donec finibus fringilla purus</h5>
+                        </div>
+                    </header>
+                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
                 </div>
-                <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
             </div>
-            <div class="service">
-                <i class="livicon" data-n="image" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
-                <div class="title">
-                    <h4>Graphic Design</h4>
-                    <h5>Donec finibus fringilla purus</h5>
+            <div class="widget service">
+                <div class="widget-content">
+                    <header>
+                        <i class="livicon" data-n="image" data-op="1" data-c="#C1C1C1" data-s="48" data-hc="false"></i>
+                        <div class="title">
+                            <h4>Graphic Design</h4>
+                            <h5>Donec finibus fringilla purus</h5>
+                        </div>
+                    </header>
+                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
                 </div>
-                <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
             </div>
-            <div class="service">
-                <i class="livicon" data-n="doc-portrait" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
-                <div class="title">
-                    <h4>Posters & Flyers</h4>
-                    <h5>Donec finibus fringilla purus</h5>
+            <div class="widget service">
+                <div class="widget-content">
+                    <header>
+                        <i class="livicon" data-n="doc-portrait" data-op="1" data-c="#C1C1C1" data-s="48" data-hc="false"></i>
+                        <div class="title">
+                            <h4>Posters & Flyers</h4>
+                            <h5>Donec finibus fringilla purus</h5>
+                        </div>
+                    </header>
+                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
                 </div>
-                <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
             </div>
-            <div class="service">
-                <i class="livicon" data-n="connect" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
-                <div class="title">
-                    <h4>Social Media</h4>
-                    <h5>Donec finibus fringilla purus</h5>
+            <div class="widget service">
+                <div class="widget-content">
+                    <header>
+                        <i class="livicon" data-n="connect" data-op="1" data-c="#C1C1C1" data-s="48" data-hc="false"></i>
+                        <div class="title">
+                            <h4>Social Media</h4>
+                            <h5>Donec finibus fringilla purus</h5>
+                        </div>
+                    </header>
+                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
                 </div>
-                <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
             </div>
-            <div class="service">
-                <i class="livicon" data-n="servers" data-op="1" data-c="#C1C1C1" data-s="55" data-hc="false"></i>
-                <div class="title">
-                    <h4>Web Hosting</h4>
-                    <h5>Donec finibus fringilla purus</h5>
+            <div class="widget service">
+                <div class="widget-content">
+                    <header>
+                        <i class="livicon" data-n="servers" data-op="1" data-c="#C1C1C1" data-s="48" data-hc="false"></i>
+                        <div class="title">
+                            <h4>Web Hosting</h4>
+                            <h5>Donec finibus fringilla purus</h5>
+                        </div>
+                    </header>
+                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
                 </div>
-                <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
+            </div>
+        </div>
+        <div class="nav-carousel">
+            <div class="icon-round-border-lrg nav-prev">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <div class="icon-round-border-lrg nav-next">
+                <i class="fa fa-angle-right"></i>
             </div>
         </div>
     </div>
@@ -367,7 +420,7 @@
                     </a>
                     <a href="/assets/images/stock6.jpg" class="icon-round-border icon-view">
                         <i class="fa fa-search"></i>
-                    </a>>
+                    </a>
                 </div>
                 <h4><a href="single-project.html">Cras Facilisis</a></h4>
                 <p>Cras dictum erat id tortor ornare.</p>
@@ -437,6 +490,14 @@
                     <p>Suspendisse tempus sodales neque, eget eleifend <b>turpis tristique</b> eu. Nullam a nisl maximus, <b><span>ultrices est</span></b> ut blandit nislr, elit in lobortis mattis.</p>
                     <h5><cite>John Doe - Theme Forest</cite></h5>
                 </blockquote>
+            </div>
+        </div>
+        <div class="nav-carousel">
+            <div class="icon-round-border-lrg nav-prev">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <div class="icon-round-border-lrg nav-next">
+                <i class="fa fa-angle-right"></i>
             </div>
         </div>
     </div>
@@ -529,9 +590,18 @@
                 </ul>
             </div>
             <div class="span-3 footer-col">
-                <h3>Stay in Touch</h3>
-                <h4>We are on many social sites</h4>
-                <p>Find us on many other websites to keep up to date with our latest designs, projects and find out what we're up to.</p>
+                <h3>Newsletter</h3>
+                <h4>Sign up to our mailing list</h4>
+                <p>Suspendisse tempus sodales neque, eget eleifend turpis tristique eu.</p>
+                <form class="newsletter h5-valid">
+                    <div class="form-element">
+                        <input type="email" class="box" required="" placeholder="Enter your email address" />
+                        <label>Email Address</label>
+                        <button type="submit">
+                            <i class="fa fa-check"></i>
+                        </button>
+                    </div>
+                </form>
                 <div class="social-icons">
                     <a href="#" class="icon tooltip" data-tip="Dribbble">
                         <i class="fa fa-dribbble"></i>
@@ -560,33 +630,29 @@
                     <div class="twitter-article">
                         <div class="twitter-pic">
                             <a href="/assets/images/twitter-pic.jpg" class="modal-image">
-                                <img width="42" height="42" src="/assets/images/twitter-pic.jpg" alt="">
+                                <img width="56" height="56" src="/assets/images/twitter-pic.jpg" alt="">
                             </a>
+                            <div class="tweet-time"><a href="#">23 Sep</a></div>
                         </div>
                         <div class="twitter-text">
-                            <p>
-                                <span class="tweetprofilelink">
-                                    <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
-                                </span>
-                                <span class="tweet-time"><a href="#">23 Sep</a></span><br>
-                                Suspendisse tempus neque, eget eleifend turpis tristique eu.
-                            </p>
+                            <div class="tweetprofilelink">
+                                <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
+                            </div>
+                            <p>Suspendisse tempus neque, eget eleifend turpis tristique eu.</p>
                         </div>
                     </div>
                     <div class="twitter-article">
                         <div class="twitter-pic">
                             <a href="/assets/images/twitter-pic.jpg" class="modal-image">
-                                <img width="42" height="42" src="/assets/images/twitter-pic.jpg" alt="">
+                                <img width="56" height="56" src="/assets/images/twitter-pic.jpg" alt="">
                             </a>
+                            <div class="tweet-time"><a href="#">23 Sep</a></div>
                         </div>
                         <div class="twitter-text">
-                            <p>
-                                <span class="tweetprofilelink">
-                                    <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
-                                </span>
-                                <span class="tweet-time"><a href="#">10 Oct</a></span><br>
-                                Suspendisse tempus neque, eget eleifend turpis tristique eu.
-                            </p>
+                            <div class="tweetprofilelink">
+                                <strong><a href="#">Theme Forest</a></strong> <a href="#">@themeforest</a>
+                            </div>
+                            <p>Suspendisse tempus neque, eget eleifend turpis tristique eu.</p>
                         </div>
                     </div>
                 </div>                        
@@ -662,10 +728,26 @@
                                 About
                             </a>
                         </li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li>
+                            <a href="services.html">
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </div>

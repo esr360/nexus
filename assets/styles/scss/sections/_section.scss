@@ -33,7 +33,7 @@ Start building the basic layout
 		}
 		ul {
 			@extend ul.reset;
-			font-size: $large-font-size;
+			font-size: $font-size-1;
 			li {
 				display: inline-block;
 				&:after {
@@ -50,17 +50,17 @@ Start building the basic layout
 					color: $brand-1;
 				}
 				.fa-calendar {
-					font-size: 0.9em;
+					font-size: $font-size-0;
 				}
 			}
 		}
 	}
 
 	.section-title {
-		font-size: 2.85rem;
 		h2,
 		h3 {
 			margin: 0.25em 0;	
+			font-size: $font-size-4;
 		    &:first-child {
 		    	margin-top: 0;
 		    }
@@ -71,19 +71,20 @@ Start building the basic layout
 		p {
 			margin-top: 0;
 			margin-bottom: 0;
-			font-size: 1.8rem;
+			font-size: $font-size-4;
 			line-height: 1;
 			color: $brand-1;
 		}
 	}
 
 	&.section-map {
-		padding-bottom: 11em !important;
 		position: relative;
 		&:after {
+			display: none;
 			content: "";
 			background-image: url('../../images/dot-map.png');
 			background-repeat: no-repeat;
+			background-size: 100%;
 			width: 60%;
 			left: 0;
 			right: 0;
@@ -96,7 +97,7 @@ Start building the basic layout
 	}
 
 	.lead {
-		font-size: $large-font-size;
+		font-size: $font-size-3;
 	}
 
 	.nav-carousel {
@@ -131,13 +132,34 @@ Start building for larger resolutions
 			width: 80%;
 			margin-left: auto;
 			margin-right: auto;
+			ul {
+				font-size: $font-size-3;
+			}
+		}
+		.section-title {
+			h2,
+			h3 {
+				font-size: $font-size-5;
+			}
 		}
 	}
 
 	@media (min-width: $breakpoint-3) {
 		header {
 			p {
-				font-size: $large-font-size;
+				font-size: $font-size-3;
+			}
+		}
+		.section-title {
+			h2,
+			h3 {
+				font-size: $font-size-6;
+			}
+		}
+		&.section-map {
+			padding-bottom: 11em !important;
+			&:after {
+				display: block;
 			}
 		}
 	}
