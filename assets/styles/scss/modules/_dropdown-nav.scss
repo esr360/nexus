@@ -76,8 +76,8 @@ Start building the basic layout
 			}
 		}
 		&:first-child {
-			a {
-				border-top: 8px solid darken($brand-1, 10%);
+			> a {
+				border-top: 8px solid darken($brand-1, 10%) !important;
 			}
 		}
 		&:last-child {
@@ -159,4 +159,21 @@ Start building for larger resolutions
 	opacity: 1;
 	visibility: visible;
 	margin-top: 1rem;
+}
+
+// there will be a much better way of doing this lol
+> ul {
+	> li {
+		&:not(:first-child) {
+			ul {
+				li {					
+					&:first-child {
+						> a {
+							border-top: none !important;
+						}
+					}
+				}
+			}
+		}
+	}
 }

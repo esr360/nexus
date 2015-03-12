@@ -3,16 +3,16 @@ $ROOT = '/';
 // start the ouput buffer
 ob_start(); 
 // page config
-$title = "Our Blog";
-$url = "blog.html";
-$type = "blog";
+$title = "Index";
+$url = "index-3.html";
+$type = "";
 $parentTitle = "";
 $parentUrl = "";
 ?>
 
 <?php require("../global/head.php"); ?>
 
-<body class="further blog blog-index">
+<body class="index hero-fixed">
 
     <!-- SITE CONTENT -->
 
@@ -22,19 +22,29 @@ $parentUrl = "";
 
         <?php require("../global/header.php"); ?>
 
-        <!-- Sub-Header -->
+        <!-- Hero -->
 
-        <?php require("../global/sub-header.php"); ?>
-
-        <!-- Breadcrumb -->
-
-        <?php require("../global/breadcrumb.php"); ?>
+        <?php require("../sections/hero.php"); ?>
 
         <!-- Main Content -->
 
-        <?php require("../sections/blog.php"); ?>
+        <?php require("../sections/welcome.php"); ?>
 
-        <?php require("../sections/promo-banner.php"); ?>
+        <?php require("../sections/skills.php"); ?>
+
+        <?php require("../sections/services.php"); ?>
+
+        <?php require("../sections/quote.php"); ?>
+
+        <?php require("../sections/clients.php"); ?>
+
+        <?php require("../sections/latest-works.php"); ?>
+
+        <?php require("../sections/testimonials.php"); ?>
+
+        <?php require("../sections/latest-posts.php"); ?>
+
+        <div id="map"></div>
 
         <!-- Footer -->
 
@@ -55,15 +65,22 @@ $parentUrl = "";
     <?php require("../global/theme-options-js.php"); ?>
 
     <!-- General -->
-    
+
     <script src="<?php echo $ROOT; ?>assets/js/global.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/homepage.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/scroll-spy.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/section-welcome.js"></script>
+
+    <!-- Google Map -->
+    
+    <?php require("../global/google-map.php"); ?>
 
 </body>
 
 <?php require("../global/feet.php"); ?>
 
 <?php
-$cachefile = "../../blog.html";
+$cachefile = "../../index-3.html";
 $fp = fopen($cachefile, 'w'); 
 // save the contents of output buffer to the file
 fwrite($fp, ob_get_contents()); 

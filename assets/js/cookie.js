@@ -55,9 +55,27 @@ if($.cookie("nexus-color")) {
 }
 
 $(document).ready(function() { 
-    $(".theme-color").click(function() { 
+
+    $(".theme-options .theme-color").click(function() { 
         $("link.color-switcher").attr("href",$(this).attr('href'));
         $.cookie("nexus-color",$(this).attr('href'), {expires: 365, path: '/'});
         return false;
     });
+
+    var identifier = window.location.hash;
+
+    if (identifier === "#app-green") {
+        $("link.color-switcher").attr("href","assets/styles/css/app-green.css");
+        $.cookie("nexus-color","assets/styles/css/app-green.css", {expires: 365, path: '/'});
+    } else if (identifier === "#app-pink") {
+        $("link.color-switcher").attr("href","assets/styles/css/app-pink.css");
+        $.cookie("nexus-color","assets/styles/css/app-pink.css", {expires: 365, path: '/'});
+    }  else if (identifier === "#app-red") {
+        $("link.color-switcher").attr("href","assets/styles/css/app-red.css");
+        $.cookie("nexus-color","assets/styles/css/app-red.css", {expires: 365, path: '/'});
+    }  else if (identifier === "#app-blue") {
+        $("link.color-switcher").attr("href","assets/styles/css/app.css");
+        $.cookie("nexus-color","assets/styles/css/app.css", {expires: 365, path: '/'});
+    } 
+
 });

@@ -186,6 +186,9 @@ Start building for larger resolutions
 		top: 0;
 		width: 100%;
 	}
+	&.cp-active {
+		padding-top: 0 !important;
+	}
 }
 
 .video-bg {
@@ -216,4 +219,5 @@ Start building for larger resolutions
 	width: 100%;
 	background: rgba($black, 0.5);
 	display: none;
+	z-index: -1;
 }

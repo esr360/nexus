@@ -7,8 +7,7 @@ TO-DO LIST
 
 TODO
 
-- add cheatsheet/components page [html]
-- add homepage option landing page
+- add page options to dropdown nav
 - update documentation
 
 FOR NEXT RELEASE (1.1)
@@ -21,6 +20,7 @@ FOR NEXT RELEASE (1.1)
 - add dot navigation (fixed on right)
 - modal/popup login/register
 - add more pages (see dropdown menu)
+- add cheatsheet/components page [html]
 
 DONE
 
@@ -67,6 +67,9 @@ DONE
 - update contact us page (eg add 3 boxes) [html]
 - replace all repeated CSS font sizes with variables [css]
 - ensure mobile size consistencies
+- fix welcome tooltip
+- add homepage option landing page
+- fix fixed-header cp-nav
 
 ********************************
 

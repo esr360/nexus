@@ -18,7 +18,13 @@
                         <li class="active">
                             <a href="#site-content">Home</a>
                             <ul>
-                                <li><a href="#">Parallax Title</a></li>
+                                <li>
+                                    <a href="#">Parallax Title</a>
+                                    <ul>
+                                        <li><a href="#">One-Page</a></li>
+                                        <li><a href="#">Multi-Page</a></li>#
+                                    </ul>
+                                </li>
                                 <li><a href="#">Parallax Background</a></li>
                                 <li><a href="#">Fixed Background</a></li>
                                 <li><a href="#">Video Background</a></li>
@@ -41,8 +47,20 @@
                         <li<?php if ($title == "Index"){ ?> class="active"<?php } ?>>
                             <a href="index.html">Home</a>
                             <ul>
-                                <li><a href="#">Parallax Title</a></li>
-                                <li><a href="#">Parallax Background</a></li>
+                                <li>
+                                    <a href="#">Parallax Title</a>
+                                    <ul>
+                                        <li><a href="#">One-Page</a></li>
+                                        <li><a href="#">Multi-Page</a></li>#
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Parallax Background</a>
+                                    <ul>
+                                        <li><a href="#">One-Page</a></li>
+                                        <li><a href="#">Multi-Page</a></li>#
+                                    </ul>
+                                </li>
                                 <li><a href="#">Fixed Background</a></li>
                                 <li><a href="#">Video Background</a></li>
                             </ul>

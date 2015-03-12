@@ -13,13 +13,14 @@ $parentUrl = "";
 
 <?php require("../global/head.php"); ?>
 
-<body class="parallax-title index index-single">
+<body class="index index-single parallax-title">
 
     <!-- SITE CONTENT -->
 
     <div id="site-content">
 
         <!-- Header -->
+
         <?php require("../global/header.php"); ?>
 
         <!-- Hero -->
@@ -70,6 +71,7 @@ $parentUrl = "";
         <div id="map"></div>
 
         <!-- Footer -->
+
         <?php require("../global/footer.php"); ?>
 
     </div><!-- end #site-content -->
@@ -87,6 +89,7 @@ $parentUrl = "";
     <?php require("../global/theme-options-js.php"); ?>
 
     <!-- General -->
+
     <script src="<?php echo $ROOT; ?>assets/js/global.js"></script>
     <script src="<?php echo $ROOT; ?>assets/js/animate-number.js"></script>
     <script src="<?php echo $ROOT; ?>assets/js/form-validation.js"></script>
@@ -95,6 +98,7 @@ $parentUrl = "";
     <script src="<?php echo $ROOT; ?>assets/js/section-welcome.js"></script>
 
     <!-- Google Map -->
+    
     <?php require("../global/google-map.php"); ?>
 
 </body>

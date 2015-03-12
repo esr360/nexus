@@ -44,15 +44,19 @@ Elements
 @import "elements/tables";
 @import "elements/tabs";
 @import "elements/tooltips";
+@import "elements/widgets";
 
 /******************************************************************
 Modules
 ******************************************************************/
 
+@import "modules/author";
+@import "modules/blog-items";
 @import "modules/bottom-bar";
 @import "modules/breadcrumb";
 @import "modules/comments";
 @import "modules/control-panel-nav";
+@import "modules/desktop-carousel";
 @import "modules/earth";
 @import "modules/flyout-nav";
 @import "modules/footer";
@@ -64,8 +68,10 @@ Modules
 @import "modules/logo";
 @import "modules/main-nav";
 @import "modules/nav-trigger";
+@import "modules/newsletter";
 @import "modules/pagination";
 @import "modules/portfolio-items";
+@import "modules/scroll-down";
 @import "modules/scroll-top";
 @import "modules/search";
 @import "modules/sub-header";
@@ -77,11 +83,12 @@ Sections
 ******************************************************************/
 
 @import "sections/banner";
-@import "sections/blog-posts";
 @import "sections/clients";
 @import "sections/contact";
 @import "sections/hero";
+@import "sections/latest-posts";
 @import "sections/latest-works";
+@import "sections/more-info";
 @import "sections/pricing";
 @import "sections/quote";
 @import "sections/section";
@@ -89,9 +96,12 @@ Sections
 @import "sections/section-secondary";
 @import "sections/services";
 @import "sections/skills";
+@import "sections/stats";
 @import "sections/team";
 @import "sections/testimonials";
 @import "sections/welcome";
+@import "sections/what-we-offer";
+@import "sections/why-choose-us";
 
 /******************************************************************
 Pages

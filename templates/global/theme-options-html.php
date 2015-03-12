@@ -33,7 +33,7 @@
         <section class="theme-option">
             <h4 class="hidden">Theme Colors</h4>
             <div class="theme-colors">
-                <a href="<?php echo $ROOT; ?>assets/styles/css/app.css" class="theme-color selected"></a>
+                <a href="<?php echo $ROOT; ?>assets/styles/css/app.css" class="theme-color"></a>
                 <a href="<?php echo $ROOT; ?>assets/styles/css/app-green.css" class="theme-color"></a>
                 <a href="<?php echo $ROOT; ?>assets/styles/css/app-pink.css" class="theme-color"></a>
                 <a href="<?php echo $ROOT; ?>assets/styles/css/app-red.css" class="theme-color"></a>

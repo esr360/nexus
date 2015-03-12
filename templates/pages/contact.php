@@ -19,12 +19,15 @@ $parentUrl = "";
     <div id="site-content">
 
         <!-- Header -->
+
         <?php require("../global/header.php"); ?>
 
         <!-- Sub-Header -->
+
         <?php require("../global/sub-header.php"); ?>
 
         <!-- Breadcrumb -->
+
         <?php require("../global/breadcrumb.php"); ?>
 
         <!-- Main Content -->
@@ -34,6 +37,7 @@ $parentUrl = "";
         <div id="map"></div>
 
         <!-- Footer -->
+
         <?php require("../global/footer.php"); ?>
 
     </div><!-- end #site-content -->
@@ -51,10 +55,12 @@ $parentUrl = "";
     <?php require("../global/theme-options-js.php"); ?>
 
     <!-- General -->
+
     <script src="<?php echo $ROOT; ?>assets/js/global.js"></script>
     <script src="<?php echo $ROOT; ?>assets/js/form-validation.js"></script>
 
     <!-- Google Map -->
+    
     <?php require("../global/google-map.php"); ?>
 
 </body>

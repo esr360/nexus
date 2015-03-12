@@ -53,7 +53,7 @@ $(document).ready(function() {
         $(this).hide();
         $('.hidden-comment').fadeIn(400);
     });
-
+    
 }); // End document.ready
 
 $(window).load(function(){
