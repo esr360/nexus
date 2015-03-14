@@ -7,8 +7,8 @@ TO-DO LIST
 
 TODO
 
-- browser testing on desktop
 - responsive testing on iphone
+- browser testing on desktop
 - update documentation
 
 FOR NEXT RELEASE (1.1)
