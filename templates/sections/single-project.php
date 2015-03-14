@@ -12,7 +12,7 @@
 
         <div class="project-carousel">
             <div class="project-preview">
-                <img src="<?php echo $ROOT; ?>assets/images/desktop.png" alt="Single Project" />
+                <img src="<?php echo $ROOT; ?>assets/images/desktop-off.png" alt="Single Project" />
                 <div class="owl-carousel previews" id="project-gallery">
                     <a href="<?php echo $ROOT; ?>assets/images/stock7.jpg">
                         <img src="<?php echo $ROOT; ?>assets/images/stock7.jpg" alt="" />

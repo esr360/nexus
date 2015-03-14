@@ -53,9 +53,6 @@ Start building the basic layout
 				}
 			}
 		}
-		ul {
-			font-family: $font-2;
-		}
 		> ul {
 			transition: 0s;
 			margin-top: 0;
@@ -95,6 +92,8 @@ Start building the basic layout
 					right: 1rem;
 					opacity: 0;
 				}
+			}
+			> li {				
 				> ul {
 					transition: 0.4s;
 					position: absolute;
@@ -102,16 +101,24 @@ Start building the basic layout
 					left: 14rem;
 					background: #1C1C1C;
 					border-radius: 0.4rem;
-					font-size: 0.75em;
+					font-size: 0.9em;
 					width: 88%;
 					height: 100%;
 					padding: 0.5rem 2rem;
 					margin: 0;
+					overflow: auto;
 					@extend .invisible;
 					li {						
 						a {
 							color: $white;
+							&:before,
+							&:after {
+								display: none;
+							}
 						}
+					}
+					ul {
+						display: none;
 					}
 				}
 			}
@@ -125,7 +132,8 @@ Start building the basic layout
 						font-family: FontAwesome;
 						float: right;
 						margin-top: 0.025rem;
-						opacity: 0.5;
+						opacity: 0;
+						transition: 0.4s;
 					}					
 				}
 			}		
@@ -211,6 +219,13 @@ CP nav is active
 			}
 			> ul {				
 				padding-left: 4rem;
+				a {					
+					&:not(:only-child) {
+						&:before {
+							opacity: 0.5;
+						}					
+					}
+				}
 			}
 			.main-search {
 				top: 3.6%;

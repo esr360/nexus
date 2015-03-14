@@ -32,7 +32,8 @@ Start building the basic layout
 			box-shadow: inset 0px -1px 0px 0px rgba(255,255,255,0.05);
 			border-bottom: 1px solid rgba(0,0,0,0.5);
 			-webkit-backface-visibility: hidden;
-			&:before, &:after {
+			&:before, 
+			&:after {
 				font-family: FontAwesome;	
 				transition: 0.4s;		
 			}
@@ -44,15 +45,15 @@ Start building the basic layout
 			&:after {
 				content: "\f105";
 				display: none;
-				color: rgba(255,255,255,0.5);
-				font-size: $font-size-2;
-				margin-top: -0.25em;
+				position: absolute;
+				top: 0;
+				right: 1em;
+				color: rgba(255,255,255,0.3);
 			}
 			&:not(:only-child) {
+				padding-right: 2.75em !important;
 				&:after {				
-					position: absolute;
-					right: 1em;
-					display: inline-block;
+					display: inline;
 				}
 			}
 		}
@@ -92,6 +93,7 @@ Start building the basic layout
 		top: 0;
 		left: 150%;
 		left: calc(150% - 1px);
+		margin-left: -0.5em;
 		margin-top: 0;
 		border-radius: 0;
 		z-index: -1;
@@ -144,13 +146,6 @@ Start building the basic layout
 		left: 0;
 		right: 0;
 		margin: auto;
-	}
-
-/******************************************************************
-Start building for larger resolutions
-******************************************************************/
-
-	@media (min-width: $breakpoint-4) {
 	}
 
 } // end dropdown ul

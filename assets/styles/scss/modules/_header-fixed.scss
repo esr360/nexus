@@ -69,8 +69,12 @@ body.fh-visible {
 			visibility: visible;
 		}
 	}
+	&.fixed-header #flyout-trigger.opera-trigger {
+		display: none !important;
+	}
 	.main-search {
-		input, .button {			
+		input, 
+		.button {			
 			font-size: 1.25em;
 		}
 		[type="submit"] {

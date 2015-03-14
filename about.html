@@ -35,6 +35,7 @@
     <div id="site-content">
 
         <!-- Header -->
+
         <header class="app-header" id="app-header">
     <div class="container">
         <div class="header-wrapper">
@@ -54,10 +55,34 @@
                         <li>
                             <a href="index.html">Home</a>
                             <ul>
-                                <li><a href="#">Parallax Title</a></li>
-                                <li><a href="#">Parallax Background</a></li>
-                                <li><a href="#">Fixed Background</a></li>
-                                <li><a href="#">Video Background</a></li>
+                                <li>
+                                    <a href="index-single.html">Parallax Title</a>
+                                    <ul>
+                                        <li><a href="index-single.html">One-Page</a></li>
+                                        <li><a href="index.html">Multi-Page</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index-single-2.html">Parallax Background</a>
+                                    <ul>
+                                        <li><a href="index-single-2.html">One-Page</a></li>
+                                        <li><a href="index-2.html">Multi-Page</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index-single-3.html">Fixed Background</a>
+                                    <ul>
+                                        <li><a href="index-single-3.html">One-Page</a></li>
+                                        <li><a href="index-3.html">Multi-Page</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index-single-4.html">Video Background</a>
+                                    <ul>
+                                        <li><a href="index-single-4.html">One-Page</a></li>
+                                        <li><a href="index-4.html">Multi-Page</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li class="active"><a href="about.html">About</a></li>
@@ -74,6 +99,7 @@
     </div>
 </header>
         <!-- Sub-Header -->
+
         <section class="hero sub-header">
     <div class="container inactive">
         <div class="sh-title-wrapper">
@@ -84,6 +110,7 @@
     </div>
 </section>
         <!-- Breadcrumb -->
+
         <nav class="breadcrumb">
     <div class="container">
         <ul>
@@ -433,6 +460,59 @@
             </div>
         </div>
     </div>
+</section>        
+        <section class="section secondary more-info inactive" id="s-more-info">
+    <div class="container">
+        <div class="row">
+            <div class="span-6 info-video">
+                <div class="auto-resizable-iframe">
+                    <div>
+                        <iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/Q3oItpVa9fs"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="span-6 more-info-meta">
+                <div class="section-title">
+                    <h2>More Info</h2>
+                    <h3><i>Learn More About Us</i></h3>
+                </div>
+                <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing</b> elit. Vestibulum euismod nisi tincidunt mollis sagittis. Sed rutrum quam non tortor ornare.</p>             
+                <ul class="bullet-list min-bp2">
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit</li>
+                    <li>Cras facilisis odio urna, quis molestie enim vulputate id</li>
+                    <li>Cras dictum erat id tortor ornare, vel facilisis dolor vehicula</li>
+                </ul>
+                <p class="button-set">
+                    <a href="contact.html" 
+                        class="button round brand-1">Get in Touch</a>
+                    <span class="text-div">-</span>
+                    <a href="about.html">Read More</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class="stats row block-columns">
+    <div class="stat span-3">
+        <i class="livicon" data-n="code" data-c="#ffffff" data-op="1" data-s="68" data-hc="false"></i>
+        <h4><span id="stat-1" data-val="14266">0</span></h4>
+        <p>Lines of code</p>
+    </div>
+    <div class="stat span-3">
+        <i class="livicon" data-n="rocket" data-c="#ffffff" data-op="1" data-s="68" data-hc="false"></i>
+        <h4><span id="stat-2" data-val="136">0</span></h4>
+        <p>Completed projects
+    </div>
+    <div class="stat span-3">
+        <i class="livicon" data-n="users" data-c="#ffffff" data-op="1" data-s="68" data-hc="false"></i>
+        <h4><span id="stat-4" data-val="28">0</span></h4>
+        <p>Happy clients</p>
+    </div>
+    <div class="stat span-3">
+        <i class="livicon" data-n="barchart" data-c="#ffffff" data-op="1" data-s="68" data-hc="false"></i>
+        <h4><span id="stat-3" data-val="3254">0</span></h4>
+        <p>Sales
+    </div>
 </section>
         <section class="section primary latest-works inactive" id="portfolio">
     <div class="container">
@@ -502,6 +582,7 @@
         <div id="map"></div>
 
         <!-- Footer -->
+
         <footer class="app-footer">
     <div class="container footer-content">
         <div class="row">
@@ -764,7 +845,7 @@
         <section class="theme-option">
             <h4 class="hidden">Theme Colors</h4>
             <div class="theme-colors">
-                <a href="/assets/styles/css/app.css" class="theme-color selected"></a>
+                <a href="/assets/styles/css/app.css" class="theme-color"></a>
                 <a href="/assets/styles/css/app-green.css" class="theme-color"></a>
                 <a href="/assets/styles/css/app-pink.css" class="theme-color"></a>
                 <a href="/assets/styles/css/app-red.css" class="theme-color"></a>
@@ -801,10 +882,13 @@
 <!--[if gt IE 9]>  <script src="/assets/js/theme-options.js"></script> <![endif]-->
 <!--[if !IE]><!--> <script src="/assets/js/theme-options.js"></script> <!--<![endif]-->
     <!-- General -->
+
     <script src="/assets/js/global.js"></script>
+    <script src="/assets/js/animate-number.js"></script>
     <script src="/assets/js/section-welcome.js"></script>
 
     <!-- Google Map -->
+    
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="/assets/js/google-map.js"></script>
 </body>

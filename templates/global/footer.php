@@ -59,7 +59,7 @@
                     <div class="twitter-article">
                         <div class="twitter-pic">
                             <a href="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" class="modal-image">
-                                <img width="56" height="56" src="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" alt="">
+                                <img width="50" height="50" src="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" alt="">
                             </a>
                             <div class="tweet-time"><a href="#">23 Sep</a></div>
                         </div>
@@ -73,7 +73,7 @@
                     <div class="twitter-article">
                         <div class="twitter-pic">
                             <a href="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" class="modal-image">
-                                <img width="56" height="56" src="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" alt="">
+                                <img width="50" height="50" src="<?php echo $ROOT; ?>assets/images/twitter-pic.jpg" alt="">
                             </a>
                             <div class="tweet-time"><a href="#">23 Sep</a></div>
                         </div>

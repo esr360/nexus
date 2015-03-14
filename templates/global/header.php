@@ -16,18 +16,36 @@
                     <ul>
                         <!-- Dropdown Nav --> 
                         <li class="active">
-                            <a href="#site-content">Home</a>
+                            <a href="index.html">Home</a>
                             <ul>
                                 <li>
-                                    <a href="#">Parallax Title</a>
+                                    <a href="index-single.html">Parallax Title</a>
                                     <ul>
-                                        <li><a href="#">One-Page</a></li>
-                                        <li><a href="#">Multi-Page</a></li>#
+                                        <li><a href="index-single.html">One-Page</a></li>
+                                        <li><a href="index.html">Multi-Page</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Parallax Background</a></li>
-                                <li><a href="#">Fixed Background</a></li>
-                                <li><a href="#">Video Background</a></li>
+                                <li>
+                                    <a href="index-single-2.html">Parallax Background</a>
+                                    <ul>
+                                        <li><a href="index-single-2.html">One-Page</a></li>
+                                        <li><a href="index-2.html">Multi-Page</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index-single-3.html">Fixed Background</a>
+                                    <ul>
+                                        <li><a href="index-single-3.html">One-Page</a></li>
+                                        <li><a href="index-3.html">Multi-Page</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index-single-4.html">Video Background</a>
+                                    <ul>
+                                        <li><a href="index-single-4.html">One-Page</a></li>
+                                        <li><a href="index-4.html">Multi-Page</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li><a href="#s-welcome">About</a></li>
@@ -48,21 +66,33 @@
                             <a href="index.html">Home</a>
                             <ul>
                                 <li>
-                                    <a href="#">Parallax Title</a>
+                                    <a href="index-single.html">Parallax Title</a>
                                     <ul>
-                                        <li><a href="#">One-Page</a></li>
-                                        <li><a href="#">Multi-Page</a></li>#
+                                        <li><a href="index-single.html">One-Page</a></li>
+                                        <li><a href="index.html">Multi-Page</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="#">Parallax Background</a>
+                                    <a href="index-single-2.html">Parallax Background</a>
                                     <ul>
-                                        <li><a href="#">One-Page</a></li>
-                                        <li><a href="#">Multi-Page</a></li>#
+                                        <li><a href="index-single-2.html">One-Page</a></li>
+                                        <li><a href="index-2.html">Multi-Page</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Fixed Background</a></li>
-                                <li><a href="#">Video Background</a></li>
+                                <li>
+                                    <a href="index-single-3.html">Fixed Background</a>
+                                    <ul>
+                                        <li><a href="index-single-3.html">One-Page</a></li>
+                                        <li><a href="index-3.html">Multi-Page</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="index-single-4.html">Video Background</a>
+                                    <ul>
+                                        <li><a href="index-single-4.html">One-Page</a></li>
+                                        <li><a href="index-4.html">Multi-Page</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
                         <li<?php if ($title == "About Us") { ?> class="active"<?php } ?>><a href="about.html">About</a></li>

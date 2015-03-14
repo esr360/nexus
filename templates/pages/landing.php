@@ -61,7 +61,7 @@ $parentUrl = "";
                     </div>
                     <div class="span-3">
                         <h3>Parallax Background</h3>
-                        <a href="index-single-2#app-pink.html" target="blank">
+                        <a href="index-single-2.html#app-pink" target="blank">
                             <img src="<?php echo $ROOT; ?>assets/images/demo/option2.png" alt="" />
                         </a>
                         <div class="theme-colors">

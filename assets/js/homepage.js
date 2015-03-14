@@ -36,7 +36,7 @@ $(document).ready(function() {
             var st = $(this).scrollTop();
 
             heroBg.css({ 
-                'background-position' : "0 "+(st/2.5)+"px, 0 0",
+                'background-position' : "0 "+(st/1.5)+"px, 0 0",
             }); 
 
         });

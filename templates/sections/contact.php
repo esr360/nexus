@@ -1,4 +1,4 @@
-<section class="section primary contact inactive" id="s-contact">
+<section class="section primary contact <?php if ($type == "one-page") { ?> class="inactive"<?php } ?>" id="s-contact">
     <div class="container">
         <?php if ($title != "Contact Us") { ?>
             <header class="sep active">

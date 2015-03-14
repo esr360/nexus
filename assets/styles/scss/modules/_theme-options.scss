@@ -44,7 +44,8 @@
 			margin-bottom: 1em;
 			border-bottom: 1px solid rgba(0,0,0,0.1);
 		}
-		p, .input-toggle {
+		p, 
+		.input-toggle {
 			float: left;
 		}
 		.input-toggle {
@@ -218,6 +219,7 @@ Start building for smaller resolutions
 	}
 
 	a {
+		&, 
 		&:hover {
 			border-bottom: 0;
 		}

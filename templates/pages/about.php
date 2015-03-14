@@ -43,6 +43,10 @@ $parentUrl = "";
         <?php require("../sections/team.php"); ?>
 
         <?php require("../sections/clients.php"); ?>
+        
+        <?php require("../sections/more-info.php"); ?>
+
+        <?php require("../sections/stats.php"); ?>
 
         <?php require("../sections/latest-works-further.php"); ?>
 
@@ -69,6 +73,7 @@ $parentUrl = "";
     <!-- General -->
 
     <script src="<?php echo $ROOT; ?>assets/js/global.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/animate-number.js"></script>
     <script src="<?php echo $ROOT; ?>assets/js/section-welcome.js"></script>
 
     <!-- Google Map -->

@@ -303,7 +303,7 @@ var portfolioCarousel = $('.portfolio-carousel');
 
 portfolioCarousel.owlCarousel({
     items: 1,
-    loop: false,
+    loop: true,
     dots: true,
     nav: false,
     slideBy: 1

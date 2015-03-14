@@ -7,7 +7,8 @@ TO-DO LIST
 
 TODO
 
-- add page options to dropdown nav
+- browser testing on desktop
+- responsive testing on iphone
 - update documentation
 
 FOR NEXT RELEASE (1.1)
@@ -70,6 +71,7 @@ DONE
 - fix welcome tooltip
 - add homepage option landing page
 - fix fixed-header cp-nav
+- add page options to dropdown nav
 
 ********************************
 
