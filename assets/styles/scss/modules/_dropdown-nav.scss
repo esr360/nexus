@@ -20,6 +20,7 @@ Start building the basic layout
 	text-align: left;
 	left: 50%;
 	transform: translateX(-50%);
+	font-weight: 400;
 	li {
 		display: block;
 		position: relative;
@@ -93,7 +94,7 @@ Start building the basic layout
 		top: 0;
 		left: 150%;
 		left: calc(150% - 1px);
-		margin-left: -0.5em;
+		margin-left: -0.55em;
 		margin-top: 0;
 		border-radius: 0;
 		z-index: -1;
