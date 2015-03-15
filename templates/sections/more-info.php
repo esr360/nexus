@@ -4,7 +4,7 @@
             <div class="span-6 info-video">
                 <div class="auto-resizable-iframe">
                     <div>
-                        <iframe frameborder="0" allowfullscreen="" src="http://www.youtube.com/embed/Q3oItpVa9fs"></iframe>
+                        <iframe allowfullscreen="" src="http://www.youtube.com/embed/Q3oItpVa9fs"></iframe>
                     </div>
                 </div>
             </div>

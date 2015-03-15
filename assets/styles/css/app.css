@@ -1829,12 +1829,13 @@ Owl Theme
 ================================================================ */
 
 .feature-block-wrapper {
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 8px solid #1795c5;
 }
 
 .feature-block {
   background: rgba(255, 255, 255, 0.5);
-  border-top: 8px solid #1795c5;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: none;
   text-align: center;
   padding: 2.5em 1em;
   -webkit-transition: 0.4s;
@@ -6695,7 +6696,7 @@ body.search-active .main-search {
 
   .theme-options .options-trigger {
     top: 5.25em;
-    right: 2.15em;
+    right: 2.1em;
     border-radius: 0.25em;
     z-index: 9;
     height: 39px;
@@ -7604,6 +7605,7 @@ Sections
 
 .section.more-info .auto-resizable-iframe iframe {
   position: absolute;
+  border: 0px;
   top: 0px;
   left: 0px;
   width: 100%;

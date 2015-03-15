@@ -96,7 +96,6 @@
                     <a href="#" class="icon-lrg tooltip" data-tip="LinkedIn">
                         <i class="fa fa-linkedin"></i>
                     </a>
-                    </a>
                 </div>
             </div>
         </div>

@@ -1829,12 +1829,13 @@ Owl Theme
 ================================================================ */
 
 .feature-block-wrapper {
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 8px solid #bb1c1c;
 }
 
 .feature-block {
   background: rgba(255, 255, 255, 0.5);
-  border-top: 8px solid #bb1c1c;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: none;
   text-align: center;
   padding: 2.5em 1em;
   -webkit-transition: 0.4s;
@@ -5309,6 +5310,10 @@ body.fh-visible .fixed-header-container .app-header {
   visibility: visible;
 }
 
+body.fh-visible.fixed-header #flyout-trigger.opera-trigger {
+  display: none !important;
+}
+
 body.fh-visible .main-search input,
 body.fh-visible .main-search .button {
   font-size: 1.25em;
@@ -5595,7 +5600,7 @@ body.fh-visible .main-search [type="submit"] {
   left: 150%;
   left: -webkit-calc(150% - 1px);
   left: calc(150% - 1px);
-  margin-left: -0.475em;
+  margin-left: -0.5em;
   margin-top: 0;
   border-radius: 0;
   z-index: -1;
@@ -6691,7 +6696,7 @@ body.search-active .main-search {
 
   .theme-options .options-trigger {
     top: 5.25em;
-    right: 2.15em;
+    right: 2.1em;
     border-radius: 0.25em;
     z-index: 9;
     height: 39px;
@@ -6841,7 +6846,7 @@ body.search-active .main-search {
 }
 
 #twitter-feed .twitter-pic {
-  width: 30%;
+  width: 16%;
   width: -webkit-calc(42px - 0.0000001em);
   width: calc(42px - 0.0000001em);
 }
@@ -7600,6 +7605,7 @@ Sections
 
 .section.more-info .auto-resizable-iframe iframe {
   position: absolute;
+  border: 0px;
   top: 0px;
   left: 0px;
   width: 100%;

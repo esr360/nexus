@@ -13,6 +13,8 @@ $(document).ready(function() {
             // Disable scroll-wheel zoom
             scrollwheel: false,
 
+            draggable: false,
+
             // The latitude and longitude to center the map (always required)
             center: new google.maps.LatLng(40.7127, -74.0059), 
 
@@ -27,6 +29,7 @@ $(document).ready(function() {
 
         // Create the Google Map using out element and options defined above
         var map = new google.maps.Map(mapElement, mapOptions);
+        
     }
 
 }); // End document.ready
