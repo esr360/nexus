@@ -2592,7 +2592,7 @@ ol.clear {
 [class*="bullet-list"] li {
   line-height: 1.6;
   position: relative;
-  padding-left: 1em;
+  padding-left: 1.5em;
 }
 
 [class*="bullet-list"] li:before,
@@ -2604,18 +2604,18 @@ ol.clear {
 
 [class*="bullet-list"] li:before {
   content: "\f138";
-  left: -0.5em;
+  left: 0;
 }
 
 [class*="bullet-list"] li:after {
   display: none;
   content: "\f137";
-  right: -0.5em;
+  right: 0;
 }
 
 [class*="bullet-list"][class*="-right"] li {
   padding-left: 0;
-  padding-right: 1em;
+  padding-right: 1.5em;
 }
 
 [class*="bullet-list"][class*="-right"] li:before {
