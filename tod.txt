@@ -12,7 +12,6 @@ TODO
 -- remove options js
 -- removing landing files
 -- ensure all links work
--- remove google map code
 -- livicons
 
 FOR NEXT RELEASE (1.1)
