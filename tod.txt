@@ -7,13 +7,6 @@ TO-DO LIST
 
 TODO
 
-- prepare ThemeForest package
--- remove options styles
--- remove options js
--- removing landing files
--- ensure all links work
--- livicons
-
 FOR NEXT RELEASE (1.1)
 
 - improve welcome section js
@@ -80,6 +73,16 @@ DONE
 - browser testing on desktop
 - fix scroll mouse animation
 - update doc to include 4 homepage options
+- prepare ThemeForest package
+-- remove options styles
+-- remove options js
+-- removing landing files
+-- ensure all links work
+-- remove google map code
+-- remove dropdown nav
+-- remove HTML logo
+-- livicons
+-- remove youtube vid
 
 ********************************
 
