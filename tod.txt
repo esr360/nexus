@@ -7,9 +7,7 @@ TO-DO LIST
 
 TODO
 
-- responsive testing on iphone
-- browser testing on desktop
-- update documentation
+- update doc to include 4 homepage options
 
 FOR NEXT RELEASE (1.1)
 
@@ -22,6 +20,7 @@ FOR NEXT RELEASE (1.1)
 - modal/popup login/register
 - add more pages (see dropdown menu)
 - add cheatsheet/components page [html]
+- update documentation
 
 DONE
 
@@ -72,6 +71,9 @@ DONE
 - add homepage option landing page
 - fix fixed-header cp-nav
 - add page options to dropdown nav
+- responsive testing on iphone
+- browser testing on desktop
+- fix scroll mouse animation
 
 ********************************
 
