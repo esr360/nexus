@@ -7,7 +7,7 @@ TO-DO LIST
 
 TODO
 
-- update doc to include 4 homepage options
+- prepare ThemeForest package
 
 FOR NEXT RELEASE (1.1)
 
@@ -74,6 +74,7 @@ DONE
 - responsive testing on iphone
 - browser testing on desktop
 - fix scroll mouse animation
+- update doc to include 4 homepage options
 
 ********************************
 

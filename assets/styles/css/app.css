@@ -6697,7 +6697,7 @@ body.search-active .main-search {
 
   .theme-options .options-trigger {
     top: 5.25em;
-    right: 2.1em;
+    right: 1.95em;
     border-radius: 0.25em;
     z-index: 9;
     height: 39px;
@@ -8338,6 +8338,7 @@ Sections
 .team .team-pic img {
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  min-width: 100%;
   display: block;
 }
 
@@ -8685,7 +8686,7 @@ Sections
 }
 
 .section.why-choose-us .wcu-graphic {
-  width: 40%;
+  width: 60%;
   margin: auto;
 }
 
@@ -8785,6 +8786,10 @@ Sections
     -webkit-transform: translateX(-70%);
     -ms-transform: translateX(-70%);
     transform: translateX(-70%);
+  }
+
+  .section.why-choose-us .wcu-graphic {
+    width: 40%;
   }
 }
 

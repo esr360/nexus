@@ -14,7 +14,7 @@ Start building the basic layout
     }
 
     .wcu-graphic {
-        width: 40%;
+        width: 60%;
         margin: auto;
     }
     
@@ -111,6 +111,9 @@ Start building for larger resolutions
                     transform: translateX(-70%);
                 }
             }
+        }
+        .wcu-graphic {
+            width: 40%;
         }
     }
 

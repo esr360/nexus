@@ -81,6 +81,7 @@ Start building the basic layout
 		overflow: hidden;
 		img {
 			transition: 0.4s;
+			min-width: 100%;
 			display: block;
 		}
 		&:hover {			
