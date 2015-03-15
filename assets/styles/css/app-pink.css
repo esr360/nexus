@@ -5514,6 +5514,7 @@ body.fh-visible .main-search [type="submit"] {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
+  font-weight: 400;
 }
 
 .main-nav > ul > li ul li {
@@ -5600,7 +5601,7 @@ body.fh-visible .main-search [type="submit"] {
   left: 150%;
   left: -webkit-calc(150% - 1px);
   left: calc(150% - 1px);
-  margin-left: -0.5em;
+  margin-left: -0.55em;
   margin-top: 0;
   border-radius: 0;
   z-index: -1;
@@ -6207,8 +6208,8 @@ body.fh-visible .main-search [type="submit"] {
 
   100% {
     opacity: 1;
-    -webkit-transform: translateY(2.3em);
-    transform: translateY(2.3em);
+    -webkit-transform: translateY(2em);
+    transform: translateY(2em);
   }
 }
 
@@ -6219,9 +6220,9 @@ body.fh-visible .main-search [type="submit"] {
 
   100% {
     opacity: 1;
-    -webkit-transform: translateY(2.3em);
-    -ms-transform: translateY(2.3em);
-    transform: translateY(2.3em);
+    -webkit-transform: translateY(2em);
+    -ms-transform: translateY(2em);
+    transform: translateY(2em);
   }
 }
 
@@ -6232,8 +6233,8 @@ body.fh-visible .main-search [type="submit"] {
 
   100% {
     opacity: 0.5;
-    -webkit-transform: translateY(2.3em);
-    transform: translateY(2.3em);
+    -webkit-transform: translateY(2em);
+    transform: translateY(2em);
   }
 }
 
@@ -6244,9 +6245,9 @@ body.fh-visible .main-search [type="submit"] {
 
   100% {
     opacity: 0.5;
-    -webkit-transform: translateY(2.3em);
-    -ms-transform: translateY(2.3em);
-    transform: translateY(2.3em);
+    -webkit-transform: translateY(2em);
+    -ms-transform: translateY(2em);
+    transform: translateY(2em);
   }
 }
 
@@ -6257,8 +6258,8 @@ body.fh-visible .main-search [type="submit"] {
 
   100% {
     opacity: 0.2;
-    -webkit-transform: translateY(2.3em);
-    transform: translateY(2.3em);
+    -webkit-transform: translateY(2em);
+    transform: translateY(2em);
   }
 }
 
@@ -6269,9 +6270,9 @@ body.fh-visible .main-search [type="submit"] {
 
   100% {
     opacity: 0.2;
-    -webkit-transform: translateY(2.3em);
-    -ms-transform: translateY(2.3em);
-    transform: translateY(2.3em);
+    -webkit-transform: translateY(2em);
+    -ms-transform: translateY(2em);
+    transform: translateY(2em);
   }
 }
 
@@ -6696,7 +6697,7 @@ body.search-active .main-search {
 
   .theme-options .options-trigger {
     top: 5.25em;
-    right: 2.1em;
+    right: 1.95em;
     border-radius: 0.25em;
     z-index: 9;
     height: 39px;
@@ -8337,6 +8338,7 @@ Sections
 .team .team-pic img {
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  min-width: 100%;
   display: block;
 }
 
@@ -8684,7 +8686,7 @@ Sections
 }
 
 .section.why-choose-us .wcu-graphic {
-  width: 40%;
+  width: 60%;
   margin: auto;
 }
 
@@ -8784,6 +8786,10 @@ Sections
     -webkit-transform: translateX(-70%);
     -ms-transform: translateX(-70%);
     transform: translateX(-70%);
+  }
+
+  .section.why-choose-us .wcu-graphic {
+    width: 40%;
   }
 }
 

@@ -8,6 +8,11 @@ TO-DO LIST
 TODO
 
 - prepare ThemeForest package
+-- remove options styles
+-- remove options js
+-- removing landing files
+-- ensure all links work
+-- remove google map code
 
 FOR NEXT RELEASE (1.1)
 
