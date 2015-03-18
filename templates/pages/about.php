@@ -72,9 +72,7 @@ $parentUrl = "";
 
     <!-- General -->
 
-    <script src="<?php echo $ROOT; ?>assets/js/global.js"></script>
-    <script src="<?php echo $ROOT; ?>assets/js/animate-number.js"></script>
-    <script src="<?php echo $ROOT; ?>assets/js/section-welcome.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/app.js"></script>
 
     <!-- Google Map -->
     

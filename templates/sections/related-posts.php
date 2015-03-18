@@ -2,7 +2,7 @@
     <div class="container">
         <header class="sep">
             <div class="section-title">
-                <h3><em>Related <i>Posts</i></em></h3>
+                <h2>Related <i>Posts</i></h2>
             </div>
         </header>
         <div class="row blog-items">

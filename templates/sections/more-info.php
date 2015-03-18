@@ -1,4 +1,4 @@
-<section class="section secondary more-info inactive" id="s-more-info">
+<section class="section secondary more-info" id="s-more-info">
     <div class="container">
         <div class="row">
             <div class="span-6 info-video">

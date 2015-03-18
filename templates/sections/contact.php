@@ -1,4 +1,4 @@
-<section class="section primary contact <?php if ($type == "one-page") { ?> inactive<?php } ?>" id="s-contact">
+<section class="section primary contact" id="s-contact">
     <div class="container">
         <?php if ($title != "Contact Us") { ?>
             <header class="sep active">
@@ -20,7 +20,7 @@
                         </div>
                     </header>
                     <p>
-                        420 Greene St<br />
+                        440 Greene St<br />
                         New York, NY 10000<br />
                         Phone number (212) 111-0022<br />
                     </p>

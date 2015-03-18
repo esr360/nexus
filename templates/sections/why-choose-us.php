@@ -3,7 +3,7 @@
         <header class="sep active">
             <div class="section-title">
                 <h2>Why <i>Choose Us</i></h2>
-                <h3>We Thrive Off Your Success</h3>
+                <h3>Your Success is Our Success</h3>
             </div>
             <p>Suspendisse tempus sodales neque, eget eleifend <a href="#">turpis tristique</a> eu. Nullam a nisl maximus, ultrices est ut blandit nislr, elit in lobortis mattis.</p>
         </header>

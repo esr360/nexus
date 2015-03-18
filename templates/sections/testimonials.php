@@ -1,4 +1,4 @@
-<section class="section secondary testimonials inactive">
+<section class="section secondary testimonials">
     <div class="container">
         <div class="testimonials-slider owl-carousel">
             <div class="testimonial">

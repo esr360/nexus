@@ -85,12 +85,8 @@ $parentUrl = "";
 
     <!-- General -->
 
-    <script src="<?php echo $ROOT; ?>assets/js/global.js"></script>
-    <script src="<?php echo $ROOT; ?>assets/js/animate-number.js"></script>
-    <script src="<?php echo $ROOT; ?>assets/js/form-validation.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/app.js"></script>
     <script src="<?php echo $ROOT; ?>assets/js/homepage.js"></script>
-    <script src="<?php echo $ROOT; ?>assets/js/scroll-spy.js"></script>
-    <script src="<?php echo $ROOT; ?>assets/js/section-welcome.js"></script>
 
     <!-- Google Map -->
     

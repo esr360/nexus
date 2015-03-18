@@ -60,7 +60,7 @@ $parentUrl = "portfolio.html";
 
     <!-- General -->
     
-    <script src="<?php echo $ROOT; ?>assets/js/global.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/app.js"></script>
 
 </body>
 

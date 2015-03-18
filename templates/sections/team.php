@@ -1,4 +1,4 @@
-<section class="section primary team inactive" id="s-team">
+<section class="section primary team" id="s-team">
     <div class="container">
         <header class="sep active">
             <div class="section-title">
