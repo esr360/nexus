@@ -169,19 +169,23 @@ $('.search-close').click(function() {
 Contact Form
 ******************************************************************/
 
-var $contact = $('.h5-valid input');
+if( $('#s-contact').length != 0 ) {
 
-if( $contact.val().length != 0 ) {
-    $contact.find('~ label').hide();
-}
+    var $contact = $('.h5-valid input');
 
-$contact.blur(function() {
-    if( $(this).val().length != 0 ) {
-        $(this).find('~ label').hide();
-    } else {
-       $(this).find('~ label').fadeIn(); 
+    if( $contact.val().length != 0 ) {
+        $contact.find('~ label').hide();
     }
-});
+
+    $contact.blur(function() {
+        if( $(this).val().length != 0 ) {
+            $(this).find('~ label').hide();
+        } else {
+           $(this).find('~ label').fadeIn(); 
+        }
+    });
+
+}
 
 /******************************************************************
 Add Active Class

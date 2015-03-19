@@ -1,4 +1,4 @@
-<section class="section primary latest-works inactive" id="portfolio">
+<section class="section primary latest-works" id="portfolio">
     <div class="container">
         <header class="sep active">
             <div class="section-title">

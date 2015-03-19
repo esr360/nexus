@@ -16,7 +16,7 @@
                             <h5>Donec finibus fringilla purus</h5>
                         </div>
                     </header>
-                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
+                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo.</p>
                 </div>
             </div>
             <div class="span-4 widget service">
@@ -28,7 +28,7 @@
                             <h5>Donec finibus fringilla purus</h5>
                         </div>
                     </header>
-                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
+                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo.</p>
                 </div>
             </div>
             <div class="span-4 widget service">
@@ -40,7 +40,7 @@
                             <h5>Donec finibus fringilla purus</h5>
                         </div>
                     </header>
-                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
+                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo.</p>
                 </div>
             </div>
         </div>
@@ -54,7 +54,7 @@
                             <h5>Donec finibus fringilla purus</h5>
                         </div>
                     </header>
-                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
+                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo.</p>
                 </div>
             </div>
             <div class="span-4 widget service">
@@ -66,7 +66,7 @@
                             <h5>Donec finibus fringilla purus</h5>
                         </div>
                     </header>
-                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
+                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo.</p>
                 </div>
             </div>
             <div class="span-4 widget service">
@@ -78,7 +78,7 @@
                             <h5>Donec finibus fringilla purus</h5>
                         </div>
                     </header>
-                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo, mattis et magna eget.</p>
+                    <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec finibus fringilla purus. Integer libero justo.</p>
                 </div>
             </div>
         </div>

@@ -7275,8 +7275,9 @@ Sections
 }
 
 .hero .hero-title h3 {
-  font-size: 0.9em;
+  font-size: 0.75em;
   font-weight: 300;
+  text-transform: uppercase;
   color: #bb1c1c;
 }
 
@@ -7580,19 +7581,6 @@ Sections
   z-index: 2;
 }
 
-.section.more-info .more-info-meta {
-  position: relative;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  opacity: 1;
-  top: 0;
-}
-
-.section.more-info.inactive .more-info-meta {
-  top: 3rem;
-  opacity: 0;
-}
-
 .section.more-info .auto-resizable-iframe {
   max-width: 720px;
   margin: 0px auto;
@@ -7718,7 +7706,7 @@ Sections
   }
 
   .section.quote blockquote h4 {
-    font-size: 2.25rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -7802,6 +7790,10 @@ Sections
   margin-bottom: 0;
 }
 
+.section .section-title h3 {
+  text-transform: uppercase;
+}
+
 .section .section-title p {
   margin-top: 0;
   margin-bottom: 0;
@@ -7877,7 +7869,7 @@ Sections
 
   .section .section-title h2,
   .section .section-title h3 {
-    font-size: 2.25rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -7956,6 +7948,7 @@ Sections
 
 .section.primary .section-title h3 {
   font-weight: 800;
+  font-size: 2.2rem;
 }
 
 .section.primary .section-title h4 {
@@ -7993,7 +7986,7 @@ Sections
 
 @media (min-width: 940px) {
   .section.primary .section-title h4 {
-    font-size: 2.25rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -8035,6 +8028,7 @@ Sections
 
 .section.secondary .section-title h3 {
   font-weight: 100;
+  font-size: 2.2rem;
 }
 
 .section.secondary .button.border {
@@ -8127,16 +8121,9 @@ Sections
   ******************************************************************/
 }
 
-.section.skills .skills-meta {
-  position: relative;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  opacity: 1;
-  top: 0;
-}
-
 .section.skills h5 {
   font-family: "Lato", sans-serif;
+  font-size: 1rem;
   margin-bottom: 0.5em;
   top: 0;
   -webkit-transition: 0.4s;
@@ -8175,11 +8162,6 @@ Sections
   padding: 0;
 }
 
-.section.skills.inactive .skills-meta {
-  opacity: 0;
-  top: 3rem;
-}
-
 @media (max-width: 940px) {
   .section.skills .progress-bars {
     margin-top: 3em;
@@ -8209,7 +8191,7 @@ Sections
 }
 
 .stats .stat h4 {
-  font-size: 2.25rem;
+  font-size: 2.2rem;
   margin-top: 1rem;
   margin-bottom: 0.25rem;
 }
