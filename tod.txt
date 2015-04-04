@@ -76,6 +76,7 @@ DONE
 - prepare ThemeForest package
 -- remove options styles
 -- remove options js
+-- remove cookie js
 -- removing landing files
 -- ensure all links work
 -- remove google map code
@@ -84,7 +85,7 @@ DONE
 -- livicons
 -- remove youtube vid
 
-********************************
+**********************************************
 
 OLD
 
@@ -127,7 +128,7 @@ BACKLOG
 - change all jquery class selectors to IDs - ensure to update docs
 - make titles/comments consistent
 - change menu icon to animated X
-- improve breadcrumb [css]
+- improve breadcrumb
 
 
 ==============================================
