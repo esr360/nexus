@@ -1,8 +1,6 @@
 <?php 
-$ROOT = '/';
 // start the ouput buffer
 ob_start(); 
-$ROOT = '/';
 // page config
 $title = "Index";
 $url = "index-single.html";
@@ -87,6 +85,7 @@ $parentUrl = "";
 
     <script src="<?php echo $ROOT; ?>assets/js/app.js"></script>
     <script src="<?php echo $ROOT; ?>assets/js/homepage.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/earth-slider.js"></script>
 
     <!-- Google Map -->
     
