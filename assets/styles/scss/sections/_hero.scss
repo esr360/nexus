@@ -47,11 +47,11 @@ Start building the basic layout
 		    }
 		}
 		h2 {
-			font-size: 1em;
+			font-size: 1.2em;
 			font-weight: 600;
 		}
 		h3 {
-			font-size: 0.75em;
+			font-size: 0.85em;
 			font-weight: 300;
 			text-transform: uppercase;
 			color: $brand-1;
@@ -175,7 +175,7 @@ Start building for larger resolutions
 
 	@media (min-width: $breakpoint-4) {
 		.hero-title {
-			font-size: $font-size-7;
+			font-size: $font-size-6;
 		}
 	}
 
