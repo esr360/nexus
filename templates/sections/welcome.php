@@ -66,9 +66,15 @@
         <div class="earth">               
             <img src="<?php echo $ROOT; ?>assets/images/earth.png" alt="" />
             <div class="pins">
-                <div class='pin active'></div>
-                <div class='pin'></div>
-                <div class='pin'></div>
+                <div class="pin-wrapper active">
+                    <div class='pin'></div>
+                </div>
+                <div class="pin-wrapper">
+                    <div class='pin'></div>
+                </div>
+                <div class="pin-wrapper">
+                    <div class='pin'></div>
+                </div>
             </div>
         </div>
     </div>

@@ -24,16 +24,30 @@ Start building the basic layout
 		animation-timing-function: linear;
 	}
 
+	.pin-wrapper {
+		transform-origin: center;
+		position: absolute;
+		width: 100%;
+		&.active {
+			.pin {
+				background: $brand-1;
+			}
+		}
+	}
+
+	.pins {
+		transform: translateY(369px);
+	}
+
 	.pin {
 		width: 55px;
 		height: 55px;
 		border-radius: 50% 50% 50% 0;
 		background: $brand-2;
-		transform: rotate(-45deg);
-		position: absolute;
-		top: 4em;
 		cursor: pointer;
 		transition: 0.4s;
+		position: relative;
+		transform: translateX(-30%) rotate(-135deg);
 		&:after {
 			content: '';
 			width: 50%;
@@ -47,20 +61,6 @@ Start building the basic layout
 			bottom: 0;
 			border-radius: 50%;
 		}
-		&.active {
-			background: $brand-1;
-		}
-		&:nth-of-type(1) {
-			left: 0;
-			right: 0;
-			margin: auto;
-		}
-		&:nth-of-type(2) {
-			left: 12.5%;
-		}
-		&:nth-of-type(3) {
-			right: 12.5%;
-		}
 	}
 
 /******************************************************************
@@ -71,17 +71,11 @@ Start building for larger resolutions
 		height: 275px;
 		padding-top: 5em;
 		.pin {
-			top: auto;
 			&:nth-of-type(1) {
-				top: 15%;
 			}
-			&:nth-of-type(2) {
-				bottom: 25%;
-				transform: rotate(-90deg);
+			&:nth-of-type(2) {;
 			}
 			&:nth-of-type(3) {
-				bottom: 25%;
-				transform: rotate(0deg);
 			}
 		}
 	}
@@ -94,5 +88,5 @@ Start building for larger resolutions
     }
     to {
         transform:rotate(-360deg);
-    }
+    } 
 }
