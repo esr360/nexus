@@ -60,7 +60,6 @@ Start building the basic layout
 		h2,
 		h3 {
 			margin: 0.25em 0;	
-			font-size: $font-size-4;
 		    &:first-child {
 		    	margin-top: 0;
 		    }
@@ -68,7 +67,12 @@ Start building the basic layout
 		        margin-bottom: 0;
 		    }
 		}
+		h2 {
+			font-size: $font-size-4;
+		}
 		h3 {
+			font-size: $font-size-3;
+			line-height: 1.2;
 			text-transform: uppercase;
 		}
 		p {
@@ -139,10 +143,13 @@ Start building for larger resolutions
 				font-size: $font-size-3;
 			}
 		}
-		.section-title {
-			h2,
-			h3 {
+		.section-title {		
+			h2 {
 				font-size: $font-size-5;
+			}
+			h3 {
+				font-size: $font-size-4;
+				line-height: 0.9;
 			}
 		}
 	}
@@ -153,16 +160,18 @@ Start building for larger resolutions
 				font-size: $font-size-3;
 			}
 		}
-		.section-title {
-			h2,
-			h3 {
-				font-size: $font-size-6;
-			}
-		}
 		&.section-map {
 			padding-bottom: 11em !important;
 			&:after {
 				display: block;
+			}
+		}
+		.section-title {			
+			h2 {
+				font-size: $font-size-6;
+			}
+			h3 {
+				font-size: 2rem;
 			}
 		}
 	}
