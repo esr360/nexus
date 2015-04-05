@@ -2,7 +2,9 @@
 /* Options Panel
 ================================================================ */
 
-// config
+//-----------------------------------------------------------------
+// Config
+//-----------------------------------------------------------------
 
 $white : white;
 $black : black;
@@ -22,6 +24,15 @@ $font-size-3 : 1.4rem;
 $breakpoint-2 : 720px;
 $breakpoint-3 : 940px;
 $breakpoint-4 : 1200px;
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    } 
+}
 
 .clearfix, .cf {
     zoom: 1;
@@ -136,7 +147,7 @@ $breakpoint-4 : 1200px;
             }       
         }
     }
-    
+
     .cp-active & {
         display: none;
     }
@@ -288,12 +299,3 @@ $breakpoint-4 : 1200px;
     }
 
 } // end .theme-demos
-
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(-360deg);
-    } 
-}

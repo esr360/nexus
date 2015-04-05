@@ -9,7 +9,6 @@ TODO
 
 FOR NEXT RELEASE (1.1)
 
-- improve welcome section js
 - potential to add round/square button option
 - add multiple header options
 - add multiple footer options (full/minimalistic)
@@ -20,7 +19,18 @@ FOR NEXT RELEASE (1.1)
 - add cheatsheet/components page [html]
 - update documentation
 
+BACKLOG
+
+- change all jquery class selectors to IDs - ensure to update docs
+- make titles/comments consistent
+- change menu icon to animated X
+- improve breadcrumb
+
 DONE
+
+- improve welcome section js
+
+**********************************************
 
 - convert to php
 - fix spelling of Manhattan
@@ -87,8 +97,6 @@ DONE
 
 **********************************************
 
-OLD
-
 - remove outline/glow on chrome inputs
 - chrome box-shadow on blog posts
 - fix options on off-canvas-nav open
@@ -122,13 +130,6 @@ OLD
 - write theme forest product page
 - package theme for themeforest
 - submit to theme forest
-
-BACKLOG
-
-- change all jquery class selectors to IDs - ensure to update docs
-- make titles/comments consistent
-- change menu icon to animated X
-- improve breadcrumb
 
 
 ==============================================

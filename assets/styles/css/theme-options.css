@@ -1,5 +1,25 @@
 /* Options Panel
 ================================================================ */
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
 .clearfix, .cf, .theme-options .theme-option {
   zoom: 1;
 }
@@ -230,27 +250,5 @@
 @media (min-width: 940px) and (max-width: 1200px) {
   .theme-demos h3 {
     height: 1.25em;
-  }
-}
-
-@-webkit-keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-  }
-}
-
-@keyframes spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
   }
 }
