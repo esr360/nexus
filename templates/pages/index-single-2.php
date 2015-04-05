@@ -1,5 +1,4 @@
 <?php 
-$ROOT = '/';
 // start the ouput buffer
 ob_start(); 
 $ROOT = '/';

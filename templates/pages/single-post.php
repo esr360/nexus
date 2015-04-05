@@ -1,5 +1,4 @@
-<?php 
-$ROOT = '/';
+<?php
 // start the ouput buffer
 ob_start(); 
 // page config
