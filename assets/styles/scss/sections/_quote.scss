@@ -4,14 +4,13 @@
 
 .section.quote {
 
-/******************************************************************
-Start building the basic layout
-******************************************************************/
+//-----------------------------------------------------------------
+// Core Styles
+//-----------------------------------------------------------------
 
 	padding: 6rem 0;
 	background-color: $brand-1;
 	overflow: hidden;
-	//background: linear-gradient(to bottom,  $brand-1 0%, adjust-hue(darken($brand-1, 5%), 5%) 100%); /* W3C */
 
 	blockquote {
 		margin: auto;
@@ -31,9 +30,9 @@ Start building the basic layout
 		}
 	}
 
-/******************************************************************
-Start building for larger resolutions
-******************************************************************/
+//-----------------------------------------------------------------
+// Larger Resolutions
+//-----------------------------------------------------------------
 
 	@media (min-width: $breakpoint-3) {
 		blockquote {

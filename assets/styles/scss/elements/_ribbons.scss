@@ -1,4 +1,6 @@
-/* RIBBON BANNERS */
+
+/* Ribbons
+================================================================ */
 
 .ribbon {
 	position: absolute;
@@ -94,7 +96,6 @@
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
-/* large text */
 
 .ribbon-large .text {
 	padding: 9px 0;
@@ -129,10 +130,6 @@
 		}
 	}
 }
-
-/*--- RIBBON COLORS ---*/
-
-/* default */
 
 .ribbon {
 	.banner {

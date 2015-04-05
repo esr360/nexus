@@ -3964,12 +3964,16 @@ body.cp-active .cp-nav-container .main-search {
   margin: auto;
   position: relative
   /******************************************************************
+  Start building for smaller  resolutions
+  ******************************************************************/
+  /******************************************************************
   Start building for larger resolutions
   ******************************************************************/
 }
 .earth img {
   position: absolute;
   left: 0;
+  top: 35%;
   -webkit-animation-name: spin;
           animation-name: spin;
   -webkit-animation-duration: 35s;
@@ -3979,20 +3983,8 @@ body.cp-active .cp-nav-container .main-search {
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
 }
-.earth .pin-wrapper {
-  -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-          transform-origin: center;
-  position: absolute;
-  width: 100%;
-}
 .earth .pin-wrapper.active .pin {
   background: #1CBB9B;
-}
-.earth .pins {
-  -webkit-transform: translateY(369px);
-      -ms-transform: translateY(369px);
-          transform: translateY(369px);
 }
 .earth .pin {
   width: 55px;
@@ -4002,9 +3994,6 @@ body.cp-active .cp-nav-container .main-search {
   cursor: pointer;
   transition: 0.4s;
   position: relative;
-  -webkit-transform: translateX(-30%) rotate(-135deg);
-      -ms-transform: translateX(-30%) rotate(-135deg);
-          transform: translateX(-30%) rotate(-135deg);
 }
 .earth .pin:after {
   content: '';
@@ -4019,10 +4008,46 @@ body.cp-active .cp-nav-container .main-search {
   bottom: 0;
   border-radius: 50%;
 }
+@media (max-width: 940px) {
+  .earth .pins {
+    text-align: center;
+    margin-top: -4rem;
+  }
+  .earth .pin-wrapper {
+    -webkit-transform: none !important;
+        -ms-transform: none !important;
+            transform: none !important;
+    display: inline-block;
+    margin-left: 1rem;
+  }
+  .earth .pin-wrapper:first-child {
+    margin-left: 0;
+  }
+  .earth .pin {
+    -webkit-transform: rotate(315deg);
+        -ms-transform: rotate(315deg);
+            transform: rotate(315deg);
+  }
+}
 @media (min-width: 940px) {
   .earth {
-    height: 275px;
-    padding-top: 5em;
+    height: 0;
+    padding-top: 25%;
+  }
+  .earth .pin-wrapper {
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    position: absolute;
+    width: 100%;
+  }
+  .earth .pins {
+    margin-top: 19%;
+  }
+  .earth .pin {
+    -webkit-transform: translateX(-30%) rotate(-135deg);
+        -ms-transform: translateX(-30%) rotate(-135deg);
+            transform: translateX(-30%) rotate(-135deg);
   }
 }
 
@@ -4520,9 +4545,9 @@ body.fh-visible .main-search [type="submit"] {
   border: 2px solid transparent;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 .logo .fa:before {
   position: absolute;

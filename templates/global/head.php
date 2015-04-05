@@ -28,6 +28,9 @@ $ROOT = '/';
     <link rel="stylesheet" href="<?php echo $ROOT; ?>assets/styles/css/app.css">
     <link rel="stylesheet" class="color-switcher" href="<?php echo $ROOT; ?>assets/styles/css/app.css">
     
+    <!-- Theme Options -->
+    <link rel="stylesheet" href="<?php echo $ROOT; ?>assets/styles/css/theme-options.css">
+    
     <!-- Modernizr -->
     <script src="<?php echo $ROOT; ?>assets/js/modernizr.min.js"></script>
 </head>

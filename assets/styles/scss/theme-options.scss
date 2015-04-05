@@ -1,0 +1,299 @@
+
+/* Options Panel
+================================================================ */
+
+// config
+
+$white : white;
+$black : black;
+$grey : #707070;
+
+$blue : #1795C5;
+$green : #1CBB9B;
+$pink : #bb1c4d;
+$red : #bb1c1c;
+
+$brand-1 : #1795C5;
+
+$font-size-0 : 0.9rem;
+$font-size-2 : 1.2rem;
+$font-size-3 : 1.4rem;
+
+$breakpoint-2 : 720px;
+$breakpoint-3 : 940px;
+$breakpoint-4 : 1200px;
+
+.clearfix, .cf {
+    zoom: 1;
+    &:before, &:after { 
+        content: ""; 
+        display: table; 
+    }
+    &:after { 
+        clear: both; 
+    }
+}
+
+.theme-options {
+    
+    position: fixed;
+    z-index: 5;
+    left: -250px;
+    transition: 0.4s;
+    top: 25%;
+
+    .options-trigger {
+        background: $white;
+        line-height: 2em;
+        text-align: center;
+        height: 2em;
+        width: 2em;
+        font-size: $font-size-2;
+        color: rgba(0,0,0,0.35);
+        cursor: pointer;
+        border-radius: 0 0.25em 0.25em 0;
+        border: 1px solid rgba(0,0,0,0.2);
+        transition: 0.4s;
+        position: absolute;
+        right: -1.95em;
+        top: 0;
+        &:hover {
+            border-color: $brand-1;
+            background: $brand-1;
+            color: $white;
+            &:before {
+                display: inline-block;
+                animation-name: spin;
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+        }
+    }
+
+    .theme-option {
+        @extend .cf;
+        &:not(:last-of-type) {
+            padding-bottom: 1em;
+            margin-bottom: 1em;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        p, 
+        .input-toggle {
+            float: left;
+        }
+        .input-toggle {
+            width: 50px;
+        }
+        p {
+            width: 76%;
+            width: calc(100% - 50px);
+            padding-right: 1em;
+            margin: 0;
+            font-size: $font-size-0;
+            font-weight: 100;
+        }
+    }
+
+    .options-content {
+        background: white;
+        border: 1px solid rgba(0,0,0,0.2);
+        padding: 1.5em 1.25em;
+        border-radius: 0 0 0.25em 0;
+        width: 250px;
+        h3 {
+            font-weight: 300;
+        }
+        h4 {
+            margin-bottom: 0.65em;
+            font-size: $font-size-0;
+        }
+    }
+
+    .page-type {
+        padding-bottom: 1em;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        margin-bottom: 1em;
+        .button {
+            line-height: 1.5;
+            font-size: $font-size-0;
+            &.active {
+                background-color: $brand-1;
+                border-color: $brand-1;
+            }
+        }
+    }
+
+    &.active {
+        left: 0;
+        .options-trigger {
+            border-color: $brand-1;
+            background: $brand-1;
+            color: $white;  
+            &:before {
+                content: "\f00d";
+                animation-name: none;
+            }       
+        }
+    }
+    
+    .cp-active & {
+        display: none;
+    }
+
+//-----------------------------------------------------------------
+// Smaller Resolutions
+//-----------------------------------------------------------------
+
+    @media (max-width: $breakpoint-2) {
+        position: static;
+        top: 90px;
+        z-index: 11;
+        &.active {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            .options-content {
+                width: 100%;
+                display: block;
+            }
+            .options-trigger {
+                top: 1em;
+            }
+        }
+        .options-trigger {
+            top: 5.25em;
+            right: 1.95em;
+            border-radius: 0.25em;
+            z-index: 9;
+            height: 39px;
+            width: 39px;
+            line-height: 38px;
+            font-size: $font-size-0;
+        }
+        .options-content {
+            border-radius: 0;
+            display: none;
+        }
+    }
+
+} // end .options
+
+// hide image logo
+.logo .image-logo {
+    display: none;
+}
+
+/* Color Options
+================================================================ */
+
+.theme-color {
+    display: inline-block;
+    margin-left: 0.5em;
+    height: 32px;
+    width: 32px;
+    background: $grey;
+    border-radius: 0.25em;
+    cursor: pointer;
+    position: relative;
+    &:after {
+        content: "";
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 50%;
+        transition: 0.4s;
+        transform: translateY(-5.5px);
+        opacity: 0;
+    }
+    &.small {
+        height: 24px;
+        width: 24px;
+        &:hover {
+            &:after {
+                background: rgba($white, 0.3);
+                opacity: 1;
+            }
+        }
+        &.active {
+            &:after {
+                background: rgba($black, 0.3);
+                opacity: 1;
+            }
+        }
+    }
+    &:nth-child(1) {
+        background: $blue;
+        margin-left: 0;
+    }
+    &:nth-child(2) {
+        background: $green;
+    }
+    &:nth-child(3) {
+        background: $pink;
+    }
+    &:nth-child(4) {
+        background: $red;
+    }
+    &:nth-child(5) {
+        background: $grey;
+    }
+}
+
+/* Demo Blocks
+================================================================ */
+
+.theme-demos {
+
+    text-align: center;
+
+    h3 {
+        font-size: $font-size-3;
+    }
+
+    a {
+        &, 
+        &:hover {
+            border-bottom: 0;
+        }
+    }
+
+//-----------------------------------------------------------------
+// Smaller Resolutions
+//-----------------------------------------------------------------
+
+    @media (max-width: $breakpoint-3) {
+        > div {
+            &:not(:last-child) {
+                padding-bottom: 2.5rem;
+                margin-bottom: 2.5rem;
+                border-bottom: 1px dotted rgba(0,0,0,0.1);
+            }
+        }
+    }
+
+//-----------------------------------------------------------------
+// Larger Resolutions
+//-----------------------------------------------------------------
+
+    @media (min-width: $breakpoint-3) and (max-width: $breakpoint-4) {
+        h3 {
+            height: 1.25em;
+        }
+    }
+
+} // end .theme-demos
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(-360deg);
+    } 
+}

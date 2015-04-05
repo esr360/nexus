@@ -5,9 +5,9 @@
 
 ul {
 
-/******************************************************************
-Start building the basic layout
-******************************************************************/
+//-----------------------------------------------------------------
+// Core Layout
+//-----------------------------------------------------------------
 
 	@extend ul.reset;
 	opacity: 0;
@@ -21,18 +21,33 @@ Start building the basic layout
 	left: 50%;
 	transform: translateX(-50%);
 	font-weight: 400;
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+	}
+	&:before {
+		height: 20px;
+		top: -20px;
+		width: 100%;
+	}
+	&:after {
+		height: 10px;
+		width: 10px;
+		background: darken($brand-1, 10%);
+		transform: rotate(45deg);
+		top: -5px;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
 	li {
 		display: block;
 		position: relative;
 		margin-left: 0;
 		a {
 			font-size: $font-size-0;
-			color: rgba(255,255,255,0.75);
-			background: rgba(0,0,0,0.86);
-			line-height: 3.2;
-			box-shadow: inset 0px -1px 0px 0px rgba(255,255,255,0.05);
-			border-bottom: 1px solid rgba(0,0,0,0.5);
-			-webkit-backface-visibility: hidden;
 			&:before, 
 			&:after {
 				font-family: FontAwesome;	
@@ -77,24 +92,14 @@ Start building the basic layout
 				}
 			}
 		}
-		&:first-child {
-			> a {
-				border-top: 8px solid darken($brand-1, 10%) !important;
-			}
-		}
-		&:last-child {
-			a {
-				border-bottom: none !important;
-				box-shadow: none;
-			}
-		}
 	}
+
 	// 2nd level and below
 	ul {
 		top: 0;
 		left: 150%;
 		left: calc(150% - 1px);
-		margin-left: -0.55em;
+		margin-left: -5%;
 		margin-top: 0;
 		border-radius: 0;
 		z-index: -1;
@@ -128,26 +133,6 @@ Start building the basic layout
 			}
 		}
 	}
-	&:before,
-	&:after {
-		content: "";
-		position: absolute;
-	}
-	&:before {
-		height: 20px;
-		top: -20px;
-		width: 100%;
-	}
-	&:after {
-		height: 10px;
-		width: 10px;
-		background: darken($brand-1, 10%);
-		transform: rotate(45deg);
-		top: -5px;
-		left: 0;
-		right: 0;
-		margin: auto;
-	}
 
 } // end dropdown ul
 
@@ -155,21 +140,4 @@ Start building the basic layout
 	opacity: 1;
 	visibility: visible;
 	margin-top: 1rem;
-}
-
-// there will be a much better way of doing this lol
-> ul {
-	> li {
-		&:not(:first-child) {
-			ul {
-				li {					
-					&:first-child {
-						> a {
-							border-top: none !important;
-						}
-					}
-				}
-			}
-		}
-	}
 }

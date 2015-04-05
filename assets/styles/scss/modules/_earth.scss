@@ -4,9 +4,9 @@
 
 .earth {
 
-/******************************************************************
-Start building the basic layout
-******************************************************************/
+//-----------------------------------------------------------------
+// Core Styles
+//-----------------------------------------------------------------
 
 	padding-top: 7em;
 	height: 200px;
@@ -18,6 +18,7 @@ Start building the basic layout
 	img {
 		position: absolute;
 		left: 0;
+		top: 35%;
 		animation-name: spin;
 		animation-duration: 35s;
 		animation-iteration-count: infinite;
@@ -25,18 +26,11 @@ Start building the basic layout
 	}
 
 	.pin-wrapper {
-		transform-origin: center;
-		position: absolute;
-		width: 100%;
 		&.active {
 			.pin {
 				background: $brand-1;
 			}
 		}
-	}
-
-	.pins {
-		transform: translateY(369px);
 	}
 
 	.pin {
@@ -47,7 +41,6 @@ Start building the basic layout
 		cursor: pointer;
 		transition: 0.4s;
 		position: relative;
-		transform: translateX(-30%) rotate(-135deg);
 		&:after {
 			content: '';
 			width: 50%;
@@ -63,20 +56,45 @@ Start building the basic layout
 		}
 	}
 
-/******************************************************************
-Start building for larger resolutions
-******************************************************************/
+//-----------------------------------------------------------------
+// Smaller Resolutions
+//-----------------------------------------------------------------
+
+	@media (max-width: $breakpoint-3) {
+		.pins {
+			text-align: center;
+			margin-top: -4rem;
+		}
+		.pin-wrapper {
+			transform: none !important;
+			display: inline-block;
+			margin-left: 1rem;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+		.pin {
+			transform: rotate(315deg);
+		}
+	}
+	
+//-----------------------------------------------------------------
+// Larger Resolutions
+//-----------------------------------------------------------------
 
 	@media (min-width: $breakpoint-3) {
-		height: 275px;
-		padding-top: 5em;
+		height: 0;
+		padding-top: 25%;
+		.pin-wrapper {
+			transform-origin: center;
+			position: absolute;
+			width: 100%;
+		}
+		.pins {
+			margin-top: 19%;
+		}
 		.pin {
-			&:nth-of-type(1) {
-			}
-			&:nth-of-type(2) {;
-			}
-			&:nth-of-type(3) {
-			}
+			transform: translateX(-30%) rotate(-135deg);
 		}
 	}
 
