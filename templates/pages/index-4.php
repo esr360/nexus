@@ -72,6 +72,7 @@ $parentUrl = "";
 
     <script src="<?php echo $ROOT; ?>assets/js/app.js"></script>
     <script src="<?php echo $ROOT; ?>assets/js/homepage.js"></script>
+    <script src="<?php echo $ROOT; ?>assets/js/earth-slider.js"></script>
 
     <!-- Google Map -->
     
