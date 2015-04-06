@@ -81,7 +81,7 @@
         <hr class="dotted">
 
         <div class="row info-graphic">
-            <div class="span-4 va-middle blue-media">
+            <div class="span-4 va-middle">
                 <img src="<?php echo $ROOT; ?>assets/images/chrome-preview.png" alt="" />
             </div>
             <div class="span-8 va-middle">

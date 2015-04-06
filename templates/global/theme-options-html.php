@@ -1,4 +1,4 @@
-<?php if ($demo == "true") { ?>
+<?php if ($demo == true) { ?>
 <div class="theme-options">
     <i class="fa fa-cog options-trigger"></i>
     <div class="options-content">

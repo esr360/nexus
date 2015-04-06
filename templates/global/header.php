@@ -7,7 +7,7 @@
                 <a href="<?php echo $ROOT; ?>index-single.html" class="image-logo">
                     <img src="<?php echo $ROOT; ?>assets/images/logo.png" alt="One Nexus" />
                 </a>
-                <?php if ($demo == "true") { ?>
+                <?php if ($demo == true) { ?>
                 <!-- HTML logo -->
                 <a href="<?php echo $ROOT; ?>index-single.html" class="html-logo"><i class="fa fa-square-o"></i> [Nexus]</a>
                 <?php } ?>
@@ -16,9 +16,10 @@
             <?php if ($type == "one-page") { ?>
                 <nav class="main-nav">
                     <ul>
-                        <!-- Dropdown Nav --> 
                         <li class="active">
                             <a href="index.html">Home</a>
+                            <?php if ($demo == true) { ?>
+                            <!-- Dropdown Nav --> 
                             <ul>
                                 <li>
                                     <a href="<?php echo $ROOT; ?>index-single.html">Parallax Title</a>
@@ -49,6 +50,7 @@
                                     </ul>
                                 </li>
                             </ul>
+                            <?php } ?>
                         </li>
                         <li><a href="#s-welcome">About</a></li>
                         <li><a href="#s-services">Services</a></li>
@@ -63,9 +65,10 @@
             <?php } else { ?>
                 <nav class="main-nav">
                     <ul>
-                        <!-- Dropdown Nav -->
                         <li<?php if ($title == "Index"){ ?> class="active"<?php } ?>>
                             <a href="<?php echo $ROOT; ?>index.html">Home</a>
+                            <?php if ($demo == true) { ?>
+                            <!-- Dropdown Nav --> 
                             <ul>
                                 <li>
                                     <a href="index-single.html">Parallax Title</a>
@@ -95,7 +98,8 @@
                                         <li><a href="<?php echo $ROOT; ?>index-4.html">Multi-Page</a></li>
                                     </ul>
                                 </li>
-                            </ul>
+                            </ul>                            
+                            <?php } ?>
                         </li>
                         <li<?php if ($title == "About Us") { ?> class="active"<?php } ?>><a href="<?php echo $ROOT; ?>about.html">About</a></li>
                         <li<?php if ($title == "Services") { ?> class="active"<?php } ?>><a href="<?php echo $ROOT; ?>services.html">Services</a></li>

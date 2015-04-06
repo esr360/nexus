@@ -1,5 +1,5 @@
 <?php 
-$demo = true;
+$demo = false;
 $ROOT = '/';
 $purchase = 'http://themeforest.net/item/nexus-responsive-multipurpose-html5-template/10789597';
 ?>          
@@ -30,7 +30,7 @@ $purchase = 'http://themeforest.net/item/nexus-responsive-multipurpose-html5-tem
     <link rel="stylesheet" href="<?php echo $ROOT; ?>assets/styles/css/app.css">
     <link rel="stylesheet" class="color-switcher" href="<?php echo $ROOT; ?>assets/styles/css/app.css">
 
-    <?php if ($demo == "true") { ?>
+    <?php if ($demo == true) { ?>
     <!-- Theme Options -->
     <link rel="stylesheet" href="<?php echo $ROOT; ?>assets/styles/css/theme-options.css">
     <?php } ?>

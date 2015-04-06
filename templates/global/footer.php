@@ -8,7 +8,7 @@
                     <a href="<?php echo $ROOT; ?>index-single.html" class="image-logo">
                         <img src="<?php echo $ROOT; ?>assets/images/logo.png" alt="One Nexus" />
                     </a>
-                    <?php if ($demo == "true") { ?>
+                    <?php if ($demo == true) { ?>
                     <!-- HTML logo -->
                     <a href="<?php echo $ROOT; ?>index-single.html" class="html-logo"><i class="fa fa-square-o"></i> [Nexus]</a>
                     <?php } ?>

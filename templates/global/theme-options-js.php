@@ -1,4 +1,4 @@
-<?php if ($demo == "true") { ?>
+<?php if ($demo == true) { ?>
 <!-- Theme Options -->
 <!-- Cookie (for theme color-switcher) -->
 <script src="<?php echo $ROOT; ?>assets/js/cookie.js"></script>
