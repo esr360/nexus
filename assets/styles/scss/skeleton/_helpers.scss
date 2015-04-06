@@ -187,3 +187,22 @@ hr.large {
         }
     }
 }
+
+//-----------------------------------------------------------------
+// Coloring
+//-----------------------------------------------------------------
+
+.hover-bg-brand-1 {
+    transition: 0.4;
+    &:hover {
+        background: $brand-1 !important;
+        border-color: $brand-1 !important;
+    }
+}
+
+.brand-1-active {
+    &.active {
+        background-color: $brand-1 !important;
+        border-color: $brand-1 !important;
+    }
+}

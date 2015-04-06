@@ -8,6 +8,7 @@ $(document).ready(function() {
 
     $('.options-trigger').click(function() {
         $('.theme-options').toggleClass('active');
+        $(this).toggleClass('active');
     });
 
     /* Remember options */

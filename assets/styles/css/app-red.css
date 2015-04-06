@@ -987,6 +987,19 @@ hr.large {
   }
 }
 
+.hover-bg-brand-1 {
+  transition: 0.4;
+}
+.hover-bg-brand-1:hover {
+  background: #bb1c1c !important;
+  border-color: #bb1c1c !important;
+}
+
+.brand-1-active.active {
+  background-color: #bb1c1c !important;
+  border-color: #bb1c1c !important;
+}
+
 /* Print Styles
 ================================================================ */
 @media print {

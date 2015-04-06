@@ -1,16 +1,16 @@
 <?php if ($demo == true) { ?>
 <div class="theme-options">
-    <i class="fa fa-cog options-trigger"></i>
+    <i class="fa fa-cog options-trigger hover-bg-brand-1 brand-1-active"></i>
     <div class="options-content">
         <h3>Theme Options</h3>
         <div class="row bp0 page-type">
             <div class="span-6">
-                <a href="<?php echo $ROOT; ?>index-single.html" class="button round full-width<?php if ($type == "one-page") { ?> active<?php } ?>">
+                <a href="<?php echo $ROOT; ?>index-single.html" class="button brand-1-active round full-width<?php if ($type == "one-page") { ?> active<?php } ?>">
                 	One Page
                 </a>
             </div>
             <div class="span-6">
-                <a href="<?php echo $ROOT; ?>index.html" class="button round full-width<?php if ($type != "one-page") { ?> active<?php } ?>">
+                <a href="<?php echo $ROOT; ?>index.html" class="button round brand-1-active full-width<?php if ($type != "one-page") { ?> active<?php } ?>">
                 	Multi-Page
                 </a>
             </div>
