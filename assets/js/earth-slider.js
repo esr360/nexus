@@ -131,7 +131,7 @@ $(window).load(function(){
             hi = h;
             highest = $(this);  
         }
-        $(this).css("height", hi)    
+        $(".welcome-content").css("height", hi)    
     });
 
 }); // End window.load

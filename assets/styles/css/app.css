@@ -3779,8 +3779,8 @@ body.cp-active .cp-nav-container .main-search {
 /* Earth
 ================================================================ */
 .earth {
-  padding-top: 7em;
-  height: 200px;
+  padding-top: 5em;
+  height: 120px;
   width: 70%;
   overflow: hidden;
   margin: auto;
@@ -6499,20 +6499,12 @@ Sections
         -ms-transform: scale(0.75) rotate(-45deg);
             transform: scale(0.75) rotate(-45deg);
   }
-  .section.welcome .title span {
-    display: none;
-  }
 }
 @media (max-width: 720px) {
   .section.welcome .welcome-features h4 {
     font-size: 1rem;
   }
-}
-@media (max-width: 940px) {
-  .section.welcome .welcome-features .title {
-    margin-top: 0.75em;
-  }
-  .section.welcome .welcome-features p {
+  .section.welcome .welcome-features .livicon {
     display: none;
   }
 }

@@ -395,6 +395,29 @@ $('.section.testimonials .nav-prev').click(function() {
 })
 
 /******************************************************************
+Welcome Features Carousel
+******************************************************************/
+
+var wfCarousel = $('.welcome-features-carousel');
+
+wfCarousel.owlCarousel({
+    items: 1,
+    loop: false,
+    dots: true,
+    nav: false,
+    margin: 20,
+    slideBy: 1,
+    responsive:{
+        720:{                
+            items: 2
+        },
+        960:{                
+            items: 3
+        }
+    }
+});
+
+/******************************************************************
 Services Carousel
 ******************************************************************/
 

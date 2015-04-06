@@ -32,8 +32,8 @@
                 <div class="section-title">
                     <h2>Our <i>Features</i> Are <strong>World Class <i class="fa fa-trophy"></i></strong></h2>
                 </div>
-                <div class="row bp0">
-                    <div class="span-4 widget welcome-feature">
+                <div class="welcome-features-carousel owl-carousel">
+                    <div class="widget welcome-feature">
                         <i class="livicon" data-n="tablet" data-c="#C1C1C1" data-op="1" data-s="68" data-hc="false"></i>
                         <div class="widget-content">
                             <div class="title">
@@ -42,7 +42,7 @@
                             <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur maximus ridiculus mus.</p>
                         </div>
                     </div>
-                    <div class="span-4 widget welcome-feature">
+                    <div class="widget welcome-feature">
                         <i class="livicon" data-n="html5" data-c="#C1C1C1" data-op="1" data-s="68" data-hc="false"></i>
                         <div class="widget-content">
                             <div class="title">
@@ -51,7 +51,7 @@
                             <p>Cum socis natoque penatibus et magnis dis parturient montes, nascetur maximus ridiculus mus.</p>
                         </div>
                     </div>
-                    <div class="span-4 widget welcome-feature">
+                    <div class="widget welcome-feature">
                         <i class="livicon" data-n="responsive" data-c="#C1C1C1" data-op="1" data-s="68" data-hc="false"></i>
                         <div class="widget-content">
                             <div class="title">

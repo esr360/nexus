@@ -28,7 +28,7 @@ $parentUrl = "";
                 <div class="sh-title-wrapper">
                     <h1><?php echo $title; ?></h1>
                     <p>Please choose from the below demos to see some of the different variant possibilities.</p>
-                    <a class="button border round cta" href="#">Purchase Theme</a>
+                    <a href="<?php echo $purchase; ?>" target="blank" class="button border round cta">Purchase Theme</a>
                 </div>
             </div>
         </section>

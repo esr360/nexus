@@ -2,7 +2,7 @@
     <div class="container">
         <div class="content">
             <h4>Start your <b>new project</b> with a <i>fresh</i> approach...</h4>
-            <p>leave your visitors with an experience to remember and <a href="#">Purchase Nexus</a> now.</p>
+            <p>leave your visitors with an experience to remember and <a href="<?php echo $purchase; ?>" target="blank">Purchase Nexus</a> now.</p>
         </div>
         <div class="meta">
             <a href="<?php echo $purchase; ?>" target="blank" class="button brand-1 round">Purchase Theme</a>
