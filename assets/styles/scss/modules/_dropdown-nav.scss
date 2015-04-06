@@ -5,22 +5,83 @@
 
 ul {
 
-//-----------------------------------------------------------------
-// Core Layout
-//-----------------------------------------------------------------
-
 	@extend ul.reset;
 	opacity: 0;
 	visibility: hidden;
-	transition: 0.4s;
 	position: absolute;
 	z-index: 999;
+	transition: 0.4s;
 	min-width: 185px;
-	margin-top: 2.6em;
 	text-align: left;
+	font-weight: 400;
+
+	li {
+		position: relative;
+		a {
+			background: rgba($black, 0.8);
+			color: $white;
+			font-size: $font-size-0;
+			line-height: 3;
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			&:before, 
+			&:after {
+				font-family: FontAwesome;	
+				transition: 0.4s;		
+			}
+			&:before {
+				content: "\f138";
+				margin-right: 0.75em;
+				display: inline-block;
+				color: $brand-1;
+			}
+			&:after {
+				content: "\f105";
+				display: none;
+				position: absolute;
+				top: 0;
+				right: 1em;
+				color: rgba(255,255,255,0.3);
+			}
+			&:not(:only-child) {
+				padding-right: 2em;
+				&:after {
+					display: inline-block;
+				}
+			}
+		}
+		&:hover {
+			a {
+				background: $brand-1;
+				&:before {
+					color: $white;
+				}
+			}
+			> ul {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+		ul {
+			left: 100%;
+			margin-left: -1px;
+			top: 0;
+			li {
+				&:hover {
+					a {
+						background: darken($brand-1, 10%);
+					}
+				}
+			}
+		}
+	}
+
+}
+
+> ul {
 	left: 50%;
 	transform: translateX(-50%);
-	font-weight: 400;
+	margin-top: 2.6em;
+	border-top: 8px solid darken($brand-1, 10%);
 	&:before,
 	&:after {
 		content: "";
@@ -36,108 +97,25 @@ ul {
 		width: 10px;
 		background: darken($brand-1, 10%);
 		transform: rotate(45deg);
-		top: -5px;
+		top: -12px;
 		left: 0;
 		right: 0;
 		margin: auto;
 	}
-
 	li {
-		display: block;
-		position: relative;
-		margin-left: 0;
-		a {
-			font-size: $font-size-0;
-			&:before, 
-			&:after {
-				font-family: FontAwesome;	
-				transition: 0.4s;		
-			}
-			&:before {
-				content: "\f138";
-				margin-right: 0.75em;
-				display: inline-block;
-			}
-			&:after {
-				content: "\f105";
-				display: none;
-				position: absolute;
-				top: 0;
-				right: 1em;
-				color: rgba(255,255,255,0.3);
-			}
-			&:not(:only-child) {
-				padding-right: 2.75em !important;
-				&:after {				
-					display: inline;
-				}
-			}
-		}
-		&:hover {
-			a {
-				background: $brand-1;
-				color: $white;
-				box-shadow: none;
-				border-bottom-color: transparent;
-				&:before,
-				&:after {
-					color: $white;
-				}
-			}
-			> ul {
-				opacity: 1;
-				visibility: visible;
-				a {
-					border-bottom: 1px solid darken($brand-1, 5%);
-				}
+		&:first-child {
+			> ul {				
+				border-top: 8px solid darken($brand-1, 10%);
+				margin-top: -8px;
 			}
 		}
 	}
+}
 
-	// 2nd level and below
-	ul {
-		top: 0;
-		left: 150%;
-		left: calc(150% - 1px);
-		margin-left: -5%;
-		margin-top: 0;
-		border-radius: 0;
-		z-index: -1;
-		&:before, 
-		&:after {
-			display: none;
-		}
-		li {	
-			&:hover {
-				a {
-					background: darken($brand-1, 15%);
-					border-bottom-color: transparent;
-				}
-			}
-			&:first-child {
-				a {
-					border-top: none;
-				}
-			}	
-		}
-		// 3d level and below
-		ul {
-			left: 149.5%;
-			left: calc(150% - 1px);
-			li {
-				&:hover {
-					a {
-						background: darken($brand-1, 25%);
-					}
-				}
-			}
-		}
+&:hover {
+	> ul {
+		opacity: 1;
+		visibility: visible;
+		margin-top: 1rem;
 	}
-
-} // end dropdown ul
-
-&:hover > ul {
-	opacity: 1;
-	visibility: visible;
-	margin-top: 1rem;
 }
