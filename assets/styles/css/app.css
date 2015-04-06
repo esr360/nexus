@@ -4394,7 +4394,7 @@ body.fh-visible .main-search [type="submit"] {
   position: relative;
 }
 .main-nav > ul > li ul li a {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.85);
   color: #ffffff;
   font-size: 0.9rem;
   line-height: 3;
