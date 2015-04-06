@@ -40,10 +40,9 @@ $(document).ready(function() {
             $('.welcome-content').removeClass('active');
 
             var $pinChild = $(this).index() + 1;
-            var $pinChildVal = $pinChild.toString();
 
             setTimeout(function(){
-                $('.welcome-content:nth-child('+$pinChildVal+')').addClass('active'); 
+                $('.welcome-content:nth-child('+$pinChild+')').addClass('active'); 
             }, 200); 
 
         });

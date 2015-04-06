@@ -3848,7 +3848,7 @@ body.cp-active .cp-nav-container .main-search {
 @media (min-width: 940px) {
   .earth {
     height: 0;
-    padding-top: 25%;
+    padding-top: 22%;
   }
   .earth .pin-wrapper {
     -webkit-transform-origin: center;
@@ -3858,7 +3858,7 @@ body.cp-active .cp-nav-container .main-search {
     width: 100%;
   }
   .earth .pins {
-    margin-top: 19%;
+    margin-top: 22%;
   }
   .earth .pin {
     -webkit-transform: translateX(-30%) rotate(-135deg);
