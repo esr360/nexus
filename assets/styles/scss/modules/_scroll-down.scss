@@ -29,10 +29,10 @@
         background-color: $white;
         border-color: $white;
         &:before {
-            background-color: #071216;  
+            background-color: darken($brand-1, 10%);  
         }
         [class*="mouse-scroll"] {
-            border-top-color: #071216;
+            border-top-color: darken($brand-1, 10%);
         }
     }
 }
