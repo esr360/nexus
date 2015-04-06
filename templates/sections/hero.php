@@ -15,7 +15,7 @@
                 <h3>A Modern HTML Template</h3>
             </div>
             <div class="meta">
-                <p class="blurb">Start your new project with a fresh approach. Nexus is truly cutting edge in terms of design and performance; leave your visitors with an experience to remember and <a href="#">Purchase Nexus</a> now.</p>
+                <p class="blurb">Start your new project with a fresh approach. Nexus is truly cutting edge in terms of design and performance; leave your visitors with an experience to remember and <a href="<?php echo $purchase; ?>" target="blank">Purchase Nexus</a> now.</p>
                 <a href="#" class="button round brand-1">Purchase Now</a>
                 <a href="#s-welcome" class="button round border">Read More</a>
             </div>

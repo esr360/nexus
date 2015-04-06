@@ -5,11 +5,13 @@
                 <!-- Logo -->
                 <div class="logo">
                     <!-- image logo -->
-                    <a href="index-single.html" class="image-logo">
+                    <a href="<?php echo $ROOT; ?>index-single.html" class="image-logo">
                         <img src="<?php echo $ROOT; ?>assets/images/logo.png" alt="One Nexus" />
                     </a>
+                    <?php if ($demo == "true") { ?>
                     <!-- HTML logo -->
-                    <a href="index-single.html" class="html-logo"><i class="fa fa-square-o"></i> [Nexus]</a>
+                    <a href="<?php echo $ROOT; ?>index-single.html" class="html-logo"><i class="fa fa-square-o"></i> [Nexus]</a>
+                    <?php } ?>
                 </div>                       
                 <p>Start your new project with a fresh approach. Nexus is truly cutting edge in terms of design and performance.</p>
                 <ul>
@@ -153,27 +155,27 @@
                 <nav class="footer-nav">                
                     <ul>
                         <li>
-                            <a href="<?php if ($type == "one-page"){ ?>#s-welcome<?php } else { ?>about.html<?php } ?>">
+                            <a href="<?php if ($type == "one-page"){ ?>#s-welcome<?php } else { echo $ROOT; ?>about.html<?php } ?>">
                                 About
                             </a>
                         </li>
                         <li>
-                            <a href="<?php if ($type == "one-page"){ ?>#s-services<?php } else { ?>services.html<?php } ?>">
+                            <a href="<?php if ($type == "one-page"){ ?>#s-services<?php } else { echo $ROOT; ?>services.html<?php } ?>">
                                 Services
                             </a>
                         </li>
                         <li>
-                            <a href="<?php if ($type == "one-page"){ ?>#s-latest-works<?php } else { ?>portfolio.html<?php } ?>">
+                            <a href="<?php if ($type == "one-page"){ ?>#s-latest-works<?php } else { echo $ROOT; ?>portfolio.html<?php } ?>">
                                 Portfolio
                             </a>
                         </li>
                         <li>
-                            <a href="<?php if ($type == "one-page"){ ?>#s-latest-posts<?php } else { ?>blog.html<?php } ?>">
+                            <a href="<?php if ($type == "one-page"){ ?>#s-latest-posts<?php } else { echo $ROOT; ?>blog.html<?php } ?>">
                                 Blog
                             </a>
                         </li>
                         <li>
-                            <a href="<?php if ($type == "one-page"){ ?>#s-contact<?php } else { ?>contact.html<?php } ?>">
+                            <a href="<?php if ($type == "one-page"){ ?>#s-contact<?php } else { echo $ROOT; ?>contact.html<?php } ?>">
                                 Contact
                             </a>
                         </li>

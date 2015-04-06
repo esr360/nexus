@@ -10,7 +10,7 @@
         </header>
 
         <div class="blog-item">                    
-            <a href="single-post.html" class="thumb">                  
+            <a href="<?php echo $ROOT; ?>single-post.html" class="thumb">                  
                 <img src="<?php echo $ROOT; ?>assets/images/stock13.jpg" alt="" />
             </a>
             <a href="<?php echo $ROOT; ?>assets/images/stock17.jpg" class="modal-image profile profile-alt">            
@@ -20,17 +20,17 @@
                 <span>Sep</span>
                 <span>23</span>
             </div>
-            <h4><a href="single-post.html">Lorem Ipsum Dolor Sit Amet</a></h4>
+            <h4><a href="<?php echo $ROOT; ?>single-post.html">Lorem Ipsum Dolor Sit Amet</a></h4>
             <h5>Posted by <a href="#">Jane Doe</a></h5>
             <p>Nullam sit amet aliquam urna. Duis fermentum, neque nec pretium fermentum, libero mauris bibendum quam, et semper nibh augue non justo faucibus id sodales in, auctor fringilla libero. Donec nunc sapien, convallis ac iaculis vestibulum, accumsan sed libero. Suspendisse potenti. Donec non condimentum arcu. Sed vel tincidunt nibh. Suspendisse potenti. Etiam euismod pretium hendrerit...</p>
-            <a class="button round brand-1" href="single-post.html">Read More</a>
+            <a class="button round brand-1" href="<?php echo $ROOT; ?>single-post.html">Read More</a>
             <small>Posted in <a href="#">Web Design</a></small>
         </div>
 
         <hr class="stripes" />
 
         <div class="blog-item">
-            <a href="single-post.html" class="thumb">                            
+            <a href="<?php echo $ROOT; ?>single-post.html" class="thumb">                            
                 <img src="<?php echo $ROOT; ?>assets/images/stock1.jpg" alt="" />
             </a>
             <a href="<?php echo $ROOT; ?>assets/images/stock16.jpg" class="modal-image profile profile-alt">            
@@ -40,17 +40,17 @@
                 <span>Oct</span>
                 <span>03</span>
             </div>
-            <h4><a href="single-post.html">Turpis Eu Tristique Donec Laoreet Sed</a></h4>
+            <h4><a href="<?php echo $ROOT; ?>single-post.html">Turpis Eu Tristique Donec Laoreet Sed</a></h4>
             <h5>Posted by <a href="#">John Doe</a></h5>
             <p>Nullam sit amet aliquam urna. Duis fermentum, neque nec pretium fermentum, libero mauris bibendum quam, et semper nibh augue non justo. Donec nunc sapien, convallis ac iaculis vestibulum, accumsan sed libero. Suspendisse potenti faucibus id sodales in, auctor fringilla libero. Donec non condimentum arcu. Sed vel tincidunt nibh. Suspendisse potenti. Etiam euismod pretium hendrerit...</p>
-            <a class="button round brand-1" href="single-post.html">Read More</a>
+            <a class="button round brand-1" href="<?php echo $ROOT; ?>single-post.html">Read More</a>
             <small>Posted in <a href="#">Wordpress</a></small>
         </div>
 
         <hr class="stripes" />
 
         <div class="blog-item">
-            <a href="single-post.html" class="thumb">                            
+            <a href="<?php echo $ROOT; ?>single-post.html" class="thumb">                            
                 <img src="<?php echo $ROOT; ?>assets/images/stock4.jpg" alt="" />
             </a>
             <a href="<?php echo $ROOT; ?>assets/images/stock18.jpg" class="modal-image profile profile-alt">            
@@ -60,10 +60,10 @@
                 <span>Oct</span>
                 <span>14</span>
             </div>
-            <h4><a href="single-post.html">Elit in Lobortis Pellentesque Consequat </a></h4>
+            <h4><a href="<?php echo $ROOT; ?>single-post.html">Elit in Lobortis Pellentesque Consequat </a></h4>
             <h5>Posted by <a href="#">Sam Tho</a></h5>
             <p>Nullam sit amet aliquam urna. Duis fermentum, neque nec pretium fermentum, libero mauris bibendum quam, et semper nibh augue non justo. Donec nunc sapien, convallis ac iaculis vestibulum, accumsan sed libero. Suspendisse potenti faucibus id sodales in, auctor fringilla libero. Donec non condimentum arcu. Sed vel tincidunt nibh. Suspendisse potenti. Etiam euismod pretium hendrerit...</p>
-            <a class="button round brand-1" href="single-post.html">Read More</a>
+            <a class="button round brand-1" href="<?php echo $ROOT; ?>single-post.html">Read More</a>
             <small>Posted in <a href="#">Themes</a></small>
         </div>
         

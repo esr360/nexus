@@ -1,6 +1,8 @@
 <?php 
+$demo = true;
 $ROOT = '/';
-?>
+$purchase = 'http://themeforest.net/item/nexus-responsive-multipurpose-html5-template/10789597'
+?>          
 
 <!DOCTYPE html>
 <!--[if IE 8]>     <html class="no-js ie ie8 lte9 lte8"> <![endif]-->
@@ -27,9 +29,11 @@ $ROOT = '/';
     <!-- Stylesheet -->
     <link rel="stylesheet" href="<?php echo $ROOT; ?>assets/styles/css/app.css">
     <link rel="stylesheet" class="color-switcher" href="<?php echo $ROOT; ?>assets/styles/css/app.css">
-    
+
+    <?php if ($demo == "true") { ?>
     <!-- Theme Options -->
     <link rel="stylesheet" href="<?php echo $ROOT; ?>assets/styles/css/theme-options.css">
+    <?php } ?>
     
     <!-- Modernizr -->
     <script src="<?php echo $ROOT; ?>assets/js/modernizr.min.js"></script>

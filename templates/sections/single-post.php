@@ -4,8 +4,8 @@
             <div class="section-title">
                 <h2>Single Post <i>Title</i></h2>
                 <ul class="post-meta">
-                    <li><i class="fa fa-user"></i> Posted by: <a href="blog.html">Jane Doe</a></li>
-                    <li><i class="fa fa-folder"></i> Category: <a href="blog.html">Default</a></li>
+                    <li><i class="fa fa-user"></i> Posted by: <a href="<?php echo $ROOT; ?>blog.html">Jane Doe</a></li>
+                    <li><i class="fa fa-folder"></i> Category: <a href="<?php echo $ROOT; ?>blog.html">Default</a></li>
                     <li><i class="fa fa-calendar"></i> Posted: Today, 9:24am</li>
                 </ul>
             </div>
@@ -45,7 +45,7 @@
                 <img width="150" alt="" src="<?php echo $ROOT; ?>assets/images/stock17.jpg">
             </a>
             <div class="author-content">
-                <h4><a href="blog.html">Jane Doe</a></h4>
+                <h4><a href="<?php echo $ROOT; ?>blog.html">Jane Doe</a></h4>
                 <h5>Graphic Designer</h5>
                 <p>Nunc pharetra et massa eu volutpat. Duis at posuere justo. Vivamus lobortis mi at leo pellentesque vehicula. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Proin ac augue quam. Etiam sollicitudin magna vitae nunc accumsan cursus.</p>
             </div>
