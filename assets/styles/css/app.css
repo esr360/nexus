@@ -4869,10 +4869,10 @@ body.fh-visible .main-search [type="submit"] {
   border-color: #ffffff;
 }
 .mouse:hover:before {
-  background-color: #071216;
+  background-color: #127297;
 }
 .mouse:hover [class*="mouse-scroll"] {
-  border-top-color: #071216;
+  border-top-color: #127297;
 }
 
 .mouse-animations {
@@ -6425,6 +6425,16 @@ Sections
       -ms-transform: scale(1);
           transform: scale(1);
 }
+.section.welcome .owl-dots {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+.section.welcome .owl-dots .owl-dot span {
+  background: rgba(0, 0, 0, 0.2);
+}
+.section.welcome .owl-dots .owl-dot.active span {
+  background: #1795C5;
+}
 .section.welcome .earth {
   transition: 0.4s;
   bottom: 0;
@@ -6490,11 +6500,11 @@ Sections
   .section.welcome .welcome-features h4 {
     font-size: 1rem;
   }
+}
+@media (max-width: 1200px) {
   .section.welcome .welcome-features .livicon {
     display: none;
   }
-}
-@media (max-width: 1200px) {
   .section.welcome .nav-carousel {
     display: none;
   }

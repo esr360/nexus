@@ -31,6 +31,21 @@
 		}
 	}
 
+	.owl-dots {
+		margin-top: 1rem;
+		margin-bottom: 0.5rem;
+		.owl-dot {
+			span {
+				background: rgba($black, 0.2);
+			}
+			&.active {
+				span {
+					background: $brand-1;
+				}
+			}
+		}
+	}
+
 	.earth {
 		transition: 0.4s;
 		bottom: 0;
@@ -108,13 +123,15 @@
 			h4 {
 				font-size: $font-size-1;
 			}
-			.livicon {
-				display: none;
-			}
 		}
 	}
 
 	@media (max-width: $breakpoint-4) {
+		.welcome-features {
+			.livicon {
+				display: none;
+			}
+		}
 		.nav-carousel {
 			display: none;
 		}

@@ -408,9 +408,6 @@ wfCarousel.owlCarousel({
     margin: 20,
     slideBy: 1,
     responsive:{
-        720:{                
-            items: 2
-        },
         960:{                
             items: 3
         }
