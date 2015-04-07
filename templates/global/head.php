@@ -1,5 +1,5 @@
 <?php 
-$live = false;
+$live = true;
 $demo = true;
 $ROOT = '/';
 $purchase = 'http://themeforest.net/item/nexus-responsive-multipurpose-html5-template/10789597';

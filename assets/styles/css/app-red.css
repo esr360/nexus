@@ -987,9 +987,6 @@ hr.large {
   }
 }
 
-.hover-bg-brand-1 {
-  transition: 0.4;
-}
 .hover-bg-brand-1:hover {
   background: #bb1c1c !important;
   border-color: #bb1c1c !important;
@@ -4118,7 +4115,8 @@ body.cp-active .cp-nav-container .main-search {
   font-style: normal;
   display: block;
 }
-.footer-testimonials div .profile, .footer-testimonials div cite {
+.footer-testimonials div .profile,
+.footer-testimonials div cite {
   float: left;
 }
 .footer-testimonials div .profile {
@@ -4140,9 +4138,6 @@ body.cp-active .cp-nav-container .main-search {
 .footer-testimonials .profile {
   height: 44px;
   width: 44px;
-}
-.footer-testimonials .profile img {
-  width: 60px !important;
 }
 .footer-testimonials .bx-wrapper {
   position: relative;

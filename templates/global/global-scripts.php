@@ -9,8 +9,3 @@
 <!--Plugins -->
 <script src="<?php echo $ROOT; ?>assets/js/owl-carousel.min.js"></script>
 <script src="<?php echo $ROOT; ?>assets/js/magnific-popup.min.js"></script>
-
-<?php if ($live == false) { ?>
-<!-- Replace stock images with placeholder -->
-<script src="http://skyux.com/libraries/placeholder.js"></script>
-<?php } ?>
