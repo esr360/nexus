@@ -85,7 +85,8 @@
 		color: white;
 		font-style: normal;
 		display: block;
-		.profile, cite {
+		.profile, 
+		cite {
 			float: left;
 		}
 		.profile {
@@ -108,9 +109,6 @@
 	.profile {
 		height: 44px;
 		width: 44px;
-		img {
-			width: 60px !important;
-		}
 	}
 	.bx-wrapper {
 		position: relative;

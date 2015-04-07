@@ -583,7 +583,7 @@ $(document).ready(function() {
 
     $(cpNav);
 
-}); // End document.ready
+}); // end document.ready
 
 $(window).load(function(){
 
