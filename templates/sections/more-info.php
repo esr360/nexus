@@ -4,7 +4,7 @@
             <div class="span-6 info-video">
                 <div class="auto-resizable-iframe">
                     <div>
-                        <iframe allowfullscreen="" src="http://www.youtube.com/embed/Q3oItpVa9fs"></iframe>
+                        <iframe allowfullscreen="" src="http://www.youtube.com/embed/<?php if ($live == true) { ?>Q3oItpVa9fs<?php } else { ?>YOURID<?php } ?>"></iframe>
                     </div>
                 </div>
             </div>
