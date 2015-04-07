@@ -135,7 +135,7 @@ $(window).bind("load scroll", function() { // call the script on window scroll &
     if ($('.fixed-header-container').css('opacity') == '1' && $('body').hasClass('fh-visible')) { // is the fixed-header visible?
         // yes
         $('.flyout-trigger').css({
-            top: '1.05em'
+            top: '0.7em'
         });
     } else {   
         // no     
