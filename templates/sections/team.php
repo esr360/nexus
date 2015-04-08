@@ -11,11 +11,11 @@
             <div class="span-4 team-member">
                 <div class="team-pic">
                     <div class="mask">
-                        <a href="<?php echo $ROOT; ?>assets/images/stock8.jpg" class="icon-lrg-border-round">
+                        <a href="<?php stockReplace("${ROOT}assets/images/stock8.jpg", "", false, true); ?>" class="icon-lrg-border-round">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>
-                    <img src="<?php echo $ROOT; ?>assets/images/stock8.jpg" alt="" />
+                    <?php stockReplace("${ROOT}assets/images/stock8.jpg", "", false); ?>
                 </div>
                 <h4>John Doe</h4>
                 <h5>CEO</h5>
@@ -44,11 +44,11 @@
             <div class="span-4 team-member">
                 <div class="team-pic">
                     <div class="mask">
-                        <a href="<?php echo $ROOT; ?>assets/images/stock15.jpg" class="icon-lrg-border-round">
+                        <a href="<?php stockReplace("${ROOT}assets/images/stock15.jpg", "", false, true); ?>" class="icon-lrg-border-round">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>
-                    <img src="<?php echo $ROOT; ?>assets/images/stock15.jpg" alt="" />
+                    <?php stockReplace("${ROOT}assets/images/stock15.jpg", "", false); ?>
                 </div>
                 <h4>Jane Dough</h4>
                 <h5>Graphic Designer</h5>
@@ -74,11 +74,11 @@
             <div class="span-4 team-member">
                 <div class="team-pic">
                     <div class="mask">
-                        <a href="<?php echo $ROOT; ?>assets/images/stock12.jpg" class="icon-lrg-border-round">
+                        <a href="<?php stockReplace("${ROOT}assets/images/stock12.jpg", "", false, true); ?>" class="icon-lrg-border-round">
                             <i class="fa fa-search"></i>
                         </a>
                     </div>
-                    <img src="<?php echo $ROOT; ?>assets/images/stock12.jpg" alt="" />
+                    <?php stockReplace("${ROOT}assets/images/stock12.jpg", "", false); ?>
                 </div>
                 <h4>Sam Tho</h4>
                 <h5>Web Developer</h5>

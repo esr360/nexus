@@ -353,7 +353,7 @@ var projectCarousel = $('.single-project .previews');
 projectCarousel.owlCarousel({
     items: 1,
     dots: false,
-    loop: true,
+    loop: false,
     nav: false,
     autoplay:true,
     slideBy: 1

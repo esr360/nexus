@@ -1,8 +1,36 @@
 <?php 
+
 $live = true;
 $demo = true;
-$ROOT = '/';
+$ROOT = '';
 $purchase = 'http://themeforest.net/item/nexus-responsive-multipurpose-html5-template/10789597';
+ 
+function stockReplace($src, $class, $link=true, $urlOnly=false) {
+ 
+   global $live;
+ 
+   if ($live==false) {
+              $src="http://placehold.it/800x543";
+    }
+ 
+    if ($link==true) {
+      ?>
+             <a href="<?= $src ?>" class="<?= $class ?>">            
+                    <img src="<?= $src ?>" alt="" />
+             </a>
+      <?php
+    } else if ($urlOnly==true) {
+      ?>
+           <?= $src ?>
+      <?php
+    } else {
+      ?>
+           <img src="<?= $src ?>" alt="" />
+      <?php
+    }
+
+}
+
 ?>          
 
 <!DOCTYPE html>

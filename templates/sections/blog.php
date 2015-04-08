@@ -11,11 +11,9 @@
 
         <div class="blog-item">                    
             <a href="<?php echo $ROOT; ?>single-post.html" class="thumb">                  
-                <img src="<?php echo $ROOT; ?>assets/images/stock13.jpg" alt="" />
+                <?php stockReplace("${ROOT}assets/images/stock13.jpg", "", false); ?>
             </a>
-            <a href="<?php echo $ROOT; ?>assets/images/stock17.jpg" class="modal-image profile profile-alt">            
-                <img src="<?php echo $ROOT; ?>assets/images/stock17.jpg" alt="" />
-            </a>
+            <?php stockReplace("${ROOT}assets/images/stock12.jpg", "modal-image profile profile-alt"); ?>
             <div class="date">
                 <span>Sep</span>
                 <span>23</span>
@@ -31,11 +29,9 @@
 
         <div class="blog-item">
             <a href="<?php echo $ROOT; ?>single-post.html" class="thumb">                            
-                <img src="<?php echo $ROOT; ?>assets/images/stock1.jpg" alt="" />
+                <?php stockReplace("${ROOT}assets/images/stock1.jpg", "", false); ?>
             </a>
-            <a href="<?php echo $ROOT; ?>assets/images/stock16.jpg" class="modal-image profile profile-alt">            
-                <img src="<?php echo $ROOT; ?>assets/images/stock16.jpg" alt="" />
-            </a>
+            <?php stockReplace("${ROOT}assets/images/stock16.jpg", "modal-image profile profile-alt"); ?>
             <div class="date">
                 <span>Oct</span>
                 <span>03</span>
@@ -51,11 +47,9 @@
 
         <div class="blog-item">
             <a href="<?php echo $ROOT; ?>single-post.html" class="thumb">                            
-                <img src="<?php echo $ROOT; ?>assets/images/stock4.jpg" alt="" />
+                <?php stockReplace("${ROOT}assets/images/stock4.jpg", "", false); ?>
             </a>
-            <a href="<?php echo $ROOT; ?>assets/images/stock18.jpg" class="modal-image profile profile-alt">            
-                <img src="<?php echo $ROOT; ?>assets/images/stock18.jpg" alt="" />
-            </a>
+            <?php stockReplace("${ROOT}assets/images/stock18.jpg", "modal-image profile profile-alt"); ?>
             <div class="date">
                 <span>Oct</span>
                 <span>14</span>

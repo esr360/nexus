@@ -11,12 +11,8 @@
             </div>
         </header>
         <div class="post-meta">
-            <a href="<?php echo $ROOT; ?>assets/images/stock13.jpg" class="modal-image thumb">                            
-                <img src="<?php echo $ROOT; ?>assets/images/stock13.jpg" alt="" />
-            </a>                    
-            <a href="<?php echo $ROOT; ?>assets/images/stock17.jpg" class="profile profile-border modal-image">            
-                <img src="<?php echo $ROOT; ?>assets/images/stock17.jpg" alt="" />
-            </a>
+            <?php stockReplace("${ROOT}assets/images/stock13.jpg", "modal-image thumb"); ?>                   
+            <?php stockReplace("${ROOT}assets/images/stock17.jpg", "modal-image profile profile-border"); ?>
         </div>
         <div class="post-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Inquit, dasne adolescenti veniam?</a> Ergo instituto veterum, quo etiam Stoici utuntur, hinc capiamus exordium. Quarum ambarum rerum cum medicinam pollicetur, luxuriae licentiam pollicetur. Duo Reges: constructio interrete. Docent enim nos, ut scis, dialectici, si ea quae rem aliquam sequantur, falsa sint.</p>
@@ -41,9 +37,7 @@
                     <h4><span>The <i>Author</i></span></h4>
                 </div>
             </header>
-            <a href="<?php echo $ROOT; ?>assets/images/stock17.jpg" class="modal-image profile profile-border">
-                <img width="150" alt="" src="<?php echo $ROOT; ?>assets/images/stock17.jpg">
-            </a>
+            <?php stockReplace("${ROOT}assets/images/stock17.jpg", "modal-image profile profile-border"); ?>
             <div class="author-content">
                 <h4><a href="<?php echo $ROOT; ?>blog.html">Jane Doe</a></h4>
                 <h5>Graphic Designer</h5>

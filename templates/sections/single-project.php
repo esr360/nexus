@@ -14,15 +14,9 @@
             <div class="project-preview">
                 <img src="<?php echo $ROOT; ?>assets/images/desktop-off.png" alt="Single Project" />
                 <div class="owl-carousel previews" id="project-gallery">
-                    <a href="<?php echo $ROOT; ?>assets/images/stock7.jpg">
-                        <img src="<?php echo $ROOT; ?>assets/images/stock7.jpg" alt="" />
-                    </a>
-                    <a href="<?php echo $ROOT; ?>assets/images/stock16.jpg">
-                        <img src="<?php echo $ROOT; ?>assets/images/stock16.jpg" alt="" />
-                    </a>
-                    <a href="<?php echo $ROOT; ?>assets/images/stock10.jpg">
-                        <img src="<?php echo $ROOT; ?>assets/images/stock10.jpg" alt="" />
-                    </a>
+                    <?php stockReplace("${ROOT}assets/images/stock7.jpg", ""); ?>
+                    <?php stockReplace("${ROOT}assets/images/stock16.jpg", ""); ?>
+                    <?php stockReplace("${ROOT}assets/images/stock10.jpg", ""); ?>
                 </div>
             </div>
             <div class="nav-carousel">

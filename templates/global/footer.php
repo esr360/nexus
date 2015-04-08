@@ -98,9 +98,7 @@
                         </blockquote>
                         <div class="cf">
                             <span class="profile">
-                                <a href="<?php echo $ROOT; ?>assets/images/stock12.jpg" class="modal-image thumb"> 
-                                    <img src="<?php echo $ROOT; ?>assets/images/stock12.jpg" alt="" />
-                                </a>
+                                <?php stockReplace("${ROOT}assets/images/stock12.jpg", "modal-image thumb"); ?>
                             </span>
                             <cite>
                                 <strong>Sam Tho</strong>
@@ -114,9 +112,7 @@
                         </blockquote>
                         <div class="cf">
                             <span class="profile">
-                                <a href="<?php echo $ROOT; ?>assets/images/stock8.jpg" class="modal-image thumb"> 
-                                    <img src="<?php echo $ROOT; ?>assets/images/stock8.jpg" alt="" />
-                                </a>
+                                <?php stockReplace("${ROOT}assets/images/stock8.jpg", "modal-image thumb"); ?>
                             </span>
                             <cite>
                                 <strong>John Doe</strong>
@@ -130,9 +126,7 @@
                         </blockquote>
                         <div class="cf">
                             <span class="profile">
-                                <a href="<?php echo $ROOT; ?>assets/images/stock15.jpg" class="modal-image thumb"> 
-                                    <img src="<?php echo $ROOT; ?>assets/images/stock15.jpg" alt="" />
-                                </a>
+                                <?php stockReplace("${ROOT}assets/images/stock15.jpg", "modal-image thumb"); ?>
                             </span>
                             <cite>
                                 <strong>Jane Dough</strong>
