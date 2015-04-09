@@ -55,8 +55,6 @@ $(document).ready(function() {
             var $pinActive = $(this);
             var $pinIndex = $(this).index() + 1; 
 
-            console.log($pinIndex);
-
             setTimeout(function(){
                 $('.welcome-content').removeClass('active');
                 $('.welcome-content:nth-child('+$pinIndex+')').addClass('active'); 
