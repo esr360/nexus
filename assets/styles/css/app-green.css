@@ -4444,7 +4444,6 @@ body.fh-visible .main-search [type="submit"] {
 }
 .main-nav > ul > li ul li ul {
   left: 100%;
-  margin-left: -1px;
   top: 0;
 }
 .main-nav > ul > li ul li ul li:hover a {
