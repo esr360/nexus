@@ -3,6 +3,9 @@
 $live = true;
 $demo = true;
 $ROOT = '';
+if ($type=="master") {
+    $ROOT = '/';
+}
 $purchase = 'http://themeforest.net/item/nexus-responsive-multipurpose-html5-template/10789597';
  
 function stockReplace($src, $class, $link=true, $urlOnly=false) {
