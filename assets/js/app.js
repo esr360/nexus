@@ -809,21 +809,6 @@ if ($('#s-welcome').length > 0) {
 
 }
 
-$(window).load(function(){
-
-var highest = null;
-var hi = 0;
-$(".welcome-content").each(function(){
-  var h = $(this).outerHeight();
-  if(h > hi){
-     hi = h;
-     highest = $(this);  
-  }
-  $(this).css("height", hi)    
-});
-
-}); // End window.load
-
 /******************************************************************
 Animate Numbers
 ******************************************************************/

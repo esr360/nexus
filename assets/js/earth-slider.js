@@ -141,19 +141,3 @@ $(document).ready(function() {
 //-----------------------------------------------------------------
 // Equal height content
 //-----------------------------------------------------------------
-
-$(window).load(function(){
-
-    var highest = null;
-    var hi = 0;
-
-    $(".welcome-content").each(function(){
-        var h = $(this).outerHeight();
-        if (h > hi) {
-            hi = h;
-            highest = $(this);  
-        }
-        $(".welcome-content").css("height", hi)    
-    });
-
-}); // end window.load
