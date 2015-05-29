@@ -4478,7 +4478,7 @@ body.fh-visible .main-search [type="submit"] {
   right: 0;
   margin: auto;
 }
-.main-nav > ul > li > ul li:first-child > ul {
+.main-nav > ul > li > ul > li:first-child > ul {
   border-top: 8px solid #127297;
   margin-top: -8px;
 }

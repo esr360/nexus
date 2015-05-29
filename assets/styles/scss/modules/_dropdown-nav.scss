@@ -101,7 +101,7 @@ ul {
 		right: 0;
 		margin: auto;
 	}
-	li {
+	> li {
 		&:first-child {
 			> ul {				
 				border-top: 8px solid darken($brand-1, 10%);
